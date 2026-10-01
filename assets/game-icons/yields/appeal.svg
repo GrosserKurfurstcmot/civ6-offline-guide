@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="魅力">
+  <defs>
+    <linearGradient id="appeal-fill" x1="12" y1="8" x2="50" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#70b758"/>
+      <stop offset="1" stop-color="#2f713d"/>
+    </linearGradient>
+  </defs>
+  <path d="M32 3 57 17.5v29L32 61 7 46.5v-29Z" fill="#0b2430" stroke="#d6b45f" stroke-width="3"/>
+  <path d="M32 8.5 52.2 20v24L32 55.5 11.8 44V20Z" fill="url(#appeal-fill)" stroke="#9bd071" stroke-width="2"/>
+  <path d="m32 17 2.2 7.2L41 27l-6.8 2.8L32 37l-2.2-7.2L23 27l6.8-2.8Z" fill="#f2df9a" opacity=".92"/>
+</svg>
