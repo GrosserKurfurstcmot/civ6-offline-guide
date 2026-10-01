@@ -1,0 +1,74 @@
+[
+  {
+    "id":"apocalypse","name":"天啟模式","en":"Apocalypse Mode","requirement":"Gathering Storm 與 Maya & Gran Colombia Pack","summary":"災害更頻繁且更強，新增預言者單位與獻祭競賽；氣候變遷達最終階段後進入隕石不斷落下的天啟。","newContent":["預言者支援單位，可主動引發特定自然災害","安撫眾神競賽，可獻祭戰鬥單位爭取獎勵","太陽耀斑與彗星撞擊等極端災害","最終氣候階段不再停止，彗星可直接摧毀城市"],
+    "rules":["災害強度固定為 4，受災風險遠高於一般對局","自然災害帶來的肥沃產出也同步提高","預言者以信仰購買，站位與撤離路線很重要","彗星命中的城市中心會被永久移除"],
+    "exploits":["以大浴場配合反覆氾濫累積大量信仰","在敵方核心引發沙塵暴、暴風雪或森林火災","保留高產災害地塊，但避免在彗星期把全部太空項目集中一城","用廉價單位參加安撫眾神，評估犧牲成本再競逐冠軍"],
+    "risks":["沿河與火山城市可能在基建成形前連續受創","後期單一超級城市會成為彗星的災難性單點故障","預言者也能被對手用來破壞你的改良設施","修復成本會拖慢原本精準的奇觀與太空節奏"],
+    "recommendedTags":["faith","production","disaster"],"avoidTags":["tall","single-city"],
+    "victoryImpact":{"science":"中","culture":"中","domination":"高","religion":"高","diplomacy":"低","score":"中"},
+    "synergies":[{"mode":"secret-societies","rating":"高","note":"虛空吟唱者可把災害與獻祭產生的信仰轉成科技文化。"},{"mode":"heroes-legends","rating":"高","note":"英雄是強力獻祭資產，但必須比較英雄剩餘壽命與召回成本。"},{"mode":"dramatic-ages","rating":"低","note":"災害修復與失城風險同時放大，容易讓黑暗時代失控。"}]
+  },
+  {
+    "id":"secret-societies","name":"秘密結社","en":"Secret Societies","requirement":"Ethiopia Pack","summary":"探索世界後可受邀加入四個秘密結社，總督頭銜會解鎖跨時代能力，顯著改寫帝國經濟與勝利節奏。","newContent":["彌涅耳瓦夜鷹，強化經濟政策、商路與間諜","虛空吟唱者，強化信仰、遺物與邪教徒忠誠壓力","血色契約，提供會隨擊殺成長的吸血鬼與吸血鬼城堡","赫密士教團，發現地脈並強化偉人與區域相鄰"],
+    "rules":["首次觸發特定行為時有機率收到結社邀請","加入後無法更換或退出結社","能力在遠古、中世紀、工業與原子時代分段解鎖","AI 也會加入結社，外交關係會受同會或敵會影響"],
+    "exploits":["經濟與外交路線優先夜鷹，利用額外政策槽和鍍金寶庫","信仰型文明選虛空吟唱者，把高信仰轉為科技文化金幣","早戰文明用血色契約累積吸血鬼戰鬥力，城堡複製最高地塊產出","偉人與高相鄰文明可用赫密士教團放大地脈"],
+    "risks":["過早投入總督頭銜會延後平伽拉、馬格努斯等通用總督","赫密士教團依賴隨機地脈，地圖不佳時回報不穩","吸血鬼操作量大，戰爭停滯時成長有限","邪教徒需要大量信仰，無法取代基本文化與人口壓力"],
+    "recommendedTags":["faith","trade","greatpeople","military"],"avoidTags":[],
+    "victoryImpact":{"science":"高","culture":"高","domination":"高","religion":"高","diplomacy":"高","score":"高"},
+    "synergies":[{"mode":"heroes-legends","rating":"高","note":"英雄與結社都能放大信仰用途，使信仰成為跨路線通貨。"},{"mode":"monopolies","rating":"高","note":"夜鷹的商業與間諜能力能保護公司並提高文化旅遊收益。"},{"mode":"zombie-defense","rating":"中","note":"吸血鬼可從大量戰鬥中成長，但必須避免殭屍攻破後方。"}]
+  },
+  {
+    "id":"tech-civic-shuffle","name":"科技與市政隨機","en":"Tech and Civic Shuffle","requirement":"免費更新，需 Rise and Fall 或 Gathering Storm","summary":"每局重新排列同時代科技與市政的前置關係，未滿足前置的節點保持隱藏，迫使玩家用鼓舞、尤里卡與偵察推斷路線。","newContent":["隨機生成的科技樹與市政樹","未探索節點以問號顯示","樹狀結構仍遵守時代與必要解鎖限制","每場對局都需要重新規劃研究順序"],
+    "rules":["科技與市政內容不變，只有位置和前置關係改變","無法一開始看到完整路線","完成尤里卡或鼓舞可能直接揭露相關節點","關鍵單位、政府與區域的到達時間會改變"],
+    "exploits":["優先完成容易的尤里卡和鼓舞，用揭露資訊反推樹形","保留一回合可完成的研究，在揭露關鍵節點後迅速轉向","以偵察、建造者和基礎區域建立不依賴固定科技順序的開局","漢摩拉比仍可用尤里卡直接解鎖，但必須重新辨認連鎖"],
+    "risks":["政治哲學、學徒制或飛行等節點可能繞遠","死背固定攻略會導致生產與研究互相等待","隨機樹可能讓某些早期特色單位窗口縮短","忽略鼓舞會同時失去研究折扣與節點情報"],
+    "recommendedTags":["eureka","culture","flexible"],"avoidTags":["single-timing"],
+    "victoryImpact":{"science":"中","culture":"中","domination":"中","religion":"低","diplomacy":"低","score":"中"},
+    "synergies":[{"mode":"dramatic-ages","rating":"低","note":"時代分數來源與研究路線同時不穩，容錯率很低。"},{"mode":"barbarian-clans","rating":"高","note":"氏族提供單位與城邦來源，能補上研究順序延誤的軍事缺口。"},{"mode":"heroes-legends","rating":"高","note":"英雄可提供不依賴科技樹的早期戰力與探索能力。"}]
+  },
+  {
+    "id":"dramatic-ages","name":"動盪時代","en":"Dramatic Ages","requirement":"Byzantium & Gaul Pack，需 Rise and Fall 或 Gathering Storm","summary":"取消普通時代，帝國只能進入黃金或黑暗時代；進入黑暗時代時部分城市立即成為自由城市。","newContent":["黃金與黑暗政策卡取代固定時代著力點","額外時代分數會提高下一次黃金時代門檻","黑暗時代依難度和帝國規模失去城市","奪回自由城市可重新建立忠誠網路"],
+    "rules":["沒有普通時代，也沒有英雄時代","達標即黃金，未達標即黑暗","黑暗時代開始時低忠誠城市可能立刻叛離","黃金時代政策通常強大但帶有明確代價"],
+    "exploits":["把容易控制的時代分數來源留到下一時代再完成","邊境先放總督、紀念碑和宜居度，避免轉時代時叛離","利用強力黃金政策推進主要勝利，再準備承受副作用","可故意讓難守城市脫離，再由軍隊奪回重建位置"],
+    "risks":["大帝國的黃金門檻持續攀升，連續黃金非常困難","邊境叛離可能切斷道路、戰略資源與忠誠鏈","戰爭中跨時代會讓前線城市瞬間變成第三方","政策卡的負面效果容易破壞原本平衡的經濟"],
+    "recommendedTags":["loyalty","era","culture"],"avoidTags":["wide","fragile"],
+    "victoryImpact":{"science":"中","culture":"高","domination":"高","religion":"中","diplomacy":"低","score":"中"},
+    "synergies":[{"mode":"secret-societies","rating":"高","note":"結社提供額外強力政策與產出，有助於跨過時代門檻。"},{"mode":"apocalypse","rating":"低","note":"災害會破壞時代分數節奏和邊境忠誠，失控風險最高。"},{"mode":"heroes-legends","rating":"高","note":"發現與召回英雄提供時代分數，英雄也能迅速奪回自由城市。"}]
+  },
+  {
+    "id":"heroes-legends","name":"英雄與傳說","en":"Heroes & Legends","requirement":"Babylon Pack","summary":"世界中存在十二位有壽命限制的英雄。城市可透過英雄史詩項目召回已故英雄，並在英雄死亡後保留史詩遺物。","newContent":["十二位具獨特能力與高戰力的英雄","英雄發現、招募與英雄壽命機制","英雄史詩城市項目與信仰召回","英雄死亡後產生兩件史詩遺物"],
+    "rules":["每位英雄同一時間只能效忠一個文明","首次招募主要靠城市生產，召回則消耗信仰","英雄每回合減少壽命，戰鬥不會停止老化","英雄由發現該英雄的城市招募與召回"],
+    "exploits":["辛巴達適合海圖與金幣爆發，赫丘利可瞬間完成區域","卑彌呼可免費徵召城邦並增加使者，適合外交或馬加什","阿南西可消耗資源取得科技文化，也能移除敵方關鍵奢侈","文化路線保留史詩遺物並搭配遺物旅遊加成"],
+    "risks":["英雄壽命有限，遠距行軍會浪費有效回合","信仰不足會讓英雄死亡後長期無法召回","搶英雄失敗可能把最適配英雄留給對手","高戰力英雄仍怕包圍、區域控制與錯誤站位"],
+    "recommendedTags":["faith","military","relic"],"avoidTags":[],
+    "victoryImpact":{"science":"高","culture":"高","domination":"高","religion":"中","diplomacy":"高","score":"高"},
+    "synergies":[{"mode":"secret-societies","rating":"高","note":"虛空吟唱者強化信仰與遺物，夜鷹則放大辛巴達的金流用途。"},{"mode":"monopolies","rating":"高","note":"阿南西可調整資源分布，英雄也能保護海外公司據點。"},{"mode":"barbarian-clans","rating":"高","note":"英雄快速清理危險氏族，也能保留想轉化為城邦的營地。"}]
+  },
+  {
+    "id":"monopolies","name":"壟斷與公司","en":"Monopolies and Corporations","requirement":"Vietnam & Kublai Khan Pack，需 Rise and Fall 或 Gathering Storm","summary":"奢侈資源可建立產業與公司，產生可收藏的產品；控制全球同類資源可形成壟斷並大幅提高旅遊業績。","newContent":["建造者建立的產業改良設施","大商人升級產業為公司","公司城市項目產生產品傑作","奢侈資源壟斷與全球旅遊倍率"],
+    "rules":["擁有兩份同類奢侈資源才能建立產業","取得大商人後可建立公司","產品需要證券交易所或海港建築的槽位收藏","控制全球多數同類奢侈資源才構成壟斷"],
+    "exploits":["早期產業的城市加成應配合城市分工，例如科技、軍事或偉人城市","預留大商人建立公司，不要全部立即退休在次要效果上","文化勝利主動買地、殖民或征服以取得同類奢侈資源","產品可移動到有旅遊倍率或更安全的城市"],
+    "risks":["壟斷旅遊倍率很強，可能讓文化勝利過早結束","為湊資源過度擴張會引發忠誠與外交問題","沒有足夠產品槽時公司項目會浪費產能","掠奪或失去唯一公司會重創專精城市"],
+    "recommendedTags":["luxury","culture","gold","trade"],"avoidTags":[],
+    "victoryImpact":{"science":"中","culture":"極高","domination":"中","religion":"低","diplomacy":"中","score":"高"},
+    "synergies":[{"mode":"secret-societies","rating":"高","note":"夜鷹強化商業中心和商路，能更快建立公司與產品網路。"},{"mode":"heroes-legends","rating":"高","note":"阿南西可移除不利資源並提供研發，辛巴達可支付公司擴張。"},{"mode":"barbarian-clans","rating":"中","note":"新城邦可能控制稀有奢侈，需用宗主權或征服取得改良權。"}]
+  },
+  {
+    "id":"barbarian-clans","name":"蠻族氏族","en":"Barbarian Clans","requirement":"免費更新","summary":"蠻族營地變成具有進度的氏族，可被雇用、賄賂、煽動或掠奪；存活夠久後會轉化為新城邦。","newContent":["七種依地貌與兵種偏好的氏族","氏族進度與城邦轉化","雇用單位、賄賂、煽動與贖回選項","營地互動的冷卻時間與進度變化"],
+    "rules":["清除氏族仍可取得一般清寨獎勵","付費互動可改變氏族目標和轉化進度","氏族可販售尚未由文明解鎖的特色單位","城邦數會在遊戲中期持續增加"],
+    "exploits":["早期雇用高階或特色單位，省下科技和戰略資源門檻","保留安全後方氏族讓它轉成可控城邦","煽動氏族攻擊競爭者，再趁機掠奪或擴張","尤利烏斯·凱撒可反覆掠奪營地獲利，秦統一者可收編蠻族"],
+    "risks":["放任氏族可能持續生產克制你軍隊的高階單位","AI 可能先行賄賂或雇用你原本想取得的單位","新城邦會占據預定城市位置或關鍵資源","過度清寨會失去後續城邦、雇兵與外交價值"],
+    "recommendedTags":["citystate","gold","military","barbarian"],"avoidTags":[],
+    "victoryImpact":{"science":"中","culture":"中","domination":"高","religion":"中","diplomacy":"高","score":"中"},
+    "synergies":[{"mode":"heroes-legends","rating":"高","note":"英雄能控制氏族威脅，卑彌呼則立即利用新城邦。"},{"mode":"dramatic-ages","rating":"中","note":"新城邦提供時代分數和宗主收益，但也可能阻塞忠誠布局。"},{"mode":"zombie-defense","rating":"低","note":"蠻族與殭屍同時存在會讓前期軍事負擔過高。"}]
+  },
+  {
+    "id":"zombie-defense","name":"殭屍防禦","en":"Zombie Defense","requirement":"Portugal Pack","summary":"死亡單位可能重生成殭屍，殭屍擊殺又會產生更多殭屍；城市可建造陷阱與路障，並用項目短暫控制殭屍。","newContent":["會隨全球死亡數變強的殭屍單位","路障、強化路障、陷阱與現代化陷阱","黑暗信號與轉向暗影城市項目","間諜煽動殭屍爆發任務"],
+    "rules":["多數陸地戰鬥死亡都有機會在原地產生殭屍","殭屍全球突變強度會隨死亡數累積","陷阱造成傷害，路障提供區域控制與防禦","控制殭屍的城市項目有回合限制，結束後會再度敵對"],
+    "exploits":["在狹口與城市外圍用路障、陷阱建立交叉火力","用遠程與城市攻擊收尾，避免近戰單位被包圍","間諜可在競爭者後方引發殭屍，拖慢太空或文化城市","控制殭屍後讓其消耗在敵軍或其他殭屍身上"],
+    "risks":["持續戰爭會永久提高全球殭屍戰力","新城、商人與建造者很容易被後方隨機復生截殺","過度依賴軍隊清怪會排擠區域和移民生產","殭屍沒有外交邊界概念，安全腹地也可能突然失守"],
+    "recommendedTags":["defense","ranged","production"],"avoidTags":["fragile","unescorted"],
+    "victoryImpact":{"science":"低","culture":"低","domination":"中","religion":"低","diplomacy":"低","score":"高"},
+    "synergies":[{"mode":"secret-societies","rating":"中","note":"血色契約可從大量作戰成長，夜鷹間諜則擅長在敵後製造爆發。"},{"mode":"heroes-legends","rating":"高","note":"高戰力英雄能處理早期殭屍，赫丘利也可快速補建被延誤的區域。"},{"mode":"barbarian-clans","rating":"低","note":"兩種無主敵人同時壓迫擴張，除非地圖空間充足。"}]
+  }
+]

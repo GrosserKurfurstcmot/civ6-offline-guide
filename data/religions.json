@@ -1,0 +1,642 @@
+{
+  "meta": {
+    "ruleset": "Gathering Storm",
+    "source": "Civilopedia.net zh-HK",
+    "generated": "2026-08-21",
+    "note": "歷史宗教的名稱與圖標不附帶固定能力；實際加成由萬神殿及四類宗教信條決定。"
+  },
+  "categories": [
+    {
+      "id": "pantheon",
+      "name": "萬神殿",
+      "timing": "首次累積足夠信仰值時選擇；每個文明只能選一個，不能傳播，也不會被其他宗教取代。"
+    },
+    {
+      "id": "follower",
+      "name": "追隨者信條",
+      "timing": "創教時必選一個；效果適用於所有信奉該宗教的城市與文明。"
+    },
+    {
+      "id": "founder",
+      "name": "創始者信條",
+      "timing": "創教或用使徒傳播信條時選擇；效果只回饋創立該宗教的文明。"
+    },
+    {
+      "id": "worship",
+      "name": "崇拜信條",
+      "timing": "創教或用使徒傳播信條時選擇；解鎖一種可用信仰值購買的聖地崇拜建築。"
+    },
+    {
+      "id": "enhancer",
+      "name": "強化信條",
+      "timing": "創教或用使徒傳播信條時選擇；強化宗教壓力、傳教效率或宗教戰鬥。"
+    }
+  ],
+  "religions": [
+    {
+      "id": "catholicism",
+      "name": "天主教",
+      "en": "Catholicism",
+      "icon": "catholicism.png"
+    },
+    {
+      "id": "islam",
+      "name": "伊斯蘭教",
+      "en": "Islam",
+      "icon": "islam.png"
+    },
+    {
+      "id": "hinduism",
+      "name": "印度教",
+      "en": "Hinduism",
+      "icon": "hinduism.png"
+    },
+    {
+      "id": "buddhism",
+      "name": "佛教",
+      "en": "Buddhism",
+      "icon": "buddhism.png"
+    },
+    {
+      "id": "orthodoxy",
+      "name": "東正教",
+      "en": "Eastern Orthodoxy",
+      "icon": "orthodoxy.png"
+    },
+    {
+      "id": "zoroastrianism",
+      "name": "拜火教",
+      "en": "Zoroastrianism",
+      "icon": "zoroastrianism.png"
+    },
+    {
+      "id": "shinto",
+      "name": "神道教",
+      "en": "Shinto",
+      "icon": "shinto.png"
+    },
+    {
+      "id": "judaism",
+      "name": "猶太教",
+      "en": "Judaism",
+      "icon": "judaism.png"
+    },
+    {
+      "id": "protestantism",
+      "name": "新教",
+      "en": "Protestantism",
+      "icon": "protestantism.png"
+    },
+    {
+      "id": "taoism",
+      "name": "道教",
+      "en": "Taoism",
+      "icon": "taoism.png"
+    },
+    {
+      "id": "confucianism",
+      "name": "儒家思想",
+      "en": "Confucianism",
+      "icon": "confucianism.png"
+    },
+    {
+      "id": "sikhism",
+      "name": "錫克教",
+      "en": "Sikhism",
+      "icon": "sikhism.png"
+    }
+  ],
+  "beliefs": [
+    {
+      "id": "initiation-rites",
+      "name": "入教儀式",
+      "en": "Initiation Rites",
+      "category": "pantheon",
+      "categoryName": "萬神殿",
+      "effect": "每清除1個蠻族哨站所+50 信仰值。清除蠻族哨站所的單位治癒100生命值。",
+      "icon": "initiation-rites.png"
+    },
+    {
+      "id": "earth-goddess",
+      "name": "大地女神",
+      "en": "Earth Goddess",
+      "category": "pantheon",
+      "categoryName": "萬神殿",
+      "effect": "擁有「極大魅力」的單元格提供的 信仰值+1。",
+      "icon": "earth-goddess.png"
+    },
+    {
+      "id": "god-of-craftsmen",
+      "name": "工匠之神",
+      "en": "God of Craftsmen",
+      "category": "pantheon",
+      "categoryName": "萬神殿",
+      "effect": "已改良戰略資源提供的 生產力及 信仰值+1。",
+      "icon": "god-of-craftsmen.png"
+    },
+    {
+      "id": "god-of-the-open-sky",
+      "name": "天空之神",
+      "en": "God of the Open Sky",
+      "category": "pantheon",
+      "categoryName": "萬神殿",
+      "effect": "牧場+1 文化值。",
+      "icon": "god-of-the-open-sky.png"
+    },
+    {
+      "id": "goddess-of-fire",
+      "name": "火焰女神",
+      "en": "Fire Goddess",
+      "category": "pantheon",
+      "categoryName": "萬神殿",
+      "effect": "地熱裂隙和火山灰土提供的 信仰值+2。",
+      "icon": "goddess-of-fire.png"
+    },
+    {
+      "id": "monument-to-the-gods",
+      "name": "主神紀念碑",
+      "en": "Monument to the Gods",
+      "category": "pantheon",
+      "categoryName": "萬神殿",
+      "effect": "遠古和古典奇觀+15% 生產力。",
+      "icon": "monument-to-the-gods.png"
+    },
+    {
+      "id": "stone-circles",
+      "name": "石圈",
+      "en": "Stone Circles",
+      "category": "pantheon",
+      "categoryName": "萬神殿",
+      "effect": "採石場+2 信仰值。",
+      "icon": "stone-circles.png"
+    },
+    {
+      "id": "desert-folklore",
+      "name": "沙漠民俗",
+      "en": "Desert Folklore",
+      "category": "pantheon",
+      "categoryName": "萬神殿",
+      "effect": "聖地區域從相鄰沙漠單元格獲得+1 信仰值。",
+      "icon": "desert-folklore.png"
+    },
+    {
+      "id": "religious-idols",
+      "name": "宗教偶像",
+      "en": "Religious Idols",
+      "category": "pantheon",
+      "categoryName": "萬神殿",
+      "effect": "採集奢侈品資源和加成資源的礦井提供的 信仰值+2。",
+      "icon": "religious-idols.png"
+    },
+    {
+      "id": "religious-settlements",
+      "name": "宗教移民",
+      "en": "Religious Settlements",
+      "category": "pantheon",
+      "categoryName": "萬神殿",
+      "effect": "選擇時首都即獲得1個開拓者。邊境擴張速度增加15%。",
+      "icon": "religious-settlements.png"
+    },
+    {
+      "id": "river-goddess",
+      "name": "河神",
+      "en": "River Goddess",
+      "category": "pantheon",
+      "categoryName": "萬神殿",
+      "effect": "如果聖地區域靠近河流，那麼城市+2 滿意度，且+2 住房。",
+      "icon": "river-goddess.png"
+    },
+    {
+      "id": "city-patron-goddess",
+      "name": "城市守護女神",
+      "en": "City Patron Goddess",
+      "category": "pantheon",
+      "categoryName": "萬神殿",
+      "effect": "無特色區域的城市建造區域時+25% 生產力。",
+      "icon": "city-patron-goddess.png"
+    },
+    {
+      "id": "goddess-of-the-hunt",
+      "name": "狩獵女神",
+      "en": "Goddess of the Hunt",
+      "category": "pantheon",
+      "categoryName": "萬神殿",
+      "effect": "露營地提供的 食物+1、 生產力+1。",
+      "icon": "goddess-of-the-hunt.png"
+    },
+    {
+      "id": "god-of-the-sea",
+      "name": "海洋之神",
+      "en": "God of the Sea",
+      "category": "pantheon",
+      "categoryName": "萬神殿",
+      "effect": "漁船 生產力+1。",
+      "icon": "god-of-the-sea.png"
+    },
+    {
+      "id": "divine-spark",
+      "name": "神聖之光",
+      "en": "Divine Spark",
+      "category": "pantheon",
+      "categoryName": "萬神殿",
+      "effect": "聖地（大預言家）、有圖書館的學院（大科學家）、有古羅馬劇場的劇院廣場（大作家）所提供的 偉人點數+1。",
+      "icon": "divine-spark.png"
+    },
+    {
+      "id": "sacred-path",
+      "name": "神聖道路",
+      "en": "Sacred Path",
+      "category": "pantheon",
+      "categoryName": "萬神殿",
+      "effect": "聖地區域從相鄰雨林單元格獲得+1 信仰值。",
+      "icon": "sacred-path.png"
+    },
+    {
+      "id": "dance-of-the-aurora",
+      "name": "極光之舞",
+      "en": "Dance of the Aurora",
+      "category": "pantheon",
+      "categoryName": "萬神殿",
+      "effect": "聖地區域從相鄰凍土單元格獲得+1 信仰值 。",
+      "icon": "dance-of-the-aurora.png"
+    },
+    {
+      "id": "goddess-of-festivals",
+      "name": "節慶女神",
+      "en": "Goddess of Festivals",
+      "category": "pantheon",
+      "categoryName": "萬神殿",
+      "effect": "種植園提供的 文化值+1。",
+      "icon": "goddess-of-festivals.png"
+    },
+    {
+      "id": "god-of-war",
+      "name": "戰爭之神",
+      "en": "God of War",
+      "category": "pantheon",
+      "categoryName": "萬神殿",
+      "effect": "在聖地區域8個單元格範圍內擊殺戰鬥單位，可獲得等同於敵方單位50%戰鬥力的 信仰值加成。（在標準遊戲速度下）",
+      "icon": "god-of-war.png"
+    },
+    {
+      "id": "god-of-the-forge",
+      "name": "鍛造之神",
+      "en": "God of the Forge",
+      "category": "pantheon",
+      "categoryName": "萬神殿",
+      "effect": "遠古和古典軍事單位+25% 生產力。",
+      "icon": "god-of-the-forge.png"
+    },
+    {
+      "id": "god-of-healing",
+      "name": "癒合之神",
+      "en": "God of Healing",
+      "category": "pantheon",
+      "categoryName": "萬神殿",
+      "effect": "您的聖地區域或任何相鄰單元格的治癒+30。",
+      "icon": "god-of-healing.png"
+    },
+    {
+      "id": "fertility-rites",
+      "name": "豐產儀式",
+      "en": "Fertility Rites",
+      "category": "pantheon",
+      "categoryName": "萬神殿",
+      "effect": "選擇時首都即獲得1個建造者。城市發展速度提高10%。",
+      "icon": "fertility-rites.png"
+    },
+    {
+      "id": "lady-of-the-reeds-and-marshes",
+      "name": "蘆葦和沼澤地裡的夫人",
+      "en": "Lady of the Reeds and Marshes",
+      "category": "pantheon",
+      "categoryName": "萬神殿",
+      "effect": "沼澤、綠洲、沙漠氾濫平原提供的 生產力+2。",
+      "icon": "lady-of-the-reeds-and-marshes.png"
+    },
+    {
+      "id": "choral-music",
+      "name": "合唱聖樂",
+      "en": "Choral Music",
+      "category": "follower",
+      "categoryName": "追隨者信條",
+      "effect": "神殿和寺廟提供等同於它們本身 信仰值產量的 文化值。",
+      "icon": "choral-music.png"
+    },
+    {
+      "id": "religious-community",
+      "name": "宗教社區",
+      "en": "Religious Community",
+      "category": "follower",
+      "categoryName": "追隨者信條",
+      "effect": "國際 貿易路線為擁有「聖地」的城市提供+2 金幣；聖地區域中每有一棟建築，便額外+2 金幣。",
+      "icon": "religious-community.png"
+    },
+    {
+      "id": "warrior-monks",
+      "name": "武僧",
+      "en": "Warrior Monks",
+      "category": "follower",
+      "categoryName": "追隨者信條",
+      "effect": "允許花費 信仰值來生產陸上戰鬥單位「武僧」。建成聖地時對相鄰的單元格施放文化炸彈。",
+      "icon": "warrior-monks.png"
+    },
+    {
+      "id": "jesuit-education",
+      "name": "耶穌會教育",
+      "en": "Jesuit Education",
+      "category": "follower",
+      "categoryName": "追隨者信條",
+      "effect": "可以使用 信仰值購買學院和劇院廣場區域建築。",
+      "icon": "jesuit-education.png"
+    },
+    {
+      "id": "feed-the-world",
+      "name": "哺育世界",
+      "en": "Feed the World",
+      "category": "follower",
+      "categoryName": "追隨者信條",
+      "effect": "每座神社和寺廟提供的 食物+3、 住房 +2。",
+      "icon": "feed-the-world.png"
+    },
+    {
+      "id": "divine-inspiration",
+      "name": "啟示",
+      "en": "Divine Inspiration",
+      "category": "follower",
+      "categoryName": "追隨者信條",
+      "effect": "所有世界奇觀+4 信仰值。",
+      "icon": "divine-inspiration.png"
+    },
+    {
+      "id": "reliquaries",
+      "name": "聖物箱",
+      "en": "Reliquaries",
+      "category": "follower",
+      "categoryName": "追隨者信條",
+      "effect": "遺物及 英雄遺物能產出3倍的 信仰值和 觀光值。",
+      "icon": "reliquaries.png"
+    },
+    {
+      "id": "zen-meditation",
+      "name": "禪修",
+      "en": "Zen Meditation",
+      "category": "follower",
+      "categoryName": "追隨者信條",
+      "effect": "擁有兩個獨立區域的城市+1 滿意度。",
+      "icon": "zen-meditation.png"
+    },
+    {
+      "id": "work-ethic",
+      "name": "職業道德",
+      "en": "Work Ethic",
+      "category": "follower",
+      "categoryName": "追隨者信條",
+      "effect": "聖地區域的 信仰值相鄰加成還提供 生產力。",
+      "icon": "work-ethic.png"
+    },
+    {
+      "id": "tithe",
+      "name": "什一稅",
+      "en": "Tithe",
+      "category": "founder",
+      "categoryName": "創始者信條",
+      "effect": "每個信奉此宗教的城市+3 金幣。",
+      "icon": "tithe.png"
+    },
+    {
+      "id": "lay-ministry",
+      "name": "民間宗教團",
+      "en": "Lay Ministry",
+      "category": "founder",
+      "categoryName": "創始者信條",
+      "effect": "每個信奉此宗教的城市的聖地區域獲得+1 信仰值或劇院廣場區域獲得+1 文化值。",
+      "icon": "lay-ministry.png"
+    },
+    {
+      "id": "religious-unity",
+      "name": "宗教統一",
+      "en": "Religious Unity",
+      "category": "founder",
+      "categoryName": "創始者信條",
+      "effect": "除了完成城邦任務所獲得的使者外，每個首次信奉此宗教的城邦皆+1 使者。",
+      "icon": "religious-unity.png"
+    },
+    {
+      "id": "sacred-places",
+      "name": "神聖處所",
+      "en": "Sacred Places",
+      "category": "founder",
+      "categoryName": "創始者信條",
+      "effect": "每個信奉此宗教且擁有世界奇觀的城市+2 科技值、 文化值、 金幣以及 信仰值。",
+      "icon": "sacred-places.png"
+    },
+    {
+      "id": "papal-primacy",
+      "name": "教皇權威",
+      "en": "Papal Primacy",
+      "category": "founder",
+      "categoryName": "創始者信條",
+      "effect": "從信奉該宗教的城邦獲得的加成增加50%。",
+      "icon": "papal-primacy.png"
+    },
+    {
+      "id": "world-church",
+      "name": "普世教會",
+      "en": "World Church",
+      "category": "founder",
+      "categoryName": "創始者信條",
+      "effect": "該宗教每有4個信徒則+1 文化值。",
+      "icon": "world-church.png"
+    },
+    {
+      "id": "pilgrimage",
+      "name": "朝聖",
+      "en": "Pilgrimage",
+      "category": "founder",
+      "categoryName": "創始者信條",
+      "effect": "每個信奉該宗教的城市+2 信仰值。",
+      "icon": "pilgrimage.png"
+    },
+    {
+      "id": "cross-cultural-dialogue",
+      "name": "跨文化對話",
+      "en": "Cross-Cultural Dialogue",
+      "category": "founder",
+      "categoryName": "創始者信條",
+      "effect": "該宗教每有4個信徒則+1 科技值。",
+      "icon": "cross-cultural-dialogue.png"
+    },
+    {
+      "id": "stewardship",
+      "name": "管理工作",
+      "en": "Stewardship",
+      "category": "founder",
+      "categoryName": "創始者信條",
+      "effect": "每個信奉此宗教的城市的學院區域獲得+1 科技值或商業中心區域獲得+1 金幣。",
+      "icon": "stewardship.png"
+    },
+    {
+      "id": "cathedral",
+      "name": "大教堂",
+      "en": "Cathedral",
+      "category": "worship",
+      "categoryName": "崇拜信條",
+      "effect": "允許建造大教堂 （+3 信仰值， 增加1個宗教藝術槽位）。",
+      "icon": "cathedral.png"
+    },
+    {
+      "id": "wat",
+      "name": "佛寺",
+      "en": "Wat",
+      "category": "worship",
+      "categoryName": "崇拜信條",
+      "effect": "允許建造佛寺（+3 信仰值，+2 科技值）。",
+      "icon": "wat.png"
+    },
+    {
+      "id": "dar-e-mehr",
+      "name": "拜火神廟",
+      "en": "Dar-e Mehr",
+      "category": "worship",
+      "categoryName": "崇拜信條",
+      "effect": "允許建造拜火神廟（+3 信仰值，自建造或修復的時代起，每進入一個新時代便額外+1 信仰值。無法受到天災掠奪）。",
+      "icon": "dar-e-mehr.png"
+    },
+    {
+      "id": "mosque",
+      "name": "清真寺",
+      "en": "Mosque",
+      "category": "worship",
+      "categoryName": "崇拜信條",
+      "effect": "允許建造清真寺（+3 信仰值）。傳教士和使徒的傳教次數+1。",
+      "icon": "mosque.png"
+    },
+    {
+      "id": "synagogue",
+      "name": "猶太教堂",
+      "en": "Synagogue",
+      "category": "worship",
+      "categoryName": "崇拜信條",
+      "effect": "允許建造猶太教堂（+5 信仰值）。",
+      "icon": "synagogue.png"
+    },
+    {
+      "id": "stupa",
+      "name": "窣堵坡",
+      "en": "Stupa",
+      "category": "worship",
+      "categoryName": "崇拜信條",
+      "effect": "允許建造窣堵坡（+3 信仰值，+1 滿意度）。",
+      "icon": "stupa.png"
+    },
+    {
+      "id": "gurdwara",
+      "name": "謁師所",
+      "en": "Gurdwara",
+      "category": "worship",
+      "categoryName": "崇拜信條",
+      "effect": "允許建造謁師所（+3 信仰值、+2 食物、+1 住房）。",
+      "icon": "gurdwara.png"
+    },
+    {
+      "id": "meeting-house",
+      "name": "禮拜堂",
+      "en": "Meeting House",
+      "category": "worship",
+      "categoryName": "崇拜信條",
+      "effect": "允許建造禮拜堂（+3 信仰值，+2 生產力）。",
+      "icon": "meeting-house.png"
+    },
+    {
+      "id": "pagoda",
+      "name": "寶塔",
+      "en": "Pagoda",
+      "category": "worship",
+      "categoryName": "崇拜信條",
+      "effect": "允許建造佛塔（+3 信仰值、每回合+1 外交支持）。",
+      "icon": "pagoda.png"
+    },
+    {
+      "id": "just-war",
+      "name": "十字軍",
+      "en": "Crusade",
+      "category": "enhancer",
+      "categoryName": "強化信條",
+      "effect": "戰鬥單位位於信奉該宗教的外國城市境內時，+10 戰鬥力。",
+      "icon": "just-war.png"
+    },
+    {
+      "id": "itinerant-preachers",
+      "name": "巡迴傳教士",
+      "en": "Itinerant Preachers",
+      "category": "enhancer",
+      "categoryName": "強化信條",
+      "effect": "宗教傳播距離增加30%。",
+      "icon": "itinerant-preachers.png"
+    },
+    {
+      "id": "religious-colonization",
+      "name": "宗教殖民",
+      "en": "Religious Colonization",
+      "category": "enhancer",
+      "categoryName": "強化信條",
+      "effect": "將此宗教當作主流宗教的玩家創立城市後，城市初始便會信奉此宗教。",
+      "icon": "religious-colonization.png"
+    },
+    {
+      "id": "defender-of-faith",
+      "name": "信仰護衛者",
+      "en": "Defender of the Faith",
+      "category": "enhancer",
+      "categoryName": "強化信條",
+      "effect": "戰鬥單位位於信奉此宗教的友方城市境內時，+5 戰鬥力。",
+      "icon": "defender-of-faith.png"
+    },
+    {
+      "id": "holy-waters",
+      "name": "神聖水域",
+      "en": "Holy Waters",
+      "category": "enhancer",
+      "categoryName": "強化信條",
+      "effect": "宗教單位處於聖地（此聖地所屬城市信仰你的主流宗教）或其相鄰的單元格時，治愈量+10。",
+      "icon": "holy-waters.png"
+    },
+    {
+      "id": "holy-order",
+      "name": "神聖訂單",
+      "en": "Holy Order",
+      "category": "enhancer",
+      "categoryName": "強化信條",
+      "effect": "購買傳教士和使徒的費用降低30%。",
+      "icon": "holy-order.png"
+    },
+    {
+      "id": "missionary-zeal",
+      "name": "傳教熱忱",
+      "en": "Missionary Zeal",
+      "category": "enhancer",
+      "categoryName": "強化信條",
+      "effect": "宗教單位忽略地形和地貌的 移動力消耗。",
+      "icon": "missionary-zeal.png"
+    },
+    {
+      "id": "scripture",
+      "name": "經文",
+      "en": "Scripture",
+      "category": "enhancer",
+      "categoryName": "強化信條",
+      "effect": "鄰近城市的宗教傳播壓力增加25%。一旦研發出印刷術，增加到50%。",
+      "icon": "scripture.png"
+    },
+    {
+      "id": "monastic-isolation",
+      "name": "與世隔絕",
+      "en": "Monastic Isolation",
+      "category": "enhancer",
+      "categoryName": "強化信條",
+      "effect": "你的宗教壓力不會因為神學戰爭戰敗而減少。",
+      "icon": "monastic-isolation.png"
+    }
+  ]
+}

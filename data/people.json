@@ -1,0 +1,4753 @@
+{
+  "meta": {
+    "ruleset": "Gathering Storm",
+    "locale": "zh-HK",
+    "source": "Civilopedia",
+    "greatPersonCount": 212,
+    "governorCount": 8,
+    "promotionCount": 48
+  },
+  "classes": [
+    {
+      "id": "engineer",
+      "icon": "icon_unit_great_engineer.png",
+      "color": "#d79a47",
+      "name": "大工程師",
+      "en": "Great Engineer",
+      "count": 21
+    },
+    {
+      "id": "writer",
+      "icon": "icon_unit_great_writer.png",
+      "color": "#8e6dac",
+      "name": "大作家",
+      "en": "Great Writer",
+      "count": 29
+    },
+    {
+      "id": "scientist",
+      "icon": "icon_unit_great_scientist.png",
+      "color": "#4c8ec3",
+      "name": "大科學家",
+      "en": "Great Scientist",
+      "count": 24
+    },
+    {
+      "id": "musician",
+      "icon": "icon_unit_great_musician.png",
+      "color": "#bf6b9a",
+      "name": "大音樂家",
+      "en": "Great Musician",
+      "count": 18
+    },
+    {
+      "id": "merchant",
+      "icon": "icon_unit_great_merchant.png",
+      "color": "#c4a245",
+      "name": "大商人",
+      "en": "Great Merchant",
+      "count": 24
+    },
+    {
+      "id": "general",
+      "icon": "icon_unit_great_general.png",
+      "color": "#a9504c",
+      "name": "大將軍",
+      "en": "Great General",
+      "count": 24
+    },
+    {
+      "id": "prophet",
+      "icon": "icon_unit_great_prophet.png",
+      "color": "#d8c875",
+      "name": "大預言家",
+      "en": "Great Prophet",
+      "count": 16
+    },
+    {
+      "id": "artist",
+      "icon": "icon_unit_great_artist.png",
+      "color": "#b46591",
+      "name": "大藝術家",
+      "en": "Great Artist",
+      "count": 23
+    },
+    {
+      "id": "admiral",
+      "icon": "icon_unit_great_admiral.png",
+      "color": "#468a99",
+      "name": "海軍統帥",
+      "en": "Great Admiral",
+      "count": 23
+    },
+    {
+      "id": "comandante",
+      "icon": "icon_unit_comandante_general.png",
+      "color": "#ad6450",
+      "name": "總指揮官",
+      "en": "Comandante General",
+      "count": 10
+    }
+  ],
+  "people": [
+    {
+      "id": "kenzo-tange",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_KENZO_TANGE",
+      "name": "丹下健三",
+      "en": "Kenzo Tange",
+      "classId": "engineer",
+      "className": "大工程師",
+      "era": "資訊時代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "賦予此城市各區域與其相鄰加成相等之 旅遊業績（若為 金幣加成，則減半）。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_engineer.png"
+    },
+    {
+      "id": "gustave-eiffel",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_GUSTAVE_EIFFEL",
+      "name": "古斯塔夫·艾菲爾",
+      "en": "Gustave Eiffel",
+      "classId": "engineer",
+      "className": "大工程師",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "啟用效果（2 次）",
+          "effect": "奇觀建設獲得 480 生產力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_engineer.png"
+    },
+    {
+      "id": "nikola-tesla",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_NIKOLA_TESLA",
+      "name": "尼古拉·特斯拉",
+      "en": "Nikola Tesla",
+      "classId": "engineer",
+      "className": "大工程師",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "該區域的地區性建築延伸到3 單元格。\n該區域的地區性建築+2 生產力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_engineer.png"
+    },
+    {
+      "id": "imhotep",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_IMHOTEP",
+      "name": "印何闐",
+      "en": "Imhotep",
+      "classId": "engineer",
+      "className": "大工程師",
+      "era": "中世紀",
+      "abilities": [
+        {
+          "label": "啟用效果（2 次）",
+          "effect": "建造奇觀時賦予175點 生產力，若該奇觀來自遠古或古典時代則生產力再加倍。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_engineer.png"
+    },
+    {
+      "id": "isidore-of-miletus",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_ISIDORE_OF_MILETUS",
+      "name": "米利都的伊西多爾",
+      "en": "Isidore of Miletus",
+      "classId": "engineer",
+      "className": "大工程師",
+      "era": "中世紀",
+      "abilities": [
+        {
+          "label": "啟用效果（2 次）",
+          "effect": "奇觀建設獲得 215 生產力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_engineer.png"
+    },
+    {
+      "id": "mimar-sinan",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_MIMAR_SINAN",
+      "name": "米馬爾·希南",
+      "en": "Mimar Sinan",
+      "classId": "engineer",
+      "className": "大工程師",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "在任何城市建成工業區時對鄰近單元格施放文化炸彈。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_engineer.png"
+    },
+    {
+      "id": "leonardo-da-vinci",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_LEONARDO_DA_VINCI",
+      "name": "李奧納多·達文西",
+      "en": "Leonardo da Vinci",
+      "classId": "engineer",
+      "className": "大工程師",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "工作坊 +3 文化值。\n為隨機的 1 個現代科技啟動 尤里卡時刻。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_engineer.png"
+    },
+    {
+      "id": "shah-jahan",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_SHAH_JAHAN",
+      "name": "沙賈漢",
+      "en": "Shah Jahān",
+      "classId": "engineer",
+      "className": "大工程師",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "建造奇觀時賦予 生產力，其上限為目前國庫之一半。接著消耗已購買 生產力的雙倍 金幣。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_engineer.png"
+    },
+    {
+      "id": "alvar-aalto",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_ALVAR_AALTO",
+      "name": "阿爾瓦·阿爾托",
+      "en": "Alvar Aalto",
+      "classId": "engineer",
+      "className": "大工程師",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "該城所有的單元格 +1 魅力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_engineer.png"
+    },
+    {
+      "id": "charles-correa",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_CHARLES_CORREA",
+      "name": "查爾斯·柯里亞",
+      "en": "Charles Correa",
+      "classId": "engineer",
+      "className": "大工程師",
+      "era": "資訊時代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "該城所有的單元格 +2 魅力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_engineer.png"
+    },
+    {
+      "id": "jane-drew",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_JANE_DREW",
+      "name": "珍·德魯",
+      "en": "Jane Drew",
+      "classId": "engineer",
+      "className": "大工程師",
+      "era": "原子能時代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "為該城+4 住房。\n為該城+3 滿意度。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_engineer.png"
+    },
+    {
+      "id": "joseph-paxton",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_JOSEPH_PAXTON",
+      "name": "約瑟夫·帕克斯頓",
+      "en": "Joseph Paxton",
+      "classId": "engineer",
+      "className": "大工程師",
+      "era": "資訊時代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "該區域的地區性建築延伸到3 單元格。\n該區域的地區性建築+1 滿意度。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_engineer.png"
+    },
+    {
+      "id": "john-a-roebling",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_JOHN_A_ROEBLING",
+      "name": "約翰·羅布林",
+      "en": "John Roebling",
+      "classId": "engineer",
+      "className": "大工程師",
+      "era": "原子能時代",
+      "abilities": [
+        {
+          "label": "啟用效果（2 次）",
+          "effect": "為該城+2 住房。\n為該城+1 滿意度。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_engineer.png"
+    },
+    {
+      "id": "bi-sheng",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_BI_SHENG",
+      "name": "畢昇",
+      "en": "Bi Sheng",
+      "classId": "engineer",
+      "className": "大工程師",
+      "era": "中世紀",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "該城市可無視 人口數量限制再建造一個區域。\n為印刷科技啟動 尤里卡時刻。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_engineer.png"
+    },
+    {
+      "id": "wernher-von-braun",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_WERNHER_VON_BRAUN",
+      "name": "華納·馮·布朗納",
+      "en": "Wernher von Braun",
+      "classId": "engineer",
+      "className": "大工程師",
+      "era": "資訊時代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "為太空競賽項目+100% 生產力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_engineer.png"
+    },
+    {
+      "id": "filippo-brunelleschi",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_FILIPPO_BRUNELLESCHI",
+      "name": "菲利波·布魯內列斯基",
+      "en": "Filippo Brunelleschi",
+      "classId": "engineer",
+      "className": "大工程師",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "啟用效果（2 次）",
+          "effect": "奇觀建設獲得 315 生產力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_engineer.png"
+    },
+    {
+      "id": "ada-lovelace",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_ADA_LOVELACE",
+      "name": "愛達·勒芙蕾絲",
+      "en": "Ada Lovelace",
+      "classId": "engineer",
+      "className": "大工程師",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "該城市可無視 人口數量限制再建造一個區域。\n為計算機科技啓動 尤里卡時刻。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_engineer.png"
+    },
+    {
+      "id": "james-of-st-george",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_JAMES_OF_ST_GEORGE",
+      "name": "聖喬治·詹姆斯",
+      "en": "James of St. George",
+      "classId": "engineer",
+      "className": "大工程師",
+      "era": "中世紀",
+      "abilities": [
+        {
+          "label": "啟用效果（3 次）",
+          "effect": "立即在當前城市建造遠古和中世紀城牆。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_engineer.png"
+    },
+    {
+      "id": "james-watt",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_JAMES_WATT",
+      "name": "詹姆斯·瓦特",
+      "en": "James Watt",
+      "classId": "engineer",
+      "className": "大工程師",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "立即在該區域建造工廠和工作坊。工廠+2 生產力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_engineer.png"
+    },
+    {
+      "id": "sergei-korolev",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_SERGEI_KOROLEV",
+      "name": "謝爾蓋·科羅廖夫",
+      "en": "Sergei Korolev",
+      "classId": "engineer",
+      "className": "大工程師",
+      "era": "原子能時代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "太空競賽項目建設獲得 1500 生產力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_engineer.png"
+    },
+    {
+      "id": "robert-goddard",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_ROBERT_GODDARD",
+      "name": "羅伯特·戈達德",
+      "en": "Robert Goddard",
+      "classId": "engineer",
+      "className": "大工程師",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "為太空競賽項目+20% 生產力。\n為火箭科技啟動 尤里卡時刻。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_engineer.png"
+    },
+    {
+      "id": "gabriela-mistral",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_GABRIELA_MISTRAL",
+      "name": "加夫列拉·米斯特拉爾",
+      "en": "Gabriela Mistral",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "資訊時代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《女人之書》",
+        "《死亡的十四行詩》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "karel-capek",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_KAREL_CAPEK",
+      "name": "卡雷爾·恰佩克",
+      "en": "Karel Capek",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "資訊時代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《羅梭的萬能工人》",
+        "《鯢魚之亂》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "niccolo-machiavelli",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_NICCOLO_MACHIAVELLI",
+      "name": "尼可洛·馬基維利",
+      "en": "Niccolò Machiavelli",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《論李維》",
+        "《君主論》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "leo-tolstoy",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_LEO_TOLSTOY",
+      "name": "列夫·托爾斯泰",
+      "en": "Leo Tolstoy",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《戰爭與和平》",
+        "《安娜·卡列尼娜》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "miguel-de-cervantes",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_MIGUEL_DE_CERVANTES",
+      "name": "米格爾·德·塞萬提斯",
+      "en": "Miguel de Cervantes",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《唐吉訶德》",
+        "《模範故事集》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "li-bai",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_LI_BAI",
+      "name": "李白",
+      "en": "Li Bai",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "中世紀",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《月下獨酌》",
+        "《夏日山中》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "alexander-pushkin",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_ALEXANDER_PUSHKIN",
+      "name": "亞歷山大·普希金",
+      "en": "Alexander Pushkin",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《奧涅金》",
+        "《鮑里斯戈杜諾夫》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "qu-yuan",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_QU_YUAN",
+      "name": "屈原",
+      "en": "Qu Yuan",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "古典時期",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《楚辭》",
+        "《哀郢》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "f-scott-fitzgerald",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_F_SCOTT_FITZGERALD",
+      "name": "法蘭西斯·史考特·基·費茲傑羅",
+      "en": "F. Scott Fitzgerald",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《人間天堂》",
+        "《美麗與毀滅》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "william-shakespeare",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_WILLIAM_SHAKESPEARE",
+      "name": "威廉·莎士比亞",
+      "en": "William Shakespeare",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《羅密歐與茱麗葉》",
+        "《哈姆雷特》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "jane-austen",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_JANE_AUSTEN",
+      "name": "珍·奧斯汀",
+      "en": "Jane Austen",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《傲慢與偏見》",
+        "《理性與感性》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "johann-wolfgang-von-goethe",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_JOHANN_WOLFGANG_VON_GOETHE",
+      "name": "約翰·沃爾夫岡·馮·歌德",
+      "en": "Johann Wolfgang von Goethe",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《浮士德》",
+        "《少年維特的煩惱》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "emily-dickinson",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_EMILY_DICKINSON",
+      "name": "埃米莉·狄更生",
+      "en": "Emily Dickinson",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《一隻鳥兒飛下步道》",
+        "《成功的滋味最甜》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "mark-twain",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_MARK_TWAIN",
+      "name": "馬克·吐溫",
+      "en": "Mark Twain",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《頑童歷險記》",
+        "《湯姆歷險記》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "homer",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_HOMER",
+      "name": "荷馬",
+      "en": "Homer",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "古典時期",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《伊利亞德》",
+        "《奧德賽》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "geoffrey-chaucer",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_GEOFFREY_CHAUCER",
+      "name": "傑弗里·喬叟",
+      "en": "Geoffrey Chaucer",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "中世紀",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《坎特伯里故事集》",
+        "《托愛樂斯與克萊西達》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "murasaki-shikibu",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_MURASAKI_SHIKIBU",
+      "name": "紫式部",
+      "en": "Murasaki Shikibu",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "中世紀",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《紫式部日記》",
+        "《源氏物語》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "bhasa",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_BHASA",
+      "name": "跋娑",
+      "en": "Bhasa",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "古典時期",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《中間者》",
+        "《雕像》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "valmiki",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_VALMIKI",
+      "name": "跋彌",
+      "en": "Valmiki",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "古典時期",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《羅摩衍那》",
+        "《極裕仙人瑜珈》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "ovid",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_OVID",
+      "name": "奧維德",
+      "en": "Ovid",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "古典時期",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《變形記》",
+        "《古代名媛》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "edgar-allen-poe",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_EDGAR_ALLEN_POE",
+      "name": "愛德格‧艾倫‧坡",
+      "en": "Edgar Allan Poe",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《告密的心》",
+        "《烏鴉》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "james-joyce",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_JAMES_JOYCE",
+      "name": "詹姆斯·喬伊絲",
+      "en": "James Joyce",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《尤利西斯》",
+        "《都柏林人》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "margaret-cavendish",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_MARGARET_CAVENDISH",
+      "name": "瑪格麗特·卡文迪什",
+      "en": "Margaret Cavendish",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《燃燒的世界》",
+        "《實驗哲學觀察》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "mary-shelley",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_MARY_SHELLEY",
+      "name": "瑪麗·雪萊",
+      "en": "Mary Shelley",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《科學怪人》",
+        "《最後一人》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "beatrix-potter",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_BEATRIX_POTTER",
+      "name": "碧雅翠絲·波特",
+      "en": "Beatrix Potter",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《小兔彼得的故事》",
+        "《格洛斯特的裁縫》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "hg-wells",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_HG_WELLS",
+      "name": "赫伯特·喬治·威爾斯",
+      "en": "H.G. Wells",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "原子能時代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《世界之戰》",
+        "《時光機器》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "marie-catherine-d-aulnoy",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_MARIE_CATHERINE_D_AULNOY",
+      "name": "德諾瓦夫人",
+      "en": "Marie-Catherine d'Aulnoy",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《美麗的金髮姑娘》",
+        "《海豚》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "rumi",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_RUMI",
+      "name": "魯米",
+      "en": "Rumi",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "中世紀",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《沙姆斯詩集》",
+        "《瑪斯納維》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "rabindranath-tagore",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_RABINDRANATH_TAGORE",
+      "name": "羅賓德拉納特·泰戈爾",
+      "en": "Rabindranath Tagore",
+      "classId": "writer",
+      "className": "大作家",
+      "era": "原子能時代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《家與世界》",
+        "《園丁集》"
+      ],
+      "icon": "icon_unit_great_writer.png"
+    },
+    {
+      "id": "isaac-newton",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_ISAAC_NEWTON",
+      "name": "以撒·牛頓",
+      "en": "Isaac Newton",
+      "classId": "scientist",
+      "className": "大科學家",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "立即在該區域建造大學和圖書館。大學+2 科技值。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_scientist.png"
+    },
+    {
+      "id": "carl-sagan",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_CARL_SAGAN",
+      "name": "卡爾·薩根",
+      "en": "Carl Sagan",
+      "classId": "scientist",
+      "className": "大科學家",
+      "era": "資訊時代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "太空競賽項目建設獲得 3000 生產力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_scientist.png"
+    },
+    {
+      "id": "ibn-khaldun",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_IBN_KHALDUN",
+      "name": "伊本·赫勒敦",
+      "en": "Ibn Khaldun",
+      "classId": "scientist",
+      "className": "大科學家",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "所選學院獲得2點 住房及1點 滿意度。帝國中非 食物產出的幸福感效益提升40%。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_scientist.png"
+    },
+    {
+      "id": "abu-al-qasim-al-zahrawi",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_ABU_AL_QASIM_AL_ZAHRAWI",
+      "name": "艾布·凱西姆·扎哈拉維",
+      "en": "Abu al-Qasim al-Zahrawi",
+      "classId": "scientist",
+      "className": "大科學家",
+      "era": "中世紀",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "為隨機的 1 個中世紀或文藝復興時期科技啟動 尤里卡時刻。\n受傷的陸地單位每回合+5生命值。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "1個單元格以內的玩家單位+20生命值。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_scientist.png"
+    },
+    {
+      "id": "emilie-du-chatelet",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_EMILIE_DU_CHATELET",
+      "name": "艾米麗·夏特萊",
+      "en": "Emilie du Chatelet",
+      "classId": "scientist",
+      "className": "大科學家",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "為隨機的 3 個文藝復興時期或工業時代科技啟動 尤里卡時刻。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_scientist.png"
+    },
+    {
+      "id": "alan-turing",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_ALAN_TURING",
+      "name": "艾倫·圖靈",
+      "en": "Alan Turing",
+      "classId": "scientist",
+      "className": "大科學家",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "為現代計算機和1個隨機科技啓動 尤里卡時刻。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_scientist.png"
+    },
+    {
+      "id": "galileo-galilei",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_GALILEO_GALILEI",
+      "name": "伽利略·伽利雷",
+      "en": "Galileo Galilei",
+      "classId": "scientist",
+      "className": "大科學家",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "在標準遊戲速度下，每個相鄰山脈單元格獲得250 科技值。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_scientist.png"
+    },
+    {
+      "id": "hypatia",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_HYPATIA",
+      "name": "希帕蒂婭",
+      "en": "Hypatia",
+      "classId": "scientist",
+      "className": "大科學家",
+      "era": "古典時期",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "立即在該區域建造一座圖書館。\n圖書館 +1 科技值。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_scientist.png"
+    },
+    {
+      "id": "janaki-ammal",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_JANAKI_AMMAL",
+      "name": "佳納克伊·安馬爾",
+      "en": "Janaki Ammal",
+      "classId": "scientist",
+      "className": "大科學家",
+      "era": "原子能時代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "為當前或附近每個雨林單元格獲得 400 科技值。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_scientist.png"
+    },
+    {
+      "id": "abdus-salam",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_ABDUS_SALAM",
+      "name": "阿卜杜勒·薩拉姆",
+      "en": "Abdus Salam",
+      "classId": "scientist",
+      "className": "大科學家",
+      "era": "資訊時代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "為資訊時代所有科技啓動 尤里卡時刻。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_scientist.png"
+    },
+    {
+      "id": "aryabhata",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_ARYABHATA",
+      "name": "阿耶波多",
+      "en": "Aryabhata",
+      "classId": "scientist",
+      "className": "大科學家",
+      "era": "古典時期",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "為隨機 3 個古典時代或中世紀科技啟動 尤里卡時刻。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_scientist.png"
+    },
+    {
+      "id": "alfred-nobel",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_ALFRED_NOBEL",
+      "name": "阿爾弗雷德·諾貝爾",
+      "en": "Alfred Nobel",
+      "classId": "scientist",
+      "className": "大科學家",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "為隨機的 1 個現代或原子能時代科技啟動 尤里卡時刻。\n使用100免費 偉人點數招募目前和將來的偉人。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_scientist.png"
+    },
+    {
+      "id": "albert-einstein",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_ALBERT_EINSTEIN",
+      "name": "阿爾伯特·愛因斯坦",
+      "en": "Albert Einstein",
+      "classId": "scientist",
+      "className": "大科學家",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "研究實驗室提供+4 科技值。\n為隨機的 1 個現代或原子能時代科技啟動 尤里卡時刻。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_scientist.png"
+    },
+    {
+      "id": "charles-darwin",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_CHARLES_DARWIN",
+      "name": "查爾斯·達爾文",
+      "en": "Charles Darwin",
+      "classId": "scientist",
+      "className": "大科學家",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "在標準遊戲速度下，位於或相鄰自然奇觀單元格時獲得500 科技值。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_scientist.png"
+    },
+    {
+      "id": "erwin-schrodinger",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_ERWIN_SCHRODINGER",
+      "name": "埃爾溫·薛丁格",
+      "en": "Erwin Schrödinger",
+      "classId": "scientist",
+      "className": "大科學家",
+      "era": "原子能時代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "為隨機 3 個原子能時代或資訊時代科技啟動 尤里卡時刻。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_scientist.png"
+    },
+    {
+      "id": "zhang-heng",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_ZHANG_HENG",
+      "name": "張衡",
+      "en": "Zhang Heng",
+      "classId": "scientist",
+      "className": "大科學家",
+      "era": "古典時期",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "觸發「天文導航」、「數學」與「工程」的 尤里卡。若已觸發以上尤里卡，則直接完成該科技。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_scientist.png"
+    },
+    {
+      "id": "stephanie-kwolek",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_STEPHANIE_KWOLEK",
+      "name": "斯蒂芬妮·克沃勒克",
+      "en": "Stephanie Kwolek",
+      "classId": "scientist",
+      "className": "大科學家",
+      "era": "資訊時代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "為太空競賽項目+100% 生產力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_scientist.png"
+    },
+    {
+      "id": "omar-khayyam",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_OMAR_KHAYYAM",
+      "name": "奧瑪·開儼",
+      "en": "Omar Khayyam",
+      "classId": "scientist",
+      "className": "大科學家",
+      "era": "中世紀",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "為兩個隨機科技啟動 尤里卡時刻，為中世紀和文藝復興時期的一個隨機市政啟動 天啟時刻。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_scientist.png"
+    },
+    {
+      "id": "james-young",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_JAMES_YOUNG",
+      "name": "詹姆斯·楊",
+      "en": "James Young",
+      "classId": "scientist",
+      "className": "大科學家",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "忽略普通科技要求，顯示 石油資源。\n為隨機 2 個工業時代或現代科技 啟動 尤里卡時刻。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_scientist.png"
+    },
+    {
+      "id": "margaret-mead",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_MARGARET_MEAD",
+      "name": "瑪格麗特·米德",
+      "en": "Margaret Mead",
+      "classId": "scientist",
+      "className": "大科學家",
+      "era": "原子能時代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "賦予1000點 科技值與 文化值（在標準遊戲速度下）。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_scientist.png"
+    },
+    {
+      "id": "mary-leakey",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_MARY_LEAKEY",
+      "name": "瑪麗·利基",
+      "en": "Mary Leakey",
+      "classId": "scientist",
+      "className": "大科學家",
+      "era": "原子能時代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "你所有城市中的 文物產生的 旅遊業績是這些城市正常產出的 300%。\n為該城市每個 文物獲得 350 科技值。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_scientist.png"
+    },
+    {
+      "id": "hildegard-of-bingen",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_HILDEGARD_OF_BINGEN",
+      "name": "賓根的希爾德加德",
+      "en": "Hildegard of Bingen",
+      "classId": "scientist",
+      "className": "大科學家",
+      "era": "中世紀",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "該聖地區域的 信仰值鄰接地域加成也提供 科技值。\n獲得 100 信仰值。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_scientist.png"
+    },
+    {
+      "id": "dmitri-mendeleev",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_DMITRI_MENDELEEV",
+      "name": "德米特里·門捷列夫",
+      "en": "Dmitri Mendeleev",
+      "classId": "scientist",
+      "className": "大科學家",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "為化學和工業時代的一個隨機科技啓動 尤里卡時刻。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_scientist.png"
+    },
+    {
+      "id": "euclid",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_EUCLID",
+      "name": "歐幾里得",
+      "en": "Euclid",
+      "classId": "scientist",
+      "className": "大科學家",
+      "era": "古典時期",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "為中世紀時期的數學和1個隨機科技啓動 尤里卡時刻。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_scientist.png"
+    },
+    {
+      "id": "yatsuhashi-kengyo",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_YATSUHASHI_KENGYO",
+      "name": "八橋檢校",
+      "en": "Yatsuhashi Kengyo",
+      "classId": "musician",
+      "className": "大音樂家",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《六段之調》",
+        "《八段之調》"
+      ],
+      "icon": "icon_unit_great_musician.png"
+    },
+    {
+      "id": "scott-joplin",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_SCOTT_JOPLIN",
+      "name": "史考特·喬普林",
+      "en": "Scott Joplin",
+      "classId": "musician",
+      "className": "大音樂家",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "巨作（3 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《演藝人》",
+        "《楓葉拉格》",
+        "《天生贏家》"
+      ],
+      "icon": "icon_unit_great_musician.png"
+    },
+    {
+      "id": "mykola-leontovych",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_MYKOLA_LEONTOVYCH",
+      "name": "尼古拉·李森科",
+      "en": "Mykola Leontovych",
+      "classId": "musician",
+      "className": "大音樂家",
+      "era": "資訊時代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《鐘聲頌歌》",
+        "《合唱團前奏曲》"
+      ],
+      "icon": "icon_unit_great_musician.png"
+    },
+    {
+      "id": "frederic-chopin",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_FREDERIC_CHOPIN",
+      "name": "弗里德里克·蕭邦",
+      "en": "Frederic Chopin",
+      "classId": "musician",
+      "className": "大音樂家",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "降E大調夜曲",
+        "華麗圓舞曲作品18號"
+      ],
+      "icon": "icon_unit_great_musician.png"
+    },
+    {
+      "id": "antonin-dvorak",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_ANTONIN_DVORAK",
+      "name": "安東尼·德沃夏克",
+      "en": "Antonin Dvorak",
+      "classId": "musician",
+      "className": "大音樂家",
+      "era": "原子能時代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "新世界交響曲（第9號）第四樂章",
+        "弦樂小夜曲作品22號第二樂章"
+      ],
+      "icon": "icon_unit_great_musician.png"
+    },
+    {
+      "id": "antonio-carlos-gomez",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_ANTONIO_CARLOS_GOMEZ",
+      "name": "安東尼奧·卡洛斯·戈梅斯",
+      "en": "Antônio Carlos Gomes",
+      "classId": "musician",
+      "className": "大音樂家",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《佛斯卡》-第一樂章（序曲）",
+        "《阿爾沃拉達》"
+      ],
+      "icon": "icon_unit_great_musician.png"
+    },
+    {
+      "id": "antonio-vivaldi",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_ANTONIO_VIVALDI",
+      "name": "安東尼奧·韋瓦第",
+      "en": "Antonio Vivaldi",
+      "classId": "musician",
+      "className": "大音樂家",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《四季：冬》",
+        "《夜晚協奏曲》"
+      ],
+      "icon": "icon_unit_great_musician.png"
+    },
+    {
+      "id": "clara-schumann",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_CLARA_SCHUMANN",
+      "name": "克拉拉·舒曼",
+      "en": "Clara Schumann",
+      "classId": "musician",
+      "className": "大音樂家",
+      "era": "原子能時代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《前奏曲與賦格》Op. 16, No. 3",
+        "《小托卡塔曲A小調》"
+      ],
+      "icon": "icon_unit_great_musician.png"
+    },
+    {
+      "id": "liliuokalani",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_LILIUOKALANI",
+      "name": "利留卡拉尼",
+      "en": "Lili'uokalani",
+      "classId": "musician",
+      "className": "大音樂家",
+      "era": "原子能時代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《利留卡拉尼的祈禱》",
+        "《薩農》"
+      ],
+      "icon": "icon_unit_great_musician.png"
+    },
+    {
+      "id": "wolfgang-amadeus-mozart",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_WOLFGANG_AMADEUS_MOZART",
+      "name": "沃爾夫岡·阿瑪迪斯·莫扎特",
+      "en": "Wolfgang Amadeus Mozart",
+      "classId": "musician",
+      "className": "大音樂家",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《小夜曲》",
+        "《第40號交響曲》第一樂章"
+      ],
+      "icon": "icon_unit_great_musician.png"
+    },
+    {
+      "id": "dimitrie-cantemir",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_DIMITRIE_CANTEMIR",
+      "name": "狄米特里·坎特米爾",
+      "en": "Dimitrie Cantemir",
+      "classId": "musician",
+      "className": "大音樂家",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "巨作（3 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《遊戲之作序曲》",
+        "《摩爾達維亞王子》",
+        "《烏蘇蘇勒貝瑞斯凡》"
+      ],
+      "icon": "icon_unit_great_musician.png"
+    },
+    {
+      "id": "peter-ilyich-tchaikovsky",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_PETER_ILYICH_TCHAIKOVSKY",
+      "name": "彼得·伊里奇·柴可夫斯基",
+      "en": "Peter Ilyich Tchaikovsky",
+      "classId": "musician",
+      "className": "大音樂家",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《羅密歐與茱麗葉幻想序曲》",
+        "《小天鵝舞曲》"
+      ],
+      "icon": "icon_unit_great_musician.png"
+    },
+    {
+      "id": "johann-sebastian-bach",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_JOHANN_SEBASTIAN_BACH",
+      "name": "約翰·塞巴斯蒂安·巴哈",
+      "en": "Johann Sebastian Bach",
+      "classId": "musician",
+      "className": "大音樂家",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "G小調小賦格",
+        "大提琴組曲G大調"
+      ],
+      "icon": "icon_unit_great_musician.png"
+    },
+    {
+      "id": "juventino-rosas",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_JUVENTINO_ROSAS",
+      "name": "胡文蒂諾·羅薩斯",
+      "en": "Juventino Rosas",
+      "classId": "musician",
+      "className": "大音樂家",
+      "era": "原子能時代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《乘風破浪圓舞曲》",
+        "《瓦爾斯·卡門》"
+      ],
+      "icon": "icon_unit_great_musician.png"
+    },
+    {
+      "id": "gauhar-jaan",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_GAUHAR_JAAN",
+      "name": "高哈爾·揚",
+      "en": "Gauhar Jaan",
+      "classId": "musician",
+      "className": "大音樂家",
+      "era": "資訊時代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《拉賈·卡哈馬吉音樂集》",
+        "《百拉米拉加》"
+      ],
+      "icon": "icon_unit_great_musician.png"
+    },
+    {
+      "id": "franz-liszt",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_FRANZ_LISZT",
+      "name": "費倫茨·李斯特",
+      "en": "Franz Liszt",
+      "classId": "musician",
+      "className": "大音樂家",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "九號超凡練習曲",
+        "梅菲斯特第一圓舞曲《鄉村客棧的舞蹈》"
+      ],
+      "icon": "icon_unit_great_musician.png"
+    },
+    {
+      "id": "ludwig-van-beethoven",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_LUDWIG_VAN_BEETHOVEN",
+      "name": "路德維希·范·貝多芬",
+      "en": "Ludwig van Beethoven",
+      "classId": "musician",
+      "className": "大音樂家",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "歡樂頌（第九交響曲）",
+        "第三交響曲（英雄交響曲）第一樂章"
+      ],
+      "icon": "icon_unit_great_musician.png"
+    },
+    {
+      "id": "liu-tianhua",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_LIU_TIANHUA",
+      "name": "劉天華",
+      "en": "Liu Tianhua",
+      "classId": "musician",
+      "className": "大音樂家",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "巨作（2 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《良宵》",
+        "《空山鳥語》"
+      ],
+      "icon": "icon_unit_great_musician.png"
+    },
+    {
+      "id": "masaru-ibuka",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_MASARU_IBUKA",
+      "name": "井深大",
+      "en": "Masaru Ibuka",
+      "classId": "merchant",
+      "className": "大商人",
+      "era": "資訊時代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "工業區 +10 旅遊業績。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_merchant.png"
+    },
+    {
+      "id": "stamford-raffles",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_STAMFORD_RAFFLES",
+      "name": "史丹福·萊佛士",
+      "en": "Stamford Raffles",
+      "classId": "merchant",
+      "className": "大商人",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "將此城邦吸收進你的帝國。賦予此城市中每回合忠誠度+10。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_merchant.png"
+    },
+    {
+      "id": "piero-de-bardi",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_PIERO_DE_BARDI",
+      "name": "皮耶羅·迪·巴爾迪",
+      "en": "Piero de' Bardi",
+      "classId": "merchant",
+      "className": "大商人",
+      "era": "中世紀",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "獲得 200 金幣。\n獲得 1 使者。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_merchant.png"
+    },
+    {
+      "id": "ibn-fadlan",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_IBN_FADLAN",
+      "name": "伊本·法德蘭",
+      "en": "Ibn Fadlan",
+      "classId": "merchant",
+      "className": "大商人",
+      "era": "中世紀",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "+1 貿易路線容量。你通往城邦的 貿易路線現在會賦予+2 信仰值。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_merchant.png"
+    },
+    {
+      "id": "irene-of-athens",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_IRENE_OF_ATHENS",
+      "name": "伊琳娜女皇",
+      "en": "Irene of Athens",
+      "classId": "merchant",
+      "className": "大商人",
+      "era": "中世紀",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "授予1個 行政長官職稱，或者招募一位新的 行政長官。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_merchant.png"
+    },
+    {
+      "id": "levi-strauss",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_LEVI_STRAUSS",
+      "name": "李維·史特勞斯",
+      "en": "Levi Strauss",
+      "classId": "merchant",
+      "className": "大商人",
+      "era": "原子能時代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "贈與 2份 牛仔褲，一種特別生產的奢侈品資源，能+4 滿意度。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_merchant.png"
+    },
+    {
+      "id": "adam-smith",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_ADAM_SMITH",
+      "name": "亞當史密斯",
+      "en": "Adam Smith",
+      "classId": "merchant",
+      "className": "大商人",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "授予1個 行政長官職稱，或者招募一位新的 行政長官。\n獲得 500 金幣。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_merchant.png"
+    },
+    {
+      "id": "zhou-daguan",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_ZHOU_DAGUAN",
+      "name": "周達觀",
+      "en": "Zhou Daguan",
+      "classId": "merchant",
+      "className": "大商人",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "賦予3名在此城邦的 使者。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "該偉人會忽視封閉的國界。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_merchant.png"
+    },
+    {
+      "id": "raja-todar-mal",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_RAJA_TODAR_MAL",
+      "name": "拉賈·托達·馬爾",
+      "en": "Raja Todar Mal",
+      "classId": "merchant",
+      "className": "大商人",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "獲得 1 使者。\n通往你自己城市的 貿易路線為目的地每個特色區域 +0.5 金幣。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_merchant.png"
+    },
+    {
+      "id": "colaeus",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_COLAEUS",
+      "name": "柯萊歐司",
+      "en": "Colaeus",
+      "classId": "merchant",
+      "className": "大商人",
+      "era": "古典時期",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "贈予1份該單元格上的奢侈品資源給你的 首都城市。\n獲得 100 信仰值。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_merchant.png"
+    },
+    {
+      "id": "john-spilsbury",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_JOHN_SPILSBURY",
+      "name": "約翰·史皮爾斯布里",
+      "en": "John Spilsbury",
+      "classId": "merchant",
+      "className": "大商人",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "贈與 1份 玩具，一種特別生產的奢侈品資源，能+4 滿意度。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_merchant.png"
+    },
+    {
+      "id": "john-rockefeller",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_JOHN_ROCKEFELLER",
+      "name": "約翰·洛克菲勒",
+      "en": "John Rockefeller",
+      "classId": "merchant",
+      "className": "大商人",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "每回合獲得3點 石油資源。目的地城市每有1點戰略資源，你的 貿易路線提供的 金幣便+2。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_merchant.png"
+    },
+    {
+      "id": "john-jacob-astor",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_JOHN_JACOB_ASTOR",
+      "name": "約翰·雅各·阿斯特",
+      "en": "John Jacob Astor",
+      "classId": "merchant",
+      "className": "大商人",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "獲得 500 金幣。\n獲得 2 使者。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_merchant.png"
+    },
+    {
+      "id": "helena-rubinstein",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_HELENA_RUBINSTEIN",
+      "name": "海倫娜·魯賓斯坦",
+      "en": "Helena Rubinstein",
+      "classId": "merchant",
+      "className": "大商人",
+      "era": "原子能時代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "贈與2份 化妝品，一種特別生產的奢侈品資源，能 +4 滿意度。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_merchant.png"
+    },
+    {
+      "id": "marco-polo",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_MARCO_POLO",
+      "name": "馬可波羅",
+      "en": "Marco Polo",
+      "classId": "merchant",
+      "className": "大商人",
+      "era": "中世紀",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "當前城市獲得一個免費的商人單位， 增加 1 貿易路線容量。途經當前城市的國外 貿易路線為雙方城市+2 金幣。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_merchant.png"
+    },
+    {
+      "id": "marcus-licinius-crassus",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_MARCUS_LICINIUS_CRASSUS",
+      "name": "馬庫斯·李錫尼·克拉蘇",
+      "en": "Marcus Licinius Crassus",
+      "classId": "merchant",
+      "className": "大商人",
+      "era": "古典時期",
+      "abilities": [
+        {
+          "label": "啟用效果（3 次）",
+          "effect": "你最近的城市把這個單元格納入領土。\n獲得 60 金幣。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_merchant.png"
+    },
+    {
+      "id": "zhang-qian",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_ZHANG_QIAN",
+      "name": "張騫",
+      "en": "Zhang Qian",
+      "classId": "merchant",
+      "className": "大商人",
+      "era": "古典時期",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "增加1 貿易路線容量。到當前城市的國外 貿易路線為雙方城市+2 金幣。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_merchant.png"
+    },
+    {
+      "id": "melitta-bentz",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_MELITTA_BENTZ",
+      "name": "梅里塔·本茨",
+      "en": "Melitta Bentz",
+      "classId": "merchant",
+      "className": "大商人",
+      "era": "原子能時代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "為你前往其他文明的 貿易路線+25% 旅遊業績。\n增加1 貿易路線容量。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_merchant.png"
+    },
+    {
+      "id": "sarah-breedlove",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_SARAH_BREEDLOVE",
+      "name": "莎拉·布里德洛夫",
+      "en": "Sarah Breedlove",
+      "classId": "merchant",
+      "className": "大商人",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "為你前往其他文明的 貿易路線+25% 旅遊業績。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_merchant.png"
+    },
+    {
+      "id": "giovanni-de-medici",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_GIOVANNI_DE_MEDICI",
+      "name": "喬凡尼·德·麥地奇",
+      "en": "Giovanni de' Medici",
+      "classId": "merchant",
+      "className": "大商人",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "立即在該區域建造銀行和市場。銀行獲得兩個巨作槽位，能在裡面放置任何東西。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_merchant.png"
+    },
+    {
+      "id": "jakob-fugger",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_JAKOB_FUGGER",
+      "name": "雅各·富格爾",
+      "en": "Jakob Fugger",
+      "classId": "merchant",
+      "className": "大商人",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "獲得 200 金幣。\n獲得 2 使者。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_merchant.png"
+    },
+    {
+      "id": "estee-lauder",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_ESTEE_LAUDER",
+      "name": "雅詩蘭黛",
+      "en": "Estée Lauder",
+      "classId": "merchant",
+      "className": "大商人",
+      "era": "資訊時代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "贈與 2份 香水，一種特別生產的奢侈品資源，能 +6 滿意度。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_merchant.png"
+    },
+    {
+      "id": "jamsetji-tata",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_JAMSETJI_TATA",
+      "name": "賈姆希德吉·塔塔",
+      "en": "Jamsetji Tata",
+      "classId": "merchant",
+      "className": "大商人",
+      "era": "資訊時代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "學院區域 +10 旅遊業績。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_merchant.png"
+    },
+    {
+      "id": "mary-katherine-goddard",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_MARY_KATHERINE_GODDARD",
+      "name": "瑪麗·凱瑟琳·戈達德",
+      "en": "Mary Katherine Goddard",
+      "classId": "merchant",
+      "className": "大商人",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "啟用效果（1 次）",
+          "effect": "對所有其他文明的外交能見度+1 等級。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_merchant.png"
+    },
+    {
+      "id": "dandara",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_DANDARA",
+      "name": "丹妲菈",
+      "en": "Dandara",
+      "classId": "general",
+      "className": "大將軍",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "隱退（2 次）",
+          "effect": "賦予1個經過1次強化的武僧。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，為工業和現代時期的陸地單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_general.png"
+    },
+    {
+      "id": "gustavus-adolphus",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_GUSTAVUS_ADOLPHUS",
+      "name": "古斯塔夫·阿道夫",
+      "en": "Gustavus Adolphus",
+      "classId": "general",
+      "className": "大將軍",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "立即創建1個帶有1次強化等級的射石炮單位。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，為文藝復興和工業時代的陸地單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_general.png"
+    },
+    {
+      "id": "boudica",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_BOUDICA",
+      "name": "布狄卡",
+      "en": "Boudica",
+      "classId": "general",
+      "className": "大將軍",
+      "era": "古典時期",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "把相鄰蠻族轉到你的控制之下。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，為古典和中世紀時期的陸地單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_general.png"
+    },
+    {
+      "id": "el-cid",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_EL_CID",
+      "name": "艾爾·熙德",
+      "en": "El Cid",
+      "classId": "general",
+      "className": "大將軍",
+      "era": "中世紀",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "由陸地軍事單位形成一支兵團。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，中世紀和文藝復興時期的陸地單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_general.png"
+    },
+    {
+      "id": "timur",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_TIMUR",
+      "name": "帖木兒",
+      "en": "Timur",
+      "classId": "general",
+      "className": "大將軍",
+      "era": "中世紀",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "為1個陸地軍事單位賦予1次強化等級並+25%戰鬥經驗值。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，中世紀和文藝復興時期的陸地單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_general.png"
+    },
+    {
+      "id": "ana-nzinga",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_ANA_NZINGA",
+      "name": "阿米娜",
+      "en": "Amina",
+      "classId": "general",
+      "className": "大將軍",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "獲得 1 使者。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，為文藝復興和工業時代的陸地單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_general.png"
+    },
+    {
+      "id": "ahmad-shah-massoud",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_AHMAD_SHAH_MASSOUD",
+      "name": "阿哈默德·沙哈·馬蘇德",
+      "en": "Ahmad Shah Massoud",
+      "classId": "general",
+      "className": "大將軍",
+      "era": "資訊時代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "立即創建1個帶有1次強化等級的現代反坦克單位。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，資訊時代的陸地單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_general.png"
+    },
+    {
+      "id": "john-monash",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_JOHN_MONASH",
+      "name": "約翰·莫納什",
+      "en": "John Monash",
+      "classId": "general",
+      "className": "大將軍",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "給予1個陸地軍事單位1次強化等級和+75%戰鬥經驗值。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，現代和原子能時代的陸地單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_general.png"
+    },
+    {
+      "id": "aethelflaed",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_AETHELFLAED",
+      "name": "埃塞爾弗萊德",
+      "en": "Æthelflæd",
+      "classId": "general",
+      "className": "大將軍",
+      "era": "中世紀",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "立即創建一個騎士單位。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，中世紀和文藝復興時期的陸地單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_general.png"
+    },
+    {
+      "id": "sun-tzu",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_SUN_TZU",
+      "name": "孫子",
+      "en": "Sun Tzu",
+      "classId": "general",
+      "className": "大將軍",
+      "era": "古典時期",
+      "abilities": [
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，為古典和中世紀時期的陸地單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [
+        "《 孫子兵法 》"
+      ],
+      "icon": "icon_unit_great_general.png"
+    },
+    {
+      "id": "napoleon-bonaparte",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_NAPOLEON_BONAPARTE",
+      "name": "拿破崙·波拿巴",
+      "en": "Napoleon Bonaparte",
+      "classId": "general",
+      "className": "大將軍",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "由陸地軍事單位形成一支軍團。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，為工業和現代時期的陸地單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_general.png"
+    },
+    {
+      "id": "georgy-zhukov",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_GEORGY_ZHUKOV",
+      "name": "格奧爾基·朱可夫",
+      "en": "Georgy Zhukov",
+      "classId": "general",
+      "className": "大將軍",
+      "era": "原子能時代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "所有陸地單位+50%側翼攻擊。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，原子能和資訊時代的陸地單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_general.png"
+    },
+    {
+      "id": "simon-bolivar",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_SIMON_BOLIVAR",
+      "name": "荷西·德·聖馬丁",
+      "en": "José de San Martín",
+      "classId": "general",
+      "className": "大將軍",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "獲得 4 使者。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，為工業和現代時期的陸地單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_general.png"
+    },
+    {
+      "id": "joan-of-arc",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_JOAN_OF_ARC",
+      "name": "聖女貞德",
+      "en": "Jeanne d'Arc",
+      "classId": "general",
+      "className": "大將軍",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "創建1個 遺跡。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，為文藝復興和工業時代的陸地單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_general.png"
+    },
+    {
+      "id": "rani-lakshmibai",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_RANI_LAKSHMIBAI",
+      "name": "詹西女王",
+      "en": "Rani Lakshmibai",
+      "classId": "general",
+      "className": "大將軍",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "立即創建1個帶有1次強化等級的騎兵單位。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，為工業和現代時期的陸地單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_general.png"
+    },
+    {
+      "id": "douglas-macarthur",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_DOUGLAS_MACARTHUR",
+      "name": "道格拉斯·麥克亞瑟",
+      "en": "Douglas MacArthur",
+      "classId": "general",
+      "className": "大將軍",
+      "era": "原子能時代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "立即建立一個擁有1次強化的坦克單位。每回合提供1點 石油。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，原子能和資訊時代的陸地單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_general.png"
+    },
+    {
+      "id": "tupac-amaru",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_TUPAC_AMARU",
+      "name": "圖帕克·阿馬魯",
+      "en": "Tupac Amaru",
+      "classId": "general",
+      "className": "大將軍",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "為目標城市每個無法防禦且未防禦之區域賦予1名火槍手。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，現代和原子能時代的陸地單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_general.png"
+    },
+    {
+      "id": "hannibal-barca",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_HANNIBAL_BARCA",
+      "name": "漢尼拔·巴卡",
+      "en": "Hannibal Barca",
+      "classId": "general",
+      "className": "大將軍",
+      "era": "古典時期",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "給予1個陸地軍事單位1次強化等級。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，為古典和中世紀時期的陸地單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_general.png"
+    },
+    {
+      "id": "marina-raskova",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_MARINA_RASKOVA",
+      "name": "瑪麗娜·拉斯科娃",
+      "en": "Marina Raskova",
+      "classId": "general",
+      "className": "大將軍",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "該單元格上的區域+1空中單位槽位。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，現代和原子能時代的陸地單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_general.png"
+    },
+    {
+      "id": "vijaya-wimalaratne",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_VIJAYA_WIMALARATNE",
+      "name": "維賈亞·維馬拉拉特",
+      "en": "Vijaya Wimalaratne",
+      "classId": "general",
+      "className": "大將軍",
+      "era": "資訊時代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "給予1個陸地軍事單位1次強化等級和+100%戰鬥經驗值。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，資訊時代的陸地單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_general.png"
+    },
+    {
+      "id": "dwight-eisenhower",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_DWIGHT_EISENHOWER",
+      "name": "德懷特·艾森豪",
+      "en": "Dwight Eisenhower",
+      "classId": "general",
+      "className": "大將軍",
+      "era": "原子能時代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "軍事單位+5% 生產力。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，原子能和資訊時代的陸地單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_general.png"
+    },
+    {
+      "id": "trung-trac",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_TRUNG_TRAC",
+      "name": "徵側",
+      "en": "Trung Trac",
+      "classId": "general",
+      "className": "大將軍",
+      "era": "古典時期",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "永久減少你帝國25%的厭戰情緒。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，為古典和中世紀時期的陸地單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_general.png"
+    },
+    {
+      "id": "samori-ture",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_SAMORI_TURE",
+      "name": "薩摩里·杜爾",
+      "en": "Samori Touré",
+      "classId": "general",
+      "className": "大將軍",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "立即創建1個帶有1次強化等級的步兵單位。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，現代和原子能時代的陸地單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_general.png"
+    },
+    {
+      "id": "sudirman",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_SUDIRMAN",
+      "name": "蘇迪曼",
+      "en": "Sudirman",
+      "classId": "general",
+      "className": "大將軍",
+      "era": "原子能時代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "給予1個陸地軍事單位1次強化等級和+100%戰鬥經驗值。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，原子能和資訊時代的陸地單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_general.png"
+    },
+    {
+      "id": "o-no-yasumaro",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_O_NO_YASUMARO",
+      "name": "太安萬侶",
+      "en": "O no Yasumaro",
+      "classId": "prophet",
+      "className": "大預言家",
+      "era": "中世紀",
+      "abilities": [
+        {
+          "label": "創立宗教",
+          "effect": "可在聖地創立一個宗教；大預言家之間沒有額外能力差異。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_prophet.png"
+    },
+    {
+      "id": "confucius",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_CONFUCIUS",
+      "name": "孔子",
+      "en": "Confucius",
+      "classId": "prophet",
+      "className": "大預言家",
+      "era": "古典時期",
+      "abilities": [
+        {
+          "label": "創立宗教",
+          "effect": "可在聖地創立一個宗教；大預言家之間沒有額外能力差異。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_prophet.png"
+    },
+    {
+      "id": "thomas-aquinas",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_THOMAS_AQUINAS",
+      "name": "托瑪斯·阿奎那",
+      "en": "Thomas Aquinas",
+      "classId": "prophet",
+      "className": "大預言家",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "創立宗教",
+          "effect": "可在聖地創立一個宗教；大預言家之間沒有額外能力差異。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_prophet.png"
+    },
+    {
+      "id": "laozi",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_LAOZI",
+      "name": "老子",
+      "en": "Laozi",
+      "classId": "prophet",
+      "className": "大預言家",
+      "era": "古典時期",
+      "abilities": [
+        {
+          "label": "創立宗教",
+          "effect": "可在聖地創立一個宗教；大預言家之間沒有額外能力差異。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_prophet.png"
+    },
+    {
+      "id": "simon-peter",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_SIMON_PETER",
+      "name": "西蒙·彼得",
+      "en": "Simon Peter",
+      "classId": "prophet",
+      "className": "大預言家",
+      "era": "古典時期",
+      "abilities": [
+        {
+          "label": "創立宗教",
+          "effect": "可在聖地創立一個宗教；大預言家之間沒有額外能力差異。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_prophet.png"
+    },
+    {
+      "id": "songtsan-gampo",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_SONGTSAN_GAMPO",
+      "name": "松贊乾布",
+      "en": "Songtsan Gampo",
+      "classId": "prophet",
+      "className": "大預言家",
+      "era": "中世紀",
+      "abilities": [
+        {
+          "label": "創立宗教",
+          "effect": "可在聖地創立一個宗教；大預言家之間沒有額外能力差異。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_prophet.png"
+    },
+    {
+      "id": "francis-of-assisi",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_FRANCIS_OF_ASSISI",
+      "name": "阿西西的法蘭西斯",
+      "en": "Francis of Assisi",
+      "classId": "prophet",
+      "className": "大預言家",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "創立宗教",
+          "effect": "可在聖地創立一個宗教；大預言家之間沒有額外能力差異。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_prophet.png"
+    },
+    {
+      "id": "adi-shankara",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_ADI_SHANKARA",
+      "name": "阿迪·商羯羅",
+      "en": "Adi Shankara",
+      "classId": "prophet",
+      "className": "大預言家",
+      "era": "中世紀",
+      "abilities": [
+        {
+          "label": "創立宗教",
+          "effect": "可在聖地創立一個宗教；大預言家之間沒有額外能力差異。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_prophet.png"
+    },
+    {
+      "id": "haji-huud",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_HAJI_HUUD",
+      "name": "哈吉·洪德",
+      "en": "Haji Huud",
+      "classId": "prophet",
+      "className": "大預言家",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "創立宗教",
+          "effect": "可在聖地創立一個宗教；大預言家之間沒有額外能力差異。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_prophet.png"
+    },
+    {
+      "id": "john-the-baptist",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_JOHN_THE_BAPTIST",
+      "name": "施洗者約翰",
+      "en": "John the Baptist",
+      "classId": "prophet",
+      "className": "大預言家",
+      "era": "古典時期",
+      "abilities": [
+        {
+          "label": "創立宗教",
+          "effect": "可在聖地創立一個宗教；大預言家之間沒有額外能力差異。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_prophet.png"
+    },
+    {
+      "id": "martin-luther",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_MARTIN_LUTHER",
+      "name": "馬丁·路德",
+      "en": "Martin Luther",
+      "classId": "prophet",
+      "className": "大預言家",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "創立宗教",
+          "effect": "可在聖地創立一個宗教；大預言家之間沒有額外能力差異。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_prophet.png"
+    },
+    {
+      "id": "siddhartha-gautama",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_SIDDHARTHA_GAUTAMA",
+      "name": "悉達多·喬達摩",
+      "en": "Siddhartha Gautama",
+      "classId": "prophet",
+      "className": "大預言家",
+      "era": "古典時期",
+      "abilities": [
+        {
+          "label": "創立宗教",
+          "effect": "可在聖地創立一個宗教；大預言家之間沒有額外能力差異。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_prophet.png"
+    },
+    {
+      "id": "bodhidharma",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_BODHIDHARMA",
+      "name": "菩提達摩",
+      "en": "Bodhidharma",
+      "classId": "prophet",
+      "className": "大預言家",
+      "era": "中世紀",
+      "abilities": [
+        {
+          "label": "創立宗教",
+          "effect": "可在聖地創立一個宗教；大預言家之間沒有額外能力差異。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_prophet.png"
+    },
+    {
+      "id": "irenaeus",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_IRENAEUS",
+      "name": "愛任紐",
+      "en": "Irenaeus",
+      "classId": "prophet",
+      "className": "大預言家",
+      "era": "中世紀",
+      "abilities": [
+        {
+          "label": "創立宗教",
+          "effect": "可在聖地創立一個宗教；大預言家之間沒有額外能力差異。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_prophet.png"
+    },
+    {
+      "id": "zoroaster",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_ZOROASTER",
+      "name": "瑣羅亞斯德",
+      "en": "Zoroaster",
+      "classId": "prophet",
+      "className": "大預言家",
+      "era": "古典時期",
+      "abilities": [
+        {
+          "label": "創立宗教",
+          "effect": "可在聖地創立一個宗教；大預言家之間沒有額外能力差異。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_prophet.png"
+    },
+    {
+      "id": "madhva-acharya",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_MADHVA_ACHARYA",
+      "name": "摩陀婆·阿查里亞",
+      "en": "Madhva Acharya",
+      "classId": "prophet",
+      "className": "大預言家",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "創立宗教",
+          "effect": "可在聖地創立一個宗教；大預言家之間沒有額外能力差異。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_prophet.png"
+    },
+    {
+      "id": "qiu-ying",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_QIU_YING",
+      "name": "仇英",
+      "en": "Qiu Ying",
+      "classId": "artist",
+      "className": "大藝術家",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "巨作（3 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《漢宮春曉圖》",
+        "《溪山漁隱圖》",
+        "《赤壁圖》"
+      ],
+      "icon": "icon_unit_great_artist.png"
+    },
+    {
+      "id": "vincent-van-gogh",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_VINCENT_VAN_GOGH",
+      "name": "文森·梵谷",
+      "en": "Vincent van Gogh",
+      "classId": "artist",
+      "className": "大藝術家",
+      "era": "原子能時代",
+      "abilities": [
+        {
+          "label": "巨作（3 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《星光燦爛》",
+        "《夜晚露天咖啡座》",
+        "《夜間咖啡館》"
+      ],
+      "icon": "icon_unit_great_artist.png"
+    },
+    {
+      "id": "kamal-ud-din-behzad",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_KAMAL_UD_DIN_BEHZAD",
+      "name": "卡瑪勒·鄔丁·白扎德",
+      "en": "Kamāl ud-Dīn Behzād",
+      "classId": "artist",
+      "className": "大藝術家",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "巨作（3 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《帖木兒與埃及蘇丹的戰場》",
+        "《約瑟與蘇黎卡》",
+        "《帖木兒於登基大典覲見使節》"
+      ],
+      "icon": "icon_unit_great_artist.png"
+    },
+    {
+      "id": "gustav-klimt",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_GUSTAV_KLIMT",
+      "name": "古斯塔夫·克林姆",
+      "en": "Gustav Klimt",
+      "classId": "artist",
+      "className": "大藝術家",
+      "era": "資訊時代",
+      "abilities": [
+        {
+          "label": "巨作（3 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《吻》",
+        "《卡默城堡公園大道》",
+        "《開滿向日葵的農場花園》"
+      ],
+      "icon": "icon_unit_great_artist.png"
+    },
+    {
+      "id": "wassily-kandinsky",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_WASSILY_KANDINSKY",
+      "name": "瓦西里·康丁斯基",
+      "en": "Wassily Kandinsky",
+      "classId": "artist",
+      "className": "大藝術家",
+      "era": "資訊時代",
+      "abilities": [
+        {
+          "label": "巨作（3 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《構成第八號》",
+        "《青騎士》",
+        "《紅場》"
+      ],
+      "icon": "icon_unit_great_artist.png"
+    },
+    {
+      "id": "donatello",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_DONATELLO",
+      "name": "多那太羅",
+      "en": "Donatello",
+      "classId": "artist",
+      "className": "大藝術家",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "巨作（3 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《聖馬可像》",
+        "《加塔梅拉塔騎馬像》",
+        "《朱迪斯斬殺赫羅弗尼斯》"
+      ],
+      "icon": "icon_unit_great_artist.png"
+    },
+    {
+      "id": "angelica-kauffman",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_ANGELICA_KAUFFMAN",
+      "name": "安吉莉卡·考夫曼",
+      "en": "Angelica Kauffman",
+      "classId": "artist",
+      "className": "大藝術家",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "巨作（3 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《安娜·瑪麗亞·詹金斯和托馬斯·詹金斯》",
+        "《約翰·約阿希姆·溫克爾曼肖像》",
+        "《女神繆斯薩拉·哈羅普》"
+      ],
+      "icon": "icon_unit_great_artist.png"
+    },
+    {
+      "id": "andrey-rublev",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_ANDREY_RUBLEV",
+      "name": "安德烈·魯布烈夫",
+      "en": "Andrei Rublev",
+      "classId": "artist",
+      "className": "大藝術家",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "巨作（3 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《聖母領報》",
+        "《救世主的榮耀》",
+        "《耶穌升天》"
+      ],
+      "icon": "icon_unit_great_artist.png"
+    },
+    {
+      "id": "michelangelo",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_MICHELANGELO",
+      "name": "米開朗基羅",
+      "en": "Michelangelo",
+      "classId": "artist",
+      "className": "大藝術家",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "巨作（3 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "西斯廷教堂天頂畫",
+        "《大衛》",
+        "《聖殤》"
+      ],
+      "icon": "icon_unit_great_artist.png"
+    },
+    {
+      "id": "el-greco",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_EL_GRECO",
+      "name": "艾爾·葛雷柯",
+      "en": "El Greco",
+      "classId": "artist",
+      "className": "大藝術家",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "巨作（3 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《賢士來朝》",
+        "《聖母升天》",
+        "《托列多風景》"
+      ],
+      "icon": "icon_unit_great_artist.png"
+    },
+    {
+      "id": "claude-monet",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_CLAUDE_MONET",
+      "name": "克洛德·莫內",
+      "en": "Claude Monet",
+      "classId": "artist",
+      "className": "大藝術家",
+      "era": "原子能時代",
+      "abilities": [
+        {
+          "label": "巨作（3 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《睡蓮》",
+        "《印象·日出》",
+        "《吉維尼的乾草堆》"
+      ],
+      "icon": "icon_unit_great_artist.png"
+    },
+    {
+      "id": "rembrandt-van-rijn",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_REMBRANDT_VAN_RIJN",
+      "name": "林布蘭·范·萊因",
+      "en": "Rembrandt van Rijn",
+      "classId": "artist",
+      "className": "大藝術家",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "巨作（3 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《安德瑞斯·德·格雷夫》",
+        "《阿加莎·巴斯》",
+        "《亞伯拉罕和以撒》"
+      ],
+      "icon": "icon_unit_great_artist.png"
+    },
+    {
+      "id": "hasegawa-tohaku",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_HASEGAWA_TOHAKU",
+      "name": "長谷川等伯",
+      "en": "Hasegawa Tōhaku",
+      "classId": "artist",
+      "className": "大藝術家",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "巨作（3 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《松林圖》",
+        "《楓》",
+        "《花鳥圖》"
+      ],
+      "icon": "icon_unit_great_artist.png"
+    },
+    {
+      "id": "amrita-sher-gil",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_AMRITA_SHER_GIL",
+      "name": "阿姆瑞塔·謝吉爾",
+      "en": "Amrita Sher-Gil",
+      "classId": "artist",
+      "className": "大藝術家",
+      "era": "資訊時代",
+      "abilities": [
+        {
+          "label": "巨作（3 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《三個女孩》",
+        "《新娘的化妝間》",
+        "《自畫像》"
+      ],
+      "icon": "icon_unit_great_artist.png"
+    },
+    {
+      "id": "hieronymus-bosch",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_HIERONYMUS_BOSCH",
+      "name": "耶羅尼米斯·博斯",
+      "en": "Hieronymus Bosch",
+      "classId": "artist",
+      "className": "大藝術家",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "巨作（3 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《人間樂園》",
+        "《最後的審判》",
+        "《乾草車》"
+      ],
+      "icon": "icon_unit_great_artist.png"
+    },
+    {
+      "id": "edmonia-lewis",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_EDMONIA_LEWIS",
+      "name": "埃德莫尼亞·里維斯",
+      "en": "Edmonia Lewis",
+      "classId": "artist",
+      "className": "大藝術家",
+      "era": "原子能時代",
+      "abilities": [
+        {
+          "label": "巨作（3 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《克麗奧佩脫拉之死》",
+        "《海華河姑娘出嫁》",
+        "《夏甲》"
+      ],
+      "icon": "icon_unit_great_artist.png"
+    },
+    {
+      "id": "sofonisba-anguissola",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_SOFONISBA_ANGUISSOLA",
+      "name": "索福尼斯巴·安圭索拉",
+      "en": "Sofonisba Anguissola",
+      "classId": "artist",
+      "className": "大藝術家",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "巨作（3 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《三姐妹下棋》",
+        "《西班牙國王腓力二世》",
+        "《僧侶肖像》"
+      ],
+      "icon": "icon_unit_great_artist.png"
+    },
+    {
+      "id": "jang-seung-eop",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_JANG_SEUNG_EOP",
+      "name": "張承業",
+      "en": "Jang Seung-eop",
+      "classId": "artist",
+      "className": "大藝術家",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "巨作（3 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《醉畫仙》",
+        "《雄雞》",
+        "《牽著馬的男人》"
+      ],
+      "icon": "icon_unit_great_artist.png"
+    },
+    {
+      "id": "titian",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_TITIAN",
+      "name": "提香",
+      "en": "Titian",
+      "classId": "artist",
+      "className": "大藝術家",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "巨作（3 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《聖母升天》",
+        "《薩洛米和施洗者約翰的頭顱》",
+        "《查理五世騎馬像》"
+      ],
+      "icon": "icon_unit_great_artist.png"
+    },
+    {
+      "id": "katsushika-hokusai",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_KATSUSHIKA_HOKUSAI",
+      "name": "葛飾北齋",
+      "en": "Katsushika Hokusai",
+      "classId": "artist",
+      "className": "大藝術家",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "巨作（3 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《神奈川衝浪裡》",
+        "《信濃諏訪湖》",
+        "《凱風快晴》"
+      ],
+      "icon": "icon_unit_great_artist.png"
+    },
+    {
+      "id": "mary-cassatt",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_MARY_CASSATT",
+      "name": "瑪麗·卡薩特",
+      "en": "Mary Cassatt",
+      "classId": "artist",
+      "className": "大藝術家",
+      "era": "資訊時代",
+      "abilities": [
+        {
+          "label": "巨作（3 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《依偎在她手臂里的莉迪婭》",
+        "《洗浴》",
+        "《一杯茶》"
+      ],
+      "icon": "icon_unit_great_artist.png"
+    },
+    {
+      "id": "marie-anne-collot",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_MARIE_ANNE_COLLOT",
+      "name": "瑪麗安·克洛",
+      "en": "Marie-Anne Collot",
+      "classId": "artist",
+      "className": "大藝術家",
+      "era": "原子能時代",
+      "abilities": [
+        {
+          "label": "巨作（3 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "《皮埃爾·路易吉·法爾內塞肖像畫》",
+        "《凱薩琳大帝肖像畫》",
+        "《瑪麗·卡思卡特肖像畫》"
+      ],
+      "icon": "icon_unit_great_artist.png"
+    },
+    {
+      "id": "boris-orlovsky",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_BORIS_ORLOVSKY",
+      "name": "鮑里斯·奧爾洛夫斯基",
+      "en": "Boris Orlovsky",
+      "classId": "artist",
+      "className": "大藝術家",
+      "era": "資訊時代",
+      "abilities": [
+        {
+          "label": "巨作（3 次）",
+          "effect": "在具有可用巨作槽位的區域或奇觀上啟用。"
+        }
+      ],
+      "works": [
+        "米哈伊爾·庫圖佐夫",
+        "《亞歷山大凱旋柱》",
+        "《沙皇亞歷山大半身像》"
+      ],
+      "icon": "icon_unit_great_artist.png"
+    },
+    {
+      "id": "chester-nimitz",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_CHESTER_NIMITZ",
+      "name": "切斯特·尼米茲",
+      "en": "Chester Nimitz",
+      "classId": "admiral",
+      "className": "海軍統帥",
+      "era": "原子能時代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "立即生產1個擁有1次強化的潛艇單位。每回合提供1點 石油。生產海軍襲擊者類單位時+20% 生產力。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，原子能和資訊時代的海軍單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_admiral.png"
+    },
+    {
+      "id": "clancy-fernando",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_CLANCY_FERNANDO",
+      "name": "克蘭西·費爾南多",
+      "en": "Clancy Fernando",
+      "classId": "admiral",
+      "className": "海軍統帥",
+      "era": "資訊時代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "給予1個海上軍事單位1次強化等級和+200%戰鬥經驗值。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，資訊時代的海軍單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_admiral.png"
+    },
+    {
+      "id": "yi-sun-sin",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_YI_SUN_SIN",
+      "name": "李舜臣",
+      "en": "Yi Sun-sin",
+      "classId": "admiral",
+      "className": "海軍統帥",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "立即建立一個擁有1次強化的裝甲艦單位。每回合提供1點 煤。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，為文藝復興和工業時代的海軍單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_admiral.png"
+    },
+    {
+      "id": "rajendra-chola",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_RAJENDRA_CHOLA",
+      "name": "拉金德拉·朱羅",
+      "en": "Rajendra Chola",
+      "classId": "admiral",
+      "className": "海軍統帥",
+      "era": "中世紀",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "所有海軍單位+3 戰鬥力。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，中世紀和文藝復興時期的海軍單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_admiral.png"
+    },
+    {
+      "id": "laskarina-bouboulina",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_LASKARINA_BOUBOULINA",
+      "name": "拉斯喀瑞尼亞·鮑勃里斯",
+      "en": "Laskarina Bouboulina",
+      "classId": "admiral",
+      "className": "海軍統帥",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "給予1個海上軍事單位1次強化等級和+50%戰鬥經驗值。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，為工業和現代時期的海軍單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_admiral.png"
+    },
+    {
+      "id": "togo-heihachiro",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_TOGO_HEIHACHIRO",
+      "name": "東鄉平八郎",
+      "en": "Togo Heihachiro",
+      "classId": "admiral",
+      "className": "海軍統帥",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "給予1個海上軍事單位1次強化等級和+75%戰鬥經驗值。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，現代和原子能時代的海軍單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_admiral.png"
+    },
+    {
+      "id": "francis-drake",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_FRANCIS_DRAKE",
+      "name": "法蘭西斯·德瑞克",
+      "en": "Francis Drake",
+      "classId": "admiral",
+      "className": "海軍統帥",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "立即生產1個擁有1次強化的私掠船單位。軍事單位掠奪海上 貿易路線獲得的獎勵+50%。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，為文藝復興和工業時代的海軍單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_admiral.png"
+    },
+    {
+      "id": "artemisia",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_ARTEMISIA",
+      "name": "阿爾特米西亞",
+      "en": "Artemisia",
+      "classId": "admiral",
+      "className": "海軍統帥",
+      "era": "古典時期",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "給予1個海上軍事單位1次強化等級。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，為古典和中世紀時期的海軍單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_admiral.png"
+    },
+    {
+      "id": "joaquim-marques-lisboa",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_JOAQUIM_MARQUES_LISBOA",
+      "name": "若阿金·馬奎斯·葡京",
+      "en": "Joaquim Marques Lisboa",
+      "classId": "admiral",
+      "className": "海軍統帥",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "厭戰情緒累積比平時少25%。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，現代和原子能時代的海軍單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_admiral.png"
+    },
+    {
+      "id": "themistocles",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_THEMISTOCLES",
+      "name": "特米斯托克利",
+      "en": "Themistocles",
+      "classId": "admiral",
+      "className": "海軍統帥",
+      "era": "古典時期",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "立即生產1個潛艇單位。生產海軍遠程攻擊類單位時+20% 生產力。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，為古典和中世紀時期的海軍單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_admiral.png"
+    },
+    {
+      "id": "hanno-the-navigator",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_HANNO_THE_NAVIGATOR",
+      "name": "航海家漢諾",
+      "en": "Hanno the Navigator",
+      "classId": "admiral",
+      "className": "海軍統帥",
+      "era": "古典時期",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "創造出有+2 移動力的海軍近戰單位。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，為古典和中世紀時期的海軍單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_admiral.png"
+    },
+    {
+      "id": "matthew-perry",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_MATTHEW_PERRY",
+      "name": "馬修·培理",
+      "en": "Matthew Perry",
+      "classId": "admiral",
+      "className": "海軍統帥",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "賦予足夠的 使者，讓你成為此城邦的宗主國。然後移除其他所有玩家的 使者。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，現代和原子能時代的海軍單位+5 戰鬥力和+1 移動力。\n該偉人會忽視封閉的國界。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_admiral.png"
+    },
+    {
+      "id": "ferdinand-magellan",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_FERDINAND_MAGELLAN",
+      "name": "斐迪南·麥哲倫",
+      "en": "Ferdinand Magellan",
+      "classId": "admiral",
+      "className": "海軍統帥",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "賦予此城市每回合+4忠誠度。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，為文藝復興和工業時代的海軍單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_admiral.png"
+    },
+    {
+      "id": "leif-erikson",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_LEIF_ERIKSON",
+      "name": "萊夫·艾瑞克森",
+      "en": "Leif Erikson",
+      "classId": "admiral",
+      "className": "海軍統帥",
+      "era": "中世紀",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "所有海軍單位+1視野範圍。允許所有海軍單位在沒有達到科技要求的情況下進入海洋單元格。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，中世紀和文藝復興時期的海軍單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_admiral.png"
+    },
+    {
+      "id": "franz-von-hipper",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_FRANZ_VON_HIPPER",
+      "name": "費倫茨·馮·希佩爾",
+      "en": "Franz von Hipper",
+      "classId": "admiral",
+      "className": "海軍統帥",
+      "era": "現代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "立即建立一個擁有1次強化的戰列艦單位。每回合提供1點 煤。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，現代和原子能時代的海軍單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_admiral.png"
+    },
+    {
+      "id": "himerios",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_HIMERIOS",
+      "name": "黑梅里歐斯",
+      "en": "Himerios",
+      "classId": "admiral",
+      "className": "海軍統帥",
+      "era": "中世紀",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "賦予1個海軍單位1次強化和+25%戰鬥經驗值。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，中世紀和文藝復興時期的海軍單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_admiral.png"
+    },
+    {
+      "id": "santa-cruz",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_SANTA_CRUZ",
+      "name": "聖克魯茲",
+      "en": "Santa Cruz",
+      "classId": "admiral",
+      "className": "海軍統帥",
+      "era": "文藝復興時期",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "由1個海上軍事單位形成一支無敵艦隊。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，為文藝復興和工業時代的海軍單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_admiral.png"
+    },
+    {
+      "id": "grace-hopper",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_GRACE_HOPPER",
+      "name": "葛麗絲·霍普",
+      "en": "Grace Hopper",
+      "classId": "admiral",
+      "className": "海軍統帥",
+      "era": "原子能時代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "獲得2項隨機的免費科技。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，原子能和資訊時代的海軍單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_admiral.png"
+    },
+    {
+      "id": "gaius-duilius",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_GAIUS_DUILIUS",
+      "name": "蓋尤斯·杜伊路斯",
+      "en": "Gaius Duilius",
+      "classId": "admiral",
+      "className": "海軍統帥",
+      "era": "古典時期",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "由1個海上軍事單位形成一支艦隊。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，為古典和中世紀時期的海軍單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_admiral.png"
+    },
+    {
+      "id": "ching-shih",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_CHING_SHIH",
+      "name": "鄭一嫂",
+      "en": "Ching Shih",
+      "classId": "admiral",
+      "className": "海軍統帥",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "獲得500 金幣（在標準遊戲速度下）。軍事單位掠奪海上 貿易路線獲得的獎勵+60%。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，為工業和現代時期的海軍單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_admiral.png"
+    },
+    {
+      "id": "zheng-he",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_ZHENG_HE",
+      "name": "鄭和",
+      "en": "Zheng He",
+      "classId": "admiral",
+      "className": "海軍統帥",
+      "era": "中世紀",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "當前城市獲得1個免費的商人單位，增加1個 貿易路線容量。途經當前城市的國外 貿易路線為雙方城市+2 金幣。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，中世紀和文藝復興時期的海軍單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_admiral.png"
+    },
+    {
+      "id": "horatio-nelson",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_HORATIO_NELSON",
+      "name": "霍雷肖·納爾遜",
+      "en": "Horatio Nelson",
+      "classId": "admiral",
+      "className": "海軍統帥",
+      "era": "工業時代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "立即在此區域建造1個燈塔和造船廠。所有海軍單位+50%側翼攻擊加成。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，為工業和現代時期的海軍單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_admiral.png"
+    },
+    {
+      "id": "sergey-gorshkov",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_SERGEY_GORSHKOV",
+      "name": "謝爾蓋·戈爾什科夫",
+      "en": "Sergei Gorshkov",
+      "classId": "admiral",
+      "className": "海軍統帥",
+      "era": "原子能時代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "給予1個海上軍事單位1次強化等級和+100%戰鬥經驗值。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "在兩個單元格以內，原子能和資訊時代的海軍單位+5 戰鬥力和+1 移動力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_great_admiral.png"
+    },
+    {
+      "id": "commandante-narino",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_COMMANDANTE_NARINO",
+      "name": "安東尼奧·納瑞紐",
+      "en": "Antonio Nariño",
+      "classId": "comandante",
+      "className": "總指揮官",
+      "era": "遠古時代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "增加1個 貿易路線容量。賦予最近的城市1個商人單位。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "2個單元格內所有陸地單位+5 戰鬥力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_comandante_general.png"
+    },
+    {
+      "id": "commandante-jose-de-sucre",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_COMMANDANTE_JOSE_DE_SUCRE",
+      "name": "安東尼奧·荷西·蘇克雷",
+      "en": "Antonio José de Sucre",
+      "classId": "comandante",
+      "className": "總指揮官",
+      "era": "遠古時代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "立即生產出玩家現在可以建造出的最強陸上戰鬥單位，該單位還擁有1次強化。該單位無需支付資源維護費用。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "2個單元格內所有陸地單位+5 戰鬥力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_comandante_general.png"
+    },
+    {
+      "id": "commandante-urdaneta",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_COMMANDANTE_URDANETA",
+      "name": "拉斐爾·烏達內塔",
+      "en": "Rafael Urdaneta",
+      "classId": "comandante",
+      "className": "總指揮官",
+      "era": "遠古時代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "2單元格範圍內的所有陸地戰鬥單位重新獲得所有 移動力以及攻擊能力。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "2個單元格內所有陸地單位+5 戰鬥力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_comandante_general.png"
+    },
+    {
+      "id": "commandante-paula-santander",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_COMMANDANTE_PAULA_SANTANDER",
+      "name": "法蘭西斯科·德保拉·桑坦德",
+      "en": "Francisco de Paula Santander",
+      "classId": "comandante",
+      "className": "總指揮官",
+      "era": "遠古時代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "賦予1個 行政長官職稱。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "2個單元格內所有陸地單位+5 戰鬥力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_comandante_general.png"
+    },
+    {
+      "id": "commandante-montilla",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_COMMANDANTE_MONTILLA",
+      "name": "馬里亞諾·蒙蒂亞",
+      "en": "Mariano Montilla",
+      "classId": "comandante",
+      "className": "總指揮官",
+      "era": "遠古時代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "進攻區域時，2單元格範圍內的陸地單位獲得+4 戰鬥力。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "2個單元格內所有陸地單位+5 戰鬥力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_comandante_general.png"
+    },
+    {
+      "id": "commandante-piar",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_COMMANDANTE_PIAR",
+      "name": "曼紐·皮亞爾",
+      "en": "Manuel Piar",
+      "classId": "comandante",
+      "className": "總指揮官",
+      "era": "遠古時代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "賦予一個陸地單位+7 戰鬥力。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "2個單元格內所有陸地單位+5 戰鬥力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_comandante_general.png"
+    },
+    {
+      "id": "commandante-antonio-paez",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_COMMANDANTE_ANTONIO_PAEZ",
+      "name": "荷西·安東尼奧·派斯",
+      "en": "José Antonio Páez",
+      "classId": "comandante",
+      "className": "總指揮官",
+      "era": "遠古時代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "賦予2個單元格內所有騎兵單位+4 戰鬥力。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "2個單元格內所有陸地單位+5 戰鬥力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_comandante_general.png"
+    },
+    {
+      "id": "commandante-ribas",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_COMMANDANTE_RIBAS",
+      "name": "荷西·菲利克斯·里瓦斯",
+      "en": "José Félix Ribas",
+      "classId": "comandante",
+      "className": "總指揮官",
+      "era": "遠古時代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "2單元格範圍內的敵方單位損失30點生命值。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "2個單元格內所有陸地單位+5 戰鬥力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_comandante_general.png"
+    },
+    {
+      "id": "commandante-marino",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_COMMANDANTE_MARINO",
+      "name": "聖地亞哥·馬里諾",
+      "en": "Santiago Mariño",
+      "classId": "comandante",
+      "className": "總指揮官",
+      "era": "遠古時代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "賦予2個單元格內所有近戰及抗騎兵單位+4 戰鬥力。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "2個單元格內所有陸地單位+5 戰鬥力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_comandante_general.png"
+    },
+    {
+      "id": "commandante-macgregor",
+      "pageId": "GREAT_PERSON_INDIVIDUAL_COMMANDANTE_MACGREGOR",
+      "name": "雷格爾·麥葛瑞格",
+      "en": "Gregor MacGregor",
+      "classId": "comandante",
+      "className": "總指揮官",
+      "era": "遠古時代",
+      "abilities": [
+        {
+          "label": "隱退（1 次）",
+          "effect": "賦予一個陸地軍事單位1次強化，同時提供等同於該單位購買費用一半的 金幣。"
+        },
+        {
+          "label": "被動影響",
+          "effect": "2個單元格內所有陸地單位+5 戰鬥力。"
+        }
+      ],
+      "works": [],
+      "icon": "icon_unit_comandante_general.png"
+    }
+  ],
+  "governors": [
+    {
+      "id": "pingala",
+      "pageId": "GOVERNOR_THE_EDUCATOR",
+      "name": "平加拉",
+      "title": "教育家",
+      "en": "Pingala (Educator)",
+      "unique": false,
+      "description": "平加拉注重於城市內的 科學與 文化發展。他也精熟於吸引 偉人前來城市。",
+      "icon": "governornormal_educator.png",
+      "establishment": 5,
+      "advice": "最泛用的科技與文化總督。人口已高的首都或核心城優先，科學勝利再沿太空開發案升滿。",
+      "bestFor": [
+        "科學",
+        "文化",
+        "偉人"
+      ],
+      "promotions": [
+        {
+          "id": "educator-librarian",
+          "pageId": "GOVERNOR_PROMOTION_EDUCATOR_LIBRARIAN",
+          "name": "圖書館員",
+          "en": "Librarian",
+          "level": 0,
+          "requires": [],
+          "effect": "此城市所產出的 科技值和 文化值增加15%。"
+        },
+        {
+          "id": "educator-researcher",
+          "pageId": "GOVERNOR_PROMOTION_EDUCATOR_RESEARCHER",
+          "name": "研究人員",
+          "en": "Researcher",
+          "level": 1,
+          "requires": ["educator-librarian"],
+          "effect": "此城市中每位公民每回合提供+1 科技值。"
+        },
+        {
+          "id": "educator-connoisseur",
+          "pageId": "GOVERNOR_PROMOTION_EDUCATOR_CONNOISSEUR",
+          "name": "鑑賞家",
+          "en": "Connoisseur",
+          "level": 1,
+          "requires": ["educator-librarian"],
+          "effect": "此城市中每位公民每回合提供+1 文化值。"
+        },
+        {
+          "id": "educator-grants",
+          "pageId": "GOVERNOR_PROMOTION_EDUCATOR_GRANTS",
+          "name": "撥款",
+          "en": "Grants",
+          "level": 2,
+          "requires": ["educator-researcher", "educator-connoisseur"],
+          "effect": "此城市每回合產生的 偉人點數+100%。"
+        },
+        {
+          "id": "educator-space-initiative",
+          "pageId": "GOVERNOR_PROMOTION_EDUCATOR_SPACE_INITIATIVE",
+          "name": "太空開發案",
+          "en": "Space Initiative",
+          "level": 3,
+          "requires": ["educator-grants"],
+          "effect": "在此城市中進行所有太空計畫項目時 生產力提高30%。"
+        },
+        {
+          "id": "merchant-curator",
+          "pageId": "GOVERNOR_PROMOTION_MERCHANT_CURATOR",
+          "name": "策展人",
+          "en": "Curator",
+          "level": 3,
+          "requires": ["educator-grants"],
+          "effect": "城市中的藝術、音樂和著作巨作提供的 旅遊業績+100%。"
+        }
+      ]
+    },
+    {
+      "id": "ibrahim",
+      "pageId": "GOVERNOR_IBRAHIM",
+      "name": "易卜拉欣",
+      "title": "大維齊爾",
+      "en": "Ibrahim (Grand Vizier)",
+      "unique": true,
+      "description": "蘇萊曼一世的維齊爾易卜拉欣是個專精於軍事和外交的行政長官。除了有獨特的強化樹外，易卜拉欣也是唯一一個能指派至所有國內城市及各文明首都的行政長官。他能對軍事行動的成敗造成影響，但同時也是個嫻熟的外交官，能加強和友好文明間的關係，並且能緩解和敵人間的緊張情勢。",
+      "icon": "governornormalxp2_grandvisier.png",
+      "establishment": 5,
+      "advice": "鄂圖曼與蘇萊曼專屬。攻城前部署至己方前線城或敵國首都，配合攻城單位與總督忠誠壓力。",
+      "bestFor": [
+        "統治",
+        "攻城",
+        "外交施壓"
+      ],
+      "promotions": [
+        {
+          "id": "pasha",
+          "pageId": "GOVERNOR_PROMOTION_PASHA",
+          "name": "帕夏",
+          "en": "Pasha",
+          "level": 0,
+          "requires": [],
+          "effect": "該城市建造所有軍事單位+20% 生產力。"
+        },
+        {
+          "id": "head-falconer",
+          "pageId": "GOVERNOR_PROMOTION_HEAD_FALCONER",
+          "name": "首席獵鷹官",
+          "en": "Head Falconer",
+          "level": 1,
+          "requires": ["pasha"],
+          "effect": "在城市領土內戰鬥的所有友軍單位+5 戰鬥力。"
+        },
+        {
+          "id": "serasker",
+          "pageId": "GOVERNOR_PROMOTION_SERASKER",
+          "name": "塞拉斯克爾",
+          "en": "Serasker",
+          "level": 1,
+          "requires": ["pasha"],
+          "effect": "進攻防禦性區域時，距離市中心10單元格範圍內的所有單位+10 戰鬥力。"
+        },
+        {
+          "id": "khass-oda-bashi",
+          "pageId": "GOVERNOR_PROMOTION_KHASS_ODA_BASHI",
+          "name": "內務總管",
+          "en": "Khass-Oda-Bashi",
+          "level": 2,
+          "requires": ["head-falconer"],
+          "effect": "就任於同盟的外國 首都時，你和對方的同盟點數每回合會增加0.5點。"
+        },
+        {
+          "id": "capou-agha",
+          "pageId": "GOVERNOR_PROMOTION_CAPOU_AGHA",
+          "name": "門衛長",
+          "en": "Capou Agha",
+          "level": 2,
+          "requires": ["serasker"],
+          "effect": "就任於外國 首都時，該城市擁有者對你的 怨氣每回合將多減少1點。"
+        },
+        {
+          "id": "grand-visier",
+          "pageId": "GOVERNOR_PROMOTION_GRAND_VISIER",
+          "name": "大維齊爾",
+          "en": "Grand Vizier",
+          "level": 3,
+          "requires": ["khass-oda-bashi", "capou-agha"],
+          "effect": "就任於外國 首都時，該擁有者的城市將無法對你的城市傳播忠誠度壓力。"
+        }
+      ]
+    },
+    {
+      "id": "amani",
+      "pageId": "GOVERNOR_THE_AMBASSADOR",
+      "name": "阿瑪妮",
+      "title": "外交官",
+      "en": "Amani (Diplomat)",
+      "unique": false,
+      "description": "精熟於為文明獲得支持，同時將文明影響力傳播至附近城市。阿瑪妮是唯一一位可以指派至外國城邦的行政長官。",
+      "icon": "governornormal_ambassador.png",
+      "establishment": 5,
+      "advice": "早期派往城邦即可視同額外使者；要搶宗主權時升幕後黑手，文化勝利也可用富饒社會增加奢侈資源。",
+      "bestFor": [
+        "外交",
+        "城邦",
+        "文化"
+      ],
+      "promotions": [
+        {
+          "id": "ambassador-messenger",
+          "pageId": "GOVERNOR_PROMOTION_AMBASSADOR_MESSENGER",
+          "name": "信使",
+          "en": "Messenger",
+          "level": 0,
+          "requires": [],
+          "effect": "可以指派至城邦，等同於2名 使者。"
+        },
+        {
+          "id": "ambassador-emissary",
+          "pageId": "GOVERNOR_PROMOTION_AMBASSADOR_EMISSARY",
+          "name": "使節",
+          "en": "Emissary",
+          "level": 1,
+          "requires": ["ambassador-messenger"],
+          "effect": "其他在9單元格範圍內且不屬於你的城市每回合將失去2點忠誠度。"
+        },
+        {
+          "id": "ambassador-affluence",
+          "pageId": "GOVERNOR_PROMOTION_AMBASSADOR_AFFLUENCE",
+          "name": "富饒社會",
+          "en": "Affluence",
+          "level": 1,
+          "requires": ["ambassador-messenger"],
+          "effect": "派遣至城邦後能獲得該城邦的奢侈品資源。"
+        },
+        {
+          "id": "ambassador-foreign-investor",
+          "pageId": "GOVERNOR_PROMOTION_AMBASSADOR_FOREIGN_INVESTOR",
+          "name": "外國投資",
+          "en": "Foreign Investor",
+          "level": 2,
+          "requires": ["ambassador-affluence"],
+          "effect": "就任於城邦期間可累積該城邦之戰略資源。而宗主國可獲得雙倍已累積的戰略資源。"
+        },
+        {
+          "id": "local-informants",
+          "pageId": "GOVERNOR_PROMOTION_LOCAL_INFORMANTS",
+          "name": "當地線人",
+          "en": "Local Informants",
+          "level": 2,
+          "requires": ["ambassador-emissary"],
+          "effect": "在此城市中敵方間諜將以比正常低3級的等級進行間諜行動。"
+        },
+        {
+          "id": "ambassador-puppeteer",
+          "pageId": "GOVERNOR_PROMOTION_AMBASSADOR_PUPPETEER",
+          "name": "幕後黑手",
+          "en": "Puppeteer",
+          "level": 3,
+          "requires": ["ambassador-foreign-investor", "local-informants"],
+          "effect": "就職於城邦時，可使您在該城邦的 使者數量翻倍。"
+        }
+      ]
+    },
+    {
+      "id": "magnus",
+      "pageId": "GOVERNOR_THE_RESOURCE_MANAGER",
+      "name": "馬格努斯",
+      "title": "總務官",
+      "en": "Magnus (Steward)",
+      "unique": false,
+      "description": "馬格努斯汲汲營營且足智多謀，能在需要時取得寶貴的資源。他也精熟於完善城市 生產力之道。",
+      "icon": "governornormal_resourcemanager.png",
+      "establishment": 5,
+      "advice": "砍伐、收穫與移民潮的核心。先用補給保證避免移民減人口，再依資源或工業城市選黑市商人、垂直整合。",
+      "bestFor": [
+        "擴張",
+        "生產",
+        "太空項目"
+      ],
+      "promotions": [
+        {
+          "id": "resource-manager-groundbreaker",
+          "pageId": "GOVERNOR_PROMOTION_RESOURCE_MANAGER_GROUNDBREAKER",
+          "name": "破土者",
+          "en": "Groundbreaker",
+          "level": 0,
+          "requires": [],
+          "effect": "在城市中進行資源收穫和地貌移除時獲得的收益+50%。"
+        },
+        {
+          "id": "resource-manager-surplus-logistics",
+          "pageId": "GOVERNOR_PROMOTION_RESOURCE_MANAGER_SURPLUS_LOGISTICS",
+          "name": "盈餘物流",
+          "en": "Surplus Logistics",
+          "level": 1,
+          "requires": ["resource-manager-groundbreaker"],
+          "effect": "+20% 食物發展。以此城市為目的地的 貿易路線可為起始城市提供+2 食物。"
+        },
+        {
+          "id": "resource-manager-expedition",
+          "pageId": "GOVERNOR_PROMOTION_RESOURCE_MANAGER_EXPEDITION",
+          "name": "補給保證",
+          "en": "Provision",
+          "level": 1,
+          "requires": ["resource-manager-groundbreaker"],
+          "effect": "在此城市中生產的開拓者不會消耗 人口。"
+        },
+        {
+          "id": "resource-manager-industrialist",
+          "pageId": "GOVERNOR_PROMOTION_RESOURCE_MANAGER_INDUSTRIALIST",
+          "name": "工業大亨",
+          "en": "Industrialist",
+          "level": 2,
+          "requires": ["resource-manager-surplus-logistics"],
+          "effect": "燃煤、燃油與核電廠每消耗1單位資源所提供的 電力+1，且 生產力+2。"
+        },
+        {
+          "id": "resource-manager-black-marketeer",
+          "pageId": "GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER",
+          "name": "黑市商人",
+          "en": "Black Marketeer",
+          "level": 2,
+          "requires": ["resource-manager-expedition"],
+          "effect": "在此城市訓練單位時，所需的戰略資源降低80%。"
+        },
+        {
+          "id": "resource-manager-vertical-integration",
+          "pageId": "GOVERNOR_PROMOTION_RESOURCE_MANAGER_VERTICAL_INTEGRATION",
+          "name": "垂直整合",
+          "en": "Vertical Integration",
+          "level": 3,
+          "requires": ["resource-manager-industrialist", "resource-manager-black-marketeer"],
+          "effect": "此城市能從附近6單元格範圍內的所有工業區獲得 生產力，而非僅限於第一座。"
+        }
+      ]
+    },
+    {
+      "id": "liang",
+      "pageId": "GOVERNOR_THE_BUILDER",
+      "name": "梁",
+      "title": "測量師",
+      "en": "Liang (Surveyor)",
+      "unique": false,
+      "description": "身為一位高效率的專家，梁精熟一切與建築建設有關的事務。同時，身為規劃專家的她還能監管城市內改良設施的開發。",
+      "icon": "governornormal_builder.png",
+      "establishment": 5,
+      "advice": "建造者與城市防災專家。新城批量出建造者時先駐守，沿海城可選水產養殖，災害頻繁地圖優先加固材料。",
+      "bestFor": [
+        "建造者",
+        "沿海",
+        "防災"
+      ],
+      "promotions": [
+        {
+          "id": "builder-guildmaster",
+          "pageId": "GOVERNOR_PROMOTION_BUILDER_GUILDMASTER",
+          "name": "公會會長",
+          "en": "Guildmaster",
+          "level": 0,
+          "requires": [],
+          "effect": "此城市中生產的所有建造者皆+1建造次數。"
+        },
+        {
+          "id": "zoning-commissioner",
+          "pageId": "GOVERNOR_PROMOTION_ZONING_COMMISSIONER",
+          "name": "分區委員長",
+          "en": "Zoning Commissioner",
+          "level": 1,
+          "requires": ["builder-guildmaster"],
+          "effect": "城市建造區域時+20% 生產力。"
+        },
+        {
+          "id": "aquaculture",
+          "pageId": "GOVERNOR_PROMOTION_AQUACULTURE",
+          "name": "水產養殖",
+          "en": "Aquaculture",
+          "level": 1,
+          "requires": ["builder-guildmaster"],
+          "effect": "城市可在海岸單元格建造養殖魚場特色改良設施。提供1點 食物、0.5 住房；若相鄰海洋資源則額外+1 食物。梁就任於此城市時，養殖魚場另提供+1 生產力。"
+        },
+        {
+          "id": "reinforced-infrastructure",
+          "pageId": "GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE",
+          "name": "加固材料",
+          "en": "Reinforced Materials",
+          "level": 2,
+          "requires": ["zoning-commissioner"],
+          "effect": "此城市的改良設施、建築及區域不會受到環境影響傷害。"
+        },
+        {
+          "id": "water-works",
+          "pageId": "GOVERNOR_PROMOTION_WATER_WORKS",
+          "name": "供水",
+          "en": "Water Works",
+          "level": 2,
+          "requires": ["aquaculture"],
+          "effect": "此城市中的每個社區及水渠區域+2 住房。此城市中的每個運河及水壩區域+1 滿意度。"
+        },
+        {
+          "id": "parks-recreation",
+          "pageId": "GOVERNOR_PROMOTION_PARKS_RECREATION",
+          "name": "公園及休閒娛樂",
+          "en": "Parks and Recreation",
+          "level": 3,
+          "requires": ["reinforced-infrastructure", "water-works"],
+          "effect": "可在城市中建造特色改良設施城市公園。提供2點魅力和1點 文化值；梁就任於此城市時另提供+3 文化值。若與水域相鄰則+1 滿意度。"
+        }
+      ]
+    },
+    {
+      "id": "moksha",
+      "pageId": "GOVERNOR_THE_CARDINAL",
+      "name": "莫克沙",
+      "title": "樞機主教",
+      "en": "Moksha (Cardinal)",
+      "unique": false,
+      "description": "這位宗教精神領袖不但能增加城市內的 宗教力量，還能為駐紮於此的宗教單位提供支援。莫克沙是帝國中的 信仰燈塔。",
+      "icon": "governornormal_cardinal.png",
+      "establishment": 5,
+      "advice": "宗教勝利與信仰經濟專用。使徒生產城優先主保聖人；大量信仰也可用神聖建築師直接購買區域。",
+      "bestFor": [
+        "宗教",
+        "信仰購買",
+        "神學戰"
+      ],
+      "promotions": [
+        {
+          "id": "cardinal-bishop",
+          "pageId": "GOVERNOR_PROMOTION_CARDINAL_BISHOP",
+          "name": "主教",
+          "en": "Bishop",
+          "level": 0,
+          "requires": [],
+          "effect": "此城市對相鄰城市的宗教壓力加倍，且城市中每個專業化區域提供+2 信仰值。"
+        },
+        {
+          "id": "cardinal-grand-inquisitor",
+          "pageId": "GOVERNOR_PROMOTION_CARDINAL_GRAND_INQUISITOR",
+          "name": "宗教大法官",
+          "en": "Grand Inquisitor",
+          "level": 1,
+          "requires": ["cardinal-bishop"],
+          "effect": "在此城市範圍內進行神學戰爭時，+10 宗教戰鬥力。"
+        },
+        {
+          "id": "cardinal-laying-on-of-hands",
+          "pageId": "GOVERNOR_PROMOTION_CARDINAL_LAYING_ON_OF_HANDS",
+          "name": "按手禮",
+          "en": "Laying On Of Hands",
+          "level": 1,
+          "requires": ["cardinal-bishop"],
+          "effect": "在此城市的單元格中，此總督所屬玩家的所有單位都能在一回合內完全回復生命值。"
+        },
+        {
+          "id": "cardinal-citadel-of-god",
+          "pageId": "GOVERNOR_PROMOTION_CARDINAL_CITADEL_OF_GOD",
+          "name": "神之堡壘",
+          "en": "Citadel of God",
+          "level": 2,
+          "requires": ["cardinal-grand-inquisitor", "cardinal-laying-on-of-hands"],
+          "effect": "城市忽視其他宗教的宗教壓力；每當城市完成建築時，獲得相當於該建築生產力花費25%的 信仰值。"
+        },
+        {
+          "id": "cardinal-patron-saint",
+          "pageId": "GOVERNOR_PROMOTION_CARDINAL_PATRON_SAINT",
+          "name": "主保聖人",
+          "en": "Patron Saint",
+          "level": 3,
+          "requires": ["cardinal-citadel-of-god"],
+          "effect": "此城市生產的使徒和武僧在獲得首次強化時能額外獲得1次強化。"
+        },
+        {
+          "id": "cardinal-divine-architect",
+          "pageId": "GOVERNOR_PROMOTION_CARDINAL_DIVINE_ARCHITECT",
+          "name": "神聖建築師",
+          "en": "Divine Architect",
+          "level": 3,
+          "requires": ["cardinal-citadel-of-god"],
+          "effect": "允許此城市使用 信仰值購買區域。"
+        }
+      ]
+    },
+    {
+      "id": "reyna",
+      "pageId": "GOVERNOR_THE_MERCHANT",
+      "name": "瑞娜",
+      "title": "財務官",
+      "en": "Reyna (Financier)",
+      "unique": false,
+      "description": "瑞娜睿智精明，擁有廣博的財政知識，能強化城市的經濟實力，運用財務來達成不可能的任務。",
+      "icon": "governornormal_merchant.png",
+      "establishment": 5,
+      "advice": "高金幣、港口與魅力城市的長線總督。承包商能用金幣買區域，可再生補貼適合電力與外交終局。",
+      "bestFor": [
+        "金幣",
+        "港口",
+        "魅力"
+      ],
+      "promotions": [
+        {
+          "id": "merchant-land-acquisition",
+          "pageId": "GOVERNOR_PROMOTION_MERCHANT_LAND_ACQUISITION",
+          "name": "土地徵收",
+          "en": "Land Acquisition",
+          "level": 0,
+          "requires": [],
+          "effect": "城市獲取新單元格的速度加快；每條穿過此城市的外國 貿易路線提供+3 金幣。"
+        },
+        {
+          "id": "merchant-forestry-management",
+          "pageId": "GOVERNOR_PROMOTION_MERCHANT_FORESTRY_MANAGEMENT",
+          "name": "林業管理",
+          "en": "Forestry Management",
+          "level": 1,
+          "requires": ["merchant-land-acquisition"],
+          "effect": "此城市從每個未建造改良設施的地貌處獲得+2 金幣。在此城市中，相鄰於未建造改良設施的地貌之單元格獲得+1魅力。"
+        },
+        {
+          "id": "merchant-harbormaster",
+          "pageId": "GOVERNOR_PROMOTION_MERCHANT_HARBORMASTER",
+          "name": "港務長",
+          "en": "Harbormaster",
+          "level": 1,
+          "requires": ["merchant-land-acquisition"],
+          "effect": "城市中商業中心和港口的相鄰加成翻倍。"
+        },
+        {
+          "id": "merchant-tax-collector",
+          "pageId": "GOVERNOR_PROMOTION_MERCHANT_TAX_COLLECTOR",
+          "name": "稅務徵收員",
+          "en": "Tax Collector",
+          "level": 2,
+          "requires": ["merchant-forestry-management", "merchant-harbormaster"],
+          "effect": "城市中每位 公民每回合+2 金幣收入。"
+        },
+        {
+          "id": "merchant-renewable-energy",
+          "pageId": "GOVERNOR_PROMOTION_MERCHANT_RENEWABLE_ENERGY",
+          "name": "可再生補貼",
+          "en": "Renewable Subsidizer",
+          "level": 3,
+          "requires": ["merchant-tax-collector"],
+          "effect": "此城市中的所有離岸風力發電廠、太陽能發電廠、風力發電廠、地熱發電廠和水力發電水壩獲得+2 電力及+2 金幣。"
+        },
+        {
+          "id": "merchant-contractor",
+          "pageId": "GOVERNOR_PROMOTION_MERCHANT_CONTRACTOR",
+          "name": "承包商",
+          "en": "Contractor",
+          "level": 3,
+          "requires": ["merchant-tax-collector"],
+          "effect": "允許城市使用 金幣購買區域。"
+        }
+      ]
+    },
+    {
+      "id": "victor",
+      "pageId": "GOVERNOR_THE_DEFENDER",
+      "name": "維克托",
+      "title": "城守",
+      "en": "Victor (Castellan)",
+      "unique": false,
+      "description": "維克托專注於軍事事務，在城市當中就職後將會成為強化與維持軍隊的關鍵角色，助其成功抵禦外國威脅。",
+      "icon": "governornormal_defender.png",
+      "establishment": 3,
+      "advice": "三回合即可就任，最適合剛征服的前線城。駐軍指揮官穩忠誠，銃眼與防空開發案保護軍事樞紐。",
+      "bestFor": [
+        "防守",
+        "忠誠",
+        "軍事生產"
+      ],
+      "promotions": [
+        {
+          "id": "redoubt",
+          "pageId": "GOVERNOR_PROMOTION_REDOUBT",
+          "name": "棱堡",
+          "en": "Redoubt",
+          "level": 0,
+          "requires": [],
+          "effect": "城市駐軍 戰鬥力+5。"
+        },
+        {
+          "id": "defense-logistics",
+          "pageId": "GOVERNOR_PROMOTION_DEFENSE_LOGISTICS",
+          "name": "防禦後勤",
+          "en": "Defense Logistics",
+          "level": 1,
+          "requires": ["redoubt"],
+          "effect": "城市無法被圍攻；此城市累積戰略資源時，每回合額外獲得1單位。"
+        },
+        {
+          "id": "garrison-commander",
+          "pageId": "GOVERNOR_PROMOTION_GARRISON_COMMANDER",
+          "name": "駐軍指揮官",
+          "en": "Garrison Commander",
+          "level": 1,
+          "requires": ["redoubt"],
+          "effect": "在城市領土內防守的單位 戰鬥力+5；9單元格內其他己方城市每回合+4 忠誠度。"
+        },
+        {
+          "id": "embrasure",
+          "pageId": "GOVERNOR_PROMOTION_EMBRASURE",
+          "name": "銃眼",
+          "en": "Embrasure",
+          "level": 2,
+          "requires": ["defense-logistics", "garrison-commander"],
+          "effect": "城市每回合獲得1次額外 遠程攻擊機會；在此城市訓練且原本不自帶晉升的軍事單位會獲得1次免費晉升。"
+        },
+        {
+          "id": "air-defense-initiative",
+          "pageId": "GOVERNOR_PROMOTION_AIR_DEFENSE_INITIATIVE",
+          "name": "防空開發案",
+          "en": "Air Defense Initiative",
+          "level": 3,
+          "requires": ["embrasure"],
+          "effect": "防禦飛機與洲際彈道導彈時，城市領土內的防空支援單位+25 戰鬥力。"
+        },
+        {
+          "id": "educator-arms-race-proponent",
+          "pageId": "GOVERNOR_PROMOTION_EDUCATOR_ARMS_RACE_PROPONENT",
+          "name": "軍備競賽推動者",
+          "en": "Arms Race Proponent",
+          "level": 3,
+          "requires": ["embrasure"],
+          "effect": "在此城市中進行所有核武器項目時 生產力提高30%。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2520 @@
+{
+  "meta": {
+    "ruleset": "Gathering Storm",
+    "source": "Civilopedia.net zh-HK",
+    "generated": "2026-08-21",
+    "note": "政策效果採遊戲繁體中文 Civilopedia 文字；黃金與黑暗時代政策另列，並非一般市政卡槽常駐卡。"
+  },
+  "categories": [
+    {
+      "id": "military",
+      "name": "軍事政策"
+    },
+    {
+      "id": "economic",
+      "name": "經濟政策"
+    },
+    {
+      "id": "diplomatic",
+      "name": "外交政策"
+    },
+    {
+      "id": "great-person",
+      "name": "偉人政策"
+    },
+    {
+      "id": "wildcard",
+      "name": "通用政策"
+    },
+    {
+      "id": "golden",
+      "name": "黃金時代政策"
+    },
+    {
+      "id": "dark",
+      "name": "黑暗時代政策"
+    }
+  ],
+  "governments": [
+    {
+      "id": "chiefdom",
+      "name": "酋邦",
+      "en": "Chiefdom",
+      "tier": 0,
+      "era": "遠古時代",
+      "unlock": "開局可用",
+      "inherent": "無加成。",
+      "legacy": "沒有加成。",
+      "slots": {
+        "military": 1,
+        "economic": 1,
+        "diplomatic": 0,
+        "wildcard": 0
+      },
+      "traits": [],
+      "uniquePolicies": []
+    },
+    {
+      "id": "classical-republic",
+      "name": "古典共和",
+      "en": "Classical Republic",
+      "tier": 1,
+      "era": "古典時代",
+      "unlock": "政治哲學",
+      "inherent": "所有帶有區域的城市+1 住房和+1 滿意度。",
+      "legacy": "+15%偉人點數。",
+      "slots": {
+        "military": 0,
+        "economic": 2,
+        "diplomatic": 1,
+        "wildcard": 1
+      },
+      "traits": [
+        "每 回合獲得1點 外交支持。"
+      ],
+      "uniquePolicies": []
+    },
+    {
+      "id": "oligarchy",
+      "name": "寡頭政治",
+      "en": "Oligarchy",
+      "tier": 1,
+      "era": "古典時代",
+      "unlock": "政治哲學",
+      "inherent": "所有陸地近戰單位、抗騎兵單位和海軍近戰單位+4 戰鬥力。",
+      "legacy": "+20%單位經驗值。",
+      "slots": {
+        "military": 2,
+        "economic": 1,
+        "diplomatic": 0,
+        "wildcard": 1
+      },
+      "traits": [
+        "每 回合獲得1點 外交支持。"
+      ],
+      "uniquePolicies": []
+    },
+    {
+      "id": "autocracy",
+      "name": "獨裁統治",
+      "en": "Autocracy",
+      "tier": 1,
+      "era": "古典時代",
+      "unlock": "政治哲學",
+      "inherent": "城市中每有一棟市政廣場建築、使館特區建築與宮殿，則所有產量+1。",
+      "legacy": "建造奇觀時+10%生產力。",
+      "slots": {
+        "military": 1,
+        "economic": 1,
+        "diplomatic": 1,
+        "wildcard": 1
+      },
+      "traits": [
+        "每 回合獲得1點 外交支持。"
+      ],
+      "uniquePolicies": []
+    },
+    {
+      "id": "monarchy",
+      "name": "君主政體",
+      "en": "Monarchy",
+      "tier": 2,
+      "era": "中世紀",
+      "unlock": "王權神授",
+      "inherent": "每一等級的城牆提供+1 住房。",
+      "legacy": "+50%影響力點數。",
+      "slots": {
+        "military": 2,
+        "economic": 1,
+        "diplomatic": 1,
+        "wildcard": 2
+      },
+      "traits": [
+        "每 回合獲得2點 外交支持。"
+      ],
+      "uniquePolicies": []
+    },
+    {
+      "id": "theocracy",
+      "name": "神權政體",
+      "en": "Theocracy",
+      "tier": 2,
+      "era": "文藝復興時代",
+      "unlock": "歸正宗",
+      "inherent": "+5 神學戰爭宗教戰鬥力。 在有 行政長官的城市內，每位 公民提供+0.5點 信仰值。",
+      "legacy": "使用 信仰值購買時享15%折扣。",
+      "slots": {
+        "military": 2,
+        "economic": 2,
+        "diplomatic": 1,
+        "wildcard": 1
+      },
+      "traits": [
+        "每 回合獲得2點 外交支持。"
+      ],
+      "uniquePolicies": []
+    },
+    {
+      "id": "merchant-republic",
+      "name": "商人共和國",
+      "en": "Merchant Republic",
+      "tier": 2,
+      "era": "文藝復興時代",
+      "unlock": "探索",
+      "inherent": "行政長官就職的所有城市+10% 金幣。",
+      "legacy": "建造區域時+15%生產力。",
+      "slots": {
+        "military": 1,
+        "economic": 2,
+        "diplomatic": 2,
+        "wildcard": 1
+      },
+      "traits": [
+        "每 回合獲得2點 外交支持。"
+      ],
+      "uniquePolicies": []
+    },
+    {
+      "id": "democracy",
+      "name": "民主主義",
+      "en": "Democracy",
+      "tier": 3,
+      "era": "現代",
+      "unlock": "選舉權",
+      "inherent": "你通往盟友或宗主國城市的 貿易路線為雙方城市+4 食物和+4 生產力。和所有盟友的同盟點數每回合增加0.25點。",
+      "legacy": "使用 金幣進行購買時可享25%折扣。",
+      "slots": {
+        "military": 1,
+        "economic": 3,
+        "diplomatic": 2,
+        "wildcard": 2
+      },
+      "traits": [
+        "每 回合獲得3點 外交支持。",
+        "針對其他政體之文明進行-20點外交修正。"
+      ],
+      "uniquePolicies": [
+        "光榮時刻",
+        "新政"
+      ]
+    },
+    {
+      "id": "communism",
+      "name": "共產主義",
+      "en": "Communism",
+      "tier": 3,
+      "era": "現代",
+      "unlock": "階級鬥爭",
+      "inherent": "在有 行政長官的城市內，每位 公民提供+0.6 生產力。",
+      "legacy": "+10% 科技值。",
+      "slots": {
+        "military": 3,
+        "economic": 3,
+        "diplomatic": 1,
+        "wildcard": 1
+      },
+      "traits": [
+        "每 回合獲得3點 外交支持。",
+        "針對其他政體之文明進行-20點外交修正。"
+      ],
+      "uniquePolicies": [
+        "集體化",
+        "保衛祖國"
+      ]
+    },
+    {
+      "id": "fascism",
+      "name": "法西斯主義",
+      "en": "Fascism",
+      "tier": 3,
+      "era": "現代",
+      "unlock": "極權主義",
+      "inherent": "所有單位+5 戰鬥力。厭戰情緒降低15%。",
+      "legacy": "建造單位時+50%生產力。",
+      "slots": {
+        "military": 4,
+        "economic": 1,
+        "diplomatic": 1,
+        "wildcard": 2
+      },
+      "traits": [
+        "每 回合獲得3點 外交支持。",
+        "針對其他政體之文明進行-20點外交修正。"
+      ],
+      "uniquePolicies": [
+        "第三選擇",
+        "軍事管制"
+      ]
+    },
+    {
+      "id": "synthetic-technocracy",
+      "name": "合成專家統治",
+      "en": "Synthetic Technocracy",
+      "tier": 4,
+      "era": "未來時代",
+      "unlock": "最佳化命令",
+      "inherent": "所有城市+3 電力，且進行城市項目時+30% 生產力。",
+      "legacy": "-10% 旅遊業績。",
+      "slots": {
+        "military": 1,
+        "economic": 3,
+        "diplomatic": 1,
+        "wildcard": 5
+      },
+      "traits": [
+        "每 回合獲得4點 外交支持。",
+        "針對其他政體之文明進行-20點外交修正。"
+      ],
+      "uniquePolicies": []
+    },
+    {
+      "id": "corporate-libertarianism",
+      "name": "法人自由意志主義",
+      "en": "Corporate Libertarianism",
+      "tier": 4,
+      "era": "未來時代",
+      "unlock": "風險政治",
+      "inherent": "商業中心和營地提供城市+10% 生產力，所有改良設施累積的資源每回合+1。",
+      "legacy": "-10% 科技值。",
+      "slots": {
+        "military": 3,
+        "economic": 1,
+        "diplomatic": 1,
+        "wildcard": 5
+      },
+      "traits": [
+        "每 回合獲得4點 外交支持。",
+        "針對其他政體之文明進行-20點外交修正。"
+      ],
+      "uniquePolicies": []
+    },
+    {
+      "id": "digital-democracy",
+      "name": "數位民主",
+      "en": "Digital Democracy",
+      "tier": 4,
+      "era": "未來時代",
+      "unlock": "分散式主權",
+      "inherent": "所有城市+2 滿意度，且每個特色區域+2 文化值。",
+      "legacy": "所有單位-3 戰鬥力。",
+      "slots": {
+        "military": 1,
+        "economic": 1,
+        "diplomatic": 3,
+        "wildcard": 5
+      },
+      "traits": [
+        "每 回合獲得4點 外交支持。",
+        "針對其他政體之文明進行-20點外交修正。"
+      ],
+      "uniquePolicies": []
+    }
+  ],
+  "policies": [
+    {
+      "id": "integrated-space-cell",
+      "name": "一體化空間機構",
+      "en": "Integrated Space Cell",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "如果一座城市有一所軍事學院或一個码头，那麼太空競賽項目+15% 生產力。",
+      "unlock": "太空競賽",
+      "civicIds": [
+        "space-race"
+      ],
+      "replacedBy": [],
+      "icon": "integrated-space-cell.png"
+    },
+    {
+      "id": "second-strike-capability",
+      "name": "二次打擊能力",
+      "en": "Second Strike Capability",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "核裝置每回合維護 費用減少50%。",
+      "unlock": "冷戰",
+      "civicIds": [
+        "cold-war"
+      ],
+      "replacedBy": [],
+      "icon": "second-strike-capability.png"
+    },
+    {
+      "id": "grande-armee",
+      "name": "大軍團",
+      "en": "Grande Armée",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "生產工業時代及其之前的近戰、抗騎兵和遠程單位時+50% 生產力。",
+      "unlock": "民族主義",
+      "civicIds": [
+        "nationalism"
+      ],
+      "replacedBy": [
+        "先軍思想"
+      ],
+      "icon": "grande-armee.png"
+    },
+    {
+      "id": "craftsmen",
+      "name": "工匠",
+      "en": "Craftsmen",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "100%工業區鄰接地域加成。",
+      "unlock": "公會",
+      "civicIds": [
+        "guilds"
+      ],
+      "replacedBy": [
+        "五年計畫"
+      ],
+      "icon": "craftsmen.png"
+    },
+    {
+      "id": "international-waters",
+      "name": "公海",
+      "en": "International Waters",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "生產所有海軍單位時+100% 生產力，不包括航空母艦。",
+      "unlock": "冷戰",
+      "civicIds": [
+        "cold-war"
+      ],
+      "replacedBy": [],
+      "icon": "international-waters.png"
+    },
+    {
+      "id": "native-conquest",
+      "name": "本土征服",
+      "en": "Native Conquest",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "擊敗舊時代單位後，會獲得等同於被擊敗單位 戰鬥力50%的 金幣（在標準遊戲速度下）。",
+      "unlock": "殖民主義",
+      "civicIds": [
+        "colonialism"
+      ],
+      "replacedBy": [],
+      "icon": "native-conquest.png"
+    },
+    {
+      "id": "military-first",
+      "name": "先軍思想",
+      "en": "Military First",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "生產所有近戰、抗騎兵和遠程單位時+50% 生產力。",
+      "unlock": "緊急部署",
+      "civicIds": [
+        "rapid-deployment"
+      ],
+      "replacedBy": [],
+      "icon": "military-first.png"
+    },
+    {
+      "id": "levee-en-masse",
+      "name": "全民動員",
+      "en": "Levée en Masse",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "每單位每回合單位維護費用減少2 金幣。",
+      "unlock": "動員",
+      "civicIds": [
+        "mobilization"
+      ],
+      "replacedBy": [],
+      "icon": "levee-en-masse.png"
+    },
+    {
+      "id": "total-war",
+      "name": "全面戰爭",
+      "en": "Total War",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "掠奪、海岸掃蕩及掠奪 貿易路線的收益+50%。",
+      "unlock": "焦土策略",
+      "civicIds": [
+        "scorched-earth"
+      ],
+      "replacedBy": [],
+      "icon": "total-war.png"
+    },
+    {
+      "id": "veterancy",
+      "name": "老兵",
+      "en": "Veterancy",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "建造營地區域、港口區域和這些區域內的建築時+30% 生產力。",
+      "unlock": "軍事訓練",
+      "civicIds": [
+        "military-training"
+      ],
+      "replacedBy": [],
+      "icon": "veterancy.png"
+    },
+    {
+      "id": "after-action-reports",
+      "name": "行動報告",
+      "en": "After Action Reports",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "所有單位獲得+25%戰鬥經驗。",
+      "unlock": "緊急部署",
+      "civicIds": [
+        "rapid-deployment"
+      ],
+      "replacedBy": [],
+      "icon": "after-action-reports.png"
+    },
+    {
+      "id": "retainers",
+      "name": "侍從",
+      "en": "Retainers",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "擁有駐軍單位的城市+1 滿意度。",
+      "unlock": "行政部門",
+      "civicIds": [
+        "civil-service"
+      ],
+      "replacedBy": [
+        "宣傳機構"
+      ],
+      "icon": "retainers.png"
+    },
+    {
+      "id": "wars-of-religion",
+      "name": "宗教戰爭",
+      "en": "Wars of Religion",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "非宗教單位和信奉其他宗教的文明進行戰爭時+4 戰鬥力。",
+      "unlock": "歸正宗",
+      "civicIds": [
+        "reformed-church"
+      ],
+      "replacedBy": [],
+      "icon": "wars-of-religion.png"
+    },
+    {
+      "id": "propaganda",
+      "name": "宣傳機構",
+      "en": "Propaganda",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "累積厭戰情緒比平時少25%。",
+      "unlock": "大眾媒體",
+      "civicIds": [
+        "mass-media"
+      ],
+      "replacedBy": [],
+      "icon": "propaganda.png"
+    },
+    {
+      "id": "feudal-contract",
+      "name": "封建契約",
+      "en": "Feudal Contract",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "生產遠古時代、古典時代、中世紀和文藝復興時代的近戰、抗騎兵和遠程單位時+50% 生產力。",
+      "unlock": "封建主義",
+      "civicIds": [
+        "feudalism"
+      ],
+      "replacedBy": [
+        "大軍團"
+      ],
+      "icon": "feudal-contract.png"
+    },
+    {
+      "id": "logistics",
+      "name": "後勤",
+      "en": "Logistics",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "在友方領土開始的回合+1移動力。",
+      "unlock": "重商主義",
+      "civicIds": [
+        "mercantilism"
+      ],
+      "replacedBy": [],
+      "icon": "logistics.png"
+    },
+    {
+      "id": "discipline",
+      "name": "紀律",
+      "en": "Discipline",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "同蠻族戰鬥時，+5 單位戰鬥力。",
+      "unlock": "法典",
+      "civicIds": [
+        "code-of-laws"
+      ],
+      "replacedBy": [
+        "本土征服"
+      ],
+      "icon": "discipline.png"
+    },
+    {
+      "id": "military-research",
+      "name": "軍事研究",
+      "en": "Military Research",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "軍事學院、碼頭和文藝復興城牆產出的 科技值+2。",
+      "unlock": "城市化",
+      "civicIds": [
+        "urbanization"
+      ],
+      "replacedBy": [
+        "一體化空間機構"
+      ],
+      "icon": "military-research.png"
+    },
+    {
+      "id": "force-modernization",
+      "name": "軍隊現代化",
+      "en": "Force Modernization",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "所有單位升級的 金幣及資源花費減半。",
+      "unlock": "城市化",
+      "civicIds": [
+        "urbanization"
+      ],
+      "replacedBy": [],
+      "icon": "force-modernization.png"
+    },
+    {
+      "id": "maritime-industries",
+      "name": "海運業",
+      "en": "Maritime Industries",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "遠古和古典時代的海軍單位+100% 生產力。",
+      "unlock": "對外貿易",
+      "civicIds": [
+        "foreign-trade"
+      ],
+      "replacedBy": [
+        "強徵入伍",
+        "公海"
+      ],
+      "icon": "maritime-industries.png"
+    },
+    {
+      "id": "lightning-warfare",
+      "name": "閃電戰",
+      "en": "Lightning Warfare",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "生產所有重型和輕裝甲兵時+50% 生產力。",
+      "unlock": "意識形態",
+      "civicIds": [
+        "ideology"
+      ],
+      "replacedBy": [],
+      "icon": "lightning-warfare.png"
+    },
+    {
+      "id": "national-identity",
+      "name": "國家認同",
+      "en": "National Identity",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "受到傷害後，單位的 戰鬥力減益降低50%。",
+      "unlock": "民族主義",
+      "civicIds": [
+        "nationalism"
+      ],
+      "replacedBy": [],
+      "icon": "national-identity.png"
+    },
+    {
+      "id": "press-gangs",
+      "name": "強徵入伍",
+      "en": "Press Gangs",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "生產工業時代及其之前的海軍單位時+100% 生產力。",
+      "unlock": "探索",
+      "civicIds": [
+        "exploration"
+      ],
+      "replacedBy": [
+        "公海"
+      ],
+      "icon": "press-gangs.png"
+    },
+    {
+      "id": "raid",
+      "name": "掃蕩",
+      "en": "Raid",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "掠奪與海岸掃蕩收益+50%。",
+      "unlock": "軍事訓練",
+      "civicIds": [
+        "military-training"
+      ],
+      "replacedBy": [
+        "全面戰爭"
+      ],
+      "icon": "raid.png"
+    },
+    {
+      "id": "third-alternative",
+      "name": "第三選擇",
+      "en": "Third Alternative",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "每個研究實驗室、軍事學院和燃煤發電廠、燃油發電廠及核能發電廠提供的 文化值+2、 金幣+4。",
+      "unlock": "極權主義",
+      "civicIds": [
+        "totalitarianism"
+      ],
+      "replacedBy": [],
+      "icon": "third-alternative.png"
+    },
+    {
+      "id": "agoge",
+      "name": "斯巴達教育",
+      "en": "Agoge",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "生產遠古和古典時代的近戰、抗騎兵和遠程單位時+50% 生產力。",
+      "unlock": "技藝",
+      "civicIds": [
+        "craftsmanship"
+      ],
+      "replacedBy": [
+        "封建契約"
+      ],
+      "icon": "agoge.png"
+    },
+    {
+      "id": "bastions",
+      "name": "棱堡",
+      "en": "Bastions",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "城市 防禦力+6。城市 遠程攻擊力+5。",
+      "unlock": "防禦戰術",
+      "civicIds": [
+        "defensive-tactics"
+      ],
+      "replacedBy": [
+        "公共工程"
+      ],
+      "icon": "bastions.png"
+    },
+    {
+      "id": "resource-management",
+      "name": "資源管理",
+      "en": "Resource Management",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "所有已建造改良設施的 鋁和 石油資源每回合產出+1額外收益。",
+      "unlock": "保藏",
+      "civicIds": [
+        "conservation"
+      ],
+      "replacedBy": [],
+      "icon": "resource-management.png"
+    },
+    {
+      "id": "maneuver",
+      "name": "演習",
+      "en": "Maneuver",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "遠古和古典時代的重型和輕裝甲兵+50% 生產力。",
+      "unlock": "軍事傳統",
+      "civicIds": [
+        "military-tradition"
+      ],
+      "replacedBy": [
+        "騎士精神",
+        "閃電戰"
+      ],
+      "icon": "maneuver.png"
+    },
+    {
+      "id": "conscription",
+      "name": "徵兵",
+      "en": "Conscription",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "每回合、每個單位的維護費用減少1 金幣。",
+      "unlock": "國家勞動力",
+      "civicIds": [
+        "state-workforce"
+      ],
+      "replacedBy": [
+        "全民動員"
+      ],
+      "icon": "conscription.png"
+    },
+    {
+      "id": "survey",
+      "name": "調查",
+      "en": "Survey",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "偵察單位經驗值翻倍。",
+      "unlock": "法典",
+      "civicIds": [
+        "code-of-laws"
+      ],
+      "replacedBy": [
+        "本土征服"
+      ],
+      "icon": "survey.png"
+    },
+    {
+      "id": "strategic-air-force",
+      "name": "戰略空軍",
+      "en": "Strategic Air Force",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "生產所有空中單位和航空母艦時+50% 生產力。",
+      "unlock": "全球化",
+      "civicIds": [
+        "globalization"
+      ],
+      "replacedBy": [],
+      "icon": "strategic-air-force.png"
+    },
+    {
+      "id": "drill-manuals",
+      "name": "操練手冊",
+      "en": "Drill Manuals",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "所有已建造改良設施的 硝石和 煤資源每回合產出+1額外收益。",
+      "unlock": "重商主義",
+      "civicIds": [
+        "mercantilism"
+      ],
+      "replacedBy": [],
+      "icon": "drill-manuals.png"
+    },
+    {
+      "id": "retinues",
+      "name": "隨從",
+      "en": "Retinues",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "所有單位升級資源花費減半。",
+      "unlock": "僱傭軍",
+      "civicIds": [
+        "mercenaries"
+      ],
+      "replacedBy": [
+        "軍隊現代化"
+      ],
+      "icon": "retinues.png"
+    },
+    {
+      "id": "professional-army",
+      "name": "職業軍隊",
+      "en": "Professional Army",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "所有單位升級的 金幣花費減半。",
+      "unlock": "僱傭軍",
+      "civicIds": [
+        "mercenaries"
+      ],
+      "replacedBy": [
+        "軍隊現代化"
+      ],
+      "icon": "professional-army.png"
+    },
+    {
+      "id": "equestrian-orders",
+      "name": "騎士階級",
+      "en": "Equestrian Orders",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "所有已建造改良設施的 馬和 鐵資源每回合產出+1額外收益。",
+      "unlock": "軍事訓練",
+      "civicIds": [
+        "military-training"
+      ],
+      "replacedBy": [],
+      "icon": "equestrian-orders.png"
+    },
+    {
+      "id": "chivalry",
+      "name": "騎士精神",
+      "en": "Chivalry",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "生產工業時代及其之前的輕重騎兵時+50% 生產力。",
+      "unlock": "王權神授",
+      "civicIds": [
+        "divine-right"
+      ],
+      "replacedBy": [
+        "閃電戰"
+      ],
+      "icon": "chivalry.png"
+    },
+    {
+      "id": "limitanei",
+      "name": "邊防軍",
+      "en": "Limitanei",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "擁有駐軍單位的城市每回合+2忠誠度。",
+      "unlock": "帝國初期",
+      "civicIds": [
+        "early-empire"
+      ],
+      "replacedBy": [],
+      "icon": "limitanei.png"
+    },
+    {
+      "id": "limes",
+      "name": "邊界",
+      "en": "Limes",
+      "category": "military",
+      "categoryName": "軍事政策",
+      "effect": "防禦建築+100% 生產力。",
+      "unlock": "防禦戰術",
+      "civicIds": [
+        "defensive-tactics"
+      ],
+      "replacedBy": [
+        "閃電戰"
+      ],
+      "icon": "limes.png"
+    },
+    {
+      "id": "triangular-trade",
+      "name": "三角貿易",
+      "en": "Triangular Trade",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "所有 貿易路線+4 金幣和+1 信仰值。",
+      "unlock": "重商主義",
+      "civicIds": [
+        "mercantilism"
+      ],
+      "replacedBy": [
+        "電子商務"
+      ],
+      "icon": "triangular-trade.png"
+    },
+    {
+      "id": "land-surveyors",
+      "name": "土地測量員",
+      "en": "Land Surveyors",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "購買一個單元格的費用降低20%。",
+      "unlock": "帝國初期",
+      "civicIds": [
+        "early-empire"
+      ],
+      "replacedBy": [
+        "徵收"
+      ],
+      "icon": "land-surveyors.png"
+    },
+    {
+      "id": "grand-opera",
+      "name": "大歌劇",
+      "en": "Grand Opera",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "劇院廣場區域收益+100% 文化值。",
+      "unlock": "歌劇和芭蕾",
+      "civicIds": [
+        "opera-ballet"
+      ],
+      "replacedBy": [],
+      "icon": "grand-opera.png"
+    },
+    {
+      "id": "five-year-plan",
+      "name": "五年計畫",
+      "en": "Five-Year Plan",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "+100%學院和工業區鄰接地域加成。",
+      "unlock": "意識形態",
+      "civicIds": [
+        "ideology"
+      ],
+      "replacedBy": [],
+      "icon": "five-year-plan.png"
+    },
+    {
+      "id": "public-works",
+      "name": "公共工程",
+      "en": "Public Works",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "建造者+30% 生產力，新訓練的建造者獲得兩點額外勞動力。",
+      "unlock": "土木工程",
+      "civicIds": [
+        "civil-engineering"
+      ],
+      "replacedBy": [],
+      "icon": "public-works.png"
+    },
+    {
+      "id": "public-transport",
+      "name": "公共交通",
+      "en": "Public Transport",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "擁有迷人魅力的社區將獲得+3 食物及+1 生產力；擁有極大魅力的社區將被賦予每種產量額外+1。所有社區獲得+1 金幣。",
+      "unlock": "城市化",
+      "civicIds": [
+        "urbanization"
+      ],
+      "replacedBy": [],
+      "icon": "public-transport.png"
+    },
+    {
+      "id": "market-economy",
+      "name": "市場經濟",
+      "en": "Market Economy",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "目的地已開發的每個奢侈品和戰略資源為你的國際 貿易路線+1 金幣，同時+2 文化值和+2 科技值。",
+      "unlock": "資本主義",
+      "civicIds": [
+        "capitalism"
+      ],
+      "replacedBy": [],
+      "icon": "market-economy.png"
+    },
+    {
+      "id": "civil-prestige",
+      "name": "民間聲望",
+      "en": "Civil Prestige",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "擁有至少2個強化的 行政長官就職後將提供+1 滿意度與+2 住房。",
+      "unlock": "行政部門",
+      "civicIds": [
+        "civil-service"
+      ],
+      "replacedBy": [],
+      "icon": "civil-prestige.png"
+    },
+    {
+      "id": "simultaneum",
+      "name": "共用教堂",
+      "en": "Simultaneum",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "聖地區域建築獲得雙倍 信仰值。",
+      "unlock": "歸正宗",
+      "civicIds": [
+        "reformed-church"
+      ],
+      "replacedBy": [],
+      "icon": "simultaneum.png"
+    },
+    {
+      "id": "online-communities",
+      "name": "在線社區",
+      "en": "Online Communities",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "從與你有 貿易路線的文明+50% 旅遊業績產量。",
+      "unlock": "社群媒體",
+      "civicIds": [
+        "social-media"
+      ],
+      "replacedBy": [],
+      "icon": "online-communities.png"
+    },
+    {
+      "id": "liberalism",
+      "name": "自由主義",
+      "en": "Liberalism",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "擁有至少兩個獨立區域的所有城市+1 滿意度。",
+      "unlock": "啟蒙運動",
+      "civicIds": [
+        "the-enlightenment"
+      ],
+      "replacedBy": [],
+      "icon": "liberalism.png"
+    },
+    {
+      "id": "free-market",
+      "name": "自由市場",
+      "en": "Free Market",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "商業中心區域的建築+100% 金幣收益。",
+      "unlock": "啟蒙運動",
+      "civicIds": [
+        "the-enlightenment"
+      ],
+      "replacedBy": [],
+      "icon": "free-market.png"
+    },
+    {
+      "id": "natural-philosophy",
+      "name": "自然哲學",
+      "en": "Natural Philosophy",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "+100%學院區域鄰接地域加成。",
+      "unlock": "歷史紀錄",
+      "civicIds": [
+        "recorded-history"
+      ],
+      "replacedBy": [
+        "五年計畫"
+      ],
+      "icon": "natural-philosophy.png"
+    },
+    {
+      "id": "god-king",
+      "name": "君主崇拜",
+      "en": "God King",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "首都+1 信仰值和+1 金幣。",
+      "unlock": "法典",
+      "civicIds": [
+        "code-of-laws"
+      ],
+      "replacedBy": [
+        "經文"
+      ],
+      "icon": "god-king.png"
+    },
+    {
+      "id": "religious-orders",
+      "name": "宗教教派",
+      "en": "Religious Orders",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "所有宗教單位在神學戰爭中+5 宗教戰鬥力。",
+      "unlock": "歸正宗",
+      "civicIds": [
+        "reformed-church"
+      ],
+      "replacedBy": [],
+      "icon": "religious-orders.png"
+    },
+    {
+      "id": "ilkum",
+      "name": "服役",
+      "en": "Ilkum",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "建造者+30% 生產力。",
+      "unlock": "技藝",
+      "civicIds": [
+        "craftsmanship"
+      ],
+      "replacedBy": [
+        "農奴制"
+      ],
+      "icon": "ilkum.png"
+    },
+    {
+      "id": "urban-planning",
+      "name": "城市規劃",
+      "en": "Urban Planning",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "所有城市+1 生產力。",
+      "unlock": "法典",
+      "civicIds": [
+        "code-of-laws"
+      ],
+      "replacedBy": [
+        "理性主義"
+      ],
+      "icon": "urban-planning.png"
+    },
+    {
+      "id": "town-charters",
+      "name": "城鎮特許狀",
+      "en": "Town Charters",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "+100%商業中心鄰接地域加成。",
+      "unlock": "公會",
+      "civicIds": [
+        "guilds"
+      ],
+      "replacedBy": [
+        "經濟同盟"
+      ],
+      "icon": "town-charters.png"
+    },
+    {
+      "id": "aesthetics",
+      "name": "美學",
+      "en": "Aesthetics",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "+100%劇院廣場區域鄰接地域加成。",
+      "unlock": "中世紀市集",
+      "civicIds": [
+        "medieval-faires"
+      ],
+      "replacedBy": [
+        "體育傳謀"
+      ],
+      "icon": "aesthetics.png"
+    },
+    {
+      "id": "gothic-architecture",
+      "name": "哥德式建築",
+      "en": "Gothic Architecture",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "建造文藝復興時期、中世紀、古典時代和遠古時代的奇觀時+15% 生產力。",
+      "unlock": "王權神授",
+      "civicIds": [
+        "divine-right"
+      ],
+      "replacedBy": [
+        "摩天大樓"
+      ],
+      "icon": "gothic-architecture.png"
+    },
+    {
+      "id": "naval-infrastructure",
+      "name": "海軍基礎設備",
+      "en": "Naval Infrastructure",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "+100%港口區域鄰接地域加成。",
+      "unlock": "海軍傳統",
+      "civicIds": [
+        "naval-tradition"
+      ],
+      "replacedBy": [
+        "經濟同盟"
+      ],
+      "icon": "naval-infrastructure.png"
+    },
+    {
+      "id": "caravansaries",
+      "name": "商隊旅館",
+      "en": "Caravansaries",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "所有 貿易路線+2 金幣。",
+      "unlock": "對外貿易",
+      "civicIds": [
+        "foreign-trade"
+      ],
+      "replacedBy": [
+        "三角貿易"
+      ],
+      "icon": "caravansaries.png"
+    },
+    {
+      "id": "corvee",
+      "name": "強迫勞役",
+      "en": "Corvée",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "遠古和古典奇觀+15% 生產力。",
+      "unlock": "國家勞動力",
+      "civicIds": [
+        "state-workforce"
+      ],
+      "replacedBy": [
+        "哥德式建築",
+        "摩天大樓"
+      ],
+      "icon": "corvee.png"
+    },
+    {
+      "id": "rationalism",
+      "name": "理性主義",
+      "en": "Rationalism",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "學院區域的建築+100% 科技值。",
+      "unlock": "啟蒙運動",
+      "civicIds": [
+        "the-enlightenment"
+      ],
+      "replacedBy": [],
+      "icon": "rationalism.png"
+    },
+    {
+      "id": "medina-quarter",
+      "name": "麥地那區",
+      "en": "Medina Quarter",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "擁有至少3個獨立區域的所有城市+2 住房。",
+      "unlock": "中世紀市集",
+      "civicIds": [
+        "medieval-faires"
+      ],
+      "replacedBy": [
+        "新政"
+      ],
+      "icon": "medina-quarter.png"
+    },
+    {
+      "id": "colonization",
+      "name": "殖民",
+      "en": "Colonization",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "開拓者+50% 生產力。",
+      "unlock": "帝國初期",
+      "civicIds": [
+        "early-empire"
+      ],
+      "replacedBy": [
+        "徵收"
+      ],
+      "icon": "colonization.png"
+    },
+    {
+      "id": "trade-confederation",
+      "name": "貿易聯盟",
+      "en": "Trade Confederation",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "國際 貿易路線+1 文化值和+1 科技值。",
+      "unlock": "僱傭軍",
+      "civicIds": [
+        "mercenaries"
+      ],
+      "replacedBy": [
+        "市場經濟"
+      ],
+      "icon": "trade-confederation.png"
+    },
+    {
+      "id": "collectivization",
+      "name": "集體化",
+      "en": "Collectivization",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "國內貿易路線提供的 生產力+2、 食物+4。",
+      "unlock": "階級鬥爭",
+      "civicIds": [
+        "class-struggle"
+      ],
+      "replacedBy": [],
+      "icon": "collectivization.png"
+    },
+    {
+      "id": "new-deal",
+      "name": "新政",
+      "en": "New Deal",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "擁有至少3個特色區域的所有城市+4 住房、+2 滿意度。",
+      "unlock": "選舉權",
+      "civicIds": [
+        "suffrage"
+      ],
+      "replacedBy": [],
+      "icon": "new-deal.png"
+    },
+    {
+      "id": "scripture",
+      "name": "經文",
+      "en": "Scripture",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "+100%聖地鄰接地域加成。",
+      "unlock": "神學",
+      "civicIds": [
+        "theology"
+      ],
+      "replacedBy": [],
+      "icon": "scripture.png"
+    },
+    {
+      "id": "economic-union",
+      "name": "經濟同盟",
+      "en": "Economic Union",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "+100%商業中心和港口區域鄰接地域加成。",
+      "unlock": "意識形態",
+      "civicIds": [
+        "ideology"
+      ],
+      "replacedBy": [],
+      "icon": "economic-union.png"
+    },
+    {
+      "id": "serfdom",
+      "name": "農奴制",
+      "en": "Serfdom",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "新訓練的建造者獲得兩點額外勞動力。",
+      "unlock": "封建主義",
+      "civicIds": [
+        "feudalism"
+      ],
+      "replacedBy": [
+        "公共工程"
+      ],
+      "icon": "serfdom.png"
+    },
+    {
+      "id": "ecommerce",
+      "name": "電子商務",
+      "en": "Ecommerce",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "所有 貿易路線+2 生產力和+5 金幣。",
+      "unlock": "全球化",
+      "civicIds": [
+        "globalization"
+      ],
+      "replacedBy": [],
+      "icon": "ecommerce.png"
+    },
+    {
+      "id": "expropriation",
+      "name": "徵收",
+      "en": "Expropriation",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "生產開拓者時+50% 生產力。購買格位的花費減少20%。",
+      "unlock": "焦土策略",
+      "civicIds": [
+        "scorched-earth"
+      ],
+      "replacedBy": [],
+      "icon": "expropriation.png"
+    },
+    {
+      "id": "skyscrapers",
+      "name": "摩天大樓",
+      "en": "Skyscrapers",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "建造所有奇觀時+15% 生產力。",
+      "unlock": "土木工程",
+      "civicIds": [
+        "civil-engineering"
+      ],
+      "replacedBy": [],
+      "icon": "skyscrapers.png"
+    },
+    {
+      "id": "insulae",
+      "name": "樓房",
+      "en": "Insulae",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "擁有至少兩個獨立區域的所有城市+1 住房。",
+      "unlock": "遊戲和娛樂",
+      "civicIds": [
+        "games-recreation"
+      ],
+      "replacedBy": [
+        "麥地那區"
+      ],
+      "icon": "insulae.png"
+    },
+    {
+      "id": "satellite-broadcasts",
+      "name": "衛星廣播",
+      "en": "Satellite Broadcasts",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "來自 音樂巨作的 旅遊業績+200%。",
+      "unlock": "太空競賽",
+      "civicIds": [
+        "space-race"
+      ],
+      "replacedBy": [],
+      "icon": "satellite-broadcasts.png"
+    },
+    {
+      "id": "heritage-tourism",
+      "name": "遺產觀光",
+      "en": "Heritage Tourism",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "藝術巨作和 文物+100% 旅遊業績。",
+      "unlock": "文化遺產",
+      "civicIds": [
+        "cultural-heritage"
+      ],
+      "replacedBy": [],
+      "icon": "heritage-tourism.png"
+    },
+    {
+      "id": "sports-media",
+      "name": "體育傳謀",
+      "en": "Sports Media",
+      "category": "economic",
+      "categoryName": "經濟政策",
+      "effect": "+100%劇院廣場區域鄰接地域加成，體育場+1 滿意度。",
+      "unlock": "職業體育",
+      "civicIds": [
+        "professional-sports"
+      ],
+      "replacedBy": [],
+      "icon": "sports-media.png"
+    },
+    {
+      "id": "diplomatic-league",
+      "name": "外交聯盟",
+      "en": "Diplomatic League",
+      "category": "diplomatic",
+      "categoryName": "外交政策",
+      "effect": "你向每個城邦派遣的第一個 使者會被視為兩個 使者。",
+      "unlock": "政治哲學",
+      "civicIds": [
+        "political-philosophy"
+      ],
+      "replacedBy": [],
+      "icon": "diplomatic-league.png"
+    },
+    {
+      "id": "wisselbanken",
+      "name": "交易銀行",
+      "en": "Wisselbanken",
+      "category": "diplomatic",
+      "categoryName": "外交政策",
+      "effect": "您通往同盟國城市的 貿易路線為雙方城市+2 食物和+2 生產力。和所有盟友的同盟點數每回合增加0.25點。",
+      "unlock": "外交部門",
+      "civicIds": [
+        "diplomatic-service"
+      ],
+      "replacedBy": [],
+      "icon": "wisselbanken.png"
+    },
+    {
+      "id": "gunboat-diplomacy",
+      "name": "炮艦外交",
+      "en": "Gunboat Diplomacy",
+      "category": "diplomatic",
+      "categoryName": "外交政策",
+      "effect": "開放所有城邦的邊界，每回合+4影響力點數來獲得 使者。",
+      "unlock": "意識形態",
+      "civicIds": [
+        "ideology"
+      ],
+      "replacedBy": [],
+      "icon": "gunboat-diplomacy.png"
+    },
+    {
+      "id": "music-censorship",
+      "name": "音樂審查",
+      "en": "Music Censorship",
+      "category": "diplomatic",
+      "categoryName": "外交政策",
+      "effect": "其他玩家的搖滾樂團不得進入你的領土。所有擁有10以上 人口的城市-1 滿意度。",
+      "unlock": "太空競賽",
+      "civicIds": [
+        "space-race"
+      ],
+      "replacedBy": [],
+      "icon": "music-censorship.png"
+    },
+    {
+      "id": "nuclear-espionage",
+      "name": "核間諜",
+      "en": "Nuclear Espionage",
+      "category": "diplomatic",
+      "categoryName": "外交政策",
+      "effect": "竊取科技提升而未被發現的間諜獲得額外提升。",
+      "unlock": "核計畫",
+      "civicIds": [
+        "nuclear-program"
+      ],
+      "replacedBy": [],
+      "icon": "nuclear-espionage.png"
+    },
+    {
+      "id": "merchant-confederation",
+      "name": "商人聯盟",
+      "en": "Merchant Confederation",
+      "category": "diplomatic",
+      "categoryName": "外交政策",
+      "effect": "城邦裡你的每位 使者+1 金幣。",
+      "unlock": "中世紀市集",
+      "civicIds": [
+        "medieval-faires"
+      ],
+      "replacedBy": [],
+      "icon": "merchant-confederation.png"
+    },
+    {
+      "id": "international-space-agency",
+      "name": "國際航太中心",
+      "en": "International Space Agency",
+      "category": "diplomatic",
+      "categoryName": "外交政策",
+      "effect": "作為宗主國時，每個下轄的城邦提供+5% 科技值。",
+      "unlock": "全球化",
+      "civicIds": [
+        "globalization"
+      ],
+      "replacedBy": [],
+      "icon": "international-space-agency.png"
+    },
+    {
+      "id": "cryptography",
+      "name": "密碼學",
+      "en": "Cryptography",
+      "category": "diplomatic",
+      "categoryName": "外交政策",
+      "effect": "在你的領土內，敵方間諜等級降低2級。你的間諜等級在攻擊性行動中增加1級。",
+      "unlock": "冷戰",
+      "civicIds": [
+        "cold-war"
+      ],
+      "replacedBy": [],
+      "icon": "cryptography.png"
+    },
+    {
+      "id": "colonial-taxes",
+      "name": "殖民地稅收",
+      "en": "Colonial Taxes",
+      "category": "diplomatic",
+      "categoryName": "外交政策",
+      "effect": "與您最初的 首都不在一個大陸的城市+25% 金幣。",
+      "unlock": "殖民主義",
+      "civicIds": [
+        "colonialism"
+      ],
+      "replacedBy": [],
+      "icon": "colonial-taxes.png"
+    },
+    {
+      "id": "colonial-offices",
+      "name": "殖民地辦事處",
+      "en": "Colonial Offices",
+      "category": "diplomatic",
+      "categoryName": "外交政策",
+      "effect": "與您最初的 首都不在一個大陸的城市發展加速15%。",
+      "unlock": "探索",
+      "civicIds": [
+        "exploration"
+      ],
+      "replacedBy": [],
+      "icon": "colonial-offices.png"
+    },
+    {
+      "id": "raj",
+      "name": "統治",
+      "en": "Raj",
+      "category": "diplomatic",
+      "categoryName": "外交政策",
+      "effect": "作為宗主國時，將從每個下轄的城邦處獲得+2 科技值、 文化值、 信仰值和 金幣。通往城邦的 貿易路線獲得+2 金幣。",
+      "unlock": "殖民主義",
+      "civicIds": [
+        "colonialism"
+      ],
+      "replacedBy": [],
+      "icon": "raj.png"
+    },
+    {
+      "id": "collective-activism",
+      "name": "集體行動主義",
+      "en": "Collective Activism",
+      "category": "diplomatic",
+      "categoryName": "外交政策",
+      "effect": "作為宗主國時，每個下轄的城邦提供+5% 文化值。",
+      "unlock": "社群媒體",
+      "civicIds": [
+        "social-media"
+      ],
+      "replacedBy": [],
+      "icon": "collective-activism.png"
+    },
+    {
+      "id": "containment",
+      "name": "遏制",
+      "en": "Containment",
+      "category": "diplomatic",
+      "categoryName": "外交政策",
+      "effect": "如果城邦的宗主國和你的政體不同，你向城邦派遣的每個 使者都被視為兩個使者。",
+      "unlock": "冷戰",
+      "civicIds": [
+        "cold-war"
+      ],
+      "replacedBy": [],
+      "icon": "containment.png"
+    },
+    {
+      "id": "charismatic-leader",
+      "name": "魅力型領袖",
+      "en": "Charismatic Leader",
+      "category": "diplomatic",
+      "categoryName": "外交政策",
+      "effect": "每回合影響力點數+2，以獲得城邦 使者。",
+      "unlock": "政治哲學",
+      "civicIds": [
+        "political-philosophy"
+      ],
+      "replacedBy": [
+        "炮艦外交"
+      ],
+      "icon": "charismatic-leader.png"
+    },
+    {
+      "id": "praetorium",
+      "name": "總督府",
+      "en": "Praetorium",
+      "category": "diplomatic",
+      "categoryName": "外交政策",
+      "effect": "行政長官每回合為其城市提供+2忠誠度。",
+      "unlock": "歷史紀錄",
+      "civicIds": [
+        "recorded-history"
+      ],
+      "replacedBy": [
+        "聯絡辦公室"
+      ],
+      "icon": "praetorium.png"
+    },
+    {
+      "id": "communications-office",
+      "name": "聯絡辦公室",
+      "en": "Communications Office",
+      "category": "diplomatic",
+      "categoryName": "外交政策",
+      "effect": "行政長官每擁有一級強化，便能為其所在城市每回合+1忠誠度。",
+      "unlock": "社群媒體",
+      "civicIds": [
+        "social-media"
+      ],
+      "replacedBy": [],
+      "icon": "communications-office.png"
+    },
+    {
+      "id": "machiavellianism",
+      "name": "權術主義",
+      "en": "Machiavellianism",
+      "category": "diplomatic",
+      "categoryName": "外交政策",
+      "effect": "間諜+50% 生產力。間諜行動時間減少25%。",
+      "unlock": "外交部門",
+      "civicIds": [
+        "diplomatic-service"
+      ],
+      "replacedBy": [],
+      "icon": "machiavellianism.png"
+    },
+    {
+      "id": "inspiration",
+      "name": "天啟",
+      "en": "Inspiration",
+      "category": "great-person",
+      "categoryName": "偉人政策",
+      "effect": "每回合+2 大科學家點數。",
+      "unlock": "神秘主義",
+      "civicIds": [
+        "mysticism"
+      ],
+      "replacedBy": [
+        "科學基金會"
+      ],
+      "icon": "inspiration.png"
+    },
+    {
+      "id": "literary-tradition",
+      "name": "文學傳統",
+      "en": "Literary Tradition",
+      "category": "great-person",
+      "categoryName": "偉人政策",
+      "effect": "每回合+2 大作家點數。",
+      "unlock": "戲劇與詩歌",
+      "civicIds": [
+        "drama-poetry"
+      ],
+      "replacedBy": [],
+      "icon": "literary-tradition.png"
+    },
+    {
+      "id": "symphonies",
+      "name": "交響曲",
+      "en": "Symphonies",
+      "category": "great-person",
+      "categoryName": "偉人政策",
+      "effect": "每回合的 大音樂家點數+4。每有一所廣播中心，則每回合的 大音樂家點數+4。",
+      "unlock": "歌劇和芭蕾",
+      "civicIds": [
+        "opera-ballet"
+      ],
+      "replacedBy": [],
+      "icon": "symphonies.png"
+    },
+    {
+      "id": "laissez-faire",
+      "name": "放任政策",
+      "en": "Laissez-Faire",
+      "category": "great-person",
+      "categoryName": "偉人政策",
+      "effect": "每有一間銀行，每回合的 大商人點數則+2；每有一間證券交易所，每回合的 大商人點數則+4。每有一座造船廠，每回合的 海軍統帥點數則+2；每有一座碼頭，每回合的 海軍統帥點數則+4。",
+      "unlock": "資本主義",
+      "civicIds": [
+        "capitalism"
+      ],
+      "replacedBy": [],
+      "icon": "laissez-faire.png"
+    },
+    {
+      "id": "nobel-prize",
+      "name": "科學基金會",
+      "en": "Science Foundations",
+      "category": "great-person",
+      "categoryName": "偉人政策",
+      "effect": "每有一所大學，每回合的 大科學家點數便+2；每有一間研究實驗室，每回合的 大科學家點數便+4。每有一座工廠，每回合的 大工程師點數便+2；每有一座發電廠，每回合的 大工程師點數便+4。",
+      "unlock": "核計畫",
+      "civicIds": [
+        "nuclear-program"
+      ],
+      "replacedBy": [],
+      "icon": "nobel-prize.png"
+    },
+    {
+      "id": "military-organization",
+      "name": "軍事組織",
+      "en": "Military Organization",
+      "category": "great-person",
+      "categoryName": "偉人政策",
+      "effect": "每有一座兵工廠，每回合的 大將軍點數便+2；每有一所軍事學院，每回合的 大將軍點數便+4。大將軍獲得+2移動力。",
+      "unlock": "焦土策略",
+      "civicIds": [
+        "scorched-earth"
+      ],
+      "replacedBy": [],
+      "icon": "military-organization.png"
+    },
+    {
+      "id": "traveling-merchants",
+      "name": "旅行商人",
+      "en": "Traveling Merchants",
+      "category": "great-person",
+      "categoryName": "偉人政策",
+      "effect": "每回合+2 大商人點數。",
+      "unlock": "公會",
+      "civicIds": [
+        "guilds"
+      ],
+      "replacedBy": [
+        "放任政策"
+      ],
+      "icon": "traveling-merchants.png"
+    },
+    {
+      "id": "navigation",
+      "name": "航海",
+      "en": "Navigation",
+      "category": "great-person",
+      "categoryName": "偉人政策",
+      "effect": "每回合+2 海軍統帥點數。",
+      "unlock": "海軍傳統",
+      "civicIds": [
+        "naval-tradition"
+      ],
+      "replacedBy": [],
+      "icon": "navigation.png"
+    },
+    {
+      "id": "strategos",
+      "name": "將軍",
+      "en": "Strategos",
+      "category": "great-person",
+      "categoryName": "偉人政策",
+      "effect": "每回合+2 大將軍點數。",
+      "unlock": "軍事傳統",
+      "civicIds": [
+        "military-tradition"
+      ],
+      "replacedBy": [
+        "軍事組織"
+      ],
+      "icon": "strategos.png"
+    },
+    {
+      "id": "revelation",
+      "name": "啟示",
+      "en": "Revelation",
+      "category": "great-person",
+      "categoryName": "偉人政策",
+      "effect": "每回合+2 大預言家點數。",
+      "unlock": "神秘主義",
+      "civicIds": [
+        "mysticism"
+      ],
+      "replacedBy": [
+        "發明"
+      ],
+      "icon": "revelation.png"
+    },
+    {
+      "id": "invention",
+      "name": "發明",
+      "en": "Invention",
+      "category": "great-person",
+      "categoryName": "偉人政策",
+      "effect": "每回合的 大工程師點數+4。每有一間工作坊，則每回合的 大工程師點數+2。",
+      "unlock": "人文主義",
+      "civicIds": [
+        "humanism"
+      ],
+      "replacedBy": [],
+      "icon": "invention.png"
+    },
+    {
+      "id": "frescoes",
+      "name": "壁畫",
+      "en": "Frescoes",
+      "category": "great-person",
+      "categoryName": "偉人政策",
+      "effect": "每回合的 大藝術家點數+2。每有一間藝術博物館，則每回合的 大藝術家點數+2。",
+      "unlock": "人文主義",
+      "civicIds": [
+        "humanism"
+      ],
+      "replacedBy": [],
+      "icon": "frescoes.png"
+    },
+    {
+      "id": "future-counter-culture",
+      "name": "太空旅遊",
+      "en": "Space Tourism",
+      "category": "wildcard",
+      "categoryName": "通用政策",
+      "effect": "其他玩家对你的 旅遊業績減少20%。",
+      "unlock": "緊急大出走",
+      "civicIds": [
+        "exodus-imperative"
+      ],
+      "replacedBy": [],
+      "icon": "future-counter-culture.png"
+    },
+    {
+      "id": "future-victory-diplomatic",
+      "name": "外交資本",
+      "en": "Diplomatic Capital",
+      "category": "wildcard",
+      "categoryName": "通用政策",
+      "effect": "每回合+4 外交支持。",
+      "unlock": "巧實力學說",
+      "civicIds": [
+        "smart-power-doctrine"
+      ],
+      "replacedBy": [],
+      "icon": "future-victory-diplomatic.png"
+    },
+    {
+      "id": "gov-democracy",
+      "name": "民主主義遺產",
+      "en": "Democratic Legacy",
+      "category": "wildcard",
+      "categoryName": "通用政策",
+      "effect": "你通往盟友或宗主國城市的 貿易路線為雙方城市+4 食物和+4 生產力。和所有盟友的同盟點數每回合增加0.25點。",
+      "unlock": "民主主義",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "gov-democracy.png"
+    },
+    {
+      "id": "finest-hour",
+      "name": "光榮時刻",
+      "en": "Their Finest Hour",
+      "category": "wildcard",
+      "categoryName": "通用政策",
+      "effect": "相鄰或位於他們的領土內時，若進行戰鬥，所有單位+5 戰鬥力。",
+      "unlock": "選舉權",
+      "civicIds": [
+        "suffrage"
+      ],
+      "replacedBy": [],
+      "icon": "finest-hour.png"
+    },
+    {
+      "id": "future-counter-domination",
+      "name": "全球聯盟",
+      "en": "Global Coalition",
+      "category": "wildcard",
+      "categoryName": "通用政策",
+      "effect": "在友方領土中的單位+7 戰鬥力。",
+      "unlock": "巧實力學說",
+      "civicIds": [
+        "smart-power-doctrine"
+      ],
+      "replacedBy": [],
+      "icon": "future-counter-domination.png"
+    },
+    {
+      "id": "gov-classical-republic",
+      "name": "共和國遺產",
+      "en": "Republican Legacy",
+      "category": "wildcard",
+      "categoryName": "通用政策",
+      "effect": "所有帶有區域的城市+1 住房和+1 滿意度。",
+      "unlock": "古典共和",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "gov-classical-republic.png"
+    },
+    {
+      "id": "gov-communism",
+      "name": "共產主義遺產",
+      "en": "Communist Legacy",
+      "category": "wildcard",
+      "categoryName": "通用政策",
+      "effect": "在有 行政長官的城市內，每位 公民提供+0.6 生產力。",
+      "unlock": "共產主義",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "gov-communism.png"
+    },
+    {
+      "id": "gov-monarchy",
+      "name": "君主政體遺產",
+      "en": "Monarchic Legacy",
+      "category": "wildcard",
+      "categoryName": "通用政策",
+      "effect": "每一等級的城牆提供+1 住房。",
+      "unlock": "君主政體",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "gov-monarchy.png"
+    },
+    {
+      "id": "gov-fascism",
+      "name": "法西斯主義遺產",
+      "en": "Fascist Legacy",
+      "category": "wildcard",
+      "categoryName": "通用政策",
+      "effect": "所有單位+5 戰鬥力。厭戰情緒降低15%。",
+      "unlock": "法西斯主義",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "gov-fascism.png"
+    },
+    {
+      "id": "future-counter-science",
+      "name": "非國家行為者",
+      "en": "Non-State Actors",
+      "category": "wildcard",
+      "categoryName": "通用政策",
+      "effect": "你的間諜單位可選擇任何可能的強化。",
+      "unlock": "文化霸權",
+      "civicIds": [
+        "cultural-hegemony"
+      ],
+      "replacedBy": [],
+      "icon": "future-counter-science.png"
+    },
+    {
+      "id": "defense-of-motherland",
+      "name": "保衛祖國",
+      "en": "Defense of the Motherland",
+      "category": "wildcard",
+      "categoryName": "通用政策",
+      "effect": "在你的領土內進行戰鬥時不會產生厭戰情緒。生產現代、原子能和資訊時代的支援單位時+100% 生產力。",
+      "unlock": "階級鬥爭",
+      "civicIds": [
+        "class-struggle"
+      ],
+      "replacedBy": [],
+      "icon": "defense-of-motherland.png"
+    },
+    {
+      "id": "future-counter-diplomatic",
+      "name": "政治煽動",
+      "en": "Rabblerousing",
+      "category": "wildcard",
+      "categoryName": "通用政策",
+      "effect": "當你在世界議會中減少某位玩家的外交勝利點數時，你能拿回半數已花費的 外交支持。每回合+1 外交支持。",
+      "unlock": "資訊戰",
+      "civicIds": [
+        "information-warfare"
+      ],
+      "replacedBy": [],
+      "icon": "future-counter-diplomatic.png"
+    },
+    {
+      "id": "martial-law",
+      "name": "軍事管制",
+      "en": "Martial Law",
+      "category": "wildcard",
+      "categoryName": "通用政策",
+      "effect": "累積的厭戰情緒比平時減少25%。擁有駐軍單位的城市每回合+4忠誠度。",
+      "unlock": "極權主義",
+      "civicIds": [
+        "totalitarianism"
+      ],
+      "replacedBy": [],
+      "icon": "martial-law.png"
+    },
+    {
+      "id": "gov-merchant-republic",
+      "name": "重商主義遺產",
+      "en": "Mercantile Legacy",
+      "category": "wildcard",
+      "categoryName": "通用政策",
+      "effect": "行政長官就職的所有城市+10% 金幣。",
+      "unlock": "商人共和國",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "gov-merchant-republic.png"
+    },
+    {
+      "id": "gov-theocracy",
+      "name": "神權政體遺產",
+      "en": "Theocratic Legacy",
+      "category": "wildcard",
+      "categoryName": "通用政策",
+      "effect": "+5 神學戰爭宗教戰鬥力。 在有 行政長官的城市內，每位 公民提供+0.5點 信仰值。",
+      "unlock": "神權政體",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "gov-theocracy.png"
+    },
+    {
+      "id": "future-victory-science",
+      "name": "航空航太外包商",
+      "en": "Aerospace Contractors",
+      "category": "wildcard",
+      "categoryName": "通用政策",
+      "effect": "擁有太空中心的城市每回合獲得+3 鋁和+3 電力。",
+      "unlock": "緊急大出走",
+      "civicIds": [
+        "exodus-imperative"
+      ],
+      "replacedBy": [],
+      "icon": "future-victory-science.png"
+    },
+    {
+      "id": "gov-oligarchy",
+      "name": "寡頭政治遺產",
+      "en": "Oligarchic Legacy",
+      "category": "wildcard",
+      "categoryName": "通用政策",
+      "effect": "所有陸地近戰單位、抗騎兵單位和海軍近戰單位+4 戰鬥力。",
+      "unlock": "寡頭政治",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "gov-oligarchy.png"
+    },
+    {
+      "id": "future-victory-domination",
+      "name": "整合式攻擊後勤",
+      "en": "Integrated Attack Logistics",
+      "category": "wildcard",
+      "categoryName": "通用政策",
+      "effect": "若在敵方領土中開始回合，則+1移動力。巨型殺戮機器人+50% 生產力。",
+      "unlock": "資訊戰",
+      "civicIds": [
+        "information-warfare"
+      ],
+      "replacedBy": [],
+      "icon": "future-victory-domination.png"
+    },
+    {
+      "id": "gov-autocracy",
+      "name": "獨裁政治遺產",
+      "en": "Autocratic Legacy",
+      "category": "wildcard",
+      "categoryName": "通用政策",
+      "effect": "城市中每有一棟市政廣場建築、使館特區建築與宮殿，則所有產量+1。",
+      "unlock": "獨裁統治",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "gov-autocracy.png"
+    },
+    {
+      "id": "future-victory-culture",
+      "name": "韓流",
+      "en": "Hallyu",
+      "category": "wildcard",
+      "categoryName": "通用政策",
+      "effect": "你的搖滾樂團單位可選擇任何可能的強化。",
+      "unlock": "文化霸權",
+      "civicIds": [
+        "cultural-hegemony"
+      ],
+      "replacedBy": [],
+      "icon": "future-victory-culture.png"
+    },
+    {
+      "id": "popular-front",
+      "name": "人民陣線",
+      "en": "Popular Front",
+      "category": "golden",
+      "categoryName": "黃金時代政策",
+      "effect": "從宗主國城邦和同盟等級獲得的外交支持+100%。通往城邦之貿易路線的所有收益+4。",
+      "unlock": "黃金或英勇時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "popular-front.webp"
+    },
+    {
+      "id": "monumentality",
+      "name": "不朽之業",
+      "en": "Monumentality",
+      "category": "golden",
+      "categoryName": "黃金時代政策",
+      "effect": "所有建造者和開拓者+2 移動力。能使用 信仰值購買平民單位。使用 信仰值與 金幣購買建造者時花費減少30%。",
+      "unlock": "黃金或英勇時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "monumentality.webp"
+    },
+    {
+      "id": "culture-industry",
+      "name": "文化工業",
+      "en": "Culture Industry",
+      "category": "golden",
+      "categoryName": "黃金時代政策",
+      "effect": "城市每擁有1個特色區域，則+1 文化值。建造非特色區域時+25% 生產力。能透過 信仰值購買娛樂中心與水上樂園。",
+      "unlock": "黃金或英勇時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "culture-industry.webp"
+    },
+    {
+      "id": "to-arms",
+      "name": "全民皆兵",
+      "en": "To Arms!",
+      "category": "golden",
+      "categoryName": "黃金時代政策",
+      "effect": "所有單位獲得的經驗值+50%；生產軍事單位時+15% 生產力。",
+      "unlock": "黃金或英勇時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "to-arms.webp"
+    },
+    {
+      "id": "free-enquiry",
+      "name": "自由思想",
+      "en": "Free Inquiry",
+      "category": "golden",
+      "categoryName": "黃金時代政策",
+      "effect": "商業中心與港口區域除提供 金幣外，還提供 科技值。此學院區域提供等同於其 科技值加成的 金幣。",
+      "unlock": "黃金或英勇時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "free-enquiry.webp"
+    },
+    {
+      "id": "military-industrial-complex",
+      "name": "軍事工業複合體",
+      "en": "Military-Industrial Complex",
+      "category": "golden",
+      "categoryName": "黃金時代政策",
+      "effect": "所有已改良的鋁、石油和鈾資源每回合額外+2產出。所有戰鬥單位+5 戰鬥力；若單位具有遠程攻擊，則+1射程。",
+      "unlock": "黃金或英勇時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "military-industrial-complex.webp"
+    },
+    {
+      "id": "exodus-of-the-evangelists",
+      "name": "教士遠行",
+      "en": "Exodus of the Evangelists",
+      "category": "golden",
+      "categoryName": "黃金時代政策",
+      "effect": "所有宗教單位+2 移動力。除此之外，新生產的宗教單位+2使用次數。每回合+4 大預言家點數。",
+      "unlock": "黃金或英勇時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "exodus-of-the-evangelists.webp"
+    },
+    {
+      "id": "mandala-state",
+      "name": "曼荼羅體系",
+      "en": "Mandala State",
+      "category": "golden",
+      "categoryName": "黃金時代政策",
+      "effect": "每擁有一處奇觀則+4 文化值。每個奇觀會導致9單元格範圍內的所有外國城市每回合失去2點忠誠度。",
+      "unlock": "黃金或英勇時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "mandala-state.webp"
+    },
+    {
+      "id": "wish-you-were-here",
+      "name": "望你同在",
+      "en": "Wish You Were Here",
+      "category": "golden",
+      "categoryName": "黃金時代政策",
+      "effect": "所有國家公園產出的 旅遊業績+100%；從世界奇觀獲得的 旅遊業績+50%。",
+      "unlock": "黃金或英勇時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "wish-you-were-here.webp"
+    },
+    {
+      "id": "soldarity",
+      "name": "團結一心",
+      "en": "Solidarity",
+      "category": "golden",
+      "categoryName": "黃金時代政策",
+      "effect": "所有 行政長官額外散播2點外國忠誠度壓力。所有擁有行政長官的城市+25% 金幣、+25% 信仰值。",
+      "unlock": "黃金或英勇時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "soldarity.webp"
+    },
+    {
+      "id": "heartbeat-of-steam",
+      "name": "滾滾蒸汽",
+      "en": "Heartbeat of Steam",
+      "category": "golden",
+      "categoryName": "黃金時代政策",
+      "effect": "建造工業時代之後的奇觀時+10% 生產力。學院區域除提供 科技值相鄰加成外，還提供 生產力。",
+      "unlock": "黃金或英勇時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "heartbeat-of-steam.webp"
+    },
+    {
+      "id": "sky-and-stars",
+      "name": "漫天星空",
+      "en": "Sky and Stars",
+      "category": "golden",
+      "categoryName": "黃金時代政策",
+      "effect": "建造太空中心和航空港區域時+30% 生產力。擁有太空中心或航空港的城市+15% 科技值和 生產力。",
+      "unlock": "黃金或英勇時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "sky-and-stars.webp"
+    },
+    {
+      "id": "sakdina",
+      "name": "薩迪納",
+      "en": "Sakdina",
+      "category": "golden",
+      "categoryName": "黃金時代政策",
+      "effect": "當你的項目啟用時，每位公民將為其城市散播+0.5點忠誠度壓力。當項目完成時，項目區域中每有一棟建築，便額外+10% 偉人點數。",
+      "unlock": "黃金或英勇時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "sakdina.webp"
+    },
+    {
+      "id": "praetorian-guard",
+      "name": "羅馬禁衛軍",
+      "en": "Praetorian Guard",
+      "category": "golden",
+      "categoryName": "黃金時代政策",
+      "effect": "受傷單位每回合獲得的生命值+10。建造營地區域和其中的建築時+2 生產力。",
+      "unlock": "黃金或英勇時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "praetorian-guard.webp"
+    },
+    {
+      "id": "reform-the-coinage",
+      "name": "鑄幣改革",
+      "en": "Reform the Coinage",
+      "category": "golden",
+      "categoryName": "黃金時代政策",
+      "effect": "你的商人不會遭到掠奪。外國城市的每個特色區域都為其 國際貿易路線+3 金幣。",
+      "unlock": "黃金或英勇時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "reform-the-coinage.webp"
+    },
+    {
+      "id": "decentralization",
+      "name": "地方分權",
+      "en": "Decentralization",
+      "category": "dark",
+      "categoryName": "黑暗時代政策",
+      "effect": "擁有6點以下 人口的城市每回合+4忠誠度。 但擁有超過6點 人口的城市將-15% 金幣。",
+      "unlock": "黑暗時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "decentralization.webp"
+    },
+    {
+      "id": "automated-workforce",
+      "name": "自動化人力",
+      "en": "Automated Workforce",
+      "category": "dark",
+      "categoryName": "黑暗時代政策",
+      "effect": "你的城市進行城市項目時+20% 生產力。 但你的城市每回合-1 滿意度且-5忠誠度。",
+      "unlock": "黑暗時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "automated-workforce.webp"
+    },
+    {
+      "id": "samoderzhaviye",
+      "name": "沙皇專制制度",
+      "en": "Samoderzhaviye",
+      "category": "dark",
+      "categoryName": "黑暗時代政策",
+      "effect": "首都+50% 生產力。 但所有 行政長官遭到陷害，無法重新就任。",
+      "unlock": "黑暗時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "samoderzhaviye.webp"
+    },
+    {
+      "id": "isolationism",
+      "name": "孤立主義",
+      "en": "Isolationism",
+      "category": "dark",
+      "categoryName": "黑暗時代政策",
+      "effect": "國內貿易路線提供+3 食物、+3 生產力，以及+3 金幣。 但無法訓練或購買開拓者，亦不能開拓新城市。",
+      "unlock": "黑暗時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "isolationism.webp"
+    },
+    {
+      "id": "inquisition",
+      "name": "宗教審訊",
+      "en": "Inquisition",
+      "category": "dark",
+      "categoryName": "黑暗時代政策",
+      "effect": "能消耗1次使徒使用次數來發動宗教審訊。位於友方領土的所有宗教單位+15 宗教戰鬥力。 但是所有城市-15% 科技值。",
+      "unlock": "黑暗時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "inquisition.webp"
+    },
+    {
+      "id": "rogue-state",
+      "name": "流氓國家",
+      "en": "Rogue State",
+      "category": "dark",
+      "categoryName": "黑暗時代政策",
+      "effect": "進行核計畫和生產核裝置時+50% 生產力。 但無法透過影響力點數獲得 使者。",
+      "unlock": "黑暗時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "rogue-state.webp"
+    },
+    {
+      "id": "monasticism",
+      "name": "修行制度",
+      "en": "Monasticism",
+      "category": "dark",
+      "categoryName": "黑暗時代政策",
+      "effect": "擁有聖地的城市+75% 科技值。 但未擁有聖地的城市-25% 文化值。",
+      "unlock": "黑暗時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "monasticism.webp"
+    },
+    {
+      "id": "despotic-paternalism",
+      "name": "家父長式專制",
+      "en": "Despotic Paternalism",
+      "category": "dark",
+      "categoryName": "黑暗時代政策",
+      "effect": "擁有 行政長官的城市每回合+4忠誠度。 但所有沒有 行政長官就職的城市-15% 科技值並-15% 文化值。",
+      "unlock": "黑暗時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "despotic-paternalism.webp"
+    },
+    {
+      "id": "soft-targets",
+      "name": "軟性目標",
+      "en": "Soft Targets",
+      "category": "dark",
+      "categoryName": "黑暗時代政策",
+      "effect": "防禦城市攻擊和對抗區防禦時+10 戰鬥力。 但對抗單位時-3 戰鬥力。",
+      "unlock": "黑暗時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "soft-targets.webp"
+    },
+    {
+      "id": "disinformation-campaign",
+      "name": "造謠行動",
+      "en": "Disinformation Campaign",
+      "category": "dark",
+      "categoryName": "黑暗時代政策",
+      "effect": "每有1個廣播中心，則每回合+3 外交支持。 但所有城市-10% 科技值及 文化值。",
+      "unlock": "黑暗時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "disinformation-campaign.webp"
+    },
+    {
+      "id": "robber-barons",
+      "name": "無良大亨",
+      "en": "Robber Barons",
+      "category": "dark",
+      "categoryName": "黑暗時代政策",
+      "effect": "擁有銀行或造船廠的城市+50% 金幣和+25% 生產力。 但所有城市-2 滿意度。",
+      "unlock": "黑暗時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "robber-barons.webp"
+    },
+    {
+      "id": "collectivism",
+      "name": "集體主義",
+      "en": "Collectivism",
+      "category": "dark",
+      "categoryName": "黑暗時代政策",
+      "effect": "農場提供+1 生產力，所有城市+2 住房。工業區提供等同於其自身相鄰加成的 食物。 但 偉人點數的累積速度減半。",
+      "unlock": "黑暗時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "collectivism.webp"
+    },
+    {
+      "id": "elite-forces",
+      "name": "精兵政策",
+      "en": "Elite Forces",
+      "category": "dark",
+      "categoryName": "黑暗時代政策",
+      "effect": "所有單位戰鬥經驗值加倍。 但所有戰鬥和間諜單位的維護費用+1 金幣。",
+      "unlock": "黑暗時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "elite-forces.webp"
+    },
+    {
+      "id": "cyber-warfare",
+      "name": "網路戰",
+      "en": "Cyber Warfare",
+      "category": "dark",
+      "categoryName": "黑暗時代政策",
+      "effect": "對上資訊時代及未來時代的單位時+10 戰鬥力。 但所招致的 怨氣不會減少。",
+      "unlock": "黑暗時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "cyber-warfare.webp"
+    },
+    {
+      "id": "flower-power",
+      "name": "權力歸花兒",
+      "en": "Flower Power",
+      "category": "dark",
+      "categoryName": "黑暗時代政策",
+      "effect": "在未交戰文明處舉行的演唱將產出加倍的 旅遊業績。 但生產搖滾樂團外的單位時生產力減少100%，而購買花費則+100%。",
+      "unlock": "黑暗時代限定",
+      "civicIds": [],
+      "replacedBy": [],
+      "icon": "flower-power.webp"
+    }
+  ]
+}

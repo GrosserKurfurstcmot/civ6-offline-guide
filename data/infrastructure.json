@@ -1,0 +1,5343 @@
+{
+  "meta": {
+    "title": "區域與建築",
+    "ruleset": "Gathering Storm",
+    "districtCount": 35,
+    "buildingCount": 85,
+    "projectCount": 45,
+    "description": "城市生產選單中的區域、建築與城市項目，包含效果、解鎖需求、成本、完成收益與區域選址。"
+  },
+  "districtRules": [
+    {
+      "title": "人口限制",
+      "detail": "一般專業區域在 1、4、7 人口時分別開放第 1、2、3 個名額，之後每增加 3 人口再多一個。水渠、社區、運河、水壩與太空中心等不計入此上限。"
+    },
+    {
+      "title": "三環限制",
+      "detail": "區域必須建在城市中心三格內。放下區域會鎖定當下生產成本，重要的高相鄰位置可先落區再暫停建造。"
+    },
+    {
+      "title": "相鄰加成",
+      "detail": "區域卡片列出的相鄰值會先成為基礎產出，再被政策卡、建築或文明能力放大；高相鄰區域應優先集中於勝利主線。"
+    },
+    {
+      "title": "先規劃再收穫",
+      "detail": "區域會永久覆蓋地塊。若地塊有樹林、雨林或可收穫資源，先用建造者收穫，再放置區域，通常能避免浪費。"
+    }
+  ],
+  "districts": [
+    {
+      "id": "district-industrial-zone",
+      "pageId": "DISTRICT_INDUSTRIAL_ZONE",
+      "name": "工業區",
+      "en": "Industrial Zone",
+      "icon": "icon_district_industrial_zone.png",
+      "description": "你城市裡的工業活動區。",
+      "effects": [
+        "每回合+1 大工程師點數。",
+        "賦予相鄰單元格的魅力：-1"
+      ],
+      "adjacency": [
+        "+1 生產力來自每個相鄰採石場單元格。",
+        "+1 生產力來自每2個相鄰區域單元格。",
+        "+1 生產力來自每個相鄰市政廣場單元格。",
+        "+1 生產力來自每2個相鄰礦井單元格。",
+        "+1 生產力來自每2個相鄰伐木場單元格。",
+        "+2 生產力來自每個相鄰水渠單元格。",
+        "+2 生產力來自每個相鄰浴場單元格。",
+        "+2 生產力來自每個相鄰運河單元格。",
+        "+2 生產力來自每個相鄰水壩單元格。",
+        "+1 生產力來自每個相鄰戰略資源單元格。",
+        "+2 生產力來自每個相鄰地脈資源單元格。"
+      ],
+      "citizenYields": [
+        "+2 生產力"
+      ],
+      "tradeYields": [],
+      "replacedBy": [
+        "商業行會",
+        "奧皮杜姆"
+      ],
+      "replaces": [],
+      "requirements": [
+        {
+          "label": "科技",
+          "value": "學徒"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：54 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "placement": {
+        "best": "每個相鄰水渠、水壩或運河提供 +2 生產力；採石場與戰略資源通常 +1，每兩座礦場或區域合計 +1。",
+        "target": "先規劃城市中心—水渠—工業區，再把水壩或運河接入。+4 是實用目標，水渠與水壩同時相鄰時常可達 +5 以上。"
+      },
+      "unique": false,
+      "baseDistrictId": ""
+    },
+    {
+      "id": "district-observatory",
+      "pageId": "DISTRICT_OBSERVATORY",
+      "name": "天文台",
+      "en": "Observatory",
+      "icon": "icon_district_observatory.png",
+      "description": "馬雅特色科學發展區域。取代學院區域且造價較為低廉。\n相鄰的種植園提供+2 科技值加成；每有2個相鄰的農場或區域單元格，則+1 科技值加成。",
+      "effects": [
+        "特色：馬雅",
+        "取代：學院",
+        "取代：每回合+1 大科學家點數。"
+      ],
+      "adjacency": [
+        "+1 科技值來自每2個相鄰區域單元格。",
+        "+2 科技值來自每個相鄰大堡礁單元格。",
+        "+1 科技值來自每個相鄰市政廣場單元格。",
+        "+2 科技值來自每個相鄰棉堡單元格。",
+        "+2 科技值來自每個相鄰種植園單元格。",
+        "+1 科技值來自每2個相鄰農場單元格。",
+        "+2 科技值來自每個相鄰地脈資源單元格。"
+      ],
+      "citizenYields": [
+        "+2 科技值"
+      ],
+      "tradeYields": [],
+      "replacedBy": [],
+      "replaces": [
+        "學院",
+        "每回合+1 大科學家點數。"
+      ],
+      "requirements": [
+        {
+          "label": "科技",
+          "value": "寫作"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：27 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "placement": {
+        "best": "這是學院的特色替代區域。先依本卡列出的實際相鄰加成選址；基礎規劃可參考：優先尋找地熱裂隙或礁石，每個提供 +2 科技值；山脈每格 +1。兩片雨林或兩個區域合計 +1，市政廣場另給 +1。",
+        "target": "特色區域通常成本更低或附帶額外效果。標準城市以 +3 為合格，科學核心城力求 +4 以上。先保留礁石與地熱，山脈凹槽通常最容易形成高相鄰。"
+      },
+      "unique": true,
+      "baseDistrictId": "district-campus"
+    },
+    {
+      "id": "district-spaceport",
+      "pageId": "DISTRICT_SPACEPORT",
+      "name": "太空中心",
+      "en": "Spaceport",
+      "icon": "icon_district_spaceport.png",
+      "description": "建造科技勝利相關項目所需的區域。包括發射地球衛星、啟動登月計畫、建立火星殖民地和展開系外行星探險。不能建在丘陵上。",
+      "effects": [
+        "賦予相鄰單元格的魅力：-1"
+      ],
+      "adjacency": [],
+      "citizenYields": [],
+      "tradeYields": [],
+      "replacedBy": [],
+      "replaces": [],
+      "requirements": [
+        {
+          "label": "科技",
+          "value": "火箭技術"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：1800 生產力"
+        }
+      ],
+      "placement": {
+        "best": "太空中心需平坦陸地，不受人口區域上限限制，也沒有相鄰產出。",
+        "target": "只在最高生產力、能穩定供電且容易反間諜的城市建造；預留第二座作備援，不必每城都蓋。"
+      },
+      "unique": false,
+      "baseDistrictId": ""
+    },
+    {
+      "id": "district-water-entertainment-complex",
+      "pageId": "DISTRICT_WATER_ENTERTAINMENT_COMPLEX",
+      "name": "水上樂園",
+      "en": "Water Park",
+      "icon": "icon_district_water_entertainment_complex.png",
+      "description": "建立在海岸單元格上的區域，能增加 滿意度，讓人民開心。無法建造在擁有「娛樂中心」的城市內。無法建造在礁石單元格上。",
+      "effects": [
+        "+1 滿意度來自娛樂",
+        "賦予相鄰單元格的魅力：1"
+      ],
+      "adjacency": [],
+      "citizenYields": [],
+      "tradeYields": [],
+      "replacedBy": [
+        "科帕卡瓦納"
+      ],
+      "replaces": [],
+      "requirements": [
+        {
+          "label": "市政",
+          "value": "自然歷史"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：54 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "placement": {
+        "best": "只能建在海岸或湖泊；後期建築的區域效果範圍比陸上娛樂中心更廣，並能給相鄰劇院廣場 +2 文化值。",
+        "target": "放在城市群中央的可用水格，優先覆蓋缺宜居度的沿海城市；先確認不會佔掉港口最佳位置。"
+      },
+      "unique": false,
+      "baseDistrictId": ""
+    },
+    {
+      "id": "district-aqueduct",
+      "pageId": "DISTRICT_AQUEDUCT",
+      "name": "水渠",
+      "en": "Aqueduct",
+      "icon": "icon_district_aqueduct.png",
+      "description": "此區域會從相鄰的河流、湖泊、綠洲或山脈引水，為該城市提供淡水資源。沒有淡水資源的城市最多獲得6個 住房。相反，已有淡水資源的城市 住房數量+2。若建造於地熱裂隙旁，+1 滿意度。能在旱災時避免 食物損失。必須建造在市中心旁。軍事工程師可消耗1點使用次數完成20%的水渠修建進度。",
+      "effects": [],
+      "adjacency": [],
+      "citizenYields": [],
+      "tradeYields": [],
+      "replacedBy": [
+        "浴場"
+      ],
+      "replaces": [],
+      "requirements": [
+        {
+          "label": "科技",
+          "value": "工程"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：36 生產力"
+        }
+      ],
+      "placement": {
+        "best": "必須鄰接城市中心，另一側連到河流、湖泊、綠洲或山脈；它不佔人口區域上限，並能給相鄰工業區 +2 生產力。",
+        "target": "建城前就預留城市中心旁能同時接淡水與工業區的一格。已有淡水城市主要為住房與工業區相鄰而建。"
+      },
+      "unique": false,
+      "baseDistrictId": ""
+    },
+    {
+      "id": "district-dam",
+      "pageId": "DISTRICT_DAM",
+      "name": "水壩",
+      "en": "Dam",
+      "icon": "icon_district_dam.png",
+      "description": "建造在氾濫平原單元格上的區域，可提高此河流沿岸居民的舒適度。避免此河流的氾濫損害（儘管從洪災中獲得的收益會減半）。在旱災時避免 食物損失。每條河流僅能在其沿岸氾濫平原上建造一座（無論是哪個玩家率先完工），且該河流必須穿越水壩單元格的至少兩側。軍事工程師可消耗1點使用次數完成20%的運河修建進度。",
+      "effects": [
+        "+3 住房",
+        "+1 滿意度來自娛樂",
+        "賦予相鄰單元格的魅力：1"
+      ],
+      "adjacency": [],
+      "citizenYields": [],
+      "tradeYields": [],
+      "replacedBy": [],
+      "replaces": [],
+      "requirements": [
+        {
+          "label": "科技",
+          "value": "扶壁"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：81 生產力"
+        }
+      ],
+      "placement": {
+        "best": "只能放在洪氾平原，單元格需由同一條河至少兩邊環繞；同一條河只能建一座水壩。它能給相鄰工業區 +2 生產力。",
+        "target": "先用帝國視角確認河流歸屬，再選能同時保護多格洪氾平原並貼工業區的位置。"
+      },
+      "unique": false,
+      "baseDistrictId": ""
+    },
+    {
+      "id": "district-government",
+      "pageId": "DISTRICT_GOVERNMENT",
+      "name": "市政廣場",
+      "en": "Government Plaza",
+      "icon": "icon_district_government.png",
+      "description": "用來紀念文明政體選擇的區域，只能建造一次。每回合為此城市提供+8忠誠度，且所有相鄰區域提供的相鄰加成+1。獎勵1個 行政長官職稱。",
+      "effects": [],
+      "adjacency": [],
+      "citizenYields": [],
+      "tradeYields": [],
+      "replacedBy": [],
+      "replaces": [],
+      "requirements": [
+        {
+          "label": "市政",
+          "value": "國家勞動力"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：30 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "placement": {
+        "best": "市政廣場會讓每個相鄰的專業區域獲得 +1 相鄰加成，本身只能全國建造一座。",
+        "target": "把它放在能同時接觸三至六個區域的位置；兩城或三城交界的區域群，通常比單獨塞在首都市中心旁更有價值。"
+      },
+      "unique": false,
+      "baseDistrictId": ""
+    },
+    {
+      "id": "district-ikanda",
+      "pageId": "DISTRICT_IKANDA",
+      "name": "伊坎達",
+      "en": "Ikanda",
+      "icon": "icon_district_ikanda.png",
+      "description": "祖魯特色區域，取代營地。提供+1 住房。若滿足市政或科技先決條件，可直接建造軍團與軍隊。伊坎達中的建築獲得+2 金幣和+1 科技值。建造軍團與軍隊的速度更快。",
+      "effects": [
+        "特色：祖魯",
+        "取代：營地",
+        "取代：每回合+1 大將軍點數。",
+        "取代：+1 住房",
+        "取代：賦予相鄰單元格的魅力：-1"
+      ],
+      "adjacency": [],
+      "citizenYields": [
+        "+2 金幣",
+        "+1 生產力"
+      ],
+      "tradeYields": [],
+      "replacedBy": [],
+      "replaces": [
+        "營地",
+        "每回合+1 大將軍點數。",
+        "+1 住房",
+        "賦予相鄰單元格的魅力：-1"
+      ],
+      "requirements": [
+        {
+          "label": "科技",
+          "value": "鑄銅術"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：27 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "placement": {
+        "best": "這是營地的特色替代區域。先依本卡列出的實際相鄰加成選址；基礎規劃可參考：營地不能緊鄰城市中心，也沒有一般產出相鄰；位置價值來自射擊覆蓋、單位部署與阻塞敵軍。",
+        "target": "特色區域通常成本更低或附帶額外效果。放在敵軍最可能接近的隘口、河對岸或邊境高地外側，避免卡住高相鄰區域與珍貴資源。"
+      },
+      "unique": true,
+      "baseDistrictId": "district-encampment"
+    },
+    {
+      "id": "district-diplomatic-quarter",
+      "pageId": "DISTRICT_DIPLOMATIC_QUARTER",
+      "name": "使館特區",
+      "en": "Diplomatic Quarter",
+      "icon": "icon_district_diplomatic_quarter.png",
+      "description": "透過外交，你的文明將從外國文明的每個代表團或大使館獲得+1 外交支持。若建在市中心旁，則+1 使者。將此區域和相鄰的區域當作目標時，敵方間諜的效力降低2級。帝國中一次只能擁有1座此區域。",
+      "effects": [],
+      "adjacency": [],
+      "citizenYields": [],
+      "tradeYields": [],
+      "replacedBy": [],
+      "replaces": [],
+      "requirements": [
+        {
+          "label": "科技",
+          "value": "數學"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：30 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "placement": {
+        "best": "使館特區重點是使者、外交支持與降低敵方間諜效率，通常沒有值得追逐的產出相鄰。",
+        "target": "優先放在核心、安全且能快速完成建築的城市；靠近市中心方便防守，也別佔用學院或工業區的高相鄰格。"
+      },
+      "unique": false,
+      "baseDistrictId": ""
+    },
+    {
+      "id": "district-mbanza",
+      "pageId": "DISTRICT_MBANZA",
+      "name": "姆班扎",
+      "en": "Mbanza",
+      "icon": "icon_district_mbanza.png",
+      "description": "只能建在雨林或樹林裡的剛果特色區域。取代社區，但可更早開始建造且造價更為低廉。不管魅力值是多少，固定提供+5 住房、+2 食物和+4 金幣。",
+      "effects": [
+        "特色：剛果",
+        "取代：社區",
+        "取代：+2 食物",
+        "取代：+4 金幣",
+        "取代：+5 住房"
+      ],
+      "adjacency": [],
+      "citizenYields": [],
+      "tradeYields": [],
+      "replacedBy": [],
+      "replaces": [
+        "社區",
+        "+2 食物",
+        "+4 金幣",
+        "+5 住房"
+      ],
+      "requirements": [
+        {
+          "label": "市政",
+          "value": "公會"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：27 生產力"
+        }
+      ],
+      "placement": {
+        "best": "這是社區的特色替代區域。先依本卡列出的實際相鄰加成選址；基礎規劃可參考：社區住房取決於落腳地塊魅力：魅力越高住房越多，不受人口區域上限限制。",
+        "target": "特色區域通常成本更低或附帶額外效果。優先選驚艷魅力地塊並遠離工業區、礦場與雨林；若城市住房尚未卡住人口，就先把生產力用在勝利主線。"
+      },
+      "unique": true,
+      "baseDistrictId": "district-neighborhood"
+    },
+    {
+      "id": "district-lavra",
+      "pageId": "DISTRICT_LAVRA",
+      "name": "拉伏拉修道院",
+      "en": "Lavra",
+      "icon": "icon_district_lavra.png",
+      "description": "俄羅斯特色宗教活動區域。取代聖地區域且造價更為低廉。\n該城市每消耗1位偉人，城市邊境便會拓展1單元格。擁有神社的修道院每回合提供+1 大作家點數、擁有寺廟的修道院每回合提供+1 大藝術家點數，而擁有祭祀建築的修道院每回合提供+1 大音樂家點數。",
+      "effects": [
+        "特色：俄羅斯",
+        "取代：聖地",
+        "取代：每回合+2 大預言家點數。",
+        "取代：賦予相鄰單元格的魅力：1"
+      ],
+      "adjacency": [
+        "+2 信仰值來自每個相鄰自然奇觀單元格。",
+        "+1 信仰值來自每個相鄰草原 （山脈）單元格。",
+        "+1 信仰值來自每個相鄰平原（山脈）單元格。",
+        "+1 信仰值來自每個相鄰沙漠 （山脈）單元格。",
+        "+1 信仰值來自每個相鄰凍土（山脈）單元格。",
+        "+1 信仰值來自每個相鄰雪地（山脈）單元格。",
+        "+1 信仰值來自每2個相鄰樹林單元格。",
+        "+1 信仰值來自每2個相鄰區域單元格。",
+        "+1 信仰值來自每個相鄰市政廣場單元格。",
+        "+1 信仰值來自每個相鄰棉堡單元格。",
+        "+2 信仰值來自每個相鄰地脈資源單元格。"
+      ],
+      "citizenYields": [
+        "+2 信仰值"
+      ],
+      "tradeYields": [],
+      "replacedBy": [],
+      "replaces": [
+        "聖地",
+        "每回合+2 大預言家點數。",
+        "賦予相鄰單元格的魅力：1"
+      ],
+      "requirements": [
+        {
+          "label": "科技",
+          "value": "占星術"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：27 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "placement": {
+        "best": "這是聖地的特色替代區域。先依本卡列出的實際相鄰加成選址；基礎規劃可參考：每格相鄰山脈提供 +1 信仰值、每兩片樹林或兩個區域提供 +1；相鄰自然奇觀的每一格通常提供 +2。",
+        "target": "特色區域通常成本更低或附帶額外效果。創教城市以 +3 為合格；山脈凹槽與多格自然奇觀旁通常最強。若準備用聖地相鄰轉生產力，更應追求 +4 以上。"
+      },
+      "unique": true,
+      "baseDistrictId": "district-holy-site"
+    },
+    {
+      "id": "district-neighborhood",
+      "pageId": "DISTRICT_NEIGHBORHOOD",
+      "name": "社區",
+      "en": "Neighborhood",
+      "icon": "icon_district_neighborhood.png",
+      "description": "基於單元格魅力，你城市裡的一個社區提供住房情況如下：\n極大魅力的：+6 住房。\n迷人的：+5 住房。\n普通的：+4 住房。\n無吸引力的：+3 住房。\n令人厭惡的：+2 住房。",
+      "effects": [
+        "+4 住房"
+      ],
+      "adjacency": [],
+      "citizenYields": [],
+      "tradeYields": [],
+      "replacedBy": [
+        "姆班扎"
+      ],
+      "replaces": [],
+      "requirements": [
+        {
+          "label": "市政",
+          "value": "城市化"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：54 生產力"
+        }
+      ],
+      "placement": {
+        "best": "社區住房取決於落腳地塊魅力：魅力越高住房越多，不受人口區域上限限制。",
+        "target": "優先選驚艷魅力地塊並遠離工業區、礦場與雨林；若城市住房尚未卡住人口，就先把生產力用在勝利主線。"
+      },
+      "unique": false,
+      "baseDistrictId": ""
+    },
+    {
+      "id": "district-preserve",
+      "pageId": "DISTRICT_PRESERVE",
+      "name": "保留區",
+      "en": "Preserve",
+      "icon": "icon_district_preserve.png",
+      "description": "根據魅力賦予最高3點 住房。對相鄰中立單元格施放文化炸彈並且增加1點魅力。",
+      "effects": [
+        "+1 住房",
+        "賦予相鄰單元格的魅力：1"
+      ],
+      "adjacency": [],
+      "citizenYields": [],
+      "tradeYields": [],
+      "replacedBy": [],
+      "replaces": [],
+      "requirements": [
+        {
+          "label": "市政",
+          "value": "神秘主義"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：54 生產力"
+        }
+      ],
+      "placement": {
+        "best": "保留區會提高相鄰地塊魅力，建築則強化相鄰未改良且高魅力的地塊。區域旁不應堆設施或其他區域。",
+        "target": "尋找山脈、樹林、海岸或自然奇觀圍出的高魅力區；先用魅力鏡頭確認至少四格可長期保持未改良。"
+      },
+      "unique": false,
+      "baseDistrictId": ""
+    },
+    {
+      "id": "district-city-center",
+      "pageId": "DISTRICT_CITY_CENTER",
+      "name": "城市中心",
+      "en": "City Center",
+      "icon": "icon_district_city_center.png",
+      "description": "這是城市中心。",
+      "effects": [
+        "飛機容量：1"
+      ],
+      "adjacency": [],
+      "citizenYields": [],
+      "tradeYields": [],
+      "replacedBy": [],
+      "replaces": [],
+      "requirements": [
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：54 生產力"
+        }
+      ],
+      "placement": {
+        "best": "城市中心位置決定整座城市的淡水、住房與前三環地塊。沿河、湖岸或綠洲通常最穩；首都還要兼顧至少兩格可工作的 2 食物／2 生產力地塊。",
+        "target": "先看淡水，再看可工作地塊與後續區域空間；不要只為單一奢侈品犧牲整體地形。"
+      },
+      "unique": false,
+      "baseDistrictId": ""
+    },
+    {
+      "id": "district-thanh",
+      "pageId": "DISTRICT_THANH",
+      "name": "城池",
+      "en": "Thành",
+      "icon": "icon_district_thanh.png",
+      "description": "越南特色建築，取代營地。每個相鄰區域提供+2 文化值。研發完「飛行」科技後將可獲得與 文化輸出相等的 旅遊業績。此區域無須人口即可建造，並且造價較為低廉，無法建造在市中心旁，不提供 偉人點數，且並非特色區域。",
+      "effects": [
+        "特色：越南",
+        "取代：營地",
+        "取代：賦予相鄰單元格的魅力：-1"
+      ],
+      "adjacency": [
+        "+2 文化值來自每個相鄰區域單元格。"
+      ],
+      "citizenYields": [
+        "+2 金幣",
+        "+1 生產力"
+      ],
+      "tradeYields": [],
+      "replacedBy": [],
+      "replaces": [
+        "營地",
+        "賦予相鄰單元格的魅力：-1"
+      ],
+      "requirements": [
+        {
+          "label": "科技",
+          "value": "鑄銅術"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：27 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "placement": {
+        "best": "這是營地的特色替代區域。先依本卡列出的實際相鄰加成選址；基礎規劃可參考：營地不能緊鄰城市中心，也沒有一般產出相鄰；位置價值來自射擊覆蓋、單位部署與阻塞敵軍。",
+        "target": "特色區域通常成本更低或附帶額外效果。放在敵軍最可能接近的隘口、河對岸或邊境高地外側，避免卡住高相鄰區域與珍貴資源。"
+      },
+      "unique": true,
+      "baseDistrictId": "district-encampment"
+    },
+    {
+      "id": "district-royal-navy-dockyard",
+      "pageId": "DISTRICT_ROYAL_NAVY_DOCKYARD",
+      "name": "皇家海軍船塢",
+      "en": "Royal Navy Dockyard",
+      "icon": "icon_district_royal_navy_dockyard.png",
+      "description": "城市裡的英國特色海軍活動區域，取代港口。在此單元格上下船不消耗 移動力。必須建在與陸地相鄰的海岸或湖泊地形上。\n為造船廠所建的所有海軍單位+1 移動力。\n建造在海外大陸時+2 金幣、每回合+4忠誠度。無法建造在礁石單元格上。",
+      "effects": [
+        "特色：英國",
+        "取代：港口",
+        "取代：每回合+2 海軍統帥點數。"
+      ],
+      "adjacency": [
+        "+1 金幣來自每2個相鄰區域單元格。",
+        "+1 金幣來自每個相鄰海岸資源單元格。",
+        "+2 金幣來自每個相鄰城市中心單元格。",
+        "+1 金幣來自每個相鄰市政廣場單元格。",
+        "+2 金幣來自每個相鄰地脈資源單元格。"
+      ],
+      "citizenYields": [
+        "+2 金幣",
+        "+1 食物"
+      ],
+      "tradeYields": [],
+      "replacedBy": [],
+      "replaces": [
+        "港口",
+        "每回合+2 海軍統帥點數。"
+      ],
+      "requirements": [
+        {
+          "label": "科技",
+          "value": "天文導航"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：27 生產力"
+        }
+      ],
+      "placement": {
+        "best": "這是港口的特色替代區域。先依本卡列出的實際相鄰加成選址；基礎規劃可參考：相鄰城市中心提供 +2 金幣，每個海洋資源 +1，市政廣場 +1，每兩個區域 +1。",
+        "target": "特色區域通常成本更低或附帶額外效果。把港口貼城市中心，再盡量接觸兩個以上海洋資源；如此可同時提高金幣、住房與海軍生產效率。"
+      },
+      "unique": true,
+      "baseDistrictId": "district-harbor"
+    },
+    {
+      "id": "district-water-street-carnival",
+      "pageId": "DISTRICT_WATER_STREET_CARNIVAL",
+      "name": "科帕卡瓦納",
+      "en": "Copacabana",
+      "icon": "icon_district_street_carnival.png",
+      "description": "巴西特色區域。取代水上樂園，+2 滿意度。同時解鎖「狂歡節」項目，進行項目的過程中城市額外+1 滿意度，完成後可獲得各種 偉人點數。無法建造在擁有「街頭狂歡節」的城市中。無法建造在礁石單元格上。",
+      "effects": [
+        "特色：巴西",
+        "取代：水上樂園",
+        "取代：+2 滿意度來自娛樂",
+        "取代：賦予相鄰單元格的魅力：1"
+      ],
+      "adjacency": [],
+      "citizenYields": [],
+      "tradeYields": [],
+      "replacedBy": [],
+      "replaces": [
+        "水上樂園",
+        "+2 滿意度來自娛樂",
+        "賦予相鄰單元格的魅力：1"
+      ],
+      "requirements": [
+        {
+          "label": "市政",
+          "value": "自然歷史"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：27 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "placement": {
+        "best": "這是水上樂園的特色替代區域。先依本卡列出的實際相鄰加成選址；基礎規劃可參考：只能建在海岸或湖泊；後期建築的區域效果範圍比陸上娛樂中心更廣，並能給相鄰劇院廣場 +2 文化值。",
+        "target": "特色區域通常成本更低或附帶額外效果。放在城市群中央的可用水格，優先覆蓋缺宜居度的沿海城市；先確認不會佔掉港口最佳位置。"
+      },
+      "unique": true,
+      "baseDistrictId": "district-water-entertainment-complex"
+    },
+    {
+      "id": "district-entertainment-complex",
+      "pageId": "DISTRICT_ENTERTAINMENT_COMPLEX",
+      "name": "娛樂中心",
+      "en": "Entertainment Complex",
+      "icon": "icon_district_entertainment_complex.png",
+      "description": "在你的城市裡致力於透過提升 滿意度讓你的人民開心的一個區域。",
+      "effects": [
+        "+1 滿意度來自娛樂",
+        "賦予相鄰單元格的魅力：1"
+      ],
+      "adjacency": [],
+      "citizenYields": [],
+      "tradeYields": [],
+      "replacedBy": [
+        "街頭狂歡節",
+        "競馬場"
+      ],
+      "replaces": [],
+      "requirements": [
+        {
+          "label": "市政",
+          "value": "遊戲和娛樂"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：54 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "placement": {
+        "best": "區域本身重點是宜居度與後期區域建築覆蓋，而非地塊產出；它也能給相鄰劇院廣場 +2 文化值。",
+        "target": "選在能讓動物園與體育場覆蓋多座城市的位置，通常是城市群中央；不要每城各蓋一座造成重複覆蓋。"
+      },
+      "unique": false,
+      "baseDistrictId": ""
+    },
+    {
+      "id": "district-seowon",
+      "pageId": "DISTRICT_SEOWON",
+      "name": "書院",
+      "en": "Seowon",
+      "icon": "icon_district_seowon.png",
+      "description": "朝鮮特色科學區域。取代學院區域。+4 科技值，每與一個區域單元格相鄰則-1 科技值。必須建在丘陵上。",
+      "effects": [
+        "特色：朝鮮",
+        "取代：學院",
+        "取代：每回合+1 大科學家點數。"
+      ],
+      "adjacency": [
+        "--1 科技值來自每個相鄰區域單元格。",
+        "+1 科技值來自每個相鄰市政廣場單元格。"
+      ],
+      "citizenYields": [
+        "+2 科技值"
+      ],
+      "tradeYields": [],
+      "replacedBy": [],
+      "replaces": [
+        "學院",
+        "每回合+1 大科學家點數。"
+      ],
+      "requirements": [
+        {
+          "label": "科技",
+          "value": "寫作"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：27 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "placement": {
+        "best": "這是學院的特色替代區域。先依本卡列出的實際相鄰加成選址；基礎規劃可參考：優先尋找地熱裂隙或礁石，每個提供 +2 科技值；山脈每格 +1。兩片雨林或兩個區域合計 +1，市政廣場另給 +1。",
+        "target": "特色區域通常成本更低或附帶額外效果。標準城市以 +3 為合格，科學核心城力求 +4 以上。先保留礁石與地熱，山脈凹槽通常最容易形成高相鄰。"
+      },
+      "unique": true,
+      "baseDistrictId": "district-campus"
+    },
+    {
+      "id": "district-bath",
+      "pageId": "DISTRICT_BATH",
+      "name": "浴場",
+      "en": "Bath",
+      "icon": "icon_district_bath.png",
+      "description": "促進城市發展的羅馬特色區域。取代水渠且造價更為低廉。\n從相鄰的河流、湖泊、綠洲或山脈引水，為該城市提供淡水資源。沒有淡水資源的城市最多獲得6個 住房。已有淡水資源的城市 住房數量+2。若建造於地熱裂隙旁，+1 滿意度。在任何情況下，浴場都能提供額外+2 住房和+1 滿意度加成。在旱災時避免 食物損失。必須建在市中心旁。軍事工程師可消耗1點使用次數完成20%的浴場修建進度。",
+      "effects": [
+        "特色：羅馬",
+        "取代：水渠",
+        "取代：+2 住房",
+        "取代：+1 滿意度來自娛樂"
+      ],
+      "adjacency": [],
+      "citizenYields": [],
+      "tradeYields": [],
+      "replacedBy": [],
+      "replaces": [
+        "水渠",
+        "+2 住房",
+        "+1 滿意度來自娛樂"
+      ],
+      "requirements": [
+        {
+          "label": "科技",
+          "value": "工程"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：18 生產力"
+        }
+      ],
+      "placement": {
+        "best": "這是水渠的特色替代區域。先依本卡列出的實際相鄰加成選址；基礎規劃可參考：必須鄰接城市中心，另一側連到河流、湖泊、綠洲或山脈；它不佔人口區域上限，並能給相鄰工業區 +2 生產力。",
+        "target": "特色區域通常成本更低或附帶額外效果。建城前就預留城市中心旁能同時接淡水與工業區的一格。已有淡水城市主要為住房與工業區相鄰而建。"
+      },
+      "unique": true,
+      "baseDistrictId": "district-aqueduct"
+    },
+    {
+      "id": "district-aerodrome",
+      "pageId": "DISTRICT_AERODROME",
+      "name": "航空港",
+      "en": "Aerodrome",
+      "icon": "icon_district_aerodrome.png",
+      "description": "允許你在該區域建造和存放飛機。不能建在丘陵上。",
+      "effects": [
+        "飛機容量：2",
+        "賦予相鄰單元格的魅力：-1"
+      ],
+      "adjacency": [],
+      "citizenYields": [],
+      "tradeYields": [],
+      "replacedBy": [],
+      "replaces": [],
+      "requirements": [
+        {
+          "label": "科技",
+          "value": "飛行"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：54 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "placement": {
+        "best": "航空港需平坦陸地，沒有產出相鄰；位置重點是空軍航程、安全與不佔用核心區域格。",
+        "target": "軍事前線放在安全後方但能覆蓋戰場的位置；文化勝利則方便串聯機場空運。避免壓掉高產工作格。"
+      },
+      "unique": false,
+      "baseDistrictId": ""
+    },
+    {
+      "id": "district-commercial-hub",
+      "pageId": "DISTRICT_COMMERCIAL_HUB",
+      "name": "商業中心",
+      "en": "Commercial Hub",
+      "icon": "icon_district_commercial_hub.png",
+      "description": "城市中專事財政與貿易的區域。",
+      "effects": [
+        "每回合+1 大商人點數。"
+      ],
+      "adjacency": [
+        "+2 金幣來自每個相鄰河流單元格。",
+        "+2 金幣來自每個相鄰港口單元格。",
+        "+2 金幣來自每個相鄰皇家海軍船塢單元格。",
+        "+1 金幣來自每2個相鄰區域單元格。",
+        "+1 金幣來自每個相鄰市政廣場單元格。",
+        "+2 金幣來自每個相鄰棉堡單元格。",
+        "+2 金幣來自每個相鄰衛港單元格。",
+        "+2 金幣來自每個相鄰地脈資源單元格。"
+      ],
+      "citizenYields": [
+        "+4 金幣"
+      ],
+      "tradeYields": [],
+      "replacedBy": [
+        "蘇古巴市場"
+      ],
+      "replaces": [],
+      "requirements": [
+        {
+          "label": "科技",
+          "value": "貨幣"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：54 生產力"
+        }
+      ],
+      "placement": {
+        "best": "沿河放置可獲 +2 金幣，鄰接港口再 +2，市政廣場 +1，每兩個區域 +1。",
+        "target": "最佳常是河岸上同時貼著港口與城市中心的位置。沿海城通常在商業中心與港口之間擇一，除非要做高相鄰三角。"
+      },
+      "unique": false,
+      "baseDistrictId": ""
+    },
+    {
+      "id": "district-hansa",
+      "pageId": "DISTRICT_HANSA",
+      "name": "商業行會",
+      "en": "Hansa",
+      "icon": "icon_district_hansa.png",
+      "description": "德國特色工業活動區，取代工業區且造價更為低廉。\n相鄰商業中心、水渠、運河或水壩區域時+2 生產力。每個相鄰資源為其+1 生產力。每兩個相鄰區域單元格為其+1 生產力。",
+      "effects": [
+        "特色：德國",
+        "取代：工業區",
+        "取代：每回合+1 大工程師點數。",
+        "取代：賦予相鄰單元格的魅力：-1"
+      ],
+      "adjacency": [
+        "+1 生產力來自每2個相鄰區域單元格。",
+        "+2 生產力來自每個相鄰商業中心單元格。",
+        "+1 生產力來自每個相鄰資源單元格。",
+        "+1 生產力來自每個相鄰市政廣場單元格。",
+        "+2 生產力來自每個相鄰水渠單元格。",
+        "+2 生產力來自每個相鄰運河單元格。",
+        "+2 生產力來自每個相鄰水壩單元格。",
+        "+2 生產力來自每個相鄰地脈資源單元格。"
+      ],
+      "citizenYields": [
+        "+2 生產力"
+      ],
+      "tradeYields": [],
+      "replacedBy": [],
+      "replaces": [
+        "工業區",
+        "每回合+1 大工程師點數。",
+        "賦予相鄰單元格的魅力：-1"
+      ],
+      "requirements": [
+        {
+          "label": "科技",
+          "value": "學徒"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：27 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "placement": {
+        "best": "這是工業區的特色替代區域。先依本卡列出的實際相鄰加成選址；基礎規劃可參考：每個相鄰水渠、水壩或運河提供 +2 生產力；採石場與戰略資源通常 +1，每兩座礦場或區域合計 +1。",
+        "target": "特色區域通常成本更低或附帶額外效果。先規劃城市中心—水渠—工業區，再把水壩或運河接入。+4 是實用目標，水渠與水壩同時相鄰時常可達 +5 以上。"
+      },
+      "unique": true,
+      "baseDistrictId": "district-industrial-zone"
+    },
+    {
+      "id": "district-harbor",
+      "pageId": "DISTRICT_HARBOR",
+      "name": "港口",
+      "en": "Harbor",
+      "icon": "icon_district_harbor.png",
+      "description": "城市中專門進行海軍活動的區域。從該單元格上下船不消耗 移動力。必須建在與陸地相鄰的海岸或湖泊地形上。無法建造在礁石單元格上。",
+      "effects": [
+        "每回合+1 海軍統帥點數。"
+      ],
+      "adjacency": [
+        "+1 金幣來自每2個相鄰區域單元格。",
+        "+1 金幣來自每個相鄰海岸資源單元格。",
+        "+2 金幣來自每個相鄰城市中心單元格。",
+        "+1 金幣來自每個相鄰市政廣場單元格。",
+        "+2 金幣來自每個相鄰地脈資源單元格。"
+      ],
+      "citizenYields": [
+        "+2 金幣",
+        "+1 食物"
+      ],
+      "tradeYields": [],
+      "replacedBy": [
+        "皇家海軍船塢",
+        "衛港"
+      ],
+      "replaces": [],
+      "requirements": [
+        {
+          "label": "科技",
+          "value": "天文導航"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：54 生產力"
+        }
+      ],
+      "placement": {
+        "best": "相鄰城市中心提供 +2 金幣，每個海洋資源 +1，市政廣場 +1，每兩個區域 +1。",
+        "target": "把港口貼城市中心，再盡量接觸兩個以上海洋資源；如此可同時提高金幣、住房與海軍生產效率。"
+      },
+      "unique": false,
+      "baseDistrictId": ""
+    },
+    {
+      "id": "district-street-carnival",
+      "pageId": "DISTRICT_STREET_CARNIVAL",
+      "name": "街頭狂歡節",
+      "en": "Street Carnival",
+      "icon": "icon_district_street_carnival.png",
+      "description": "巴西特色區域。取代娛樂中心，+2 滿意度。同時解鎖「狂歡節」項目，項目進行時該城市額外+1 滿意度，項目完成後可獲得多種 偉人點數。無法建造在擁有「科帕卡瓦納」的城市中。",
+      "effects": [
+        "特色：巴西",
+        "取代：娛樂中心",
+        "取代：+2 滿意度來自娛樂",
+        "取代：賦予相鄰單元格的魅力：1"
+      ],
+      "adjacency": [],
+      "citizenYields": [],
+      "tradeYields": [],
+      "replacedBy": [],
+      "replaces": [
+        "娛樂中心",
+        "+2 滿意度來自娛樂",
+        "賦予相鄰單元格的魅力：1"
+      ],
+      "requirements": [
+        {
+          "label": "市政",
+          "value": "遊戲和娛樂"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：27 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "placement": {
+        "best": "這是娛樂中心的特色替代區域。先依本卡列出的實際相鄰加成選址；基礎規劃可參考：區域本身重點是宜居度與後期區域建築覆蓋，而非地塊產出；它也能給相鄰劇院廣場 +2 文化值。",
+        "target": "特色區域通常成本更低或附帶額外效果。選在能讓動物園與體育場覆蓋多座城市的位置，通常是城市群中央；不要每城各蓋一座造成重複覆蓋。"
+      },
+      "unique": true,
+      "baseDistrictId": "district-entertainment-complex"
+    },
+    {
+      "id": "district-oppidum",
+      "pageId": "DISTRICT_OPPIDUM",
+      "name": "奧皮杜姆",
+      "en": "Oppidum",
+      "icon": "icon_district_oppidum.png",
+      "description": "高盧特色區域，取代工業區，不僅造價較低廉，可建造的時間也較早。奧皮杜姆為防禦性區域且具有遠程攻擊能力。建成首座奧皮杜姆後，隨即解鎖「學徒」科技。\n每與一個採石場改良設施或戰略資源相鄰，就可獲得+2 生產力之相鄰加成。",
+      "effects": [
+        "特色：高盧",
+        "取代：工業區",
+        "取代：每回合+1 大工程師點數。",
+        "取代：賦予相鄰單元格的魅力：-1"
+      ],
+      "adjacency": [
+        "+1 生產力來自每個相鄰市政廣場單元格。",
+        "+2 生產力來自每個相鄰採石場單元格。",
+        "+2 生產力來自每個相鄰戰略資源單元格。",
+        "+2 生產力來自每個相鄰地脈資源單元格。"
+      ],
+      "citizenYields": [
+        "+2 生產力"
+      ],
+      "tradeYields": [],
+      "replacedBy": [],
+      "replaces": [
+        "工業區",
+        "每回合+1 大工程師點數。",
+        "賦予相鄰單元格的魅力：-1"
+      ],
+      "requirements": [
+        {
+          "label": "科技",
+          "value": "煉鐵術"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：27 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "placement": {
+        "best": "這是工業區的特色替代區域。先依本卡列出的實際相鄰加成選址；基礎規劃可參考：每個相鄰水渠、水壩或運河提供 +2 生產力；採石場與戰略資源通常 +1，每兩座礦場或區域合計 +1。",
+        "target": "特色區域通常成本更低或附帶額外效果。先規劃城市中心—水渠—工業區，再把水壩或運河接入。+4 是實用目標，水渠與水壩同時相鄰時常可達 +5 以上。"
+      },
+      "unique": true,
+      "baseDistrictId": "district-industrial-zone"
+    },
+    {
+      "id": "district-holy-site",
+      "pageId": "DISTRICT_HOLY_SITE",
+      "name": "聖地",
+      "en": "Holy Site",
+      "icon": "icon_district_holy_site.png",
+      "description": "你城市裡的宗教祭祀區。",
+      "effects": [
+        "每回合+1 大預言家點數。",
+        "賦予相鄰單元格的魅力：1"
+      ],
+      "adjacency": [
+        "+2 信仰值來自每個相鄰自然奇觀單元格。",
+        "+1 信仰值來自每個相鄰草原 （山脈）單元格。",
+        "+1 信仰值來自每個相鄰平原（山脈）單元格。",
+        "+1 信仰值來自每個相鄰沙漠 （山脈）單元格。",
+        "+1 信仰值來自每個相鄰凍土（山脈）單元格。",
+        "+1 信仰值來自每個相鄰雪地（山脈）單元格。",
+        "+1 信仰值來自每2個相鄰樹林單元格。",
+        "+1 信仰值來自每2個相鄰區域單元格。",
+        "+1 信仰值來自每個相鄰市政廣場單元格。",
+        "+1 信仰值來自每個相鄰棉堡單元格。",
+        "+2 信仰值來自每個相鄰地脈資源單元格。"
+      ],
+      "citizenYields": [
+        "+2 信仰值"
+      ],
+      "tradeYields": [],
+      "replacedBy": [
+        "拉伏拉修道院"
+      ],
+      "replaces": [],
+      "requirements": [
+        {
+          "label": "科技",
+          "value": "占星術"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：54 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "placement": {
+        "best": "每格相鄰山脈提供 +1 信仰值、每兩片樹林或兩個區域提供 +1；相鄰自然奇觀的每一格通常提供 +2。",
+        "target": "創教城市以 +3 為合格；山脈凹槽與多格自然奇觀旁通常最強。若準備用聖地相鄰轉生產力，更應追求 +4 以上。"
+      },
+      "unique": false,
+      "baseDistrictId": ""
+    },
+    {
+      "id": "district-canal",
+      "pageId": "DISTRICT_CANAL",
+      "name": "運河",
+      "en": "Canal",
+      "icon": "icon_district_canal.png",
+      "description": "建造於平地，能連結兩大水域或將水域連結至市中心的區域。經過此處的 貿易路線能夠從其目的地區域獲得成倍的金幣收益。運河能直接穿越格位，或呈60度彎曲。然而無法建造有三個出入口的運河交界口，並且運河在其所創建水道的每側都必須擁有一個完整的陸地單元格。軍事工程師可消耗1點使用次數完成20%的運河修建進度。",
+      "effects": [
+        "賦予相鄰單元格的魅力：1"
+      ],
+      "adjacency": [],
+      "citizenYields": [],
+      "tradeYields": [],
+      "replacedBy": [],
+      "replaces": [],
+      "requirements": [
+        {
+          "label": "科技",
+          "value": "蒸汽動力"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：81 生產力"
+        }
+      ],
+      "placement": {
+        "best": "必須讓兩側形成城市中心或可通航水域的有效連接，並能給相鄰工業區 +2 生產力。",
+        "target": "只有能打通海路、縮短艦隊航程或補足工業區相鄰時才值得高生產成本；純裝飾通常太慢。"
+      },
+      "unique": false,
+      "baseDistrictId": ""
+    },
+    {
+      "id": "district-theater",
+      "pageId": "DISTRICT_THEATER",
+      "name": "劇院廣場",
+      "en": "Theater Square",
+      "icon": "icon_district_theater.png",
+      "description": "你城市裡的文化遺址區。",
+      "effects": [
+        "每回合+1 大作家點數。",
+        "每回合+1 大藝術家點數。",
+        "每回合+1 大音樂家點數。",
+        "賦予相鄰單元格的魅力：1"
+      ],
+      "adjacency": [
+        "+2 文化值來自每個相鄰奇觀單元格。",
+        "+1 文化值來自每2個相鄰區域單元格。",
+        "+1 文化值來自每個相鄰市政廣場單元格。",
+        "+2 文化值來自每個相鄰娛樂中心單元格。",
+        "+2 文化值來自每個相鄰水上樂園單元格。",
+        "+2 文化值來自每個相鄰街頭狂歡節單元格。",
+        "+2 文化值來自每個相鄰科帕卡瓦納單元格。",
+        "+2 文化值來自每個相鄰棉堡單元格。",
+        "+2 文化值來自每個相鄰競馬場單元格。",
+        "+2 文化值來自每個相鄰地脈資源單元格。"
+      ],
+      "citizenYields": [
+        "+2 文化值"
+      ],
+      "tradeYields": [],
+      "replacedBy": [
+        "衛城"
+      ],
+      "replaces": [],
+      "requirements": [
+        {
+          "label": "市政",
+          "value": "戲劇與詩歌"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：54 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "placement": {
+        "best": "相鄰每座奇觀、娛樂中心或水上樂園提供 +2 文化值；市政廣場 +1，每兩個區域 +1。",
+        "target": "先預留奇觀與娛樂區，再把劇院廣場夾在中間。沒有奇觀規劃時，不要為了很低的相鄰過早建造。"
+      },
+      "unique": false,
+      "baseDistrictId": ""
+    },
+    {
+      "id": "district-acropolis",
+      "pageId": "DISTRICT_ACROPOLIS",
+      "name": "衛城",
+      "en": "Acropolis",
+      "icon": "icon_district_acropolis.png",
+      "description": "希臘特色文化遺址區域，取代劇院廣場區域且造價更為低廉。建成時獎勵1位 使者。\n每個相鄰區域可使其+1 文化值，每個相鄰市中心則使其額外+1 文化值。每座相鄰奇觀、娛樂中心與水上樂園+2 文化值。只能建在丘陵上。",
+      "effects": [
+        "特色：希臘",
+        "取代：劇院廣場",
+        "取代：每回合+1 大作家點數。",
+        "取代：每回合+1 大藝術家點數。",
+        "取代：每回合+1 大音樂家點數。",
+        "取代：賦予相鄰單元格的魅力：1"
+      ],
+      "adjacency": [
+        "+2 文化值來自每個相鄰奇觀單元格。",
+        "+1 文化值來自每個相鄰區域單元格。",
+        "+1 文化值來自每個相鄰城市中心單元格。",
+        "+1 文化值來自每個相鄰市政廣場單元格。",
+        "+2 文化值來自每個相鄰娛樂中心單元格。",
+        "+2 文化值來自每個相鄰水上樂園單元格。",
+        "+2 文化值來自每個相鄰棉堡單元格。",
+        "+2 文化值來自每個相鄰地脈資源單元格。"
+      ],
+      "citizenYields": [
+        "+2 文化值"
+      ],
+      "tradeYields": [],
+      "replacedBy": [],
+      "replaces": [
+        "劇院廣場",
+        "每回合+1 大作家點數。",
+        "每回合+1 大藝術家點數。",
+        "每回合+1 大音樂家點數。",
+        "賦予相鄰單元格的魅力：1"
+      ],
+      "requirements": [
+        {
+          "label": "市政",
+          "value": "戲劇與詩歌"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：27 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "placement": {
+        "best": "這是劇院廣場的特色替代區域。先依本卡列出的實際相鄰加成選址；基礎規劃可參考：相鄰每座奇觀、娛樂中心或水上樂園提供 +2 文化值；市政廣場 +1，每兩個區域 +1。",
+        "target": "特色區域通常成本更低或附帶額外效果。先預留奇觀與娛樂區，再把劇院廣場夾在中間。沒有奇觀規劃時，不要為了很低的相鄰過早建造。"
+      },
+      "unique": true,
+      "baseDistrictId": "district-theater"
+    },
+    {
+      "id": "district-cothon",
+      "pageId": "DISTRICT_COTHON",
+      "name": "衛港",
+      "en": "Cothon",
+      "icon": "icon_district_cothon.png",
+      "description": "腓尼基城市海軍活動特色區域。取代港口且造價更為低廉。必須建在相鄰陸地的海岸或湖泊地形上。\n此城市生產海軍單位和開拓者+50% 生產力。所有受傷的海軍單位在此城市邊界內每回合治癒+100生命值。",
+      "effects": [
+        "特色：腓尼基",
+        "取代：港口",
+        "取代：每回合+1 海軍統帥點數。"
+      ],
+      "adjacency": [
+        "+1 金幣來自每2個相鄰區域單元格。",
+        "+1 金幣來自每個相鄰海岸資源單元格。",
+        "+2 金幣來自每個相鄰城市中心單元格。",
+        "+1 金幣來自每個相鄰市政廣場單元格。",
+        "+2 金幣來自每個相鄰地脈資源單元格。"
+      ],
+      "citizenYields": [
+        "+2 金幣",
+        "+1 食物"
+      ],
+      "tradeYields": [],
+      "replacedBy": [],
+      "replaces": [
+        "港口",
+        "每回合+1 海軍統帥點數。"
+      ],
+      "requirements": [
+        {
+          "label": "科技",
+          "value": "天文導航"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：27 生產力"
+        }
+      ],
+      "placement": {
+        "best": "這是港口的特色替代區域。先依本卡列出的實際相鄰加成選址；基礎規劃可參考：相鄰城市中心提供 +2 金幣，每個海洋資源 +1，市政廣場 +1，每兩個區域 +1。",
+        "target": "特色區域通常成本更低或附帶額外效果。把港口貼城市中心，再盡量接觸兩個以上海洋資源；如此可同時提高金幣、住房與海軍生產效率。"
+      },
+      "unique": true,
+      "baseDistrictId": "district-harbor"
+    },
+    {
+      "id": "district-campus",
+      "pageId": "DISTRICT_CAMPUS",
+      "name": "學院",
+      "en": "Campus",
+      "icon": "icon_district_campus.png",
+      "description": "你城市裡的科學發展區。",
+      "effects": [
+        "每回合+1 大科學家點數。"
+      ],
+      "adjacency": [
+        "+1 科技值來自每個相鄰草原 （山脈）單元格。",
+        "+1 科技值來自每個相鄰平原（山脈）單元格。",
+        "+1 科技值來自每個相鄰沙漠 （山脈）單元格。",
+        "+1 科技值來自每個相鄰凍土（山脈）單元格。",
+        "+1 科技值來自每個相鄰雪地（山脈）單元格。",
+        "+1 科技值來自每2個相鄰雨林單元格。",
+        "+1 科技值來自每2個相鄰區域單元格。",
+        "+2 科技值來自每個相鄰大堡礁單元格。",
+        "+1 科技值來自每個相鄰市政廣場單元格。",
+        "+2 科技值來自每個相鄰地熱裂隙單元格。",
+        "+2 科技值來自每個相鄰礁石單元格。",
+        "+2 科技值來自每個相鄰棉堡單元格。",
+        "+2 科技值來自每個相鄰地脈資源單元格。"
+      ],
+      "citizenYields": [
+        "+2 科技值"
+      ],
+      "tradeYields": [],
+      "replacedBy": [
+        "書院",
+        "天文台"
+      ],
+      "replaces": [],
+      "requirements": [
+        {
+          "label": "科技",
+          "value": "寫作"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：54 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "placement": {
+        "best": "優先尋找地熱裂隙或礁石，每個提供 +2 科技值；山脈每格 +1。兩片雨林或兩個區域合計 +1，市政廣場另給 +1。",
+        "target": "標準城市以 +3 為合格，科學核心城力求 +4 以上。先保留礁石與地熱，山脈凹槽通常最容易形成高相鄰。"
+      },
+      "unique": false,
+      "baseDistrictId": ""
+    },
+    {
+      "id": "district-encampment",
+      "pageId": "DISTRICT_ENCAMPMENT",
+      "name": "營地",
+      "en": "Encampment",
+      "icon": "icon_district_encampment.png",
+      "description": "你城市裡的軍事機構區域。",
+      "effects": [
+        "每回合+1 大將軍點數。",
+        "賦予相鄰單元格的魅力：-1"
+      ],
+      "adjacency": [],
+      "citizenYields": [
+        "+2 金幣",
+        "+1 生產力"
+      ],
+      "tradeYields": [],
+      "replacedBy": [
+        "伊坎達",
+        "城池"
+      ],
+      "replaces": [],
+      "requirements": [
+        {
+          "label": "科技",
+          "value": "鑄銅術"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：54 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "placement": {
+        "best": "營地不能緊鄰城市中心，也沒有一般產出相鄰；位置價值來自射擊覆蓋、單位部署與阻塞敵軍。",
+        "target": "放在敵軍最可能接近的隘口、河對岸或邊境高地外側，避免卡住高相鄰區域與珍貴資源。"
+      },
+      "unique": false,
+      "baseDistrictId": ""
+    },
+    {
+      "id": "district-hippodrome",
+      "pageId": "DISTRICT_HIPPODROME",
+      "name": "競馬場",
+      "en": "Hippodrome",
+      "icon": "icon_district_hippodrome.png",
+      "description": "拜占庭特色區域。取代娛樂中心區域，提供+3 滿意度、且造價較為低廉。當競馬場和此區域內建築建成時可獲得一個重騎兵單位。此區域所賦予之單位無須花費資源維護。無法建造在擁有「水上樂園」的城市中。",
+      "effects": [
+        "特色：拜占庭",
+        "取代：娛樂中心",
+        "取代：+3 滿意度來自娛樂",
+        "取代：賦予相鄰單元格的魅力：1"
+      ],
+      "adjacency": [],
+      "citizenYields": [],
+      "tradeYields": [],
+      "replacedBy": [],
+      "replaces": [
+        "娛樂中心",
+        "+3 滿意度來自娛樂",
+        "賦予相鄰單元格的魅力：1"
+      ],
+      "requirements": [
+        {
+          "label": "市政",
+          "value": "遊戲和娛樂"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：27 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "placement": {
+        "best": "這是娛樂中心的特色替代區域。先依本卡列出的實際相鄰加成選址；基礎規劃可參考：區域本身重點是宜居度與後期區域建築覆蓋，而非地塊產出；它也能給相鄰劇院廣場 +2 文化值。",
+        "target": "特色區域通常成本更低或附帶額外效果。選在能讓動物園與體育場覆蓋多座城市的位置，通常是城市群中央；不要每城各蓋一座造成重複覆蓋。"
+      },
+      "unique": true,
+      "baseDistrictId": "district-entertainment-complex"
+    },
+    {
+      "id": "district-suguba",
+      "pageId": "DISTRICT_SUGUBA",
+      "name": "蘇古巴市場",
+      "en": "Suguba",
+      "icon": "icon_district_suguba.png",
+      "description": "專事財政與貿易的馬利特色建築，取代商業中心。在此城市中，以 金幣和 信仰值購買單位、建築和區域時，價格減少20%。\n每個相鄰的聖地+2 金幣加成。每個含有河流邊緣的單元格+2 金幣加成。每2個相鄰區域單元格+1 金幣加成。",
+      "effects": [
+        "特色：馬利",
+        "取代：商業中心",
+        "取代：每回合+1 大商人點數。"
+      ],
+      "adjacency": [
+        "+2 金幣來自每個相鄰河流單元格。",
+        "+1 金幣來自每2個相鄰區域單元格。",
+        "+1 金幣來自每個相鄰市政廣場單元格。",
+        "+2 金幣來自每個相鄰棉堡單元格。",
+        "+2 金幣來自每個相鄰聖地單元格。",
+        "+2 金幣來自每個相鄰拉伏拉修道院單元格。",
+        "+2 金幣來自每個相鄰地脈資源單元格。"
+      ],
+      "citizenYields": [
+        "+4 金幣"
+      ],
+      "tradeYields": [],
+      "replacedBy": [],
+      "replaces": [
+        "商業中心",
+        "每回合+1 大商人點數。"
+      ],
+      "requirements": [
+        {
+          "label": "科技",
+          "value": "貨幣"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：27 生產力"
+        }
+      ],
+      "placement": {
+        "best": "這是商業中心的特色替代區域。先依本卡列出的實際相鄰加成選址；基礎規劃可參考：沿河放置可獲 +2 金幣，鄰接港口再 +2，市政廣場 +1，每兩個區域 +1。",
+        "target": "特色區域通常成本更低或附帶額外效果。最佳常是河岸上同時貼著港口與城市中心的位置。沿海城通常在商業中心與港口之間擇一，除非要做高相鄰三角。"
+      },
+      "unique": true,
+      "baseDistrictId": "district-commercial-hub"
+    }
+  ],
+  "buildings": [
+    {
+      "id": "building-workshop",
+      "pageId": "BUILDING_WORKSHOP",
+      "name": "工作坊",
+      "en": "Workshop",
+      "icon": "icon_building_workshop.png",
+      "districtPageId": "DISTRICT_INDUSTRIAL_ZONE",
+      "districtId": "district-industrial-zone",
+      "districtName": "工業區",
+      "description": "",
+      "effects": [
+        "+3 生產力",
+        "+1 公民槽位",
+        "每回合+1 大工程師點數。"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "工業區"
+        },
+        {
+          "label": "科技",
+          "value": "學徒"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：195 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：780 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "tip": "工業區的第一級建築，先在高相鄰、會繼續蓋工廠與發電廠的核心工業城完成。",
+      "unique": false
+    },
+    {
+      "id": "building-factory",
+      "pageId": "BUILDING_FACTORY",
+      "name": "工廠",
+      "en": "Factory",
+      "icon": "icon_building_factory.png",
+      "districtPageId": "DISTRICT_INDUSTRIAL_ZONE",
+      "districtId": "district-industrial-zone",
+      "districtName": "工業區",
+      "description": "其 生產力加成可延展至6單元格範圍內所有未獲得此建築類型加成之市中心。",
+      "effects": [
+        "+3 生產力",
+        "+3 生產力， 電力充足時獲得額外加成。",
+        "+1 公民槽位",
+        "每回合+1 大工程師點數。"
+      ],
+      "replacedBy": [
+        "電子廠"
+      ],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "工業區"
+        },
+        {
+          "label": "科技",
+          "value": "工業化"
+        },
+        {
+          "label": "建築",
+          "value": "工作坊"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：330 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1320 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：2 金幣"
+        }
+      ],
+      "tip": "區域生產力可服務城市群；安排覆蓋範圍，避免多座工廠效果重複。",
+      "unique": false
+    },
+    {
+      "id": "building-power-plant",
+      "pageId": "BUILDING_POWER_PLANT",
+      "name": "核能發電廠",
+      "en": "Nuclear Power Plant",
+      "icon": "icon_building_power_plant.png",
+      "districtPageId": "DISTRICT_INDUSTRIAL_ZONE",
+      "districtId": "district-industrial-zone",
+      "districtName": "工業區",
+      "description": "自動將任何數量的 鈾轉化為 電力，並為6單元格範圍內的城市供電，比率為：\n1點 鈾 16點 電力。\n會排放微量二氧化碳至大氣中\n一旦建成，隨著核能發電廠老化，核事故發生的機率也會增加。其 生產力和 科技值加成可延展至6單元格範圍內所有未獲得發電廠建築加成之市中心。",
+      "effects": [
+        "+4 生產力",
+        "+3 科技值",
+        "+1 公民槽位",
+        "每回合+1 大工程師點數。",
+        "公民收益（每位公民）：+1 生產力"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "工業區"
+        },
+        {
+          "label": "科技",
+          "value": "核裂變"
+        },
+        {
+          "label": "建築",
+          "value": "工廠"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：480 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1920 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：3 金幣"
+        }
+      ],
+      "tip": "高相鄰工業城優先，區域性建築要按覆蓋範圍規劃，避免效果重複。",
+      "unique": false
+    },
+    {
+      "id": "building-electronics-factory",
+      "pageId": "BUILDING_ELECTRONICS_FACTORY",
+      "name": "電子廠",
+      "en": "Electronics Factory",
+      "icon": "icon_building_electronics_factory.png",
+      "districtPageId": "DISTRICT_INDUSTRIAL_ZONE",
+      "districtId": "district-industrial-zone",
+      "districtName": "工業區",
+      "description": "日本特色建築。研究「電力」科技後，該建築能為所在城市額外+4 文化值。其 生產力加成可延展至6單元格範圍內所有未獲得此建築類型加成之市中心。",
+      "effects": [
+        "特色：日本",
+        "取代：工廠",
+        "取代：+3 生產力",
+        "取代：+5 生產力， 電力充足時獲得額外加成。",
+        "取代：+1 公民槽位",
+        "取代：每回合+1 大工程師點數。"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "工業區"
+        },
+        {
+          "label": "科技",
+          "value": "工業化"
+        },
+        {
+          "label": "建築",
+          "value": "工作坊"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：330 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1320 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：2 金幣"
+        }
+      ],
+      "tip": "高相鄰工業城優先，區域性建築要按覆蓋範圍規劃，避免效果重複。",
+      "unique": true
+    },
+    {
+      "id": "building-fossil-fuel-power-plant",
+      "pageId": "BUILDING_FOSSIL_FUEL_POWER_PLANT",
+      "name": "燃油發電廠",
+      "en": "Oil Power Plant",
+      "icon": "icon_building_fossil_fuel_power_plant.png",
+      "districtPageId": "DISTRICT_INDUSTRIAL_ZONE",
+      "districtId": "district-industrial-zone",
+      "districtName": "工業區",
+      "description": "自動將任何數量的 石油轉化為 電力，並為6單元格範圍內的城市供電，比率為：\n1點 石油 4點 電力。\n會排放中等二氧化碳至大氣中\n其 生產力加成可延展至6單元格範圍內所有未獲得發電廠建築加成之市中心。",
+      "effects": [
+        "+3 生產力",
+        "+1 公民槽位",
+        "每回合+1 大工程師點數。",
+        "公民收益（每位公民）：+1 生產力"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "工業區"
+        },
+        {
+          "label": "科技",
+          "value": "電力"
+        },
+        {
+          "label": "建築",
+          "value": "工廠"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：360 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1440 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：3 金幣"
+        }
+      ],
+      "tip": "高相鄰工業城優先，區域性建築要按覆蓋範圍規劃，避免效果重複。",
+      "unique": false
+    },
+    {
+      "id": "building-coal-power-plant",
+      "pageId": "BUILDING_COAL_POWER_PLANT",
+      "name": "燃煤發電廠",
+      "en": "Coal Power Plant",
+      "icon": "icon_building_coal_power_plant.png",
+      "districtPageId": "DISTRICT_INDUSTRIAL_ZONE",
+      "districtId": "district-industrial-zone",
+      "districtName": "工業區",
+      "description": "自動將任何數量的 煤轉化為 電力，並為6單元格範圍內的城市供電，比率為：\n1點 煤 4點 電力。\n會排放大量二氧化碳至大氣中",
+      "effects": [
+        "生產力加成等於該區域相鄰 生產力加成。",
+        "+1 公民槽位",
+        "每回合+1 大工程師點數。",
+        "公民收益（每位公民）：+1 生產力"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "工業區"
+        },
+        {
+          "label": "科技",
+          "value": "工業化"
+        },
+        {
+          "label": "建築",
+          "value": "工廠"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：300 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1200 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：3 金幣"
+        }
+      ],
+      "tip": "高相鄰工業城優先，區域性建築要按覆蓋範圍規劃，避免效果重複。",
+      "unique": false
+    },
+    {
+      "id": "building-aquatics-center",
+      "pageId": "BUILDING_AQUATICS_CENTER",
+      "name": "水上運動中心",
+      "en": "Aquatics Center",
+      "icon": "icon_building_aquatics_center.png",
+      "districtPageId": "DISTRICT_WATER_ENTERTAINMENT_COMPLEX",
+      "districtId": "district-water-entertainment-complex",
+      "districtName": "水上樂園",
+      "description": "距離9單元格範圍內的所有市中心可獲得 滿意度加成。此加成僅能在同座城市內施用1次，在市中心9單元格範圍內建造多座此建築並不會提供額外加成。此城市中每座建在海岸單元格之上、或相鄰於海岸單位格的奇觀+2 旅遊業績。",
+      "effects": [
+        "+1 滿意度來自娛樂",
+        "+2 滿意度來自娛樂， 電力充足時獲得額外加成。",
+        "+750來自搖滾演唱會的 旅遊業績。"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "水上樂園"
+        },
+        {
+          "label": "市政",
+          "value": "職業體育"
+        },
+        {
+          "label": "建築",
+          "value": "水族館"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：480 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1920 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：3 金幣"
+        }
+      ],
+      "tip": "沿海城市群缺宜居度或文化勝利需要旅遊時優先，留意區域效果覆蓋範圍。",
+      "unique": false
+    },
+    {
+      "id": "building-aquarium",
+      "pageId": "BUILDING_AQUARIUM",
+      "name": "水族館",
+      "en": "Aquarium",
+      "icon": "icon_building_aquarium.png",
+      "districtPageId": "DISTRICT_WATER_ENTERTAINMENT_COMPLEX",
+      "districtId": "district-water-entertainment-complex",
+      "districtName": "水上樂園",
+      "description": "距離9單元格範圍內的所有市中心可獲得 滿意度加成。此加成僅能在同座城市內施用1次，在市中心9單元格範圍內建造多座此建築並不會提供額外加成。此城市中的每個海岸資源、遇難船隻遺址與礁石單元格+1 科技值。",
+      "effects": [
+        "+1 滿意度來自娛樂"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "水上樂園"
+        },
+        {
+          "label": "市政",
+          "value": "自然歷史"
+        },
+        {
+          "label": "建築",
+          "value": "摩天輪"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：360 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1440 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：2 金幣"
+        }
+      ],
+      "tip": "沿海城市群缺宜居度或文化勝利需要旅遊時優先，留意區域效果覆蓋範圍。",
+      "unique": false
+    },
+    {
+      "id": "building-ferris-wheel",
+      "pageId": "BUILDING_FERRIS_WHEEL",
+      "name": "摩天輪",
+      "en": "Ferris Wheel",
+      "icon": "icon_building_ferris_wheel.png",
+      "districtPageId": "DISTRICT_WATER_ENTERTAINMENT_COMPLEX",
+      "districtId": "district-water-entertainment-complex",
+      "districtName": "水上樂園",
+      "description": "+2 旅遊業績。",
+      "effects": [
+        "+3 文化值",
+        "+2 滿意度來自娛樂",
+        "+250來自搖滾演唱會的 旅遊業績。"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "水上樂園"
+        },
+        {
+          "label": "市政",
+          "value": "自然歷史"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：290 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1160 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "tip": "沿海城市群缺宜居度或文化勝利需要旅遊時優先，留意區域效果覆蓋範圍。",
+      "unique": false
+    },
+    {
+      "id": "building-hydroelectric-dam",
+      "pageId": "BUILDING_HYDROELECTRIC_DAM",
+      "name": "水力發電水壩",
+      "en": "Hydroelectric Dam",
+      "icon": "icon_building_hydroelectric_dam.png",
+      "districtPageId": "DISTRICT_DAM",
+      "districtId": "district-dam",
+      "districtName": "水壩",
+      "description": "可再生的水源提供此城市+6 電力。",
+      "effects": [],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "水壩"
+        },
+        {
+          "label": "科技",
+          "value": "電力"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：440 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1760 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "tip": "建在水壩內；先確認此城市會使用卡片列出的產出、槽位或區域效果，再投入生產力。",
+      "unique": false
+    },
+    {
+      "id": "building-gov-faith",
+      "pageId": "BUILDING_GOV_FAITH",
+      "name": "大團長聖堂",
+      "en": "Grand Master's Chapel",
+      "icon": "icon_building_gov_faith.png",
+      "districtPageId": "DISTRICT_GOVERNMENT",
+      "districtId": "district-government",
+      "districtName": "市政廣場",
+      "description": "賦予以 信仰值購買陸地單位的能力。\n掠奪改良設施與區域可獲得額外 信仰值。\n獎勵1個 行政長官職稱。",
+      "effects": [
+        "+5 信仰值"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "市政廣場"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：290 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：2 金幣"
+        }
+      ],
+      "tip": "政府廣場建築互斥且會鎖定長期戰略；選擇前先看擴張、總督、軍事或信仰經濟的主線。",
+      "unique": false
+    },
+    {
+      "id": "building-queens-bibliotheque",
+      "pageId": "BUILDING_QUEENS_BIBLIOTHEQUE",
+      "name": "女王圖書館",
+      "en": "Queen's Bibliotheque",
+      "icon": "icon_building_queens_bibliotheque.png",
+      "districtPageId": "DISTRICT_GOVERNMENT",
+      "districtId": "district-government",
+      "districtName": "市政廣場",
+      "description": "瑞典特色建築。此建築提供2個 著作、 音樂及任一種類 藝術的槽位。\n獎勵1個 行政長官職稱。",
+      "effects": [
+        "特色：克里斯蒂娜",
+        "特色：每回合+2 大藝術家點數。",
+        "特色：每回合+2 大作家點數。",
+        "特色：每回合+2 大音樂家點數。",
+        "特色：+2 偉大的巨作著作槽位",
+        "特色：+2 偉大的巨作藝術槽位",
+        "特色：+2 偉大的巨作音樂槽位"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "市政廣場"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：217 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：2 金幣"
+        }
+      ],
+      "tip": "政府廣場建築互斥且會鎖定長期戰略；選擇前先看擴張、總督、軍事或信仰經濟的主線。",
+      "unique": true
+    },
+    {
+      "id": "building-gov-citystates",
+      "pageId": "BUILDING_GOV_CITYSTATES",
+      "name": "外交部",
+      "en": "Foreign Ministry",
+      "icon": "icon_building_gov_citystates.png",
+      "districtPageId": "DISTRICT_GOVERNMENT",
+      "districtId": "district-government",
+      "districtName": "市政廣場",
+      "description": "+3 外交支持。徵集城邦單位所花費的 金幣減半。\n若您為城邦的宗主國，城邦單位 戰鬥力+4（包括已徵集的單位）。\n獎勵1個 行政長官職稱。",
+      "effects": [],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "市政廣場"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：290 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：2 金幣"
+        }
+      ],
+      "tip": "政府廣場建築互斥且會鎖定長期戰略；選擇前先看擴張、總督、軍事或信仰經濟的主線。",
+      "unique": false
+    },
+    {
+      "id": "building-gov-science",
+      "pageId": "BUILDING_GOV_SCIENCE",
+      "name": "皇家學會",
+      "en": "Royal Society",
+      "icon": "icon_building_gov_science.png",
+      "districtPageId": "DISTRICT_GOVERNMENT",
+      "districtId": "district-government",
+      "districtName": "市政廣場",
+      "description": "建造者能夠用盡建造次數換取區域項目的 生產力加成。一次僅能用於一座城市，每回合限一次。\n獎勵1個 行政長官職稱。",
+      "effects": [],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "市政廣場"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：440 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：3 金幣"
+        }
+      ],
+      "tip": "政府廣場建築互斥且會鎖定長期戰略；選擇前先看擴張、總督、軍事或信仰經濟的主線。",
+      "unique": false
+    },
+    {
+      "id": "building-gov-conquest",
+      "pageId": "BUILDING_GOV_CONQUEST",
+      "name": "軍閥王座",
+      "en": "Warlord's Throne",
+      "icon": "icon_building_gov_conquest.png",
+      "districtPageId": "DISTRICT_GOVERNMENT",
+      "districtId": "district-government",
+      "districtName": "市政廣場",
+      "description": "佔領敵方城市時所有城市可獲得20% 生產力加成，效果持續5個回合。\n獎勵1個 行政長官職稱。",
+      "effects": [],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "市政廣場"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：150 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "tip": "政府廣場建築互斥且會鎖定長期戰略；選擇前先看擴張、總督、軍事或信仰經濟的主線。",
+      "unique": false
+    },
+    {
+      "id": "building-gov-wide",
+      "pageId": "BUILDING_GOV_WIDE",
+      "name": "祠堂",
+      "en": "Ancestral Hall",
+      "icon": "icon_building_gov_wide.png",
+      "districtPageId": "DISTRICT_GOVERNMENT",
+      "districtId": "district-government",
+      "districtName": "市政廣場",
+      "description": "在此城市中生產開拓者時+50% 生產力。\n新城市免費獲得1位建造者。\n獎勵1個 行政長官職稱。",
+      "effects": [],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "市政廣場"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：150 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "tip": "政府廣場建築互斥且會鎖定長期戰略；選擇前先看擴張、總督、軍事或信仰經濟的主線。",
+      "unique": false
+    },
+    {
+      "id": "building-gov-culture",
+      "pageId": "BUILDING_GOV_CULTURE",
+      "name": "國家歷史博物館",
+      "en": "National History Museum",
+      "icon": "icon_building_gov_culture.png",
+      "districtPageId": "DISTRICT_GOVERNMENT",
+      "districtId": "district-government",
+      "districtName": "市政廣場",
+      "description": "提供4個不限種類的巨作槽位。\n獎勵1個 行政長官職稱。",
+      "effects": [
+        "+4 巨作槽位（任一類型）"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "市政廣場"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：440 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：3 金幣"
+        }
+      ],
+      "tip": "政府廣場建築互斥且會鎖定長期戰略；選擇前先看擴張、總督、軍事或信仰經濟的主線。",
+      "unique": false
+    },
+    {
+      "id": "building-gov-spies",
+      "pageId": "BUILDING_GOV_SPIES",
+      "name": "情報局",
+      "en": "Intelligence Agency",
+      "icon": "icon_building_gov_spies.png",
+      "districtPageId": "DISTRICT_GOVERNMENT",
+      "districtId": "district-government",
+      "districtName": "市政廣場",
+      "description": "間諜與間諜容量+1。\n所有間諜行動的成功率更高。\n獎勵1個 行政長官職稱。",
+      "effects": [],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "市政廣場"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：290 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：2 金幣"
+        }
+      ],
+      "tip": "政府廣場建築互斥且會鎖定長期戰略；選擇前先看擴張、總督、軍事或信仰經濟的主線。",
+      "unique": false
+    },
+    {
+      "id": "building-gov-military",
+      "pageId": "BUILDING_GOV_MILITARY",
+      "name": "戰爭部",
+      "en": "War Department",
+      "icon": "icon_building_gov_military.png",
+      "districtPageId": "DISTRICT_GOVERNMENT",
+      "districtId": "district-government",
+      "districtName": "市政廣場",
+      "description": "消滅單位時所有單位皆可治癒生命值（最高20點）。\n獎勵1個 行政長官職稱。",
+      "effects": [],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "市政廣場"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：440 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：3 金幣"
+        }
+      ],
+      "tip": "政府廣場建築互斥且會鎖定長期戰略；選擇前先看擴張、總督、軍事或信仰經濟的主線。",
+      "unique": false
+    },
+    {
+      "id": "building-gov-tall",
+      "pageId": "BUILDING_GOV_TALL",
+      "name": "謁見廳",
+      "en": "Audience Chamber",
+      "icon": "icon_building_gov_tall.png",
+      "districtPageId": "DISTRICT_GOVERNMENT",
+      "districtId": "district-government",
+      "districtName": "市政廣場",
+      "description": "所有擁有行政長官的城市+2 滿意度、+4 住房。\n沒有行政長官的城市-2忠誠度。\n獎勵1個 行政長官職稱。",
+      "effects": [],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "市政廣場"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：150 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "tip": "政府廣場建築互斥且會鎖定長期戰略；選擇前先看擴張、總督、軍事或信仰經濟的主線。",
+      "unique": false
+    },
+    {
+      "id": "building-chancery",
+      "pageId": "BUILDING_CHANCERY",
+      "name": "文秘署",
+      "en": "Chancery",
+      "icon": "icon_building_chancery.png",
+      "districtPageId": "DISTRICT_DIPLOMATIC_QUARTER",
+      "districtId": "district-diplomatic-quarter",
+      "districtName": "使館特區",
+      "description": "每回合+3影響力點數。此文明俘虜或殺死敵方間諜時，敵方間諜每有一級強化，文明便獲得50點 科技值。",
+      "effects": [],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "使館特區"
+        },
+        {
+          "label": "市政",
+          "value": "外交部門"
+        },
+        {
+          "label": "建築",
+          "value": "領事館"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：290 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1160 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：2 金幣"
+        }
+      ],
+      "tip": "建在使館特區內；先確認此城市會使用卡片列出的產出、槽位或區域效果，再投入生產力。",
+      "unique": false
+    },
+    {
+      "id": "building-consulate",
+      "pageId": "BUILDING_CONSULATE",
+      "name": "領事館",
+      "en": "Consulate",
+      "icon": "icon_building_consulate.png",
+      "districtPageId": "DISTRICT_DIPLOMATIC_QUARTER",
+      "districtId": "district-diplomatic-quarter",
+      "districtName": "使館特區",
+      "description": "每回合+2影響力點數。以此城市或擁有營地的城市為目標時，敵方間諜的效力將降低一階。",
+      "effects": [],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "使館特區"
+        },
+        {
+          "label": "科技",
+          "value": "數學"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：150 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：600 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "tip": "建在使館特區內；先確認此城市會使用卡片列出的產出、槽位或區域效果，再投入生產力。",
+      "unique": false
+    },
+    {
+      "id": "building-food-market",
+      "pageId": "BUILDING_FOOD_MARKET",
+      "name": "食品市場",
+      "en": "Food Market",
+      "icon": "icon_building_food_market.png",
+      "districtPageId": "DISTRICT_NEIGHBORHOOD",
+      "districtId": "district-neighborhood",
+      "districtName": "社區",
+      "description": "僅能在一座城市中建造一次，就算該城市擁有多個社區亦同。",
+      "effects": [
+        "+4 食物",
+        "+2 食物， 電力充足時獲得額外加成。"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "社區"
+        },
+        {
+          "label": "科技",
+          "value": "可更換部件"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：380 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1520 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "tip": "建在社區內；先確認此城市會使用卡片列出的產出、槽位或區域效果，再投入生產力。",
+      "unique": false
+    },
+    {
+      "id": "building-shopping-mall",
+      "pageId": "BUILDING_SHOPPING_MALL",
+      "name": "購物中心",
+      "en": "Shopping Mall",
+      "icon": "icon_building_shopping_mall.png",
+      "districtPageId": "DISTRICT_NEIGHBORHOOD",
+      "districtId": "district-neighborhood",
+      "districtName": "社區",
+      "description": "+4 旅遊業績。僅能在一座城市中建造一次，就算該城市擁有多個社區亦同。",
+      "effects": [
+        "+2 金幣",
+        "+2 金幣， 電力充足時獲得額外加成。",
+        "+1 滿意度來自娛樂",
+        "+1 滿意度來自娛樂， 電力充足時獲得額外加成。"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "社區"
+        },
+        {
+          "label": "市政",
+          "value": "資本主義"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：440 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1760 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "tip": "建在社區內；先確認此城市會使用卡片列出的產出、槽位或區域效果，再投入生產力。",
+      "unique": false
+    },
+    {
+      "id": "building-grove",
+      "pageId": "BUILDING_GROVE",
+      "name": "古樹林",
+      "en": "Grove",
+      "icon": "icon_building_grove.png",
+      "districtPageId": "DISTRICT_PRESERVE",
+      "districtId": "district-preserve",
+      "districtName": "保留區",
+      "description": "賦予相鄰未改良之迷人的單元格+1 食物和+1 信仰值。若相鄰未改良之極大魅力的單元格，則增加為+2 食物、+2 信仰值和+2 文化值。",
+      "effects": [],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "保留區"
+        },
+        {
+          "label": "市政",
+          "value": "神秘主義"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：150 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：600 金幣"
+        }
+      ],
+      "tip": "只有相鄰地塊能保持高魅力且不改良時才有高回報；一般城市不應盲目建造。",
+      "unique": false
+    },
+    {
+      "id": "building-sanctuary",
+      "pageId": "BUILDING_SANCTUARY",
+      "name": "庇護所",
+      "en": "Sanctuary",
+      "icon": "icon_building_sanctuary.png",
+      "districtPageId": "DISTRICT_PRESERVE",
+      "districtId": "district-preserve",
+      "districtName": "保留區",
+      "description": "賦予相鄰未改良之迷人的單元格+1 科技值和+1 金幣。若相鄰未改良之極大魅力的單元格，則增加為+2 科技值、+2 金幣和+2 生產力。",
+      "effects": [],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "保留區"
+        },
+        {
+          "label": "市政",
+          "value": "保藏"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：440 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1760 金幣"
+        }
+      ],
+      "tip": "只有相鄰地塊能保持高魅力且不改良時才有高回報；一般城市不應盲目建造。",
+      "unique": false
+    },
+    {
+      "id": "building-sewer",
+      "pageId": "BUILDING_SEWER",
+      "name": "下水道",
+      "en": "Sewer",
+      "icon": "icon_building_sewer.png",
+      "districtPageId": "DISTRICT_CITY_CENTER",
+      "districtId": "district-city-center",
+      "districtName": "城市中心",
+      "description": "",
+      "effects": [
+        "+2 住房"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "城市中心"
+        },
+        {
+          "label": "科技",
+          "value": "公共衛生"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：200 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：800 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：2 金幣"
+        }
+      ],
+      "tip": "依城市當前瓶頸決定：文化擴張、住房成長、防禦或災害保護，不必照固定順序全蓋。",
+      "unique": false
+    },
+    {
+      "id": "building-castle",
+      "pageId": "BUILDING_CASTLE",
+      "name": "中世紀城牆",
+      "en": "Medieval Walls",
+      "icon": "icon_building_castle.png",
+      "districtPageId": "DISTRICT_CITY_CENTER",
+      "districtId": "district-city-center",
+      "districtName": "城市中心",
+      "description": "增加你的外部防禦力。獲得「保藏」市政後提供2 旅遊業績。此城市不會受到破城槌的影響。",
+      "effects": [
+        "+100外部防禦"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "城市中心"
+        },
+        {
+          "label": "科技",
+          "value": "城堡"
+        },
+        {
+          "label": "建築",
+          "value": "遠古城牆"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：220 生產力"
+        }
+      ],
+      "tip": "依城市當前瓶頸決定：文化擴張、住房成長、防禦或災害保護，不必照固定順序全蓋。",
+      "unique": false
+    },
+    {
+      "id": "building-star-fort",
+      "pageId": "BUILDING_STAR_FORT",
+      "name": "文藝復興城牆",
+      "en": "Renaissance Walls",
+      "icon": "icon_building_star_fort.png",
+      "districtPageId": "DISTRICT_CITY_CENTER",
+      "districtId": "district-city-center",
+      "districtName": "城市中心",
+      "description": "提升你的外部防禦能力至最佳水平。獲得「保藏」市政後提供3 旅遊業績。此城市不會受到攻城塔或破城槌的影響。",
+      "effects": [
+        "+100外部防禦"
+      ],
+      "replacedBy": [
+        "要塞"
+      ],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "城市中心"
+        },
+        {
+          "label": "科技",
+          "value": "攻城術"
+        },
+        {
+          "label": "建築",
+          "value": "中世紀城牆"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：300 生產力"
+        }
+      ],
+      "tip": "依城市當前瓶頸決定：文化擴張、住房成長、防禦或災害保護，不必照固定順序全蓋。",
+      "unique": false
+    },
+    {
+      "id": "building-water-mill",
+      "pageId": "BUILDING_WATER_MILL",
+      "name": "水磨",
+      "en": "Water Mill",
+      "icon": "icon_building_water_mill.png",
+      "districtPageId": "DISTRICT_CITY_CENTER",
+      "districtId": "district-city-center",
+      "districtName": "城市中心",
+      "description": "透過建築農場改良的加成資源分別+1 食物。城市必須與河流相鄰。",
+      "effects": [
+        "+1 食物",
+        "+1 生產力"
+      ],
+      "replacedBy": [
+        "灌渠"
+      ],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "城市中心"
+        },
+        {
+          "label": "科技",
+          "value": "輪子"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：80 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：320 金幣"
+        }
+      ],
+      "tip": "沿河城市且有多個加成資源時收益最好；若城市沒有相關資源，優先度會明顯下降。",
+      "unique": false
+    },
+    {
+      "id": "building-flood-barrier",
+      "pageId": "BUILDING_FLOOD_BARRIER",
+      "name": "防洪堤",
+      "en": "Flood Barrier",
+      "icon": "icon_building_flood_barrier.png",
+      "districtPageId": "DISTRICT_CITY_CENTER",
+      "districtId": "district-city-center",
+      "districtName": "城市中心",
+      "description": "保護此城市的海岸低地不受氾濫威脅。初始的建造費用和每回合維護費用會根據此城市的海岸低地數量和當前海平面高度而定。若在城市單元格遭到洪災之後建造，將能完整修復這些單元格。但淹沒的單元格無法恢復。\n必須建造在擁有一個或多個海岸低地單元格的城市中。若城市遭到佔領將不會受到掠奪。",
+      "effects": [],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "城市中心"
+        },
+        {
+          "label": "科技",
+          "value": "計算機"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：80 生產力"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "tip": "會受海平面上升影響的城市應在電腦科技後盡快完成；越晚建造成本通常越高。",
+      "unique": false
+    },
+    {
+      "id": "building-monument",
+      "pageId": "BUILDING_MONUMENT",
+      "name": "紀念碑",
+      "en": "Monument",
+      "icon": "icon_building_monument.png",
+      "districtPageId": "DISTRICT_CITY_CENTER",
+      "districtId": "district-city-center",
+      "districtName": "城市中心",
+      "description": "為此城市每回合+1忠誠度。若該城市的忠誠度已達最高，則額外+1 文化值。",
+      "effects": [
+        "+1 文化值"
+      ],
+      "replacedBy": [
+        "舊神方尖碑"
+      ],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "城市中心"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：60 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：240 金幣"
+        }
+      ],
+      "tip": "新城通常優先度很高：忠誠度未滿時先補忠誠，滿忠誠後提供文化值，加速取得關鍵市政與擴張邊界。",
+      "unique": false
+    },
+    {
+      "id": "building-tsikhe",
+      "pageId": "BUILDING_TSIKHE",
+      "name": "要塞",
+      "en": "Tsikhe",
+      "icon": "icon_building_tsikhe.png",
+      "districtPageId": "DISTRICT_CITY_CENTER",
+      "districtId": "district-city-center",
+      "districtName": "城市中心",
+      "description": "喬治亞的特色建築。 生產力消耗比文藝復興城牆更低，而外部防禦能力更高。獲得「保藏」市政後提供3點 旅遊業績。提供4點 信仰值。處於黃金時代時， 旅遊業績和 信仰值加倍。",
+      "effects": [
+        "特色：喬治亞",
+        "取代：文藝復興城牆",
+        "取代：+4 信仰值",
+        "取代：+200外部防禦"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "城市中心"
+        },
+        {
+          "label": "科技",
+          "value": "攻城術"
+        },
+        {
+          "label": "建築",
+          "value": "中世紀城牆"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：260 生產力"
+        }
+      ],
+      "tip": "依城市當前瓶頸決定：文化擴張、住房成長、防禦或災害保護，不必照固定順序全蓋。",
+      "unique": true
+    },
+    {
+      "id": "building-palace",
+      "pageId": "BUILDING_PALACE",
+      "name": "宮殿",
+      "en": "Palace",
+      "icon": "icon_building_palace.png",
+      "districtPageId": "DISTRICT_CITY_CENTER",
+      "districtId": "district-city-center",
+      "districtName": "城市中心",
+      "description": "",
+      "effects": [
+        "+1 文化值",
+        "+5 金幣",
+        "+2 生產力",
+        "+2 科技值",
+        "+1 住房",
+        "+2 滿意度來自娛樂",
+        "+1 巨作槽位（任一類型）"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "城市中心"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：1 生產力"
+        }
+      ],
+      "tip": "依城市當前瓶頸決定：文化擴張、住房成長、防禦或災害保護，不必照固定順序全蓋。",
+      "unique": false
+    },
+    {
+      "id": "building-walls",
+      "pageId": "BUILDING_WALLS",
+      "name": "遠古城牆",
+      "en": "Ancient Walls",
+      "icon": "icon_building_walls.png",
+      "districtPageId": "DISTRICT_CITY_CENTER",
+      "districtId": "district-city-center",
+      "districtName": "城市中心",
+      "description": "提供環繞城市中心和營地區域的城牆。城牆允許城市中心和營地區域進行 遠程攻擊，在攻擊城市之前，必須先擊毀城牆。獲得「保藏」市政後提供1 旅遊業績。",
+      "effects": [
+        "+100外部防禦"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "城市中心"
+        },
+        {
+          "label": "科技",
+          "value": "砌磚"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：80 生產力"
+        }
+      ],
+      "tip": "邊境城、可能被突襲的城市或準備文化旅遊時建；和平內陸城不必過早投入。",
+      "unique": false
+    },
+    {
+      "id": "building-granary",
+      "pageId": "BUILDING_GRANARY",
+      "name": "糧倉",
+      "en": "Granary",
+      "icon": "icon_building_granary.png",
+      "districtPageId": "DISTRICT_CITY_CENTER",
+      "districtId": "district-city-center",
+      "districtName": "城市中心",
+      "description": "",
+      "effects": [
+        "+1 食物",
+        "+2 住房"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "城市中心"
+        },
+        {
+          "label": "科技",
+          "value": "製陶術"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：65 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：260 金幣"
+        }
+      ],
+      "tip": "城市被住房卡住，或缺食物成長時再建；有淡水且住房充足的新城不必固定排在紀念碑之前。",
+      "unique": false
+    },
+    {
+      "id": "building-old-god-obelisk",
+      "pageId": "BUILDING_OLD_GOD_OBELISK",
+      "name": "舊神方尖碑",
+      "en": "Old God Obelisk",
+      "icon": "icon_building_old_god_obelisk.png",
+      "districtPageId": "DISTRICT_CITY_CENTER",
+      "districtId": "district-city-center",
+      "districtName": "城市中心",
+      "description": "虛空遊吟者特色建築，取代紀念碑。包含1個能放置各種類型巨作的巨作槽位。每回合為此城市提供+1忠誠度。若此城市的忠誠度已經全滿，則額外提供+1 文化值。",
+      "effects": [
+        "取代：紀念碑",
+        "取代：+1 文化值",
+        "取代：+4 信仰值",
+        "取代：+1 巨作槽位（任一類型）"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "城市中心"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：60 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：240 金幣"
+        }
+      ],
+      "tip": "依城市當前瓶頸決定：文化擴張、住房成長、防禦或災害保護，不必照固定順序全蓋。",
+      "unique": true
+    },
+    {
+      "id": "building-palgum",
+      "pageId": "BUILDING_PALGUM",
+      "name": "灌渠",
+      "en": "Palgum",
+      "icon": "icon_building_palgum.png",
+      "districtPageId": "DISTRICT_CITY_CENTER",
+      "districtId": "district-city-center",
+      "districtName": "城市中心",
+      "description": "巴比倫特色建築。+1 住房並+2 生產力。淡水單元格獲得+1 食物。城市必須相鄰於河流。",
+      "effects": [
+        "特色：巴比倫",
+        "取代：水磨",
+        "取代：+2 生產力",
+        "取代：+1 住房"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "城市中心"
+        },
+        {
+          "label": "科技",
+          "value": "灌溉"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：80 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：320 金幣"
+        }
+      ],
+      "tip": "依城市當前瓶頸決定：文化擴張、住房成長、防禦或災害保護，不必照固定順序全蓋。",
+      "unique": true
+    },
+    {
+      "id": "building-zoo",
+      "pageId": "BUILDING_ZOO",
+      "name": "動物園",
+      "en": "Zoo",
+      "icon": "icon_building_zoo.png",
+      "districtPageId": "DISTRICT_ENTERTAINMENT_COMPLEX",
+      "districtId": "district-entertainment-complex",
+      "districtName": "娛樂中心",
+      "description": "距離6單元格範圍內的所有市中心可獲得 滿意度加成。此加成僅能在同座城市內施用1次，在市中心6單元格範圍內建造多座此建築並不會提供額外加成。此城市中的每個雨林和沼澤單元格+1 科技值。",
+      "effects": [
+        "+1 滿意度來自娛樂"
+      ],
+      "replacedBy": [
+        "溫泉浴場"
+      ],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "娛樂中心"
+        },
+        {
+          "label": "市政",
+          "value": "自然歷史"
+        },
+        {
+          "label": "建築",
+          "value": "競技場"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：360 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1440 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：2 金幣"
+        }
+      ],
+      "tip": "城市群宜居度不足時建造；區域性建築應集中覆蓋多城而非逐城複製。",
+      "unique": false
+    },
+    {
+      "id": "building-thermal-bath",
+      "pageId": "BUILDING_THERMAL_BATH",
+      "name": "溫泉浴場",
+      "en": "Thermal Bath",
+      "icon": "icon_building_thermal_bath.png",
+      "districtPageId": "DISTRICT_ENTERTAINMENT_COMPLEX",
+      "districtId": "district-entertainment-complex",
+      "districtName": "娛樂中心",
+      "description": "匈牙利特色建築。距離6單元格範圍內的每個市中心獲得+2點 滿意度和+2點 生產力基礎加成。此加成僅能在同座城市內施用1次，在市中心6單元格範圍內建造多座此建築並不會提供額外加成。\n若此城市境內有至少一個地熱裂隙，則每個+3 旅遊業績且+2 滿意度。",
+      "effects": [
+        "特色：匈牙利",
+        "取代：動物園",
+        "取代：+2 生產力",
+        "取代：+2 滿意度來自娛樂"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "娛樂中心"
+        },
+        {
+          "label": "市政",
+          "value": "自然歷史"
+        },
+        {
+          "label": "建築",
+          "value": "競技場"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：360 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1440 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：2 金幣"
+        }
+      ],
+      "tip": "城市群宜居度不足時建造；區域性建築應集中覆蓋多城而非逐城複製。",
+      "unique": true
+    },
+    {
+      "id": "building-tlachtli",
+      "pageId": "BUILDING_TLACHTLI",
+      "name": "蹴球場",
+      "en": "Tlachtli",
+      "icon": "icon_building_tlachtli.png",
+      "districtPageId": "DISTRICT_ENTERTAINMENT_COMPLEX",
+      "districtId": "district-entertainment-complex",
+      "districtName": "娛樂中心",
+      "description": "阿茲特克特色建築。提供2點 滿意度、+2 文化值、+2 信仰值，及1點 大將軍點數。擁有「保藏」市政後提供+1 旅遊業績。",
+      "effects": [
+        "特色：阿茲特克",
+        "取代：競技場",
+        "取代：+2 信仰值",
+        "取代：+2 文化值",
+        "取代：+2 滿意度來自娛樂",
+        "取代：每回合+1 大將軍點數。",
+        "取代：+250來自搖滾演唱會的 旅遊業績。"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "娛樂中心"
+        },
+        {
+          "label": "市政",
+          "value": "遊戲和娛樂"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：135 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：540 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "tip": "城市群宜居度不足時建造；區域性建築應集中覆蓋多城而非逐城複製。",
+      "unique": true
+    },
+    {
+      "id": "building-arena",
+      "pageId": "BUILDING_ARENA",
+      "name": "競技場",
+      "en": "Arena",
+      "icon": "icon_building_arena.png",
+      "districtPageId": "DISTRICT_ENTERTAINMENT_COMPLEX",
+      "districtId": "district-entertainment-complex",
+      "districtName": "娛樂中心",
+      "description": "獲得「保藏」市政後提供1點 旅遊業績。",
+      "effects": [
+        "+1 文化值",
+        "+2 滿意度來自娛樂",
+        "+250來自搖滾演唱會的 旅遊業績。"
+      ],
+      "replacedBy": [
+        "蹴球場"
+      ],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "娛樂中心"
+        },
+        {
+          "label": "市政",
+          "value": "遊戲和娛樂"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：150 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：600 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "tip": "單城宜居度與文化的基礎建築，也是後續區域宜居度建築的前置。",
+      "unique": false
+    },
+    {
+      "id": "building-stadium",
+      "pageId": "BUILDING_STADIUM",
+      "name": "體育場",
+      "en": "Stadium",
+      "icon": "icon_building_stadium.png",
+      "districtPageId": "DISTRICT_ENTERTAINMENT_COMPLEX",
+      "districtId": "district-entertainment-complex",
+      "districtName": "娛樂中心",
+      "description": "距離6單元格範圍內的所有市中心可獲得 滿意度加成。此加成僅能在同座城市內施用1次，在市中心6單元格範圍內建造多座此建築並不會提供額外加成。 人口10或以上的城市+2 旅遊業績， 人口20或以上的城市+5 旅遊業績。",
+      "effects": [
+        "+1 滿意度來自娛樂",
+        "+2 滿意度來自娛樂， 電力充足時獲得額外加成。",
+        "+750來自搖滾演唱會的 旅遊業績。"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "娛樂中心"
+        },
+        {
+          "label": "市政",
+          "value": "職業體育"
+        },
+        {
+          "label": "建築",
+          "value": "動物園"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：480 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1920 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：3 金幣"
+        }
+      ],
+      "tip": "城市群宜居度不足時建造；區域性建築應集中覆蓋多城而非逐城複製。",
+      "unique": false
+    },
+    {
+      "id": "building-hangar",
+      "pageId": "BUILDING_HANGAR",
+      "name": "機庫",
+      "en": "Hangar",
+      "icon": "icon_building_hangar.png",
+      "districtPageId": "DISTRICT_AERODROME",
+      "districtId": "district-aerodrome",
+      "districtName": "航空港",
+      "description": "當前城市訓練的空中單位+25%戰鬥經驗值。航空港區域+2空中單位槽位。",
+      "effects": [
+        "+2 生產力"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "航空港"
+        },
+        {
+          "label": "科技",
+          "value": "飛行"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：380 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1520 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "tip": "建在航空港內；先確認此城市會使用卡片列出的產出、槽位或區域效果，再投入生產力。",
+      "unique": false
+    },
+    {
+      "id": "building-airport",
+      "pageId": "BUILDING_AIRPORT",
+      "name": "機場",
+      "en": "Airport",
+      "icon": "icon_building_airport.png",
+      "districtPageId": "DISTRICT_AERODROME",
+      "districtId": "district-aerodrome",
+      "districtName": "航空港",
+      "description": "該城市訓練的空中單位+50%戰鬥經驗值。航空港+2空中單位槽位。緊急部署市政解鎖後，可以在帶有機場的航空港之間空運陸地單位。",
+      "effects": [
+        "+4 生產力",
+        "+2 生產力， 電力充足時獲得額外加成。"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "航空港"
+        },
+        {
+          "label": "科技",
+          "value": "現代航空"
+        },
+        {
+          "label": "建築",
+          "value": "機庫"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：480 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1920 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：2 金幣"
+        }
+      ],
+      "tip": "建在航空港內；先確認此城市會使用卡片列出的產出、槽位或區域效果，再投入生產力。",
+      "unique": false
+    },
+    {
+      "id": "building-grand-bazaar",
+      "pageId": "BUILDING_GRAND_BAZAAR",
+      "name": "大巴扎",
+      "en": "Grand Bazaar",
+      "icon": "icon_building_grand_bazaar.png",
+      "districtPageId": "DISTRICT_COMMERCIAL_HUB",
+      "districtId": "district-commercial-hub",
+      "districtName": "商業中心",
+      "description": "鄂圖曼特色建築。此城市每改良1種不同的戰略資源，即可再累積1個額外的戰略資源。此城市每改良一個奢侈品資源+1 滿意度。",
+      "effects": [
+        "特色：鄂圖曼",
+        "取代：銀行",
+        "取代：+5 金幣",
+        "取代：+1 公民槽位",
+        "取代：每回合+1 大商人點數。"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "商業中心"
+        },
+        {
+          "label": "科技",
+          "value": "銀行業"
+        },
+        {
+          "label": "建築",
+          "value": "市場"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：220 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：880 金幣"
+        }
+      ],
+      "tip": "經濟樞紐與需要商路容量的城市優先，完成前先確認新增金幣能否回收建造成本。",
+      "unique": true
+    },
+    {
+      "id": "building-market",
+      "pageId": "BUILDING_MARKET",
+      "name": "市場",
+      "en": "Market",
+      "icon": "icon_building_market.png",
+      "districtPageId": "DISTRICT_COMMERCIAL_HUB",
+      "districtId": "district-commercial-hub",
+      "districtName": "商業中心",
+      "description": "若此城市尚未建有燈塔，則+1 貿易路線容量。",
+      "effects": [
+        "+2 金幣",
+        "+1 公民槽位",
+        "每回合+1 大商人點數。"
+      ],
+      "replacedBy": [
+        "紡織會館"
+      ],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "商業中心"
+        },
+        {
+          "label": "科技",
+          "value": "貨幣"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：120 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：480 金幣"
+        }
+      ],
+      "tip": "提供商路容量的早期經濟建築；新商路能立刻投入時優先度最高。",
+      "unique": false
+    },
+    {
+      "id": "building-gilded-vault",
+      "pageId": "BUILDING_GILDED_VAULT",
+      "name": "金箔寶庫",
+      "en": "Gilded Vault",
+      "icon": "icon_building_gilded_vault.png",
+      "districtPageId": "DISTRICT_COMMERCIAL_HUB",
+      "districtId": "district-commercial-hub",
+      "districtName": "商業中心",
+      "description": "米娜瓦之夜鷹特色建築，取代銀行。此商業中心將生成等同於其 金幣相鄰加成的 文化值。若此城市擁有港口，則+1 貿易路線容量。",
+      "effects": [
+        "取代：銀行",
+        "取代：+5 金幣",
+        "取代：+1 公民槽位",
+        "取代：每回合+2 大商人點數。"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "商業中心"
+        },
+        {
+          "label": "科技",
+          "value": "銀行業"
+        },
+        {
+          "label": "建築",
+          "value": "市場"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：290 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1160 金幣"
+        }
+      ],
+      "tip": "經濟樞紐與需要商路容量的城市優先，完成前先確認新增金幣能否回收建造成本。",
+      "unique": true
+    },
+    {
+      "id": "building-sukiennice",
+      "pageId": "BUILDING_SUKIENNICE",
+      "name": "紡織會館",
+      "en": "Sukiennice",
+      "icon": "icon_building_sukiennice.png",
+      "districtPageId": "DISTRICT_COMMERCIAL_HUB",
+      "districtId": "district-commercial-hub",
+      "districtName": "商業中心",
+      "description": "波蘭特色建築。從此城市出發的國際 貿易路線 +2 生產力；國內 貿易路線 +4 金幣。若此城市尚未擁有燈塔建築，則+1 貿易路線容量。",
+      "effects": [
+        "特色：波蘭",
+        "取代：市場",
+        "取代：+2 金幣",
+        "取代：+1 公民槽位",
+        "取代：每回合+1 大商人點數。"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "商業中心"
+        },
+        {
+          "label": "科技",
+          "value": "貨幣"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：120 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：480 金幣"
+        }
+      ],
+      "tip": "經濟樞紐與需要商路容量的城市優先，完成前先確認新增金幣能否回收建造成本。",
+      "unique": true
+    },
+    {
+      "id": "building-bank",
+      "pageId": "BUILDING_BANK",
+      "name": "銀行",
+      "en": "Bank",
+      "icon": "icon_building_bank.png",
+      "districtPageId": "DISTRICT_COMMERCIAL_HUB",
+      "districtId": "district-commercial-hub",
+      "districtName": "商業中心",
+      "description": "",
+      "effects": [
+        "+5 金幣",
+        "+1 公民槽位",
+        "每回合+1 大商人點數。"
+      ],
+      "replacedBy": [
+        "大巴扎",
+        "金箔寶庫"
+      ],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "商業中心"
+        },
+        {
+          "label": "科技",
+          "value": "銀行業"
+        },
+        {
+          "label": "建築",
+          "value": "市場"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：290 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1160 金幣"
+        }
+      ],
+      "tip": "經濟樞紐與需要商路容量的城市優先，完成前先確認新增金幣能否回收建造成本。",
+      "unique": false
+    },
+    {
+      "id": "building-stock-exchange",
+      "pageId": "BUILDING_STOCK_EXCHANGE",
+      "name": "證券交易所",
+      "en": "Stock Exchange",
+      "icon": "icon_building_stock_exchange.png",
+      "districtPageId": "DISTRICT_COMMERCIAL_HUB",
+      "districtId": "district-commercial-hub",
+      "districtName": "商業中心",
+      "description": "",
+      "effects": [
+        "+4 金幣",
+        "+7 金幣， 電力充足時獲得額外加成。",
+        "+1 公民槽位",
+        "每回合+1 大商人點數。",
+        "+3 產品槽位",
+        "公民收益（每位公民）：+2 金幣"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "商業中心"
+        },
+        {
+          "label": "科技",
+          "value": "經濟"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：330 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1320 金幣"
+        }
+      ],
+      "tip": "經濟樞紐與需要商路容量的城市優先，完成前先確認新增金幣能否回收建造成本。",
+      "unique": false
+    },
+    {
+      "id": "building-shipyard",
+      "pageId": "BUILDING_SHIPYARD",
+      "name": "造船廠",
+      "en": "Shipyard",
+      "icon": "icon_building_shipyard.png",
+      "districtPageId": "DISTRICT_HARBOR",
+      "districtId": "district-harbor",
+      "districtName": "港口",
+      "description": "在該城市訓練的所有海軍單位+25%戰鬥經驗值。加成 生產力和港口區域的相鄰加成相同。此城市所有未改良的海岸或湖泊單元格+1 生產力。",
+      "effects": [
+        "+1 食物",
+        "生產力加成等於該區域相鄰 金幣加成。",
+        "+1 公民槽位",
+        "每回合+1 海軍統帥點數。",
+        "+500來自搖滾演唱會的 旅遊業績。"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "港口"
+        },
+        {
+          "label": "科技",
+          "value": "大量生產"
+        },
+        {
+          "label": "建築",
+          "value": "燈塔"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：290 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1160 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "tip": "把港口相鄰轉成生產力，高相鄰港口的質變建築；低相鄰港口收益較慢。",
+      "unique": false
+    },
+    {
+      "id": "building-seaport",
+      "pageId": "BUILDING_SEAPORT",
+      "name": "碼頭",
+      "en": "Seaport",
+      "icon": "icon_building_seaport.png",
+      "districtPageId": "DISTRICT_HARBOR",
+      "districtId": "district-harbor",
+      "districtName": "港口",
+      "description": "此城市中訓練的所有海軍單位+25%戰鬥經驗值。允許直接訓練艦隊與無敵艦隊。艦隊與無敵艦隊的訓練費用減少25%。此城市所有海岸單元格+2 金幣。",
+      "effects": [
+        "+2 金幣",
+        "+2 食物",
+        "+1 住房",
+        "+1 公民槽位",
+        "每回合+1 海軍統帥點數。",
+        "+3 產品槽位",
+        "公民收益（每位公民）：+1 食物"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "港口"
+        },
+        {
+          "label": "科技",
+          "value": "電力"
+        },
+        {
+          "label": "建築",
+          "value": "造船廠"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：440 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1760 金幣"
+        }
+      ],
+      "tip": "沿海貿易城與造船城優先；高港口相鄰能讓後續建築價值明顯提高。",
+      "unique": false
+    },
+    {
+      "id": "building-lighthouse",
+      "pageId": "BUILDING_LIGHTHOUSE",
+      "name": "燈塔",
+      "en": "Lighthouse",
+      "icon": "icon_building_lighthouse.png",
+      "districtPageId": "DISTRICT_HARBOR",
+      "districtId": "district-harbor",
+      "districtName": "港口",
+      "description": "此城市中訓練的所有海軍單位+25%戰鬥經驗值。此城市所有海岸單元格提供的 食物+1。若此城市相鄰於海岸則+2 住房。若此城市未建有市場，則 貿易路線的容量+1。",
+      "effects": [
+        "+1 住房",
+        "+1 公民槽位",
+        "每回合+1 海軍統帥點數。"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "港口"
+        },
+        {
+          "label": "科技",
+          "value": "天文導航"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：120 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：480 金幣"
+        }
+      ],
+      "tip": "港口城市的住房、食物與商路核心；沿海擴張通常比市場更早完成。",
+      "unique": false
+    },
+    {
+      "id": "building-cathedral",
+      "pageId": "BUILDING_CATHEDRAL",
+      "name": "大教堂",
+      "en": "Cathedral",
+      "icon": "icon_building_cathedral.png",
+      "districtPageId": "DISTRICT_HOLY_SITE",
+      "districtId": "district-holy-site",
+      "districtName": "聖地",
+      "description": "",
+      "effects": [
+        "特色：大教堂",
+        "特色：+3 信仰值",
+        "特色：+1 公民槽位",
+        "特色：+1 偉大的巨作宗教藝術槽位",
+        "公民收益（每位公民）：+1 信仰值"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "聖地"
+        },
+        {
+          "label": "建築",
+          "value": "寺廟"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：190 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：380 信仰值"
+        }
+      ],
+      "tip": "創教、宗教勝利或信仰購買體系優先；不使用信仰時不要機械式蓋滿。",
+      "unique": false
+    },
+    {
+      "id": "building-stave-church",
+      "pageId": "BUILDING_STAVE_CHURCH",
+      "name": "木條教堂",
+      "en": "Stave Church",
+      "icon": "icon_building_stave_church.png",
+      "districtPageId": "DISTRICT_HOLY_SITE",
+      "districtId": "district-holy-site",
+      "districtName": "聖地",
+      "description": "挪威特色建築。建造後可使用 信仰值購買使徒和審判官。聖地區域可從樹林獲得額外的標準相鄰加成。為此城中每個海洋資源單元格+1 生產力。在此城市中召回英雄將減少15%的 信仰值消耗。",
+      "effects": [
+        "特色：挪威",
+        "取代：寺廟",
+        "取代：+4 信仰值",
+        "取代：+1 公民槽位",
+        "取代：每回合+1 大預言家點數。",
+        "取代：+1 遺跡槽位"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "聖地"
+        },
+        {
+          "label": "市政",
+          "value": "神學"
+        },
+        {
+          "label": "建築",
+          "value": "神社"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：120 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：480 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：2 金幣"
+        }
+      ],
+      "tip": "創教、宗教勝利或信仰購買體系優先；不使用信仰時不要機械式蓋滿。",
+      "unique": true
+    },
+    {
+      "id": "building-temple",
+      "pageId": "BUILDING_TEMPLE",
+      "name": "寺廟",
+      "en": "Temple",
+      "icon": "icon_building_temple.png",
+      "districtPageId": "DISTRICT_HOLY_SITE",
+      "districtId": "district-holy-site",
+      "districtName": "聖地",
+      "description": "允許購買使徒、上師和審判官，如果擁有相應信仰還可購買武僧。這些單位僅能透過 信仰值購買。",
+      "effects": [
+        "+4 信仰值",
+        "+1 公民槽位",
+        "每回合+1 大預言家點數。",
+        "+1 遺跡槽位"
+      ],
+      "replacedBy": [
+        "木條教堂",
+        "高棉佛堂"
+      ],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "聖地"
+        },
+        {
+          "label": "市政",
+          "value": "神學"
+        },
+        {
+          "label": "建築",
+          "value": "神社"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：120 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：480 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：2 金幣"
+        }
+      ],
+      "tip": "解鎖使徒與崇拜建築；宗教勝利、聖物或信仰購買策略優先。",
+      "unique": false
+    },
+    {
+      "id": "building-wat",
+      "pageId": "BUILDING_WAT",
+      "name": "佛寺",
+      "en": "Wat",
+      "icon": "icon_building_wat.png",
+      "districtPageId": "DISTRICT_HOLY_SITE",
+      "districtId": "district-holy-site",
+      "districtName": "聖地",
+      "description": "",
+      "effects": [
+        "特色：佛寺",
+        "特色：+3 信仰值",
+        "特色：+2 科技值",
+        "特色：+1 公民槽位",
+        "公民收益（每位公民）：+1 信仰值"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "聖地"
+        },
+        {
+          "label": "建築",
+          "value": "寺廟"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：190 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：380 信仰值"
+        }
+      ],
+      "tip": "創教、宗教勝利或信仰購買體系優先；不使用信仰時不要機械式蓋滿。",
+      "unique": false
+    },
+    {
+      "id": "building-dar-e-mehr",
+      "pageId": "BUILDING_DAR_E_MEHR",
+      "name": "拜火神廟",
+      "en": "Dar-e Mehr",
+      "icon": "icon_building_dar_e_mehr.png",
+      "districtPageId": "DISTRICT_HOLY_SITE",
+      "districtId": "district-holy-site",
+      "districtName": "聖地",
+      "description": "自建造或修復的時代起，每進入一個新時代便額外+1 信仰值。無法受到天災掠奪。",
+      "effects": [
+        "特色：拜火神廟",
+        "特色：+3 信仰值",
+        "特色：+1 公民槽位",
+        "公民收益（每位公民）：+1 信仰值"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "聖地"
+        },
+        {
+          "label": "建築",
+          "value": "寺廟"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：190 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：380 信仰值"
+        }
+      ],
+      "tip": "創教、宗教勝利或信仰購買體系優先；不使用信仰時不要機械式蓋滿。",
+      "unique": false
+    },
+    {
+      "id": "building-shrine",
+      "pageId": "BUILDING_SHRINE",
+      "name": "神社",
+      "en": "Shrine",
+      "icon": "icon_building_shrine.png",
+      "districtPageId": "DISTRICT_HOLY_SITE",
+      "districtId": "district-holy-site",
+      "districtName": "聖地",
+      "description": "允許購買傳教士。只能使用 信仰值進行購買。",
+      "effects": [
+        "+2 信仰值",
+        "+1 公民槽位",
+        "每回合+1 大預言家點數。"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "聖地"
+        },
+        {
+          "label": "科技",
+          "value": "占星術"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：70 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：280 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "tip": "創教與宗教勝利的第一級建築，提供信仰與傳教士；不走宗教時依信仰經濟需求決定。",
+      "unique": false
+    },
+    {
+      "id": "building-prasat",
+      "pageId": "BUILDING_PRASAT",
+      "name": "高棉佛堂",
+      "en": "Prasat",
+      "icon": "icon_building_prasat.png",
+      "districtPageId": "DISTRICT_HOLY_SITE",
+      "districtId": "district-holy-site",
+      "districtName": "聖地",
+      "description": "+6 信仰值。高棉特色建築，取代寺廟。必須先建造此建築才能使用 信仰值購買使徒和審判官。城市中每有1點 人口，則+0.5 文化值。研發完「飛行」科技後， 人口10點或以上的城市+10 旅遊業績， 人口20點或以上的城市+20 旅遊業績。在此城市中召回英雄將減少15%的 信仰值消耗。",
+      "effects": [
+        "特色：高棉",
+        "取代：寺廟",
+        "取代：+6 信仰值",
+        "取代：+1 公民槽位",
+        "取代：每回合+1 大預言家點數。",
+        "取代：+1 遺跡槽位"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "聖地"
+        },
+        {
+          "label": "市政",
+          "value": "神學"
+        },
+        {
+          "label": "建築",
+          "value": "神社"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：120 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：480 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：2 金幣"
+        }
+      ],
+      "tip": "創教、宗教勝利或信仰購買體系優先；不使用信仰時不要機械式蓋滿。",
+      "unique": true
+    },
+    {
+      "id": "building-mosque",
+      "pageId": "BUILDING_MOSQUE",
+      "name": "清真寺",
+      "en": "Mosque",
+      "icon": "icon_building_mosque.png",
+      "districtPageId": "DISTRICT_HOLY_SITE",
+      "districtId": "district-holy-site",
+      "districtName": "聖地",
+      "description": "此處創造的傳教士和使徒+1傳教次數。",
+      "effects": [
+        "特色：清真寺",
+        "特色：+3 信仰值",
+        "特色：+1 公民槽位",
+        "公民收益（每位公民）：+1 信仰值"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "聖地"
+        },
+        {
+          "label": "建築",
+          "value": "寺廟"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：190 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：380 信仰值"
+        }
+      ],
+      "tip": "創教、宗教勝利或信仰購買體系優先；不使用信仰時不要機械式蓋滿。",
+      "unique": false
+    },
+    {
+      "id": "building-synagogue",
+      "pageId": "BUILDING_SYNAGOGUE",
+      "name": "猶太教堂",
+      "en": "Synagogue",
+      "icon": "icon_building_synagogue.png",
+      "districtPageId": "DISTRICT_HOLY_SITE",
+      "districtId": "district-holy-site",
+      "districtName": "聖地",
+      "description": "",
+      "effects": [
+        "特色：猶太教堂",
+        "特色：+5 信仰值",
+        "特色：+1 公民槽位",
+        "公民收益（每位公民）：+1 信仰值"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "聖地"
+        },
+        {
+          "label": "建築",
+          "value": "寺廟"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：190 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：380 信仰值"
+        }
+      ],
+      "tip": "創教、宗教勝利或信仰購買體系優先；不使用信仰時不要機械式蓋滿。",
+      "unique": false
+    },
+    {
+      "id": "building-gurdwara",
+      "pageId": "BUILDING_GURDWARA",
+      "name": "謁師所",
+      "en": "Gurdwara",
+      "icon": "icon_building_gurdwara.png",
+      "districtPageId": "DISTRICT_HOLY_SITE",
+      "districtId": "district-holy-site",
+      "districtName": "聖地",
+      "description": "",
+      "effects": [
+        "特色：謁師所",
+        "特色：+3 信仰值",
+        "特色：+2 食物",
+        "特色：+1 住房",
+        "特色：+1 公民槽位",
+        "公民收益（每位公民）：+1 信仰值"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "聖地"
+        },
+        {
+          "label": "建築",
+          "value": "寺廟"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：190 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：380 信仰值"
+        }
+      ],
+      "tip": "創教、宗教勝利或信仰購買體系優先；不使用信仰時不要機械式蓋滿。",
+      "unique": false
+    },
+    {
+      "id": "building-meeting-house",
+      "pageId": "BUILDING_MEETING_HOUSE",
+      "name": "禮拜堂",
+      "en": "Meeting House",
+      "icon": "icon_building_meeting_house.png",
+      "districtPageId": "DISTRICT_HOLY_SITE",
+      "districtId": "district-holy-site",
+      "districtName": "聖地",
+      "description": "",
+      "effects": [
+        "特色：禮拜堂",
+        "特色：+3 信仰值",
+        "特色：+2 生產力",
+        "特色：+1 公民槽位",
+        "公民收益（每位公民）：+1 信仰值"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "聖地"
+        },
+        {
+          "label": "建築",
+          "value": "寺廟"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：190 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：380 信仰值"
+        }
+      ],
+      "tip": "創教、宗教勝利或信仰購買體系優先；不使用信仰時不要機械式蓋滿。",
+      "unique": false
+    },
+    {
+      "id": "building-pagoda",
+      "pageId": "BUILDING_PAGODA",
+      "name": "寶塔",
+      "en": "Pagoda",
+      "icon": "icon_building_pagoda.png",
+      "districtPageId": "DISTRICT_HOLY_SITE",
+      "districtId": "district-holy-site",
+      "districtName": "聖地",
+      "description": "每回合+1 外交支持。",
+      "effects": [
+        "特色：寶塔",
+        "特色：+3 信仰值",
+        "特色：+1 公民槽位",
+        "公民收益（每位公民）：+1 信仰值"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "聖地"
+        },
+        {
+          "label": "建築",
+          "value": "寺廟"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：190 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：380 信仰值"
+        }
+      ],
+      "tip": "創教、宗教勝利或信仰購買體系優先；不使用信仰時不要機械式蓋滿。",
+      "unique": false
+    },
+    {
+      "id": "building-stupa",
+      "pageId": "BUILDING_STUPA",
+      "name": "窣堵坡",
+      "en": "Stupa",
+      "icon": "icon_building_stupa.png",
+      "districtPageId": "DISTRICT_HOLY_SITE",
+      "districtId": "district-holy-site",
+      "districtName": "聖地",
+      "description": "",
+      "effects": [
+        "特色：窣堵坡",
+        "特色：+3 信仰值",
+        "特色：+1 滿意度來自娛樂",
+        "特色：+1 公民槽位",
+        "公民收益（每位公民）：+1 信仰值"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "聖地"
+        },
+        {
+          "label": "建築",
+          "value": "寺廟"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：190 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：380 信仰值"
+        }
+      ],
+      "tip": "創教、宗教勝利或信仰購買體系優先；不使用信仰時不要機械式蓋滿。",
+      "unique": false
+    },
+    {
+      "id": "building-marae",
+      "pageId": "BUILDING_MARAE",
+      "name": "毛利會堂",
+      "en": "Marae",
+      "icon": "icon_building_marae.png",
+      "districtPageId": "DISTRICT_THEATER",
+      "districtId": "district-theater",
+      "districtName": "劇院廣場",
+      "description": "毛利特色建築。此城市中每個具有可通過地貌或自然奇觀的單元格+1 文化值和 信仰值。研發完「飛行」科技後，此城市所有具備地貌或自然奇觀的單元格+1 旅遊業績。無維護花費。無巨作槽位。",
+      "effects": [
+        "特色：毛利",
+        "取代：古羅馬劇場",
+        "取代：+1 公民槽位",
+        "取代：+250來自搖滾演唱會的 旅遊業績。"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "劇院廣場"
+        },
+        {
+          "label": "市政",
+          "value": "戲劇與詩歌"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：150 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：600 金幣"
+        }
+      ],
+      "tip": "文化勝利、偉人競爭或已有巨作時優先；先準備足夠槽位再搶人。",
+      "unique": true
+    },
+    {
+      "id": "building-amphitheater",
+      "pageId": "BUILDING_AMPHITHEATER",
+      "name": "古羅馬劇場",
+      "en": "Amphitheater",
+      "icon": "icon_building_amphitheater.png",
+      "districtPageId": "DISTRICT_THEATER",
+      "districtId": "district-theater",
+      "districtName": "劇院廣場",
+      "description": "",
+      "effects": [
+        "+2 文化值",
+        "+1 公民槽位",
+        "每回合+1 大作家點數。",
+        "+2 偉大的巨作著作槽位",
+        "+250來自搖滾演唱會的 旅遊業績。"
+      ],
+      "replacedBy": [
+        "毛利會堂"
+      ],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "劇院廣場"
+        },
+        {
+          "label": "市政",
+          "value": "戲劇與詩歌"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：150 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：600 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "tip": "提供早期文化與著作槽；已有大作家或正競爭文化勝利時優先。",
+      "unique": false
+    },
+    {
+      "id": "building-museum-artifact",
+      "pageId": "BUILDING_MUSEUM_ARTIFACT",
+      "name": "考古博物館",
+      "en": "Archaeological Museum",
+      "icon": "icon_building_museum_artifact.png",
+      "districtPageId": "DISTRICT_THEATER",
+      "districtId": "district-theater",
+      "districtName": "劇院廣場",
+      "description": "可存放 文物。如果劇院廣場區域已有一座藝術博物館則無法修建。",
+      "effects": [
+        "+2 文化值",
+        "+1 公民槽位",
+        "每回合+1 大作家點數。",
+        "每回合+2 大藝術家點數。",
+        "+3 文物槽位"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "劇院廣場"
+        },
+        {
+          "label": "市政",
+          "value": "人文主義"
+        },
+        {
+          "label": "建築",
+          "value": "古羅馬劇場"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：290 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1160 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：2 金幣"
+        }
+      ],
+      "tip": "適合地圖大、遺址充足或大藝術家競爭激烈時；需再生產考古學家。",
+      "unique": false
+    },
+    {
+      "id": "building-film-studio",
+      "pageId": "BUILDING_FILM_STUDIO",
+      "name": "電影製片廠",
+      "en": "Film Studio",
+      "icon": "icon_building_film_studio.png",
+      "districtPageId": "DISTRICT_THEATER",
+      "districtId": "district-theater",
+      "districtName": "劇院廣場",
+      "description": "美國特色建築。當遊戲進入現代後，該城市對其他文明+100% 旅遊業績壓力。",
+      "effects": [
+        "特色：美國",
+        "取代：廣播中心",
+        "取代：+2 文化值",
+        "取代：+4 文化值， 電力充足時獲得額外加成。",
+        "取代：+1 公民槽位",
+        "取代：每回合+1 大藝術家點數。",
+        "取代：每回合+2 大音樂家點數。",
+        "取代：+1 偉大的巨作音樂槽位",
+        "取代：+750來自搖滾演唱會的 旅遊業績。",
+        "公民收益（每位公民）：+1 文化值"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "劇院廣場"
+        },
+        {
+          "label": "科技",
+          "value": "無線電"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：440 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1760 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：3 金幣"
+        }
+      ],
+      "tip": "文化勝利、偉人競爭或已有巨作時優先；先準備足夠槽位再搶人。",
+      "unique": true
+    },
+    {
+      "id": "building-broadcast-center",
+      "pageId": "BUILDING_BROADCAST_CENTER",
+      "name": "廣播中心",
+      "en": "Broadcast Center",
+      "icon": "icon_building_broadcast_center.png",
+      "districtPageId": "DISTRICT_THEATER",
+      "districtId": "district-theater",
+      "districtName": "劇院廣場",
+      "description": "",
+      "effects": [
+        "公民收益（每位公民）：+1 文化值",
+        "+2 文化值",
+        "+4 文化值， 電力充足時獲得額外加成。",
+        "+1 公民槽位",
+        "每回合+1 大藝術家點數。",
+        "每回合+2 大音樂家點數。",
+        "+1 偉大的巨作音樂槽位",
+        "+750來自搖滾演唱會的 旅遊業績。"
+      ],
+      "replacedBy": [
+        "電影製片廠"
+      ],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "劇院廣場"
+        },
+        {
+          "label": "科技",
+          "value": "無線電"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：440 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1760 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：3 金幣"
+        }
+      ],
+      "tip": "文化勝利、偉人競爭或已有巨作時優先；先準備足夠槽位再搶人。",
+      "unique": false
+    },
+    {
+      "id": "building-museum-art",
+      "pageId": "BUILDING_MUSEUM_ART",
+      "name": "藝術博物館",
+      "en": "Art Museum",
+      "icon": "icon_building_museum_art.png",
+      "districtPageId": "DISTRICT_THEATER",
+      "districtId": "district-theater",
+      "districtName": "劇院廣場",
+      "description": "擁有 藝術巨作。如果劇院廣場區域已有一座考古博物館則無法修建。",
+      "effects": [
+        "+2 文化值",
+        "+1 公民槽位",
+        "每回合+1 大作家點數。",
+        "每回合+2 大藝術家點數。",
+        "+3 偉大的巨作藝術槽位"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "劇院廣場"
+        },
+        {
+          "label": "市政",
+          "value": "人文主義"
+        },
+        {
+          "label": "建築",
+          "value": "古羅馬劇場"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：290 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1160 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：2 金幣"
+        }
+      ],
+      "tip": "適合能穩定取得大藝術家的文明；注意藝術品主題化需求。",
+      "unique": false
+    },
+    {
+      "id": "building-university",
+      "pageId": "BUILDING_UNIVERSITY",
+      "name": "大學",
+      "en": "University",
+      "icon": "icon_building_university.png",
+      "districtPageId": "DISTRICT_CAMPUS",
+      "districtId": "district-campus",
+      "districtName": "學院",
+      "description": "",
+      "effects": [
+        "+4 科技值",
+        "+1 住房",
+        "+1 公民槽位",
+        "每回合+1 大科學家點數。",
+        "+500來自搖滾演唱會的 旅遊業績。"
+      ],
+      "replacedBy": [
+        "伊斯蘭學校",
+        "鍊金術會所",
+        "航海學校"
+      ],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "學院"
+        },
+        {
+          "label": "科技",
+          "value": "教育"
+        },
+        {
+          "label": "建築",
+          "value": "圖書館"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：250 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1000 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：2 金幣"
+        }
+      ],
+      "tip": "中期科技骨幹；高學院相鄰城、人口能工作專家槽的城市先建。",
+      "unique": false
+    },
+    {
+      "id": "building-madrasa",
+      "pageId": "BUILDING_MADRASA",
+      "name": "伊斯蘭學校",
+      "en": "Madrasa",
+      "icon": "icon_building_madrasa.png",
+      "districtPageId": "DISTRICT_CAMPUS",
+      "districtId": "district-campus",
+      "districtName": "學院",
+      "description": "阿拉伯特色建築。 信仰值和學院區域的鄰接地域加成相等。",
+      "effects": [
+        "特色：阿拉伯",
+        "取代：大學",
+        "取代：+5 科技值",
+        "取代：信仰值加成等於該區域相鄰 科技值加成。",
+        "取代：+1 住房",
+        "取代：+1 公民槽位",
+        "取代：每回合+1 大科學家點數。",
+        "取代：+500來自搖滾演唱會的 旅遊業績。"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "學院"
+        },
+        {
+          "label": "市政",
+          "value": "神學"
+        },
+        {
+          "label": "建築",
+          "value": "圖書館"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：250 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1000 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：2 金幣"
+        }
+      ],
+      "tip": "科技主線與高學院相鄰城市優先；先確認城市人口、供電或偉人競爭能用到完整效果。",
+      "unique": true
+    },
+    {
+      "id": "building-research-lab",
+      "pageId": "BUILDING_RESEARCH_LAB",
+      "name": "研究實驗室",
+      "en": "Research Lab",
+      "icon": "icon_building_research_lab.png",
+      "districtPageId": "DISTRICT_CAMPUS",
+      "districtId": "district-campus",
+      "districtName": "學院",
+      "description": "",
+      "effects": [
+        "+3 科技值",
+        "+5 科技值， 電力充足時獲得額外加成。",
+        "+1 公民槽位",
+        "每回合+1 大科學家點數。",
+        "公民收益（每位公民）：+1 科技值"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "學院"
+        },
+        {
+          "label": "科技",
+          "value": "化學"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：440 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1760 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：3 金幣"
+        }
+      ],
+      "tip": "後期科學勝利核心，先確保供電才能取得完整收益。",
+      "unique": false
+    },
+    {
+      "id": "building-navigation-school",
+      "pageId": "BUILDING_NAVIGATION_SCHOOL",
+      "name": "航海學校",
+      "en": "Navigation School",
+      "icon": "icon_building_navigation_school.png",
+      "districtPageId": "DISTRICT_CAMPUS",
+      "districtId": "district-campus",
+      "districtName": "學院",
+      "description": "葡萄牙特色建築。此城市生產海軍單位時+25% 生產力。此城市每有2個海岸或湖泊單元格，便+1 科技值。每回合+1 海軍統帥點數且+1 大科學家點數。",
+      "effects": [
+        "特色：葡萄牙",
+        "取代：大學",
+        "取代：+4 科技值",
+        "取代：+1 住房",
+        "取代：+1 公民槽位",
+        "取代：每回合+1 海軍統帥點數。",
+        "取代：每回合+1 大科學家點數。",
+        "取代：+500來自搖滾演唱會的 旅遊業績。"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "學院"
+        },
+        {
+          "label": "科技",
+          "value": "教育"
+        },
+        {
+          "label": "建築",
+          "value": "圖書館"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：250 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1000 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：2 金幣"
+        }
+      ],
+      "tip": "科技主線與高學院相鄰城市優先；先確認城市人口、供電或偉人競爭能用到完整效果。",
+      "unique": true
+    },
+    {
+      "id": "building-library",
+      "pageId": "BUILDING_LIBRARY",
+      "name": "圖書館",
+      "en": "Library",
+      "icon": "icon_building_library.png",
+      "districtPageId": "DISTRICT_CAMPUS",
+      "districtId": "district-campus",
+      "districtName": "學院",
+      "description": "",
+      "effects": [
+        "+2 科技值",
+        "+1 公民槽位",
+        "每回合+1 大科學家點數。"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "學院"
+        },
+        {
+          "label": "科技",
+          "value": "寫作"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：90 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：360 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "tip": "學院落地後最穩定的早期科技來源，科學主城與需要搶大科學家的城市優先。",
+      "unique": false
+    },
+    {
+      "id": "building-alchemical-society",
+      "pageId": "BUILDING_ALCHEMICAL_SOCIETY",
+      "name": "鍊金術會所",
+      "en": "Alchemical Society",
+      "icon": "icon_building_alchemical_society.png",
+      "districtPageId": "DISTRICT_CAMPUS",
+      "districtId": "district-campus",
+      "districtName": "學院",
+      "description": "黃金黎明協會特色建築，取代大學。此學院區域將生成等同於其 科技值相鄰加成的 金幣。",
+      "effects": [
+        "取代：大學",
+        "取代：+4 科技值",
+        "取代：+2 生產力",
+        "取代：+1 住房",
+        "取代：+1 公民槽位",
+        "取代：每回合+1 大工程師點數。",
+        "取代：每回合+1 大商人點數。",
+        "取代：每回合+1 大科學家點數。"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "學院"
+        },
+        {
+          "label": "科技",
+          "value": "教育"
+        },
+        {
+          "label": "建築",
+          "value": "圖書館"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：250 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1000 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：2 金幣"
+        }
+      ],
+      "tip": "科技主線與高學院相鄰城市優先；先確認城市人口、供電或偉人競爭能用到完整效果。",
+      "unique": true
+    },
+    {
+      "id": "building-basilikoi-paides",
+      "pageId": "BUILDING_BASILIKOI_PAIDES",
+      "name": "王室宮殿",
+      "en": "Basilikoi Paides",
+      "icon": "icon_building_basilikoi_paides.png",
+      "districtPageId": "DISTRICT_ENCAMPMENT",
+      "districtId": "district-encampment",
+      "districtName": "營地",
+      "description": "馬其頓特色建築。該城市訓練的所有近戰、遠程陸地單位和「禁衛騎兵」的戰鬥經驗值+25%。在此城中創建非平民單位時能獲得等同於該單位花費25%的 科技值。\n戰略資源囤積+10（標準速度下）。\n不能建造在已有馬廄的營地區域中。",
+      "effects": [
+        "特色：馬其頓",
+        "取代：兵營",
+        "取代：+1 生產力",
+        "取代：+1 住房",
+        "取代：+1 公民槽位",
+        "取代：每回合+1 大將軍點數。"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "營地"
+        },
+        {
+          "label": "科技",
+          "value": "鑄銅術"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：90 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：360 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "tip": "只在會持續生產軍隊的專職城市投資；經驗與戰略資源收益比單純面板產出更重要。",
+      "unique": true
+    },
+    {
+      "id": "building-armory",
+      "pageId": "BUILDING_ARMORY",
+      "name": "兵工廠",
+      "en": "Armory",
+      "icon": "icon_building_armory.png",
+      "districtPageId": "DISTRICT_ENCAMPMENT",
+      "districtId": "district-encampment",
+      "districtName": "營地",
+      "description": "該城市訓練的所有陸地單位+25%戰鬥經驗值。\n戰略資源囤積+10（標準速度下）。",
+      "effects": [
+        "+3 生產力",
+        "+1 公民槽位",
+        "每回合+1 大將軍點數。"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "營地"
+        },
+        {
+          "label": "科技",
+          "value": "軍事工程學"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：195 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：780 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：2 金幣"
+        }
+      ],
+      "tip": "只在會持續生產軍隊的專職城市投資；經驗與戰略資源收益比單純面板產出更重要。",
+      "unique": false
+    },
+    {
+      "id": "building-barracks",
+      "pageId": "BUILDING_BARRACKS",
+      "name": "兵營",
+      "en": "Barracks",
+      "icon": "icon_building_barracks.png",
+      "districtPageId": "DISTRICT_ENCAMPMENT",
+      "districtId": "district-encampment",
+      "districtName": "營地",
+      "description": "該城市訓練的所有近戰和遠程陸地單位戰鬥經驗值+25%。\n戰略資源囤積+10（標準速度下）。\n不能建造在已有馬廄的營地區域中。",
+      "effects": [
+        "+1 生產力",
+        "+1 住房",
+        "+1 公民槽位",
+        "每回合+1 大將軍點數。"
+      ],
+      "replacedBy": [
+        "王室宮殿"
+      ],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "營地"
+        },
+        {
+          "label": "科技",
+          "value": "鑄銅術"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：90 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：360 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "tip": "偏近戰與遠程單位的軍事城選兵營；與馬廄互斥，應依主要兵種決定。",
+      "unique": false
+    },
+    {
+      "id": "building-military-academy",
+      "pageId": "BUILDING_MILITARY_ACADEMY",
+      "name": "軍事學院",
+      "en": "Military Academy",
+      "icon": "icon_building_military_academy.png",
+      "districtPageId": "DISTRICT_ENCAMPMENT",
+      "districtId": "district-encampment",
+      "districtName": "營地",
+      "description": "該城市訓練的所有陸地單位+25%戰鬥經驗值。\n戰略資源囤積+10（標準速度下）。\n允許直接訓練軍團與軍隊。軍團與軍隊的訓練費用減少25%。",
+      "effects": [
+        "+4 生產力",
+        "+1 住房",
+        "+1 公民槽位",
+        "每回合+1 大將軍點數。",
+        "公民收益（每位公民）：+1 生產力"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "營地"
+        },
+        {
+          "label": "科技",
+          "value": "軍事學"
+        },
+        {
+          "label": "建築",
+          "value": "兵工廠"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：330 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：1320 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：2 金幣"
+        }
+      ],
+      "tip": "只在會持續生產軍隊的專職城市投資；經驗與戰略資源收益比單純面板產出更重要。",
+      "unique": false
+    },
+    {
+      "id": "building-stable",
+      "pageId": "BUILDING_STABLE",
+      "name": "馬廄",
+      "en": "Stable",
+      "icon": "icon_building_stable.png",
+      "districtPageId": "DISTRICT_ENCAMPMENT",
+      "districtId": "district-encampment",
+      "districtName": "營地",
+      "description": "此城市生產的所有騎兵和攻城單位單位+25%戰鬥經驗值。\n戰略資源囤積+10（標準速度下）。\n不能建造在已有兵營的營地區域中。",
+      "effects": [
+        "+1 生產力",
+        "+1 住房",
+        "+1 公民槽位",
+        "每回合+1 大將軍點數。"
+      ],
+      "replacedBy": [
+        "斡耳朵"
+      ],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "營地"
+        },
+        {
+          "label": "科技",
+          "value": "騎馬"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：120 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：480 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "tip": "偏騎兵與攻城單位的軍事城選馬廄；不要在不出兵的城市只為少量產出而建。",
+      "unique": false
+    },
+    {
+      "id": "building-ordu",
+      "pageId": "BUILDING_ORDU",
+      "name": "斡耳朵",
+      "en": "Ordu",
+      "icon": "icon_building_ordu.png",
+      "districtPageId": "DISTRICT_ENCAMPMENT",
+      "districtId": "district-encampment",
+      "districtName": "營地",
+      "description": "蒙古特色建築，為此城市所訓練的輕重騎兵賦予額外1點 移動力。此城市生產的所有騎兵單位和攻城單位+25%戰鬥經驗值。\n戰略資源囤積+10（標準速度下）。\n不能建造在已有兵營的營地區域中。",
+      "effects": [
+        "特色：蒙古",
+        "取代：馬廄",
+        "取代：+1 生產力",
+        "取代：+1 住房",
+        "取代：+1 公民槽位",
+        "取代：每回合+1 大將軍點數。"
+      ],
+      "replacedBy": [],
+      "requirements": [
+        {
+          "label": "區域",
+          "value": "營地"
+        },
+        {
+          "label": "科技",
+          "value": "騎馬"
+        },
+        {
+          "label": "生產力消耗",
+          "value": "基本花費：120 生產力"
+        },
+        {
+          "label": "購買成本",
+          "value": "基本花費：480 金幣"
+        },
+        {
+          "label": "維護費用",
+          "value": "基本花費：1 金幣"
+        }
+      ],
+      "tip": "只在會持續生產軍隊的專職城市投資；經驗與戰略資源收益比單純面板產出更重要。",
+      "unique": true
+    }
+  ],
+  "projects": [
+    {
+      "id": "campus-research-grants", "name": "學院研究補助", "en": "Campus Research Grants", "category": "district", "categoryName": "區域項目", "districtId": "district-campus",
+      "description": "把城市生產力轉成科技與大科學家競爭力的重複項目。",
+      "whileActive": ["項目進行期間持續產出科技值。"],
+      "onComplete": ["依投入的生產力獲得大科學家點數。"],
+      "requirements": [{"label":"必要區域","value":"學院"}],
+      "tip": "科研城已蓋完關鍵建築，或只差少量大科學家點數時投入；缺區域建築時不要過早重複刷。"
+    },
+    {
+      "id": "holy-site-prayers", "name": "聖地祈禱", "en": "Holy Site Prayers", "category": "district", "categoryName": "區域項目", "districtId": "district-holy-site",
+      "description": "以城市產能換取信仰與大預言家點數，主要服務創教競爭。",
+      "whileActive": ["持續產出信仰值。", "該城市的宗教壓力提高 100%。"],
+      "onComplete": ["依投入的生產力獲得大預言家點數。"],
+      "requirements": [{"label":"必要區域","value":"聖地"}],
+      "tip": "宗教名額將滿而你還差一截大預言家點數時最有價值；完成創教後通常改做更直接的城市建設。"
+    },
+    {
+      "id": "theater-square-festival", "name": "劇院廣場節慶", "en": "Theater Square Festival", "category": "district", "categoryName": "區域項目", "districtId": "district-theater",
+      "description": "文化城的重複項目，用於追趕市政並搶作家、藝術家與音樂家。",
+      "whileActive": ["項目進行期間持續產出文化值。"],
+      "onComplete": ["獲得大作家、大藝術家與大音樂家點數。"],
+      "requirements": [{"label":"必要區域","value":"劇院廣場"}],
+      "tip": "有空餘巨作槽位、正競爭關鍵偉人時使用；沒有展示空間時先補建築。"
+    },
+    {
+      "id": "commercial-hub-investment", "name": "商業中心投資", "en": "Commercial Hub Investment", "category": "district", "categoryName": "區域項目", "districtId": "district-commercial-hub",
+      "description": "把高產城市的閒置產能轉成現金流與大商人點數。",
+      "whileActive": ["每回合獲得大量金幣。"],
+      "onComplete": ["依投入的生產力獲得大商人點數。"],
+      "requirements": [{"label":"必要區域","value":"商業中心"}],
+      "tip": "急需現金升級軍隊、購買建築或追逐關鍵大商人時使用。"
+    },
+    {
+      "id": "harbor-shipping", "name": "港口運輸", "en": "Harbor Shipping", "category": "district", "categoryName": "區域項目", "districtId": "district-harbor",
+      "description": "海港城市的物流項目，以生產力換取金幣與海軍統帥點數。",
+      "whileActive": ["項目進行期間持續產出金幣。"],
+      "onComplete": ["依投入的生產力獲得海軍統帥點數。"],
+      "requirements": [{"label":"必要區域","value":"港口"}],
+      "tip": "海軍戰爭前追海軍統帥，或船塢城市已無關鍵建築可蓋時投入。"
+    },
+    {
+      "id": "industrial-zone-logistics", "name": "工業區物流", "en": "Industrial Zone Logistics", "category": "district", "categoryName": "區域項目", "districtId": "district-industrial-zone",
+      "description": "讓工業城市全力支援電網並競爭大工程師。",
+      "whileActive": ["項目進行期間，這座城市會獲得完整供電。"],
+      "onComplete": ["依投入的生產力獲得大工程師點數。"],
+      "requirements": [{"label":"必要區域","value":"工業區"}],
+      "tip": "缺電使三級建築停擺，或需要搶奇觀、太空競賽相關大工程師時使用。"
+    },
+    {
+      "id": "encampment-training", "name": "營地訓練", "en": "Encampment Training", "category": "district", "categoryName": "區域項目", "districtId": "district-encampment",
+      "description": "軍事城市的重複訓練項目，補充收入並競爭大將軍。",
+      "whileActive": ["項目進行期間持續產出金幣。"],
+      "onComplete": ["依投入的生產力獲得大將軍點數。"],
+      "requirements": [{"label":"必要區域","value":"營地"}],
+      "tip": "戰爭窗口將至但暫時不缺單位時，用它卡位時代相符的大將軍。"
+    },
+    {
+      "id": "bread-and-circuses", "name": "麵包與馬戲", "en": "Bread and Circuses", "category": "loyalty", "categoryName": "忠誠度項目", "districtId": "district-entertainment-complex",
+      "description": "以人口向周圍城市施加忠誠壓力，適合邊境攻防與和平翻城。",
+      "whileActive": ["城市每位公民對 9 格內城市額外施加 +0.5 忠誠壓力；距離每增加 1 格衰減 10%。"],
+      "onComplete": ["本城獲得 +20 忠誠度。"],
+      "requirements": [{"label":"必要區域","value":"娛樂中心"}],
+      "tip": "黃金時代邊境城市連續開啟最強；人口小、離目標太遠時收益很低。"
+    },
+    {
+      "id": "bread-and-circuses-coastal", "name": "麵包與馬戲（海濱）", "en": "Bread and Circuses (Coastal)", "category": "loyalty", "categoryName": "忠誠度項目", "districtId": "district-water-entertainment-complex",
+      "description": "水上樂園版本的忠誠度項目，規則與娛樂中心版本相同。",
+      "whileActive": ["按本城人口向 9 格內城市施加額外忠誠壓力。"],
+      "onComplete": ["本城獲得 +20 忠誠度。"],
+      "requirements": [{"label":"必要區域","value":"水上樂園"}],
+      "tip": "群島或沿海邊境用來穩定新征服城市，也能配合其他城市夾擊對手忠誠。"
+    },
+    {
+      "id": "carbon-recapture", "name": "碳捕獲", "en": "Carbon Recapture", "category": "climate", "categoryName": "氣候項目", "districtId": "district-industrial-zone",
+      "description": "終盤把高產城市轉為減排與外交支持來源。",
+      "whileActive": ["無額外每回合產出；城市正常投入生產力完成項目。"],
+      "onComplete": ["文明累積碳排放減少 50。", "獲得 30 點外交支持。"],
+      "requirements": [{"label":"必要區域","value":"工業區"},{"label":"必要市政","value":"全球暖化減緩學"}],
+      "tip": "外交勝利終盤可在多座高產城市反覆執行；同時能改善世界氣候評分與國際形象。"
+    },
+    {
+      "id": "recommission-nuclear-reactor", "name": "重新啟用核反應爐", "en": "Recommission Nuclear Reactor", "category": "power", "categoryName": "電力項目", "districtId": "district-industrial-zone",
+      "description": "維修老化核電廠，降低核事故風險。",
+      "whileActive": ["無額外每回合收益。"],
+      "onComplete": ["核反應爐年齡重設為 0。"],
+      "requirements": [{"label":"必要建築","value":"核電廠"},{"label":"必要科技","value":"核分裂"}],
+      "tip": "別等事故率升高才維修；在核電廠運轉約 10 至 20 回合後依風險與城市價值安排。"
+    },
+    {
+      "id": "convert-to-coal", "name": "改用煤炭發電", "en": "Convert to Coal Power", "category": "power", "categoryName": "電力項目", "districtId": "district-industrial-zone",
+      "description": "把目前的發電廠替換為燃煤發電廠。",
+      "whileActive": ["轉換期間無額外產出。"],
+      "onComplete": ["移除目前發電廠及其效果，改為燃煤發電廠。"],
+      "requirements": [{"label":"必要區域","value":"工業區"},{"label":"必要科技","value":"工業化"}],
+      "tip": "只在急需高生產力且能承受碳排放時選擇；海平面上升風險高時通常不值得。"
+    },
+    {
+      "id": "convert-to-oil", "name": "改用石油發電", "en": "Convert to Oil Power", "category": "power", "categoryName": "電力項目", "districtId": "district-industrial-zone",
+      "description": "把目前的發電廠替換為燃油發電廠。",
+      "whileActive": ["轉換期間無額外產出。"],
+      "onComplete": ["移除目前發電廠及其效果，改為燃油發電廠。"],
+      "requirements": [{"label":"必要區域","value":"工業區"},{"label":"必要科技","value":"電力"}],
+      "tip": "煤炭不足、石油有餘且需要區域供電時才轉換；先預留軍隊所需的石油。"
+    },
+    {
+      "id": "convert-to-nuclear", "name": "改用核能發電", "en": "Convert to Nuclear Power", "category": "power", "categoryName": "電力項目", "districtId": "district-industrial-zone",
+      "description": "把目前的發電廠替換為核電廠，以較少燃料供應較多電力。",
+      "whileActive": ["轉換期間無額外產出。"],
+      "onComplete": ["移除目前發電廠及其效果，改為核電廠。"],
+      "requirements": [{"label":"必要區域","value":"工業區"},{"label":"必要科技","value":"核分裂"}],
+      "tip": "電力需求大且已能定期維修時使用；避免在無法承擔核事故的核心城市盲目轉換。"
+    },
+    {
+      "id": "decommission-coal", "name": "停用燃煤發電廠", "en": "Decommission Coal Power Plant", "category": "power", "categoryName": "電力項目", "districtId": "district-industrial-zone",
+      "description": "永久拆除燃煤發電廠，停止其產出與排放。",
+      "whileActive": ["停用期間無額外收益。"],
+      "onComplete": ["移除燃煤發電廠及其全部效果。", "氣候協定競賽期間可取得對應分數。"],
+      "requirements": [{"label":"必要建築","value":"燃煤發電廠"},{"label":"必要市政","value":"全球暖化減緩學"}],
+      "tip": "已有替代電源，或正在競爭氣候協定時停用；否則先確認區域建築不會因斷電失效。"
+    },
+    {
+      "id": "decommission-oil", "name": "停用燃油發電廠", "en": "Decommission Oil Power Plant", "category": "power", "categoryName": "電力項目", "districtId": "district-industrial-zone",
+      "description": "永久拆除燃油發電廠並停止消耗石油。",
+      "whileActive": ["停用期間無額外收益。"],
+      "onComplete": ["移除燃油發電廠及其全部效果。", "氣候協定競賽期間可取得對應分數。"],
+      "requirements": [{"label":"必要建築","value":"燃油發電廠"},{"label":"必要市政","value":"全球暖化減緩學"}],
+      "tip": "石油要留給現代軍隊，且城市已有再生能源時特別適合停用。"
+    },
+    {
+      "id": "decommission-nuclear", "name": "停用核電廠", "en": "Decommission Nuclear Power Plant", "category": "power", "categoryName": "電力項目", "districtId": "district-industrial-zone",
+      "description": "永久拆除核電廠，消除後續反應爐事故風險。",
+      "whileActive": ["停用期間無額外收益。"],
+      "onComplete": ["移除核電廠及其全部效果。", "氣候協定競賽期間可取得對應分數。"],
+      "requirements": [{"label":"必要建築","value":"核電廠"},{"label":"必要市政","value":"全球暖化減緩學"}],
+      "tip": "終盤已有太陽能、風電與水壩供電時，可省去反覆維修與事故風險。"
+    },
+    {
+      "id": "manhattan-project", "name": "曼哈頓計畫", "en": "Manhattan Project", "category": "nuclear", "categoryName": "核武項目", "districtId": "district-encampment",
+      "description": "解鎖核武器生產能力的文明級一次性項目。",
+      "whileActive": ["無額外每回合收益。"],
+      "onComplete": ["允許城市生產「製造核裝置」項目。"],
+      "requirements": [{"label":"必要科技","value":"核分裂"}],
+      "tip": "統治路線或需要核威懾時，在高產城市完成；和平勝利通常可把產能留給主線。"
+    },
+    {
+      "id": "operation-ivy", "name": "常春藤行動", "en": "Operation Ivy", "category": "nuclear", "categoryName": "核武項目", "districtId": "district-encampment",
+      "description": "解鎖熱核裝置生產能力的文明級一次性項目。",
+      "whileActive": ["無額外每回合收益。"],
+      "onComplete": ["允許城市生產「製造熱核裝置」項目。"],
+      "requirements": [{"label":"必要科技","value":"核融合"},{"label":"前置項目","value":"曼哈頓計畫"}],
+      "tip": "只有需要更大爆炸半徑與更長投射距離時才投入，避免拖慢太空或外交終盤。"
+    },
+    {
+      "id": "build-nuclear-device", "name": "製造核裝置", "en": "Build Nuclear Device", "category": "nuclear", "categoryName": "核武項目", "districtId": "district-encampment",
+      "description": "製造一枚可供轟炸機或核潛艇發射的核裝置。",
+      "whileActive": ["佔用城市生產佇列並消耗所需戰略資源。"],
+      "onComplete": ["核裝置庫存 +1。"],
+      "requirements": [{"label":"前置項目","value":"曼哈頓計畫"},{"label":"戰略資源","value":"鈾"}],
+      "tip": "先確認已有可靠投射單位；核武會造成外交與環境代價，不要只因解鎖就生產。"
+    },
+    {
+      "id": "build-thermonuclear-device", "name": "製造熱核裝置", "en": "Build Thermonuclear Device", "category": "nuclear", "categoryName": "核武項目", "districtId": "district-encampment",
+      "description": "製造威力與影響範圍更大的熱核裝置。",
+      "whileActive": ["佔用城市生產佇列並消耗所需戰略資源。"],
+      "onComplete": ["熱核裝置庫存 +1。"],
+      "requirements": [{"label":"前置項目","value":"常春藤行動"},{"label":"戰略資源","value":"鈾"}],
+      "tip": "只為決定性終戰或威懾準備；大範圍污染會讓占領與城市經營更加困難。"
+    },
+    {
+      "id": "launch-earth-satellite", "name": "發射地球衛星", "en": "Launch Earth Satellite", "category": "space", "categoryName": "太空競賽", "districtId": "district-spaceport",
+      "description": "科學勝利的第一個太空項目。",
+      "whileActive": ["由太空中心城市投入生產力推進。"],
+      "onComplete": ["揭示整張地圖中尚未探索的區域。", "完成科學勝利第一階段。"],
+      "requirements": [{"label":"必要區域","value":"太空中心"},{"label":"必要科技","value":"火箭學"}],
+      "tip": "由最高產城市負責，並先安排總督、政策卡與工業區輻射加成。"
+    },
+    {
+      "id": "launch-moon-landing", "name": "登月計畫", "en": "Launch Moon Landing", "category": "space", "categoryName": "太空競賽", "districtId": "district-spaceport",
+      "description": "科學勝利的第二階段，完成後帶來一次性文化爆發。",
+      "whileActive": ["由太空中心城市投入生產力推進。"],
+      "onComplete": ["獲得相當於文明每回合科技值 10 倍的文化值。", "推進科學勝利。"],
+      "requirements": [{"label":"必要區域","value":"太空中心"},{"label":"必要科技","value":"衛星"},{"label":"前置項目","value":"發射地球衛星"}],
+      "tip": "完成前可短暫拉高每回合科技值，放大一次性文化收益並更快取得終盤市政。"
+    },
+    {
+      "id": "launch-mars-colony", "name": "建立火星殖民地", "en": "Launch Mars Colony", "category": "space", "categoryName": "太空競賽", "districtId": "district-spaceport",
+      "description": "在 Gathering Storm 規則中是啟動系外行星遠征的重要前置。",
+      "whileActive": ["由太空中心城市投入生產力推進。"],
+      "onComplete": ["完成火星殖民階段並解鎖後續科學勝利流程。"],
+      "requirements": [{"label":"必要區域","value":"太空中心"},{"label":"必要科技","value":"奈米科技"},{"label":"前置項目","value":"登月計畫"}],
+      "tip": "主太空城負責時，可讓第二、第三座太空城預先完成建築，準備後續加速項目。"
+    },
+    {
+      "id": "exoplanet-expedition", "name": "系外行星遠征", "en": "Exoplanet Expedition", "category": "space", "categoryName": "太空競賽", "districtId": "district-spaceport",
+      "description": "發射系外行星船；抵達目的地即可完成科學勝利。",
+      "whileActive": ["完成後遠征船以每回合 1 光年速度前進。"],
+      "onComplete": ["啟動 50 光年的系外行星航程。"],
+      "requirements": [{"label":"必要區域","value":"太空中心"},{"label":"必要科技","value":"智慧材料"},{"label":"前置項目","value":"建立火星殖民地"}],
+      "tip": "發射後立刻讓所有高產太空城改做雷射站，速度加成會直接縮短勝利回合數。"
+    },
+    {
+      "id": "terrestrial-laser-station", "name": "地面雷射站", "en": "Terrestrial Laser Station", "category": "space", "categoryName": "太空加速項目", "districtId": "district-spaceport",
+      "description": "用地面供電設施加速已發射的系外行星遠征。",
+      "whileActive": ["需要城市有足夠電力維持項目。"],
+      "onComplete": ["系外行星遠征每回合速度永久 +1 光年。"],
+      "requirements": [{"label":"必要區域","value":"太空中心"},{"label":"前置項目","value":"系外行星遠征"},{"label":"必要科技","value":"離地雷射站"}],
+      "tip": "可重複生產；確保電網穩定，所有太空城一起刷通常比只靠主城快得多。"
+    },
+    {
+      "id": "lagrange-laser-station", "name": "拉格朗日雷射站", "en": "Lagrange Laser Station", "category": "space", "categoryName": "太空加速項目", "districtId": "district-spaceport",
+      "description": "以鋁材建造太空雷射站，加速系外行星遠征。",
+      "whileActive": ["每次生產需消耗鋁。"],
+      "onComplete": ["系外行星遠征每回合速度永久 +1 光年。"],
+      "requirements": [{"label":"必要區域","value":"太空中心"},{"label":"前置項目","value":"系外行星遠征"},{"label":"必要科技","value":"離地雷射站"}],
+      "tip": "電力不足但鋁庫存充足時優先；先停止不必要的鋁單位生產，避免項目中斷。"
+    },
+    {
+      "id": "repair-outer-defenses", "name": "修復外部防禦", "en": "Repair Outer Defenses", "category": "defense", "categoryName": "城市防禦項目", "districtId": "district-city-center",
+      "description": "修復城市城牆與都市防禦受到的傷害。",
+      "whileActive": ["修復期間仍佔用城市生產佇列。"],
+      "onComplete": ["恢復外部防禦生命值。"],
+      "requirements": [{"label":"使用條件","value":"城市至少 3 回合未受到攻擊"},{"label":"必要狀態","value":"外部防禦已受損"}],
+      "tip": "停戰空窗立刻修復，避免敵軍第二波攻勢；仍在被攻擊時項目不會出現。"
+    },
+    {
+      "id": "send-aid", "name": "提供援助", "en": "Send Aid", "category": "emergency", "categoryName": "國際援助項目", "districtId": "district-city-center",
+      "description": "在援助請求或緊急事件中把城市產能轉成競賽分數。",
+      "whileActive": ["城市持續投入生產力以累積援助。"],
+      "onComplete": ["為正在進行的援助請求增加分數。"],
+      "requirements": [{"label":"必要條件","value":"世界議會已啟動對應援助請求"}],
+      "tip": "外交勝利需要冠軍獎勵時讓多座閒置城市共同投入；若無競賽，項目不會出現。"
+    },
+    {
+      "id": "move-capital", "name": "遷都", "en": "Move Capital", "category": "unique", "categoryName": "文明特色項目", "districtId": "district-harbor",
+      "description": "腓尼基專屬項目，把首都移至有特色港口的城市。",
+      "whileActive": ["城市投入生產力完成遷都準備。"],
+      "onComplete": ["文明首都移至執行項目的城市。"],
+      "requirements": [{"label":"限定文明","value":"腓尼基"},{"label":"必要區域","value":"U型港（Cothon）"}],
+      "tip": "用來調整忠誠核心、殖民洲判定與大陸型政策收益；遷都前先確認貿易與外交後果。"
+    },
+    {
+      "id": "court-festival", "name": "宮廷盛會", "en": "Court Festival", "category": "unique", "categoryName": "領袖特色項目", "districtId": "district-theater",
+      "description": "凱瑟琳（華麗壯觀）專屬項目，將多餘奢侈資源轉成文化與旅遊業績。",
+      "whileActive": ["城市投入生產力舉辦盛會。"],
+      "onComplete": ["依文明持有的多餘奢侈資源數量獲得文化與旅遊業績。"],
+      "requirements": [{"label":"限定領袖","value":"凱瑟琳·德·美第奇（華麗壯觀）"},{"label":"必要區域","value":"劇院廣場"}],
+      "tip": "先靠交易蒐集不同與重複奢侈品，再由多座高產城市連續舉辦，能形成文化勝利爆發。"
+    },
+    {
+      "id": "lijia-food", "name": "里甲（食物）", "en": "Lijia (Food)", "category": "unique", "categoryName": "領袖特色項目", "districtId": "district-city-center",
+      "description": "永樂專屬可重複項目，把城市生產力轉為食物。",
+      "whileActive": ["每回合把 50% 生產力轉換為食物。"],
+      "onComplete": ["可隨時切換其他生產項目；沒有固定完成獎勵。"],
+      "requirements": [{"label":"限定領袖","value":"永樂皇帝"}],
+      "tip": "衝 10 人口能力門檻、補新城人口時使用；住房或宜居度不足時先解決瓶頸。"
+    },
+    {
+      "id": "lijia-faith", "name": "里甲（信仰）", "en": "Lijia (Faith)", "category": "unique", "categoryName": "領袖特色項目", "districtId": "district-city-center",
+      "description": "永樂專屬可重複項目，把城市生產力轉為信仰。",
+      "whileActive": ["每回合把 50% 生產力轉換為信仰。"],
+      "onComplete": ["可隨時切換其他生產項目；沒有固定完成獎勵。"],
+      "requirements": [{"label":"限定領袖","value":"永樂皇帝"}],
+      "tip": "需要宗教單位、自然學家、搖滾樂團或紀念性移民時，讓非主力城市短期轉換。"
+    },
+    {
+      "id": "lijia-gold", "name": "里甲（金幣）", "en": "Lijia (Gold)", "category": "unique", "categoryName": "領袖特色項目", "districtId": "district-city-center",
+      "description": "永樂專屬可重複項目，把城市生產力完整轉為金幣。",
+      "whileActive": ["每回合把 100% 生產力轉換為金幣。"],
+      "onComplete": ["可隨時切換其他生產項目；沒有固定完成獎勵。"],
+      "requirements": [{"label":"限定領袖","value":"永樂皇帝"}],
+      "tip": "升級軍隊或集中購買關鍵建築前短期使用；長期使用會犧牲城市基礎建設。"
+    },
+    {
+      "id": "heroic-tales", "name": "英雄史詩", "en": "Heroic Tales", "category": "mode", "categoryName": "英雄與傳說模式", "districtId": "district-city-center",
+      "description": "探索尚未發現的英雄，讓文明取得招募機會。",
+      "whileActive": ["城市投入生產力尋找新的英雄傳說。"],
+      "onComplete": ["發現一位尚未被發現的英雄；若仍可招募，會開放對應英雄。"],
+      "requirements": [{"label":"必要模式","value":"英雄與傳說"}],
+      "tip": "早期沒有自然發現理想英雄時再做；若已有適合勝利路線的英雄，產能通常應先用來招募與擴張。"
+    },
+    {
+      "id": "devotion-to-hero", "name": "虔信英雄（12 種）", "en": "Devotion to Hero", "category": "mode", "categoryName": "英雄與傳說模式", "districtId": "district-city-center",
+      "description": "已發現英雄的招募項目；遊戲會依英雄分成阿南西、亞瑟、貝奧武夫、海克力斯、卑彌呼等 12 個獨立項目。",
+      "whileActive": ["城市投入生產力完成對指定英雄的虔信。"],
+      "onComplete": ["指定英雄出現在該城市中心。"],
+      "requirements": [{"label":"必要模式","value":"英雄與傳說"},{"label":"必要條件","value":"已發現且目前可招募的指定英雄"}],
+      "tip": "把英雄招到最接近任務前線的城市；英雄壽命有限，別在暫時用不到時過早完成。"
+    },
+    {
+      "id": "create-corporation-product", "name": "建立新產品（28 種）", "en": "Create New Product", "category": "mode", "categoryName": "壟斷與公司模式", "districtId": "district-commercial-hub",
+      "description": "公司以奢侈資源建立產品；遊戲依琥珀、柑橘、可可、咖啡等 28 種資源分成獨立項目。",
+      "whileActive": ["公司所在城市投入生產力製作產品。"],
+      "onComplete": ["產生一件可存放於證券交易所或海港建築的公司產品。", "產品會依奢侈資源提供主辦城市產出或生產加成。"],
+      "requirements": [{"label":"必要模式","value":"壟斷與公司"},{"label":"必要條件","value":"已在對應奢侈資源上建立公司且有可用產品槽位"}],
+      "tip": "文化勝利優先製作並集中展示；先確認槽位，避免完成後產品無處安放。"
+    },
+    {
+      "id": "carnival", "name": "嘉年華", "en": "Carnival", "category": "unique", "categoryName": "文明特色項目", "districtId": "district-entertainment-complex",
+      "description": "巴西街頭嘉年華專屬項目，兼顧宜居度與多類偉人競爭。",
+      "whileActive": ["項目進行期間，本城 +1 宜居度。"],
+      "onComplete": ["獲得大工程師、大商人、大作家、大藝術家與大音樂家點數。"],
+      "requirements": [{"label":"限定文明","value":"巴西"},{"label":"必要區域","value":"街頭嘉年華"}],
+      "tip": "城市宜居度臨界或同時競爭多類偉人時連續舉辦；缺基礎建築時仍應先補城市底盤。"
+    },
+    {
+      "id": "carnival-coastal", "name": "嘉年華（海濱）", "en": "Carnival (Coastal)", "category": "unique", "categoryName": "文明特色項目", "districtId": "district-water-entertainment-complex",
+      "description": "巴西科帕卡巴納專屬的海濱嘉年華，收益與街頭版本一致。",
+      "whileActive": ["項目進行期間，本城 +1 宜居度。"],
+      "onComplete": ["獲得大工程師、大商人、大作家、大藝術家與大音樂家點數。"],
+      "requirements": [{"label":"限定文明","value":"巴西"},{"label":"必要區域","value":"科帕卡巴納"}],
+      "tip": "沿海文化城可用它同時維持宜居度並追偉人，特別適合已有大量巨作槽位的城市。"
+    },
+    {
+      "id": "occult-research", "name": "神秘學研究", "en": "Occult Research", "category": "mode", "categoryName": "秘密結社項目", "districtId": "district-campus",
+      "description": "鍊金術士學派終盤項目，把地脈布局轉成科技與偉人點數。",
+      "whileActive": ["每回合持續產出金幣。"],
+      "onComplete": ["依本城地脈數量獲得科技值。", "獲得大科學家、大商人與大工程師點數。"],
+      "requirements": [{"label":"必要模式","value":"秘密結社"},{"label":"必要結社","value":"鍊金術士學派並取得艾華斯晉升"},{"label":"必要區域","value":"學院"}],
+      "tip": "地脈密集城市收益最高；沒有地脈時仍有金幣與偉人點數，但爆發力明顯較低。"
+    },
+    {
+      "id": "dark-summoning", "name": "黑暗召喚", "en": "Dark Summoning", "category": "mode", "categoryName": "秘密結社項目", "districtId": "district-city-center",
+      "description": "虛空吟唱者項目，強化邪教徒造成的忠誠度傷害。",
+      "whileActive": ["每回合產出大量信仰值。"],
+      "onComplete": ["邪教徒的忠誠度傷害永久 +2，最多累積至 30。"],
+      "requirements": [{"label":"必要模式","value":"秘密結社"},{"label":"必要結社","value":"虛空吟唱者"},{"label":"必要建築","value":"舊神方尖碑"}],
+      "tip": "準備用邪教徒翻邊境城時連續堆疊；若沒有忠誠攻勢，單純為信仰反覆做通常不如直接建設。"
+    },
+    {
+      "id": "dark-signal", "name": "黑暗信號", "en": "Dark Signal", "category": "mode", "categoryName": "殭屍防禦模式", "districtId": "district-campus",
+      "description": "以科學手段暫時控制本城領土內的殭屍。",
+      "whileActive": ["城市投入生產力完成控制信號。"],
+      "onComplete": ["取得本城領土內所有殭屍的控制權，持續 30 回合。"],
+      "requirements": [{"label":"必要模式","value":"殭屍防禦"},{"label":"必要區域","value":"學院"}],
+      "tip": "領土內聚集多隻殭屍時價值最高；控制後立即用來守城、探路或消耗敵軍。"
+    },
+    {
+      "id": "turn-undead", "name": "操控亡靈", "en": "Turn Undead", "category": "mode", "categoryName": "殭屍防禦模式", "districtId": "district-holy-site",
+      "description": "以宗教力量暫時控制本城領土內的殭屍。",
+      "whileActive": ["城市投入生產力完成宗教儀式。"],
+      "onComplete": ["取得本城領土內所有殭屍的控制權，持續 15 回合。"],
+      "requirements": [{"label":"必要模式","value":"殭屍防禦"},{"label":"必要區域","value":"聖地"}],
+      "tip": "持續時間比黑暗信號短，適合緊急解圍；控制權到期前把殭屍派離脆弱城市。"
+    },
+    {
+      "id": "train-athletes", "name": "訓練運動員", "en": "Train Athletes", "category": "competition", "categoryName": "世界競賽項目", "districtId": "district-entertainment-complex",
+      "description": "世界運動會期間把城市產能轉成競賽分數。",
+      "whileActive": ["城市持續投入生產力訓練運動員。"],
+      "onComplete": ["為世界運動會增加分數。"],
+      "requirements": [{"label":"必要條件","value":"世界運動會競賽進行中"}],
+      "tip": "想取得外交勝利點數或冠軍獎勵時，多城同時生產；競賽結束後會自動失去用途。"
+    },
+    {
+      "id": "train-astronauts", "name": "訓練太空人", "en": "Train Astronauts", "category": "competition", "categoryName": "世界競賽項目", "districtId": "district-spaceport",
+      "description": "國際太空站競賽期間把太空城市產能轉成競賽分數。",
+      "whileActive": ["城市持續投入生產力訓練太空人。"],
+      "onComplete": ["為國際太空站競賽增加分數。"],
+      "requirements": [{"label":"必要條件","value":"國際太空站競賽進行中"},{"label":"必要區域","value":"太空中心"}],
+      "tip": "科學文明通常最有優勢，但要比較競賽獎勵與自己正在進行的科學勝利項目哪個更急。"
+    }
+  ]
+}
