@@ -1,0 +1,30 @@
+# Local operating-system files
+.DS_Store
+.AppleDouble
+._*
+Thumbs.db
+Desktop.ini
+
+# Credentials and local settings
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+.npmrc
+.netrc
+credentials*.json
+secrets*.json
+
+# Dependencies and logs
+node_modules/
+*.log
+
+# Personal reading-data exports
+civ6-backup*.json
+civ6-data*.json
+
+# Editor settings
+.vscode/
+.idea/
