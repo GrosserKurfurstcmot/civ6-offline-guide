@@ -28,3 +28,6 @@ civ6-data*.json
 # Editor settings
 .vscode/
 .idea/
+
+# Default filename used by the website export function
+civ6-guide-backup*.json
