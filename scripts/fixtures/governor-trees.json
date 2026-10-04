@@ -1,0 +1,431 @@
+{
+  "ruleset": "Gathering Storm (unmodded)",
+  "checked": "2026-10-05",
+  "note": "Reference tree levels are zero-based; display levels include appointment and are one-based. Multiple prerequisites are alternatives.",
+  "promotions": [
+    {
+      "governor": "pingala",
+      "id": "educator-librarian",
+      "level": 0,
+      "requires": [],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_educator_librarian/"
+    },
+    {
+      "governor": "pingala",
+      "id": "educator-researcher",
+      "level": 1,
+      "requires": [
+        "educator-librarian"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_educator_researcher/"
+    },
+    {
+      "governor": "pingala",
+      "id": "educator-connoisseur",
+      "level": 1,
+      "requires": [
+        "educator-librarian"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_educator_connoisseur/"
+    },
+    {
+      "governor": "pingala",
+      "id": "educator-grants",
+      "level": 2,
+      "requires": [
+        "educator-connoisseur",
+        "educator-researcher"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_educator_grants/"
+    },
+    {
+      "governor": "pingala",
+      "id": "educator-space-initiative",
+      "level": 3,
+      "requires": [
+        "educator-grants"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_educator_space_initiative/"
+    },
+    {
+      "governor": "pingala",
+      "id": "merchant-curator",
+      "level": 3,
+      "requires": [
+        "educator-grants"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_merchant_curator/"
+    },
+    {
+      "governor": "ibrahim",
+      "id": "pasha",
+      "level": 0,
+      "requires": [],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_pasha/"
+    },
+    {
+      "governor": "ibrahim",
+      "id": "head-falconer",
+      "level": 1,
+      "requires": [
+        "pasha"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_head_falconer/"
+    },
+    {
+      "governor": "ibrahim",
+      "id": "serasker",
+      "level": 1,
+      "requires": [
+        "pasha"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_serasker/"
+    },
+    {
+      "governor": "ibrahim",
+      "id": "khass-oda-bashi",
+      "level": 2,
+      "requires": [
+        "head-falconer"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_khass_oda_bashi/"
+    },
+    {
+      "governor": "ibrahim",
+      "id": "capou-agha",
+      "level": 2,
+      "requires": [
+        "serasker"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_capou_agha/"
+    },
+    {
+      "governor": "ibrahim",
+      "id": "grand-visier",
+      "level": 3,
+      "requires": [
+        "khass-oda-bashi",
+        "capou-agha"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_grand_visier/"
+    },
+    {
+      "governor": "amani",
+      "id": "ambassador-messenger",
+      "level": 0,
+      "requires": [],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_ambassador_messenger/"
+    },
+    {
+      "governor": "amani",
+      "id": "ambassador-emissary",
+      "level": 1,
+      "requires": [
+        "ambassador-messenger"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_ambassador_emissary/"
+    },
+    {
+      "governor": "amani",
+      "id": "ambassador-affluence",
+      "level": 1,
+      "requires": [
+        "ambassador-messenger"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_ambassador_affluence/"
+    },
+    {
+      "governor": "amani",
+      "id": "ambassador-foreign-investor",
+      "level": 2,
+      "requires": [
+        "ambassador-affluence"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_ambassador_foreign_investor/"
+    },
+    {
+      "governor": "amani",
+      "id": "local-informants",
+      "level": 2,
+      "requires": [
+        "ambassador-emissary"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_local_informants/"
+    },
+    {
+      "governor": "amani",
+      "id": "ambassador-puppeteer",
+      "level": 3,
+      "requires": [
+        "local-informants",
+        "ambassador-foreign-investor"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_ambassador_puppeteer/"
+    },
+    {
+      "governor": "magnus",
+      "id": "resource-manager-groundbreaker",
+      "level": 0,
+      "requires": [],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_resource_manager_groundbreaker/"
+    },
+    {
+      "governor": "magnus",
+      "id": "resource-manager-surplus-logistics",
+      "level": 1,
+      "requires": [
+        "resource-manager-groundbreaker"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_resource_manager_surplus_logistics/"
+    },
+    {
+      "governor": "magnus",
+      "id": "resource-manager-expedition",
+      "level": 1,
+      "requires": [
+        "resource-manager-groundbreaker"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_resource_manager_expedition/"
+    },
+    {
+      "governor": "magnus",
+      "id": "resource-manager-industrialist",
+      "level": 2,
+      "requires": [
+        "resource-manager-surplus-logistics"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_resource_manager_industrialist/"
+    },
+    {
+      "governor": "magnus",
+      "id": "resource-manager-black-marketeer",
+      "level": 2,
+      "requires": [
+        "resource-manager-expedition"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_resource_manager_black_marketeer/"
+    },
+    {
+      "governor": "magnus",
+      "id": "resource-manager-vertical-integration",
+      "level": 3,
+      "requires": [
+        "resource-manager-industrialist",
+        "resource-manager-black-marketeer"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_resource_manager_vertical_integration/"
+    },
+    {
+      "governor": "liang",
+      "id": "builder-guildmaster",
+      "level": 0,
+      "requires": [],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_builder_guildmaster/"
+    },
+    {
+      "governor": "liang",
+      "id": "zoning-commissioner",
+      "level": 1,
+      "requires": [
+        "builder-guildmaster"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_zoning_commissioner/"
+    },
+    {
+      "governor": "liang",
+      "id": "aquaculture",
+      "level": 1,
+      "requires": [
+        "builder-guildmaster"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_aquaculture/"
+    },
+    {
+      "governor": "liang",
+      "id": "reinforced-infrastructure",
+      "level": 2,
+      "requires": [
+        "zoning-commissioner"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_reinforced_infrastructure/"
+    },
+    {
+      "governor": "liang",
+      "id": "water-works",
+      "level": 2,
+      "requires": [
+        "aquaculture"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_water_works/"
+    },
+    {
+      "governor": "liang",
+      "id": "parks-recreation",
+      "level": 3,
+      "requires": [
+        "water-works",
+        "reinforced-infrastructure"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_parks_recreation/"
+    },
+    {
+      "governor": "moksha",
+      "id": "cardinal-bishop",
+      "level": 0,
+      "requires": [],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_cardinal_bishop/"
+    },
+    {
+      "governor": "moksha",
+      "id": "cardinal-grand-inquisitor",
+      "level": 1,
+      "requires": [
+        "cardinal-bishop"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_cardinal_grand_inquisitor/"
+    },
+    {
+      "governor": "moksha",
+      "id": "cardinal-laying-on-of-hands",
+      "level": 1,
+      "requires": [
+        "cardinal-bishop"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_cardinal_laying_on_of_hands/"
+    },
+    {
+      "governor": "moksha",
+      "id": "cardinal-citadel-of-god",
+      "level": 2,
+      "requires": [
+        "cardinal-grand-inquisitor",
+        "cardinal-laying-on-of-hands"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_cardinal_citadel_of_god/"
+    },
+    {
+      "governor": "moksha",
+      "id": "cardinal-patron-saint",
+      "level": 3,
+      "requires": [
+        "cardinal-citadel-of-god"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_cardinal_patron_saint/"
+    },
+    {
+      "governor": "moksha",
+      "id": "cardinal-divine-architect",
+      "level": 3,
+      "requires": [
+        "cardinal-citadel-of-god"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_cardinal_divine_architect/"
+    },
+    {
+      "governor": "reyna",
+      "id": "merchant-land-acquisition",
+      "level": 0,
+      "requires": [],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_merchant_land_acquisition/"
+    },
+    {
+      "governor": "reyna",
+      "id": "merchant-forestry-management",
+      "level": 1,
+      "requires": [
+        "merchant-land-acquisition"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_merchant_forestry_management/"
+    },
+    {
+      "governor": "reyna",
+      "id": "merchant-harbormaster",
+      "level": 1,
+      "requires": [
+        "merchant-land-acquisition"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_merchant_harbormaster/"
+    },
+    {
+      "governor": "reyna",
+      "id": "merchant-tax-collector",
+      "level": 2,
+      "requires": [
+        "merchant-harbormaster",
+        "merchant-forestry-management"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_merchant_tax_collector/"
+    },
+    {
+      "governor": "reyna",
+      "id": "merchant-renewable-energy",
+      "level": 3,
+      "requires": [
+        "merchant-tax-collector"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_merchant_renewable_energy/"
+    },
+    {
+      "governor": "reyna",
+      "id": "merchant-contractor",
+      "level": 3,
+      "requires": [
+        "merchant-tax-collector"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_merchant_contractor/"
+    },
+    {
+      "governor": "victor",
+      "id": "redoubt",
+      "level": 0,
+      "requires": [],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_redoubt/"
+    },
+    {
+      "governor": "victor",
+      "id": "defense-logistics",
+      "level": 1,
+      "requires": [
+        "redoubt"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_defense_logistics/"
+    },
+    {
+      "governor": "victor",
+      "id": "garrison-commander",
+      "level": 1,
+      "requires": [
+        "redoubt"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_garrison_commander/"
+    },
+    {
+      "governor": "victor",
+      "id": "embrasure",
+      "level": 2,
+      "requires": [
+        "defense-logistics",
+        "garrison-commander"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_embrasure/"
+    },
+    {
+      "governor": "victor",
+      "id": "air-defense-initiative",
+      "level": 3,
+      "requires": [
+        "embrasure"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_air_defense_initiative/"
+    },
+    {
+      "governor": "victor",
+      "id": "educator-arms-race-proponent",
+      "level": 3,
+      "requires": [
+        "embrasure"
+      ],
+      "source": "https://www.civilopedia.net/en-US/gathering-storm/governors/governor_promotion_educator_arms_race_proponent/"
+    }
+  ]
+}
