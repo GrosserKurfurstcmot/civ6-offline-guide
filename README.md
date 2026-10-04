@@ -190,3 +190,11 @@ The build validates the data and updates `assets/data.bundle.js`. Optional onlin
 This is an unofficial fan project, unaffiliated with and not endorsed by Firaxis Games, 2K, or Take-Two Interactive. Game icons, portraits, trademarks, and some in-game effect text remain the property of their respective rights holders. See [LICENSES.md](LICENSES.md). These notices do not grant an open-source license for the entire project or for the bundled game assets.
 
 [2K's posting policy](https://support.2k.com/hc/en-us/articles/201335153-Policy-on-posting-copyrighted-2K-material) generally does not object to non-commercial fan use without intentional spoilers, but reserves takedown and policy-change rights. It does not explicitly address redistribution of a large icon collection in a GitHub repository. No project-specific written permission for this asset bundle is documented in this repository; no unrestricted reuse rights are claimed. Policy checked: **2026-10-02**.
+
+## 總督技能列表 / Governor skill list
+
+每位總督的六項技能以「名稱／效果」兩欄表格呈現。名稱欄列出中文與英文名稱，效果欄標示基本能力並完整列出效果；頁面與全站搜尋不再標示技能層級、分支或前置條件。不同版本的效果與解鎖方式，以遊戲內顯示為準。
+
+資料中的 `level` 與 `requires` 仍保留供維護檢查使用，不作為畫面分組。修改後可執行 `node scripts/governor-test.js`，檢查八位總督的全部技能、表格與搜尋連結。
+
+Each governor's six skills are displayed in a two-column **Name / Effect** table. Chinese and English names appear in the name column; the effect column identifies the base ability and retains the full effect text. Skill levels, branches and prerequisites are not shown on the page or in search labels. Effects and unlock conditions may vary by game version; follow the descriptions in your game. Source levels and prerequisites remain available for maintenance checks. Run `node scripts/governor-test.js` after changes to verify the tables and search links.
