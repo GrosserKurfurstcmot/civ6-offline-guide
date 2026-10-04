@@ -49,7 +49,7 @@
     { type: "page", lens: "wiki", id: "wiki-governments", title: "政體與政策卡", subtitle: "政體加成、卡槽與全部政策", route: "#/wiki/governments", text: "政體 政策卡 軍事 經濟 外交 偉人 通用 卡槽" },
     { type: "page", lens: "wiki", id: "wiki-religions", title: "宗教與信條", subtitle: "歷史宗教與全部宗教加成", route: "#/wiki/religions", text: "宗教 信條 萬神殿 創立者 追隨者 禮拜 建築" },
     { type: "page", lens: "wiki", id: "wiki-great-people", title: "偉人百科", subtitle: "全部偉人、時代與啟用效果", route: "#/wiki/great-people", text: "偉人 大科學家 大工程師 大作家 大將軍 啟用 效果" },
-    { type: "page", lens: "wiki", id: "wiki-governors", title: "總督與晉升", subtitle: "總督能力與完整升級樹", route: "#/wiki/governors", text: "總督 晉升 升級 樹 能力 平加拉 梁 馬格努斯" },
+    { type: "page", lens: "wiki", id: "wiki-governors", title: "總督與晉升", subtitle: "總督技能名稱與效果", route: "#/wiki/governors", text: "總督 晉升 升級 樹 能力 平加拉 梁 馬格努斯" },
     { type: "page", lens: "wiki", id: "wiki-systems", title: "核心機制", subtitle: "人口、忠誠、商路、外交與氣候", route: "#/wiki/systems", text: "人口 食物 住房 宜居度 忠誠 商路 外交 城邦 氣候 災害" }
   ];
   var filterEventsBound = false;
@@ -651,7 +651,7 @@
       { route: "#/wiki/governments", icon: "system", eyebrow: DATA.meta.governmentCount + " + " + DATA.meta.policyCount, title: "政體與政策卡", description: "政體加成、卡槽、政策效果與解鎖市政。" },
       { route: "#/wiki/religions", icon: "wiki", eyebrow: DATA.meta.religionCount + " + " + DATA.meta.beliefCount, title: "宗教與信條", description: "歷史宗教、萬神殿與四類宗教信條。" },
       { route: "#/wiki/great-people", icon: "leader", eyebrow: DATA.meta.greatPersonCount + " 位", title: "偉人", description: "時代、類型、招募與完整啟用效果。" },
-      { route: "#/wiki/governors", icon: "leader", eyebrow: DATA.meta.governorCount + " 位", title: "總督", description: "任命能力、就任時間與完整晉升樹。" },
+      { route: "#/wiki/governors", icon: "leader", eyebrow: DATA.meta.governorCount + " 位", title: "總督", description: "基本能力、就任時間與各項技能效果。" },
       { route: "#/wiki/modes", icon: "mode", eyebrow: DATA.meta.modeCount + " 種", title: "遊戲模式規則", description: "啟用需求、新增內容與規則變更。" },
       { route: "#/wiki/systems", icon: "system", eyebrow: DATA.handbook.systems.length + " 個系統", title: "核心機制", description: "人口、忠誠、商路、外交、氣候與戰爭疲勞。" }
     ];
@@ -1356,32 +1356,24 @@
       '<section class="great-people-catalog" id="great-people-catalog"><div class="section-heading-row"><div><p class="kicker">ALL GREAT PEOPLE</p><h2>全部偉人與效果</h2></div><p>共顯示 <strong>' + list.length + '</strong> 位；總指揮官是大哥倫比亞專屬，其他九類由所有符合條件的文明競爭。</p></div><div class="great-people-controls"><div class="people-class-filters" role="group" aria-label="依偉人類型篩選">' + classButtons + '</div><div class="people-era-filter" role="group" aria-label="依時代篩選偉人"><label><span class="field-label">時代</span><select class="filter-select" data-people-filter="era"><option value="">全部時代</option>' + eraOptions + '</select></label><button class="button secondary" type="button" data-action="clear-people-filters">清除偉人篩選</button></div></div><div class="great-person-grid">' + (list.length ? list.map(renderGreatPersonCard).join("") : renderPeopleEmpty()) + '</div></section>';
   }
 
-  function renderPromotionNode(governor, promotion) {
-    var levelName = promotion.level === 0 ? "任命能力" : "第 " + promotion.level + " 級";
-    var promotionMap = {};
-    governor.promotions.forEach(function (item) { promotionMap[item.id] = item; });
-    var requirements = (promotion.requires || []).map(function (id) { return promotionMap[id]; }).filter(Boolean);
-    var requirementMarkup = requirements.length ? '<div class="promotion-requires"><span>前置</span><strong>' + requirements.map(function (item) { return escapeHtml(item.name); }).join(" ＋ ") + '</strong></div>' : '<div class="promotion-requires promotion-base"><span>起點</span><strong>任命後立即生效</strong></div>';
-    return '<article class="promotion-node promotion-level-' + promotion.level + '" id="promotion-' + escapeHtml(governor.id) + '-' + escapeHtml(promotion.id) + '"><span>' + levelName + '</span><h4>' + escapeHtml(promotion.name) + '</h4><small>' + escapeHtml(promotion.en) + '</small><p>' + escapeHtml(promotion.effect) + '</p>' + requirementMarkup + '</article>';
+  function renderPromotionRow(governor, promotion) {
+    var baseLabel = promotion.level === 0 ? '<strong class="governor-base-label">基本能力</strong>' : "";
+    return '<tr class="governor-skill-row" id="promotion-' + escapeHtml(governor.id) + '-' + escapeHtml(promotion.id) + '"><th scope="row"><strong>' + escapeHtml(promotion.name) + '</strong><small lang="en">' + escapeHtml(promotion.en) + '</small></th><td>' + baseLabel + '<p>' + escapeHtml(promotion.effect) + '</p></td></tr>';
   }
 
-  function renderPromotionTier(governor, level) {
-    var promotions = governor.promotions.filter(function (promotion) { return promotion.level === level; });
-    if (!promotions.length) return "";
-    var label = level === 0 ? "任命" : "第 " + level + " 級";
-    return '<section class="promotion-tier promotion-tier-' + level + '" data-count="' + promotions.length + '"><div class="promotion-tier-label"><span>' + label + '</span><small>' + (level === 0 ? "基礎能力" : promotions.length + " 項選擇") + '</small></div><div class="promotion-tier-nodes">' + promotions.map(function (promotion) { return renderPromotionNode(governor, promotion); }).join("") + '</div></section>';
+  function renderPromotionTable(governor) {
+    return '<div class="governor-skill-table-wrap"><table class="governor-skill-table"><caption class="sr-only">' + escapeHtml(governor.name) + '的技能名稱與效果</caption><colgroup><col class="governor-skill-name-column"><col></colgroup><thead><tr><th scope="col">名稱</th><th scope="col">效果</th></tr></thead><tbody>' + governor.promotions.map(function (promotion) { return renderPromotionRow(governor, promotion); }).join("") + '</tbody></table></div>';
   }
 
   function renderGovernorCard(governor) {
-    var profile = [1, 2, 3].map(function (level) { return governor.promotions.filter(function (promotion) { return promotion.level === level; }).length; }).join("→");
-    var promotions = [0, 1, 2, 3].map(function (level) { return renderPromotionTier(governor, level); }).join("");
-    return '<details class="governor-card" id="governor-' + escapeHtml(governor.id) + '"><summary><span class="governor-portrait"><img src="assets/game-icons/people/' + escapeHtml(governor.icon) + '" width="128" height="128" loading="lazy" decoding="async" alt="' + escapeHtml(governor.name + "總督遊戲肖像") + '"></span><span class="governor-summary"><span class="governor-kind">' + (governor.unique ? "鄂圖曼專屬總督" : "通用總督") + '</span><strong>' + escapeHtml(governor.name) + ' <small>· ' + escapeHtml(governor.title) + '</small></strong><span class="english">' + escapeHtml(governor.en) + '</span><span class="governor-tags">' + governor.bestFor.map(function (tag) { return '<span>' + escapeHtml(tag) + '</span>'; }).join("") + '</span></span><span class="establishment-badge"><strong>' + governor.establishment + '</strong><span>回合就任</span></span></summary><div class="governor-details"><p class="governor-description">' + escapeHtml(governor.description) + '</p><aside class="governor-advice"><strong>新手用法</strong><p>' + escapeHtml(governor.advice) + '</p></aside><div class="promotion-heading"><div><span>官方晉升樹 · ' + profile + '</span><h4>任命能力＋5 項可選晉升</h4></div><small>前置列顯示實際依賴；任命或每次晉升均消耗 1 個總督頭銜</small></div><div class="promotion-tree">' + promotions + '</div></div></details>';
+    var promotions = renderPromotionTable(governor);
+    return '<details class="governor-card" id="governor-' + escapeHtml(governor.id) + '"><summary><span class="governor-portrait"><img src="assets/game-icons/people/' + escapeHtml(governor.icon) + '" width="128" height="128" loading="lazy" decoding="async" alt="' + escapeHtml(governor.name + "總督遊戲肖像") + '"></span><span class="governor-summary"><span class="governor-kind">' + (governor.unique ? "鄂圖曼專屬總督" : "通用總督") + '</span><strong>' + escapeHtml(governor.name) + ' <small>· ' + escapeHtml(governor.title) + '</small></strong><span class="english">' + escapeHtml(governor.en) + '</span><span class="governor-tags">' + governor.bestFor.map(function (tag) { return '<span>' + escapeHtml(tag) + '</span>'; }).join("") + '</span></span><span class="establishment-badge"><strong>' + governor.establishment + '</strong><span>回合就任</span></span></summary><div class="governor-details"><p class="governor-description">' + escapeHtml(governor.description) + '</p><aside class="governor-advice"><strong>新手用法</strong><p>' + escapeHtml(governor.advice) + '</p></aside><div class="promotion-heading"><div><span>技能一覽</span><h4>基本能力與晉升技能</h4></div><small>任命與每次晉升各耗 1 個總督頭銜</small></div>' + promotions + '</div></details>';
   }
 
   function renderGovernorsGuide() {
     var list = DATA.people.governors.slice();
-    return '<section class="governor-primer"><div><p class="kicker">GOVERNORS</p><h2>先看城市任務，再決定分散任命或集中升級</h2><p>總督在城市就任後提供忠誠度與專屬能力。普通總督需 5 回合就任，維克托只需 3 回合；重新調派後要再次等待。</p><p class="governor-tree-note"><strong>晉升樹並非統一形狀：</strong>平加拉、瑞娜、莫克沙與維克托是 2→1→2；其餘四位是 2→2→1。頁面以每項能力的「前置」為準。<a href="https://www.civilopedia.net/en-US/gathering-storm/concepts/governors_1/" target="_blank" rel="noreferrer">查看 Gathering Storm 官方說明</a></p></div><div class="governor-rule-grid"><span><strong>1 城 1 人</strong>同一城市只能指派一位總督</span><span><strong>頭銜共用</strong>任命新人與升級舊人都消耗頭銜</span><span><strong>能力需就任</strong>調派途中不會套用城市能力</span></div></section>' +
-      '<section class="governor-catalog" id="governor-catalog"><div class="section-heading-row"><div><p class="kicker">ALL GOVERNORS</p><h2>全部總督與升級樹</h2></div><p>共顯示 <strong>' + list.length + '</strong> 位總督；易卜拉欣只在蘇萊曼領導鄂圖曼時可用。</p></div><div class="governor-grid">' + list.map(renderGovernorCard).join("") + '</div></section>';
+    return '<section class="governor-primer"><div><p class="kicker">GOVERNORS</p><h2>先看城市任務，再決定分散任命或集中升級</h2><p>總督在城市就任後提供忠誠度與專屬能力。普通總督需 5 回合就任，維克托只需 3 回合；重新調派後要再次等待。</p><p class="governor-tree-note">下表列出各技能的名稱與效果。不同版本的技能效果與解鎖條件，請以遊戲內顯示為準。</p></div><div class="governor-rule-grid"><span><strong>1 城 1 人</strong>同一城市只能指派一位總督</span><span><strong>頭銜共用</strong>任命新人與升級舊人都消耗頭銜</span><span><strong>能力需就任</strong>調派途中不會套用城市能力</span></div></section>' +
+      '<section class="governor-catalog" id="governor-catalog"><div class="section-heading-row"><div><p class="kicker">ALL GOVERNORS</p><h2>全部總督與技能</h2></div><p>共顯示 <strong>' + list.length + '</strong> 位總督；易卜拉欣只在蘇萊曼領導鄂圖曼時可用。</p></div><div class="governor-grid">' + list.map(renderGovernorCard).join("") + '</div></section>';
   }
 
   function renderPeopleEmpty() {

@@ -871,6 +871,26 @@ a.terrain-resource-chip:hover { color: var(--accent-strong); border-color: var(-
 .promotion-requires strong { color: var(--text); font-size: 10px; line-height: 1.4; }
 .promotion-requires.promotion-base strong { color: var(--accent-strong); }
 
+/* Governor skills use a flat name/effect table across game versions. */
+.governor-skill-table-wrap { overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: var(--surface-inset); }
+.governor-skill-table { width: 100%; table-layout: fixed; border-collapse: collapse; }
+.governor-skill-name-column { width: 32%; }
+.governor-skill-table th, .governor-skill-table td { padding: 14px 16px; border-bottom: 1px solid var(--line); vertical-align: top; text-align: left; overflow-wrap: anywhere; }
+.governor-skill-table th:first-child { border-right: 1px solid var(--line); }
+.governor-skill-table thead th { color: var(--accent-strong); background: var(--accent-soft); font-size: var(--font-small); font-weight: 800; text-align: center; }
+.governor-skill-table tbody th { font-weight: 400; }
+.governor-skill-table tbody th > strong { display: block; color: var(--text); font-size: var(--font-body); line-height: 1.5; }
+.governor-skill-table tbody th > small { display: block; margin-top: 7px; color: var(--subtle); font-size: var(--font-caption); line-height: 1.5; }
+.governor-skill-table td p { margin: 0; color: var(--muted); font-size: var(--font-body); line-height: 1.65; }
+.governor-skill-table tbody tr:last-child > * { border-bottom: 0; }
+.governor-base-label { display: block; margin-bottom: 7px; color: var(--accent-strong); font-size: var(--font-small); line-height: 1.5; }
+.governor-skill-row { scroll-margin-top: calc(var(--header-height) + 176px); }
+@media (max-width: 640px) {
+  .governor-skill-name-column { width: 38%; }
+  .governor-skill-table th, .governor-skill-table td { padding: 12px 10px; }
+  .governor-skill-row { scroll-margin-top: calc(var(--header-height) + 220px); }
+}
+
 .button { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; padding: 9px 16px; border: 1px solid transparent; border-radius: var(--radius-sm); font-weight: 700; white-space: nowrap; }
 .button.primary { color: #10150f; background: var(--accent-strong); }
 .button.primary:hover { background: var(--accent); }
