@@ -134,9 +134,15 @@ function greatPersonDetails(html) {
 
 function promotionDetails(html) {
   const levelMatch = html.match(/等級：([^<]+)<\/div>/);
-  const rawLevel = levelMatch ? plainText(levelMatch[1]) : "";
+  if (!levelMatch) throw new Error("總督技能缺少來源層級");
+  const rawLevel = plainText(levelMatch[1]);
   const level = rawLevel === "基礎" ? 0 : Number(rawLevel.replace(/\D/g, ""));
-  return { level: Number.isFinite(level) ? level : 0, effect: descriptionFromHtml(html) };
+  if (!Number.isInteger(level) || level < 0 || level > 3) throw new Error(`無效總督技能層級：${rawLevel}`);
+  const requirementSection = html.match(/<p\b[^>]*>要求<\/p>([\s\S]*?)(?=<p\b[^>]*>|$)/);
+  const requirementNames = requirementSection ? Array.from(requirementSection[1].matchAll(/<div\b[^>]*>\s*<img\b[^>]*\/bullet\.png[^>]*>\s*([^<]+)<\/div>/g), (match) => plainText(match[1])) : [];
+  if (level > 0 && !requirementNames.length) throw new Error("總督晉升缺少前置技能，停止更新以免覆寫不完整資料");
+  // Keep source levels for base-ability identification and maintenance; the UI uses a flat skill list.
+  return { level, effect: descriptionFromHtml(html), requirementNames };
 }
 
 async function mapConcurrent(items, limit, mapper) {
@@ -217,6 +223,11 @@ async function buildGovernors() {
         name: titleFromHtml(html) || promotion.name,
         en: enNames.get(promotion.pageId) || promotion.name,
         level: details.level,
+        requires: details.requirementNames.map((name) => {
+          const requirement = promotionLinks.find((item) => item.name === name);
+          if (!requirement) throw new Error(`找不到總督前置技能：${name}`);
+          return slugFromPageId(requirement.pageId.replace(/^GOVERNOR_PROMOTION_/, ""));
+        }),
         effect: details.effect
       };
     });

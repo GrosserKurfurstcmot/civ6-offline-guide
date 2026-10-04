@@ -485,7 +485,7 @@ for (const greatPerson of people.people) {
 }
 for (const governor of people.governors) {
   searchIndex.push({ type: "governor", id: governor.id, title: governor.name, subtitle: `${governor.title}｜${governor.en}`, route: `#/wiki/governors?focus=governor-${governor.id}`, text: compactSearchText(governor) });
-  for (const promotion of governor.promotions) searchIndex.push({ type: "governor-promotion", id: `${governor.id}-${promotion.id}`, title: promotion.name, subtitle: `${governor.name}｜第 ${promotion.level} 級晉升｜${promotion.en}`, route: `#/wiki/governors?focus=promotion-${governor.id}-${promotion.id}`, text: compactSearchText(governor.name, governor.en, promotion) });
+  for (const promotion of governor.promotions) searchIndex.push({ type: "governor-promotion", id: `${governor.id}-${promotion.id}`, title: promotion.name, subtitle: `${governor.name}｜${promotion.level === 0 ? "基本能力" : "晉升技能"}｜${promotion.en}`, route: `#/wiki/governors?focus=promotion-${governor.id}-${promotion.id}`, text: compactSearchText(governor.name, governor.en, promotion) });
 }
 for (const district of infrastructure.districts) {
   searchIndex.push({ type: "district", id: district.id, title: district.name, subtitle: `${district.en}｜區域與選址`, route: `#/wiki/infrastructure?focus=infrastructure-${district.id}`, text: compactSearchText(district) });
